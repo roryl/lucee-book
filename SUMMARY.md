@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [Tutorials](chapter1.md)
-   * Beginning Web Development with Lucee
+   * [Beginning Web Development with Lucee](beginning_web_development_with_lucee.md)
 * [Lucee Language](lucee_language.md)
    * [Syntax](syntax.md)
        * Script
