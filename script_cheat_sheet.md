@@ -58,6 +58,32 @@ loop index="i" array="#myArray#" item="item" {
 }
 ```
 
+##While Loop
+```
+x = 0;
+while(x <= 10){
+  x = x + 1;
+  echo(x);
+}
+```
+
+##Closure
+Implements a closure, which passing this function around keeps a reference to the scopes from where it was created
+```
+myClosure = function(){
+  //do something
+}
+```
+
+##User Defined Function
+User defined functions can be called from anywhere within the script but when they are passed around they do not contain a reference to where they were created
+```
+function myFunc(){
+
+}
+```
+
+
 
 
 
