@@ -8,12 +8,25 @@ if(condition){
 ```
 
 ## If/else
-```if(condition){
+```
+if(condition){
   doSomething();
 } else {
   doSomethingElse();
 }
 ```
+
+## If/else if
+```
+if(condition){
+  doSomething();
+} else if(condition2) {
+  doSomethingElse();
+} else {
+  doSomethingMore();
+}
+```
+
 
 
 
