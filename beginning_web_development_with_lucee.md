@@ -11,3 +11,5 @@ Lucee is considered an Application Server. An Application Server is a self conta
 
 
 Lucee allows you to program web sites easily. As a Web Programming language, it contains everything you need to write HTML pages, create forms, send emails, access databases, create automatic tasks, and more. It is like any other programming language with data, ifs, loops and outputs. However, Lucee uses a language called "CFML" which was designed for easy integration into HTML. CFML stands for ColdFusion Markup Language and is a tag based language just like HTML. This makes getting started in CFML relatively easy. Here is an example of CFML:
+
+<script src="https://gist.github.com/roryl/6d3ddaafdf6a5cab3445.js"></script>
