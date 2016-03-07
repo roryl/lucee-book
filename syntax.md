@@ -27,6 +27,7 @@ savecontent(variable="myContent){
   echo("Output some test");
 }
 ```
+View the [script reference](script_reference.html) for all language constructs
 
 ### Tags 
 
