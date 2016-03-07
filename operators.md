@@ -64,6 +64,54 @@
 |&=|compound concatenation|A shorthand operator that joins two strings, e.g. a &= b would be equivalent to writing a = a & b|
 | 0:2 | 1:2 | 2:2 |
 
+## Ternary operator
+The ternary operator lets you return results conditionally, in a very compact amount of code: 
+
+    condition ? value1 : value2
+
+This would return value1 if condition is true, otherwise it would return false.  It's comparable to the following logical structure: 
+
+    <cfif condition>
+        #value1#
+    <cfelse>
+        #value2#
+    </cfif>
+
+or the function:
+
+    iif(condition, "value1", "value2")
+
+For example: 
+
+    animal = "cat";
+    writeOutput(animal == "cat"? "Meow" : "Woof");
+
+would output "Meow".
+
+
+## Elvis operator
+The "Elvis operator" is a shortening of the ternary operator. One instance of where this is handy is for returning a 'sensible default' value if an variable does not exist. A simple example might look like this:
+    writeOutput(rockstar?: "Elvis Presley");
+
+Outputs the value of "rockstar" if the variable exists, otherwise it outputs "Elvis Presley"
+
+==Operators not available in tags==
+You can use <nowiki><> > < >= and <=</nowiki> in tags, as long as they don't interfere with the tag syntax.  In that case you must use the equivalent GT, LT, etc. operators instead.
+
+==Casting==
+Note that in Railo values are cast to an appropriate type automatically, except when using the identical operators === and !==
+
+For example: 
+
+    <cfset a = "2">
+    <cfset b = a ^ 2>
+    
+## Null-coalescing operator
+
+Will return the first value if not null, otherwise returns the second value
+
+result = firstValue ?: secondValue
+
 
 
 
