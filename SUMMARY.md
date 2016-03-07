@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [Tutorials](chapter1.md)
-   * Beginning Web Application Development with Lucee
+   * [Beginning Web Application Development with Lucee](beginning_web_application_development_with_lucee.md)
    * [What is Lucee](what_is_lucee.md)
 * [Lucee Language](lucee_language.md)
    * [Syntax](syntax.md)
