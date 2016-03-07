@@ -4,7 +4,6 @@
 * [Tutorials](chapter1.md)
    * [Beginning Web Application Development with Lucee](beginning_web_application_development_with_lucee.md)
        * [What is Lucee](what_is_lucee.md)
-   * [What is Lucee](whatis_lucee_md.md)
 * [Lucee Language](lucee_language.md)
    * [Syntax](syntax.md)
        * [Script Reference](script_reference.md)
