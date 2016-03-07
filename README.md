@@ -1,3 +1,3 @@
-# My Awesome Book
+# Lucee Server
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+Welcome to Lucee, a dynamic scripting language for building web applications. This Book will help you get started building web applications for Lucee.
