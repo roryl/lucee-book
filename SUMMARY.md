@@ -5,7 +5,7 @@
 * [Lucee Language](lucee_language.md)
    * Syntax
        * Script
-   * Operators
+   * [Operators](operators.md)
 * [Developing Applications](developing_applications.md)
    * [Introduction](introduction.md)
 * [Extending Lucee](extending_lucee.md)
