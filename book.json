@@ -1,6 +1,7 @@
 {
     "plugins": [
-        "gist"
+        "gist",
+        "anchors"
     ],
     "pluginsConfig": {}
 }
