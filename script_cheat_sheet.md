@@ -1,5 +1,11 @@
 # Script Quick Reference
 
+###Table of Contents
+- [If](#if)
+- [Instantiation](#instantiation)
+- [Installation](#installation)
+- [API Reference](#api-reference)
+
 ## If
 ```
 if(condition){
