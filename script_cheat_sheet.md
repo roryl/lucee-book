@@ -49,6 +49,13 @@ for(var key IN myStruct){
 }
 ```
 
+#For IN loop Query
+```
+for(row IN query){
+  echo(row.columnName);
+}
+```
+
 ##Array Loop
 Usefull for maintaining a reference to the index and the array element
 ```
@@ -83,6 +90,25 @@ function myFunc(){
 }
 ```
 
+##Do While Loop
+```
+x = 0;
+do {
+  x = x+1;
+  echo(x);
+} while(x <= 10)
+```
+
+##Try-Catch-Throw-Finally
+```
+ try {
+   //Trys code and watches for an exception
+ } catch(any e){
+   //Runs if an exception was encountered in the try block
+ } finally {
+   //Runs always whether there was an exception or not
+ }
+```
 
 
 
