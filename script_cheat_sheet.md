@@ -42,7 +42,21 @@ for(var i IN myArray){
 ```
 
 ##For IN loop struct
+```
+for(var key IN myStruct){
+  //Outputs the value of the struct key
+  echo(myStruct[key]);
+}
+```
 
+##Array Loop
+Usefull for maintaining a reference to the index and the array element
+```
+loop index="i" array="#myArray#" item="item" {   
+   echo(i) //Outputs the index we are on in the loop
+   echo(item) //outputs the value of the array element we are on  
+}
+```
 
 
 
