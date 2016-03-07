@@ -2,7 +2,7 @@
 
 ###Table of Contents
 - [If](#if)
-- [Instantiation](#instantiation)
+- [Array Loop](#array-loop)
 - [Installation](#installation)
 - [API Reference](#api-reference)
 
