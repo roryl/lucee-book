@@ -10,7 +10,7 @@
        * [Script Quick Reference](script_cheat_sheet.md)
    * [Operators](operators.md)
    * Features
-       * Classes
+       * [Classes](classes.md)
 * [Developing Applications](developing_applications.md)
    * [Introduction](introduction.md)
    * [Application.cfc Lifecycle](applicationcfc_lifecycle.md)
