@@ -43,6 +43,7 @@
        * Get-Post-Return
    * Messaging
    * Caching
+       * Template Caching
    * Clustering
    * Debugging
    * Object Modeling
