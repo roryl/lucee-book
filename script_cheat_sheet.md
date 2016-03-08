@@ -134,7 +134,19 @@ tagname(arg=1, arg=2){
 ```
 
 ##Single Line Commit
+```
+//this is a comment
+```
 
+##Multi Line Commit
+```
+/*
+
+This is a multi line commit
+
+*/
+
+```
 
 
 
