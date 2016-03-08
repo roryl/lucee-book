@@ -8,7 +8,7 @@ component {
 
 }
 ```
->Save this file as myClass.cfc to create your Component
+>Example: Save this file as myClass.cfc to create your Component
 
 
 
