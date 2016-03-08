@@ -52,7 +52,8 @@
    * Tuning
    * Deploying
    * REST
-   *  Serialization
+   * Serialization
+   * Persistence
 * [Extending Lucee](extending_lucee.md)
    * [Custom Tags](custom_tags.md)
 * [Community](community.md)
