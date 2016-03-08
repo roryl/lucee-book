@@ -8,6 +8,7 @@ The following code sets a dynamic variable "test"
 myVar = "test";
 "#myVar#" = "foo";
 echo(test); //outputs foo
+newVar = response.result["#myVar#"].row; // Same as: response.result.foo.row;
 ```
 
 ##Evaluate
