@@ -554,5 +554,7 @@ Specifies whether the database has to be inspected to identify the missing infor
 
 </table>
  
+ 
+ Adapted from http://help.adobe.com/en_US/ColdFusion/9.0/Developing/WSD628ADC4-A5F7-4079-99E0-FD725BE9B4BD.html
 
  
