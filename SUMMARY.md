@@ -49,7 +49,7 @@
    * Tuning
    * Deploying
    * REST
-   * Request Handling
+   * Traditional Request Handling
        * Post-Redirect-Get
        * Get-Post-Return
 * [Extending Lucee](extending_lucee.md)
