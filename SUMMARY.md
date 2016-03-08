@@ -8,7 +8,7 @@
    * [Lucee Context](lucee_context.md)
    * [Lucee Admin](lucee_admin.md)
    * [Deployment Options](deployment_options.md)
-       * Vagrant
+       * [Vagrant](vagrant.md)
        * Digital Ocean
        * Docker
        * [CentOS (Generic)](centos_generic.md)
