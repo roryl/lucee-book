@@ -17,6 +17,7 @@
 - [Tags in Script](#tags-in-script)
 - [Single Line Comment](#single-line-comment)
 - [Multi Line Comment](#multi-line-comment)
+- [Struct Literal](#struct-literal)
 
 ## If
 ```
@@ -155,6 +156,16 @@ This is a multi line commit
 
 */
 
+```
+
+##Struct Literal
+```
+myStruct = {key:"value", key2:"value2"}
+```
+
+##Array Literal
+```
+myArray = ["value1", "value2"];
 ```
 
 
