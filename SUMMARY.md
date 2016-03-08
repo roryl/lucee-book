@@ -11,6 +11,7 @@
    * [Operators](operators.md)
    * Features
        * [Classes](classes.md)
+       * Types
 * [Developing Applications](developing_applications.md)
    * [Introduction](introduction.md)
    * [Application.cfc Lifecycle](applicationcfc_lifecycle.md)
