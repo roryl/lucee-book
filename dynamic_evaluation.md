@@ -8,7 +8,6 @@ The following code sets a dynamic variable "test"
 myVar = "test";
 "#myVar#" = "foo";
 echo(test); //outputs foo
-newVar = response.result["#myVar#"].row; // Same as: response.result.foo.row;
 ```
 
 ##Evaluate
@@ -17,4 +16,12 @@ When doing more complex dynamic evaluations, you can make use of the evalute() f
 myVar = "test";
 evaluate("#myVar# = 'foo'");
 echo(test); //outputs foo
+```
+
+##Dynamic Struct Array Notation
+It is also possibly to dynamically access the members of a structure using array notaiton
+```
+myVar = "test
+;myStruct = {test:"foo"; test2:"bar"}
+
 ```
