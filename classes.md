@@ -47,6 +47,12 @@ The above declaration represents the following
   }  
 ```
 
+See Types for a list of Types that you can annotate your functions with.
+
+###Method Arguments
+
+
+
 
 ##Instantiation
 
