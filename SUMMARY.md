@@ -26,6 +26,7 @@
        * [Application.cfc Sample](applicationcfc_sample.md)
    * Messaging
    * Caching
+   * Clustering
 * [Extending Lucee](extending_lucee.md)
    * [Custom Tags](custom_tags.md)
 
