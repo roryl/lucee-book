@@ -11,8 +11,8 @@
 * [Developing Applications](developing_applications.md)
    * [Introduction](introduction.md)
    * [Application.cfc Lifecycle](applicationcfc_lifecycle.md)
-       * [Application.cfc Sample](applicationcfc_sample.md)
        * [Application.cfc Settings](applicationcfc_settings.md)
+       * [Application.cfc Sample](applicationcfc_sample.md)
 * [Extending Lucee](extending_lucee.md)
    * [Custom Tags](custom_tags.md)
 
