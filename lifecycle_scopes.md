@@ -21,6 +21,17 @@ Accessible for the life of a single web request. You do not need to lock access 
 ###Session
 Accessible for the life of a user session, until the sessionTimeout specified in Application.cfc is reached from no activity. Care must be used when multiple requests could come in from the same client simultaneously. In these situations, use lock {} to syncronize write access. 
 
+###URL
+Accessible for the life of a single request, the URL scope represents any URL query parameters passed
+> yourdomain.com?arg1=foo&arg2=bar
+
+###CGI
+Accessible for the life of a single request, the CGI scope (which stangs for Common Gateway Interface) is all of the web server variables passed to Lucee by Tomcat, Apache or any web server running Lucee.
+
+A new of the CGI variables are:
+
+
+
 You do not need to lock read access to any of the Global scopes, only write access when there can potentially be a race condition of two clients writing to a global variable at the same time.
 
 
