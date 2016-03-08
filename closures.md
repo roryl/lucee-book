@@ -21,6 +21,7 @@ var newArray = myArray.map(function(value){
 dump(newArray); //outputs ONE, TWO, TREE
 ```
 
+Here we passed an anonymous function (it had no name) to the map function.
 
 
 
