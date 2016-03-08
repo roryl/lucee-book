@@ -64,6 +64,7 @@
 * [Extending Lucee](extending_lucee.md)
    * [Custom Tags](custom_tags.md)
    * Installing Extensions
+   * Creating Extensions
 * [Community](community.md)
    * [Frameworks & Libraries](frameworks_&_libraries.md)
    * [Lucee Blogs](lucee_blogs.md)
