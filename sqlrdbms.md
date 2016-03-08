@@ -16,10 +16,10 @@ Lucee has native integration with every popular SQL database on the market and c
 * PostgreSQL
 * Sybase
 
-##Datasources
+##Configuring Datasources
 Access to the SQL database is setup by configuring a datasource in the Lucee Admin or in your Application.cfc
 
-##Lucee Admin
+###Lucee Admin
 
 To configure a Datasource for your [Web Context](https://rorylaitila.gitbooks.io/lucee/content/lucee_context.html#web-context), or for all websites via the [Server Context](https://rorylaitila.gitbooks.io/lucee/content/lucee_context.html#server-context):
 
@@ -36,7 +36,7 @@ To configure a Datasource for your [Web Context](https://rorylaitila.gitbooks.io
 ![](datasources_3.png)
 
 
-##Application.cfc Configuration
+###Application.cfc Configuration
 The entire datasource can be configured in your Application.cfc so that your datasource is portable without needing to manually configure in the admin. The easiest way to do this is to setup the datasource in the admin in the above example, and then copy the config that the Admin gives you.
 
 1. > Setup the datasource as described in the Lucee Admin section
