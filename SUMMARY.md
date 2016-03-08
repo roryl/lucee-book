@@ -48,6 +48,7 @@
        * Object Caching
        * Function Caching
        * Template Fragment Caching
+       * Persistent Scope Caching
    * Clustering
    * Debugging
    * Object Modeling
