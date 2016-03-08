@@ -3,6 +3,8 @@ Simple applications usually do not need caching but as your application grows mo
 
 Lucee has one of the most robust caching solutions on the market and caching is available at every level, even in the language syntax itself. The right type of caching you need to use depends on the performance constraints of your particular application and the structure of your code. Typically, go for the easiest thing that works!
 
+This section gives an overview of the available caching features.
+
 ##Template Caching
 Lucee can cache whole Lucee HTML templates so that they are only generated once, and then subsequent requests are from the cache
 
