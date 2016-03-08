@@ -28,6 +28,8 @@ isNumeric(1); //returns true
 ##Type Hinting
 Lucee allows annotating functions, arguments and properties with type information which will be checked at runtime. The following types are evaluated as type hints. Because Lucee is dynamically interpreted, Types are not statically enforced by the compiler. Add types to your functions and components to make them self documenting for other programers and to catch type errors closer to the source of the problem.
 
+You can make use of [CFLint](https://github.com/cflint/CFLint) to statically analyize your code, though this does not check that variables are of the correct Type. 
+
 * any
 * array
 * binary
