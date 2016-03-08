@@ -8,13 +8,13 @@
    * [Lucee Context](lucee_context.md)
    * [Lucee Admin](lucee_admin.md)
    * [Deployment Options](deployment_options.md)
+       * CommandBox
        * [Vagrant](vagrant.md)
        * Digital Ocean
        * Docker
        * [CentOS (Generic)](centos_generic.md)
        * Windows IIS
        * OSX
-       * CommandBox
 * [Lucee Language](lucee_language.md)
    * [Syntax](syntax.md)
        * [Script Quick Reference](script_cheat_sheet.md)
