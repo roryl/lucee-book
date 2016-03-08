@@ -50,6 +50,6 @@
    * [Custom Tags](custom_tags.md)
 * [Community](community.md)
    * Frameworks & Libraries
-   * Lucee Blogs
+   * [Lucee Blogs](lucee_blogs.md)
    * [Support](support.md)
 
