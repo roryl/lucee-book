@@ -33,6 +33,7 @@
    * Scheduled Tasks
    * Automated Testing
    * Securing
+   * Tuning
 * [Extending Lucee](extending_lucee.md)
    * [Custom Tags](custom_tags.md)
 
