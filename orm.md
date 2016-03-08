@@ -6,19 +6,19 @@ In an object model, the application objects are not aware of the database struct
 
 By using ORM, you can access and update data entirely using the object model of an application. ORM provides features such as:
 
-Database vendor independence
-Caching
-Concurrency
-Performance optimization
-Introducing ColdFusion ORM
-Architecture
-Configure ORM
-Define ORM mapping
-Working with objects
-Using queries
-Transaction and concurrency
-Performance optimization
-ORM session management
-Event Handling in CFC
-Autogenerating database schema
-Support for multiple data sources for ORM
+* Database vendor independence
+* Caching
+* Concurrency
+* Performance optimization
+* Introducing ColdFusion ORM
+* Architecture
+* Configure ORM
+* Define ORM mapping
+* Working with objects
+* Using queries
+* Transaction and concurrency
+* Performance optimization
+* ORM session management
+* Event Handling in CFC
+* Autogenerating database schema
+* Support for multiple data sources for ORM
