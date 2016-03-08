@@ -57,7 +57,7 @@
        * SQL/RDBMs
        * NoSQL
        * Files
-       * ORM
+       * [ORM](orm.md)
 * [Extending Lucee](extending_lucee.md)
    * [Custom Tags](custom_tags.md)
 * [Community](community.md)
