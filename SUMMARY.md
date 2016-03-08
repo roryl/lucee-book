@@ -17,6 +17,7 @@
        * [Templates](templates.md)
        * [First Class Functions](first_class_functions.md)
        * [Lifecycle Scopes](lifecycle_scopes.md)
+       * Dynamic Evaluation
 * [Developing Applications](developing_applications.md)
    * [Introduction](introduction.md)
    * [Application.cfc Lifecycle](applicationcfc_lifecycle.md)
