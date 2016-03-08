@@ -49,7 +49,7 @@
 * [Extending Lucee](extending_lucee.md)
    * [Custom Tags](custom_tags.md)
 * [Community](community.md)
-   * Frameworks & Libraries
+   * [Frameworks & Libraries](frameworks_&_libraries.md)
    * [Lucee Blogs](lucee_blogs.md)
    * [Support](support.md)
 
