@@ -59,6 +59,7 @@
        * Files
        * [ORM](orm.md)
            * [Introducing Lucee ORM](introducing_lucee_orm.md)
+           * Architecture
 * [Extending Lucee](extending_lucee.md)
    * [Custom Tags](custom_tags.md)
 * [Community](community.md)
