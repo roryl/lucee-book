@@ -9,7 +9,7 @@ Your Lucee web application will live in a webroot on a web server. At its most b
 
 - wwwroot
   - /assets - JS & CSS files
-  - /views
+  - /views - other Lucee templates (.cfm)
   - Application.cfc
   - Index.cfm
 
