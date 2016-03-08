@@ -6,7 +6,7 @@
        * [What is Lucee](what_is_lucee.md)
 * [Lucee Server](lucee_server.md)
    * [Lucee Context](lucee_context.md)
-   * Lucee Admin
+   * [Lucee Admin](lucee_admin.md)
 * [Lucee Language](lucee_language.md)
    * [Syntax](syntax.md)
        * [Script Quick Reference](script_cheat_sheet.md)
