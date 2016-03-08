@@ -45,6 +45,7 @@
    * Caching
        * Template Caching
        * Query Caching
+       * Object Caching
    * Clustering
    * Debugging
    * Object Modeling
