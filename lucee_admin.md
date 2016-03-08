@@ -8,4 +8,4 @@ You should see something like this:
 
 ![](admin.jpg)
 
->note: On the firs time logging into the Server or Web admins, Lucee will prompt you for a password
+>note: On the first time logging into the Server or Web admins, Lucee will prompt you for a password
