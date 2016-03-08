@@ -7,7 +7,7 @@
 - [Installation](#installation)
 - [API Reference](#api-reference)
 
-<!-- toc --->
+
 
 ## If
 ```
