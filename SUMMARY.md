@@ -48,8 +48,8 @@
    * Securing
    * Tuning
    * REST
-   * Deploying
    * POST-Redirect-GET
+   * Deploying
 * [Extending Lucee](extending_lucee.md)
    * [Custom Tags](custom_tags.md)
 * [Community](community.md)
