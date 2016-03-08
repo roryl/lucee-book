@@ -36,7 +36,10 @@ Here is a possible manual directory structure:
 
 The purpose of this structure is not so much that you must adhere to it exactly, but it is an example to recommend some larger points regarding developing with Lucee. These points apply to most web applications as well.
 
-###Separate out the Web App from your Model. 
+This scaffolding assumes a [Domain-Driven-Design](https://en.wikipedia.org/wiki/Domain-driven_design) & Object-Oriented style of development, which is common for consumer and business web applications. 
+
+###Separate out the "app" from your "model"
+
 
 ###Keep your Web Root (wwwroot) separate from your core files
 
