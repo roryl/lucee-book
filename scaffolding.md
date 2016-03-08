@@ -1,6 +1,6 @@
 # Scaffolding
 
-Building modern web applications is complex and every application is different. However for Lucee and platforms like it, there tends to be a common set of conventions that are used when building web applications. This chapter discusses common structures for your application that are suitable for use with Lucee.
+Scaffolding refers to how you structure your files for your application. Building modern web applications is complex and every application is different. However for Lucee and platforms like it, there tends to be a common set of conventions that are used when building web applications. This chapter discusses common structures for your application that are suitable for use with Lucee.
 
 Unless you are building a command line application with Lucee using CommandBox, the standard application with Lucee is a Web Application. This scaffolding section deals only with Web Applications. 
 
@@ -13,13 +13,13 @@ Your Lucee web application will live in a webroot on a server. At its most basic
   - Application.cfc
   - Index.cfm
 
-For your most basic types of web applications, which are single purpose, only have one or two features, or may be used for prototyping, this kind of structure above may be appropriate. You can also use the above for learning and experimentation without having to deal with also learning one of the below frameworks. 
+For your most basic types of web applications, which may be single purpose, only have one or two features, or may be used for prototyping, this kind of structure above may be appropriate. You can also use the above for learning and experimentation without having to deal with also learning one of the below frameworks. 
 
-If you start adding many features, the above structure may not be enough to handle all of your needs and you should consider learning one of the frameworks below. 
+If you start adding many features, the above structure may not be enough to handle all of your needs and you should consider learning one of the frameworks below to structure your code. 
 
 
 ##Using Frameworks
-In Lucee there are a few big open source MVC (Model-View-Contorller) frameworks that are suitable for most web applications. 
+In Lucee there are a few major open source MVC (Model-View-Contorller) frameworks that are suitable for most web applications. 
 
 ###[Framework 1 (fw/1)](https://github.com/framework-one/fw1)
 A lightweight MVC, best for do it yourself people who only want the minimal of structure
@@ -34,7 +34,7 @@ A full featured MVC platform suitable for small to enterprise applications, with
 ##Custom Scaffold
 If your needs are complex or your use case does not follow the capabilities of those frameworks, then there is a common way to structure your application in Lucee that takes into account some scenarios and conventions.
 
-Here is a possible manual directory structure:
+Here is a possible complex directory structure:
 
 - /root
   - /model - Entities & Value Objects of your Domain
