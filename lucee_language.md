@@ -11,7 +11,7 @@ Lucee is a modern dynamically typed Object Oriented scripting language for serve
 * Closures
 * Declarative Programming Features
 * Mixins
-* Meta Programming
+* Meta Programming Capabilities
 * Java Integration
 * Functional Programming Features
 
