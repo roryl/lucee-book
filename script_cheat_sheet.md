@@ -2,8 +2,11 @@
 
 ###Table of Contents
 - [If](#if)
-- [If/Else](#if-else)
-- [Array Loop](#array-loop)
+- [If/Else](#ifelse)
+- [If/Else if](#ifelse-if)
+- [For Loop](#forloop)
+- [For IN Loop Array](#for-in-loop-array)
+
 
 
 
