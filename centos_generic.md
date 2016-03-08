@@ -15,7 +15,7 @@ Install the latest version of Lucee, grab the latest linux installer from [Lucee
 Give permissions to execute the installer
 >chmod 755 lucee-4.5.2.018-pl0-linux-x64-installer.run
 
-Execute the installer and follow the prompts
+Execute the installer, it will ask you a series of prompts. Usually the defaults are sufficient.
 
 >./lucee-4.5.2.018-pl0-linux-x64-installer.run 
 
