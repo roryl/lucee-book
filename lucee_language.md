@@ -7,7 +7,7 @@ Language features include:
 * Classes (Known as Components in Lucee)
 * Types
 * Type Hinting
-* Type Coersion
+* Type Coercion
 * Templates (for HTML rendering)
 * Interfaces
 * Standard Library "Built in Functions" 
