@@ -1,6 +1,7 @@
 # Persistence
+Most web applications have to store something at some point in order to be useful. Lucee has multiple data storage options from SQL Databases, NoSQL, Files and an Object Relational Mapper
 
-##Databases
+##SQL Databases
 Lucee supports persisting to many different datastores including all popular RDBMS (MySQL, SQL Server, PostgreSQL, Oracle) and NoSQL Datastores CouchDB, MongoDB and others.
 
 ##Files
