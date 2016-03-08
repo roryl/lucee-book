@@ -7,6 +7,8 @@ Lucee supports simple and complex types, type hinting and type coercion
 * Boolean
 * Numeric
 
+> Note: You can check if a variable resolves to a simple type with the function isSimpleValue()
+
 ###Numeric Type
 The numeric type supports Integers and Real Numbers.
 
