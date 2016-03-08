@@ -17,7 +17,22 @@ Path to any directory in command box and type start. CommandBox will start a Luc
 
 ![](commandbox-start.jpg)
 
+Here I ran three commands:
+> mkdir learnlucee 
+
+This create a directory that I can use to store my files for development. You can create as many directories as you need anywhere
+
+> cd learnlucee
+
+This "change directory" (cd) command put me into the learnlucee folder
+
+> start
+
+This started up Lucee on a random port (it picks one that is available but you can manually set this yourself, see the [documentation](https://ortus.gitbooks.io/commandbox-documentation/content/embedded_server/embedded_server.html)). 
+
 ![](commandbox-started.jpg)
+
+Once it finihsed starting, CommandBox automatically opened the running Lucee, which is showing me a list of my (empty) learnlucee directory. I can now add files to this directory and begin programming in Lucee.
 
 ![](commandbox-directory.jpg)
 
