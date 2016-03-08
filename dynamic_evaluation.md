@@ -1,5 +1,5 @@
 # Dynamic Evaluation
-Sometimes it can be useful to run Lucee code which has been dynamically generated, or access variables which are dynamically generated. This can enable meta programming when you do not know the names of variables at compile time. 
+Sometimes it can be useful to run Lucee code which has been dynamically generated, or access variables which are dynamically generated. This can enable meta programming when you do not know the names of variables in advance.
 
 ##Dynamic Variables
 The following code sets a dynamic variable "test" 
