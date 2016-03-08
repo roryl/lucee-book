@@ -50,6 +50,7 @@
        * Template Fragment Caching
        * Persistent Scope Caching
        * ORM Caching
+       * RAM Disk Caching
    * Clustering
    * Debugging
    * Object Modeling
