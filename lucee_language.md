@@ -5,6 +5,7 @@ Lucee is a modern dynamically typed Object Oriented scripting language for serve
 * Classes (Known as Components in Lucee)
 * Type Hinting
 * Templates (for HTML rendering)
+* Interfaces
 * Large Standard Library
 * Functional Programming Features
 * First Class Functions
