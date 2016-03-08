@@ -47,9 +47,9 @@
    * Automated Testing
    * Securing
    * Tuning
-   * REST
    * POST-Redirect-GET
    * Deploying
+   * REST
    * Request Handling
 * [Extending Lucee](extending_lucee.md)
    * [Custom Tags](custom_tags.md)
