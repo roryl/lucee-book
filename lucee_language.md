@@ -1,12 +1,12 @@
 # Lucee Language
 
-Lucee is a modern dynamically typed Object Oriented scripting language for server side web application programming. Language features include:
+Lucee is a dynamically typed, Object Oriented scripting language for server side web application programming. Language features include:
 
 * Classes (Known as Components in Lucee)
 * Type Hinting
 * Templates (for HTML rendering)
 * Interfaces
-* Large Standard Library* 
+* Standard Library "Built in Functions" 
 * First Class Functions
 * Closures
 * Declarative Programming Features
@@ -14,4 +14,5 @@ Lucee is a modern dynamically typed Object Oriented scripting language for serve
 * Meta Programming Capabilities
 * Java Integration
 * Functional Programming Features
+* Dynamic Evaluation
 
