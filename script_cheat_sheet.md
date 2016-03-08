@@ -4,8 +4,6 @@
 - [If](#if)
 - [If/Else](#if-else)
 - [Array Loop](#array-loop)
-- [Installation](#installation)
-- [API Reference](#api-reference)
 
 
 
