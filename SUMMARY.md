@@ -11,7 +11,7 @@
        * Vagrant
        * Digital Ocean
        * Docker
-       * CentOS (Generic)
+       * [CentOS (Generic)](centos_generic.md)
        * Windows IIS
        * OSX
 * [Lucee Language](lucee_language.md)
