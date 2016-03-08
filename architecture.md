@@ -38,3 +38,4 @@ The Hibernate configuration is created and loaded only when the application star
 
 To restart the application, you can stop the application using ApplicationStop() and the next request to any page in this application automatically starts it.
 
+Adapted from http://help.adobe.com/en_US/ColdFusion/9.0/Developing/WSD628ADC4-A5F7-4079-99E0-FD725BE9B4BD.html
