@@ -17,6 +17,7 @@
        * [Templates](templates.md)
        * [First Class Functions](first_class_functions.md)
        * [Lifecycle Scopes](lifecycle_scopes.md)
+           * CGI Variables
        * [Dynamic Evaluation](dynamic_evaluation.md)
        * [Java Integration](java_integration.md)
 * [Developing Applications](developing_applications.md)
