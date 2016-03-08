@@ -1,6 +1,6 @@
 # Templates
 
-Lucee allows creating server side templates which can house HTML to be rendered and delivered to the web browser. These templates allow access to all Lucee Built in Functions and Tags. Combining these functions and tags with HTML allow you to build complex interfaces, or other kinds of output like XML, JSON, or PDFs. 
+Lucee allows creating server side templates which can house HTML to be rendered and delivered to the web browser. These templates allow access to all Lucee Built in Functions and Tags like query, loop and savecontent. Combining these functions and tags with HTML allow you to build complex interfaces, or other kinds of output like XML, JSON, or PDFs. 
 
 >Note: The file extension of Lucee templates is .cfm
 
