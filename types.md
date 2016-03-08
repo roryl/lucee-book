@@ -7,6 +7,9 @@ Lucee supports simple and complex types, type hinting and type coercion
 * Boolean
 * Numeric
 
+###Numeric Type
+The numeric type supports Integers and Real Numbers.
+
 ##Complex Types
 * Lists (string lists, like a CSV)
 * Array
