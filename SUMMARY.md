@@ -16,7 +16,7 @@
        * Windows IIS
        * OSX
 * [Lucee Language](lucee_language.md)
-   * Command Line REPL
+   * [Command Line REPL](command_line_repl.md)
    * [Syntax](syntax.md)
        * [Script Quick Reference](script_cheat_sheet.md)
    * [Operators](operators.md)
