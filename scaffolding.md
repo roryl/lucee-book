@@ -1,6 +1,6 @@
 # Scaffolding
 
-Scaffolding refers to how you structure your files for your application. Building modern web applications is complex and every application is different. However for Lucee, there tends to be a common set of conventions that are used when building web applications. This chapter discusses common structures for your application that are suitable for use with Lucee.
+Scaffolding refers to how you structure your files for your application. Building modern web applications is complex and every application is different. Lucee does not impose on you how to structure your application, like say Ruby on Rails. It allows more flexibility for unique situaitons. However for Lucee, there tends to be a common set of conventions that are used when building web applications. This chapter discusses common structures for your application that are likely to meet your needs with Lucee.
 
 Unless you are building a command line application with Lucee using CommandBox, the standard application with Lucee is a Web Application. This scaffolding section deals only with Web Applications. 
 
