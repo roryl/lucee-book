@@ -47,7 +47,6 @@
    * Automated Testing
    * Securing
    * Tuning
-   * POST-Redirect-GET
    * Deploying
    * REST
    * Request Handling
