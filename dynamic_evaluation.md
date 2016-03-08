@@ -25,5 +25,4 @@ myVar = "test";
 myStruct = {test:"foo"; test2:"bar"}
 echo(myStruct[myVar]); //outputs "foo"
 echo(myStruct["#test2#"]; //outputs "bar" 
-
 ```
