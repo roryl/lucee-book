@@ -38,6 +38,9 @@
        * [Application.cfc Sample](applicationcfc_sample.md)
    * [Scaffolding](scaffolding.md)
    * [View Templates](view_templates.md)
+   * Traditional Request Handling
+       * Post-Redirect-Get
+       * Get-Post-Return
    * Messaging
    * Caching
    * Clustering
@@ -49,9 +52,6 @@
    * Tuning
    * Deploying
    * REST
-   * Traditional Request Handling
-       * Post-Redirect-Get
-       * Get-Post-Return
 * [Extending Lucee](extending_lucee.md)
    * [Custom Tags](custom_tags.md)
 * [Community](community.md)
