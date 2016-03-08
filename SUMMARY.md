@@ -32,6 +32,7 @@
    * Object Modeling
    * Scheduled Tasks
    * Automated Testing
+   * Securing
 * [Extending Lucee](extending_lucee.md)
    * [Custom Tags](custom_tags.md)
 
