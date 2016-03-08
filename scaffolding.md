@@ -2,6 +2,22 @@
 
 Building modern web applications is complex and every application is different. However for Lucee and platforms like it, there tends to be a common set of conventions that are used when building web applications. This chapter discusses common structures for your application that are suitable for use with Lucee.
 
+Unless you are building a command line application with Lucee using CommandBox, the standard application with Lucee is a Web Application. This scaffolding section deals only with Web Applications. 
+
+##Basic Web App
+Your Lucee web application will live in a webroot on a server. At its most basic level, the webroot must contain an index.cfm that will process the request as the default template, and an Application.cfc to define your application. 
+
+- wwwroot
+  - /assets - JS & CSS files
+  - /views
+  - Application.cfc
+  - Index.cfm
+
+For your most basic types of web applications, which are single purpose, only have one or two features, or may be used for prototyping, this kind of structure above may be appropriate. You can also use the above for learning and experimentation without having to deal with also learning one of the below frameworks. 
+
+If you start adding many features, the above structure may not be enough to handle all of your needs and you should consider learning one of the frameworks below. 
+
+
 ##Using Frameworks
 In Lucee there are a few big open source MVC (Model-View-Contorller) frameworks that are suitable for most web applications. 
 
