@@ -10,6 +10,7 @@
    * [Deployment Options](deployment_options.md)
        * Vagrant
        * Digital Ocean
+       * Docker
 * [Lucee Language](lucee_language.md)
    * [Syntax](syntax.md)
        * [Script Quick Reference](script_cheat_sheet.md)
