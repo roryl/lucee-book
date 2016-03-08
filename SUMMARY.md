@@ -55,7 +55,7 @@
    * Serialization
    * [Persistence](persistence.md)
        * SQL/RDBMs
-       * NoSQL
+       * [NoSQL](nosql.md)
        * Files
        * [ORM](orm.md)
            * [Introducing Lucee ORM](introducing_lucee_orm.md)
