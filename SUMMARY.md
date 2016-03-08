@@ -16,6 +16,7 @@
        * Windows IIS
        * OSX
 * [Lucee Language](lucee_language.md)
+   * Command Line REPL
    * [Syntax](syntax.md)
        * [Script Quick Reference](script_cheat_sheet.md)
    * [Operators](operators.md)
@@ -28,7 +29,6 @@
            * [CGI Variables](cgi_variables.md)
        * [Dynamic Evaluation](dynamic_evaluation.md)
        * [Java Integration](java_integration.md)
-   * Command Line REPL
 * [Developing Applications](developing_applications.md)
    * [Introduction](introduction.md)
    * [Application.cfc Lifecycle](applicationcfc_lifecycle.md)
