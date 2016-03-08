@@ -175,3 +175,5 @@ if (ArrayLen(arts) > 0)
     } 
 } 
 ```
+
+Adapted from http://help.adobe.com/en_US/ColdFusion/9.0/Developing/WSD628ADC4-A5F7-4079-99E0-FD725BE9B4BD.html
