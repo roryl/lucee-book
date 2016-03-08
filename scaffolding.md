@@ -55,10 +55,10 @@ The purpose of this structure is not so much that you must adhere to it exactly,
 This scaffolding assumes a [Domain-Driven-Design](https://en.wikipedia.org/wiki/Domain-driven_design) & Object-Oriented style of development, which is common for consumer and business web applications. 
 
 ###Separate out the "app" from your "model"
-In the above structure, our "app" contains the code which represents our client (a HTML web application), while the code in the "root" is our core domain model. The root represents all of the core components, libraries, services and third party code necessary to create your application. By separating out the client "app" from the "root" it more easily allows you to separate concerns. This may allow you to even have multiple types of client apps, like a REST API, a mobile app, and a website, which all use the common root.
+In the above structure, our "app" contains the code which represents our client (a HTML web application), while the code in the "root" is our core domain model. The root represents all of the core components, libraries, services and third party code necessary to create your application. By separating out the client "app" from the "root" it more easily allows you to separate concerns. This may allow you to even have multiple types of client apps, like a REST API, and a website, which all use the common root.
 
 ###Keep your Web Root (wwwroot) separate from your core files
-In Lucee you *can* put all of your files in the webroot, but it is not recommended. Only publically accessible assets like JS, CSS and image files should be in the webroot, along with the primary Application.cfc and index.cfm. This keeps your application's other templates and components secure from being directly accessed and simplifies your security. 
+In Lucee you *can* put all of your files in the webroot, but it is not recommended. Only publically accessible assets like JS, CSS and image files should be in the webroot, along with the primary Application.cfc and index.cfm. This keeps your application's templates and components secure from being directly accessed and this simplifies your security. 
 
 
 
