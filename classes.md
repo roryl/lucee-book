@@ -40,5 +40,13 @@ component {
 }
 ```
 
+The above declaration represents the following
+```
+  [access] [return type] function [function name](){
+  
+  }  
+```
+
+
 ##Instantiation
 
