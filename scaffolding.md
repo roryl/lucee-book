@@ -1,11 +1,11 @@
 # Scaffolding
 
-Scaffolding refers to how you structure your files for your application. Building modern web applications is complex and every application is different. However for Lucee and platforms like it, there tends to be a common set of conventions that are used when building web applications. This chapter discusses common structures for your application that are suitable for use with Lucee.
+Scaffolding refers to how you structure your files for your application. Building modern web applications is complex and every application is different. However for Lucee, there tends to be a common set of conventions that are used when building web applications. This chapter discusses common structures for your application that are suitable for use with Lucee.
 
 Unless you are building a command line application with Lucee using CommandBox, the standard application with Lucee is a Web Application. This scaffolding section deals only with Web Applications. 
 
 ##Basic Web App
-Your Lucee web application will live in a webroot on a server. At its most basic level, the webroot must contain an index.cfm that will process the request as the default template, and an Application.cfc to define your application. 
+Your Lucee web application will live in a webroot on a web server. At its most basic level, the webroot must contain an index.cfm that will process the request as the default template, and an Application.cfc to define your application. 
 
 - wwwroot
   - /assets - JS & CSS files
@@ -58,6 +58,7 @@ This scaffolding assumes a [Domain-Driven-Design](https://en.wikipedia.org/wiki/
 
 
 ###Keep your Web Root (wwwroot) separate from your core files
+In Lucee you *can* put all of your files in the webroot, but it is not recommended. Only publically accessible assets like JS, CSS and image files should be in the webroot, along with the primary Application.cfc and index.cfm. This keeps your application's other templates and components secure from being directly accessed and simplifies your security. 
 
 
 
