@@ -57,7 +57,7 @@
        * [SQL/RDBMs](sqlrdbms.md)
        * [NoSQL](nosql.md)
        * Files
-       * [ORM](orm.md)
+       * [ORM Object Graph](orm.md)
            * [Introducing Lucee ORM](introducing_lucee_orm.md)
            * [Architecture](architecture.md)
            * [Configure ORM](configure_orm.md)
