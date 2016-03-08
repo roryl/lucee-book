@@ -9,7 +9,6 @@ Lucee has native support for local file storage, RAM filesystem, FTP, & AWS s3, 
 
 Source http://blog.getrailo.com/post.cfm/railo-tip-of-the-week-railo-resources
 
-
 ## ORM (Object Relational Mapping)
 
 Lucee has built in support for modeling your domain objects with Components as an Object Graph and persisting them to a SQL RDBMS. The ORM is best utilized with new developments, though it can be adapted to legacy SQL installations.
