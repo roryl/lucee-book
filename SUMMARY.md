@@ -11,5 +11,6 @@
    * [Operators](operators.md)
 * [Developing Applications](developing_applications.md)
    * [Introduction](introduction.md)
+   * Application.cfc Lifecycle
 * [Extending Lucee](extending_lucee.md)
 
