@@ -19,7 +19,7 @@ echo(test); //outputs foo
 ```
 
 ##Dynamic Struct Array Notation
-It is also possibly to dynamically access the members of a structure using array notaiton
+It is also possibly to dynamically access the members of a structure using array notation
 ```
 myVar = "test";
 myStruct = {test:"foo"; test2:"bar"}
