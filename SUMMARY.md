@@ -6,7 +6,6 @@
        * [What is Lucee](what_is_lucee.md)
 * [Lucee Language](lucee_language.md)
    * [Syntax](syntax.md)
-       * [Script Reference](script_reference.md)
        * [Script Quick Reference](script_cheat_sheet.md)
    * [Operators](operators.md)
 * [Developing Applications](developing_applications.md)
