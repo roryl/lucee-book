@@ -42,7 +42,7 @@
        * Post-Redirect-Get
        * Get-Post-Return
    * Messaging
-   * Caching
+   * [Caching](caching.md)
        * Template Caching
        * Query Caching
        * Object Caching
