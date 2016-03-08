@@ -14,6 +14,7 @@
    * Features
        * [Classes](classes.md)
        * [Types](types.md)
+       * Templates
 * [Developing Applications](developing_applications.md)
    * [Introduction](introduction.md)
    * [Application.cfc Lifecycle](applicationcfc_lifecycle.md)
