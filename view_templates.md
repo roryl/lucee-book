@@ -7,4 +7,4 @@ This article assumes that you are not using a Framework. If you are using a fram
 
 ##Lucee Template Custom Tags
 
-##Lucee Handlebars
+##Lucee Handlebars.js
