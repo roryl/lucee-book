@@ -76,5 +76,14 @@ component {
   
 }
 ```
-You should always explicity state the scope of your variables, and use var for your local variables. This will prevent subtle bugs that are hard to track
+You should always explicitly state the scope of your variables, and use var for your local variables. This will prevent subtle bugs that are hard to track.
+
+It is also possible to access local variables as a collection using the local structure. 
+```
+function myFunc(){
+  var myVar = "foo";
+  echo(local.myVar); //outputs foo
+}
+
+```
 
