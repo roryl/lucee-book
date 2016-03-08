@@ -5,6 +5,7 @@ Lucee is a dynamically typed, Object Oriented scripting language for server side
 Language features include:
 
 * Classes (Known as Components in Lucee)
+* Types
 * Type Hinting
 * Templates (for HTML rendering)
 * Interfaces
