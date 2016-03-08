@@ -95,11 +95,15 @@ The "Elvis operator" is a shortening of the ternary operator. One instance of wh
 
 Outputs the value of "rockstar" if the variable exists, otherwise it outputs "Elvis Presley"
 
-==Operators not available in tags==
-You can use <nowiki><> > < >= and <=</nowiki> in tags, as long as they don't interfere with the tag syntax.  In that case you must use the equivalent GT, LT, etc. operators instead.
 
-==Casting==
-Note that in Railo values are cast to an appropriate type automatically, except when using the identical operators === and !==
+## Operators not available in tags
+
+You can use <> > < >= and <= in tags, as long as they don't interfere with the tag syntax.  In that case you must use the equivalent GT, LT, etc. operators instead.
+
+
+## Casting
+
+Note that in Lucee values are cast to an appropriate type automatically, except when using the identical operators === and !==
 
 For example: 
 
@@ -112,6 +116,7 @@ Will return the first value if not null, otherwise returns the second value
 
 result = firstValue ?: secondValue
 
+From: https://github.com/getrailo/railo/wiki/Operators
 
 
 
