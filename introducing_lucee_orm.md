@@ -16,7 +16,7 @@ Lucee ORM automates most of these tasks, which:
 * Minimizes the amount of code you write
 * Apart from providing a framework for mapping the object model with the relational database, Lucee ORM provides data query and retrieval facilities.
 
-For more information, see www.hibernate.org.
+For more information, see [Hibernate 3 documentation](https://docs.jboss.org/hibernate/orm/3.3/reference/en/html/).
 
 Lucee ORM example
 
