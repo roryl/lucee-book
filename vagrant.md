@@ -6,7 +6,7 @@ Vagrant simply wraps a [VirtualBox VM](https://www.virtualbox.org/wiki/Downloads
 
 ##Sample Vagrant File
 
-This vagrant file cane be used to configure a Lucee VM. This article does not go into the specific of using Vagrant, for that follow a [Vagrant Tutorial](https://www.vagrantup.com/docs/). This vagrant file below uses a CentOS 6 VM.
+This vagrant file cane be used to configure a Lucee VM. This article does not go into the specific of using Vagrant, for that follow a [Vagrant Tutorial](https://www.vagrantup.com/docs/). This vagrant file below uses a CentOS 6 VM and is not security hardended, it is only intended for development pruposes. 
 
 ```
 # -*- mode: ruby -*-
@@ -78,26 +78,39 @@ Vagrant.configure(2) do |config|
   # documentation for more information about their specific syntax and use.
   config.vm.provision "shell", inline: <<-SHELL
 	pwd
-     #sudo yum -y install httpd
-	 #service iptables save
-	 #service iptables stop
-	 #chkconfig iptables off
-	 #yum -y install mysql-server
-	 #chkconfig --level 345 mysqld on
-	 #wget http://d8yjolse1mixx.cloudfront.net/downloader.cfm/id/143/file/lucee-4.5.2.018-pl0-linux-x64-installer.run
-	 #chmod 755 lucee-4.5.2.018-pl0-linux-x64-installer.run
-	 #./lucee-4.5.2.018-pl0-linux-x64-installer.run --mode unattended --railopass 123456
-	 #yum -y install nano
-	 #cp /etc/httpd/conf/httpd.conf /etc/httpd/conf/httpd.conf.bak
-	 #sed -i -e 's/#EnableMMAP off/EnableMMAP off/g' /etc/httpd/conf/httpd.conf
-	 #sed -i -e 's/#Enable Sendfile Off/Enable Sendfile Off/g' /etc/httpd/conf/httpd.conf
-	 #sed -i -e 's/DirectoryIndex index.html index.html.var/DirectoryIndex index.html index.html.var index.cfm/g' /etc/httpd/conf/httpd.conf
-	 #cp /vagrant/commandbox.repo /etc/yum.repos.d/commandbox.repo
-	 #sudo yum -y update && install commandbox
-	 #touch /etc/httpd/conf/vhosts.conf	 
-	 #mkdir /etc/httpd/conf/vhosts
-	 #echo "Include conf/vhosts.conf" >> /etc/httpd/conf/httpd.conf
-   #  sudo apt-get install -y apache2
+     #Install Apache Server
+     sudo yum -y install httpd
+	 
+     #For development purposes, turn off the firewall
+     service iptables save
+	 service iptables stop
+	 chkconfig iptables off
+	 
+     #Install MySQL Server
+     yum -y install mysql-server
+	 chkconfig --level 345 mysqld on
+	 
+     #Download Lucee. Change the URL to latest versions from http://lucee.org/downloads.html
+     wget http://d8yjolse1mixx.cloudfront.net/downloader.cfm/id/143/file/lucee-4.5.2.018-pl0-linux-x64-installer.run
+     
+     #Make the installer executable
+	 chmod 755 lucee-4.5.2.018-pl0-linux-x64-installer.run
+     
+     #Run the installer in unattended mode and set the admin password
+	 ./lucee-4.5.2.018-pl0-linux-x64-installer.run --mode unattended --railopass 123456
+     
+     #Install Nano text editor
+	 yum -y install nano
+     
+     #Backup the http conf because we are going to edit it
+     cp /etc/httpd/conf/httpd.conf /etc/httpd/conf/httpd.conf.bak
+     
+     #When running VMs, apache caching static files (js, css, images) that are servers over the network from the host OS. Turning off MMAP and SendFile stops this caching
+     sed -i -e 's/#EnableMMAP off/EnableMMAP off/g' /etc/httpd/conf/httpd.conf
+	 sed -i -e 's/#Enable Sendfile Off/Enable Sendfile Off/g' /etc/httpd/conf/httpd.conf
+     
+     #Add index.cfm to the directory index
+	 sed -i -e 's/DirectoryIndex index.html index.html.var/DirectoryIndex index.html index.html.var index.cfm/g' /etc/httpd/conf/httpd.conf	 
   SHELL
 end
 
