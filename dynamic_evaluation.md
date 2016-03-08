@@ -21,7 +21,9 @@ echo(test); //outputs foo
 ##Dynamic Struct Array Notation
 It is also possibly to dynamically access the members of a structure using array notaiton
 ```
-myVar = "test
-;myStruct = {test:"foo"; test2:"bar"}
+myVar = "test";
+myStruct = {test:"foo"; test2:"bar"}
+echo(myStruct[myVar]); //outputs "foo"
+echo(myStruct["#test2#"]; //outputs "bar" 
 
 ```
