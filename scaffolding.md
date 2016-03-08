@@ -42,7 +42,7 @@ Here is a possible complex directory structure:
   - /vendor - Third party code
   - /util - Non domain / universal code
   - /app - client web application    
-    - /controllers - CFCs to route requests to the Model & Services
+    - /controllers - CFCs to route requests to the Model
     - /views - Lucee Templates containing HTML
     - /layouts - Lucee Templates containing global layout HTML
     - wwwroot - This is where your website is served from
