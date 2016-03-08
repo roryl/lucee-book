@@ -25,6 +25,7 @@
        * [Application.cfc Settings](applicationcfc_settings.md)
        * [Application.cfc Sample](applicationcfc_sample.md)
    * Messaging
+   * Caching
 * [Extending Lucee](extending_lucee.md)
    * [Custom Tags](custom_tags.md)
 
