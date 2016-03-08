@@ -21,9 +21,9 @@
        * [Script Quick Reference](script_cheat_sheet.md)
    * [Operators](operators.md)
    * Features
-       * [Closures](closures.md)
        * [Classes](classes.md)
        * [Types](types.md)
+       * [Closures](closures.md)
        * [Templates](templates.md)
        * [First Class Functions](first_class_functions.md)
        * [Lifecycle Scopes](lifecycle_scopes.md)
