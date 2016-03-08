@@ -1,6 +1,6 @@
 # Syntax
 
-There are two flavors to the Lucee Language, Tags and Script. The entire language is available in Tags or Script. Tags should be (almost always) only used for HTML templates.
+There are two flavors to the Lucee Language, Tags and Script. The entire language is available in Tags or Script. Tags should (almost always) only be used for HTML templates.
 
 For a detailed review of script syntax see [](https://github.com/adamcameron/cfscript/blob/master/cfscript.md)
 
