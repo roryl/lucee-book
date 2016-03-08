@@ -46,6 +46,7 @@
    * Tuning
    * REST
    * Deploying
+   * View Templates
 * [Extending Lucee](extending_lucee.md)
    * [Custom Tags](custom_tags.md)
 * [Community](community.md)
