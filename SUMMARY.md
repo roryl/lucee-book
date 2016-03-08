@@ -9,6 +9,7 @@
    * [Lucee Admin](lucee_admin.md)
    * [Deployment Options](deployment_options.md)
        * Vagrant
+       * Digital Ocean
 * [Lucee Language](lucee_language.md)
    * [Syntax](syntax.md)
        * [Script Quick Reference](script_cheat_sheet.md)
