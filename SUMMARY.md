@@ -37,7 +37,7 @@
        * [Application.cfc Settings](applicationcfc_settings.md)
        * [Application.cfc Sample](applicationcfc_sample.md)
    * [Scaffolding](scaffolding.md)
-   * View Templates
+   * [View Templates](view_templates.md)
    * Messaging
    * Caching
    * Clustering
