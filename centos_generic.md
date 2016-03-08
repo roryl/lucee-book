@@ -3,7 +3,7 @@
 The following commands will setup a basic Lucee installation on a CentOS 6 server with Lucee, Apache and MySQL
 
 Install Apache
-> sudo yum -y install httpd
+> yum -y install httpd
 
 Install MySQL
 >yum -y install mysql-server
