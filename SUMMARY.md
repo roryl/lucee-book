@@ -54,6 +54,7 @@
    * REST
    * Serialization
    * [Persistence](persistence.md)
+       * SQL/RDBMs
 * [Extending Lucee](extending_lucee.md)
    * [Custom Tags](custom_tags.md)
 * [Community](community.md)
