@@ -15,7 +15,7 @@
        * [Classes](classes.md)
        * [Types](types.md)
        * [Templates](templates.md)
-       * First Class Functions
+       * [First Class Functions](first_class_functions.md)
 * [Developing Applications](developing_applications.md)
    * [Introduction](introduction.md)
    * [Application.cfc Lifecycle](applicationcfc_lifecycle.md)
