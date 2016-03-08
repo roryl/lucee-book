@@ -6,9 +6,17 @@
 - [If/Else if](#ifelse-if)
 - [For Loop](#forloop)
 - [For IN Loop Array](#for-in-loop-array)
-
-
-
+- [For IN loop Struct](#for-in-loop-struct)
+- [For In Loop Query](#for-in-loop-query)
+- [Array Loop](#array-loop)
+- [While Loop](#while-loop)
+- [Closure](#closure)
+- [User Defined Function](#user-defined-function)
+- [Do While Loop](#do-while-loop)
+- [Try Catch Throw Finally](#try-catch-throw-finally)
+- [Tags in Script](#tags-in-script)
+- [Single Line Comment](#single-line-comment)
+- [Multi Line Comment](#multi-line-comment)
 
 ## If
 ```
@@ -109,7 +117,7 @@ do {
 } while(x <= 10)
 ```
 
-##Try-Catch-Throw-Finally
+##Try Catch Throw Finally
 ```
  try {
    //Trys code and watches for an exception
@@ -134,12 +142,12 @@ tagname(arg=1, arg=2){
 }
 ```
 
-##Single Line Commit
+##Single Line Comment
 ```
 //this is a comment
 ```
 
-##Multi Line Commit
+##Multi Line Comment
 ```
 /*
 
