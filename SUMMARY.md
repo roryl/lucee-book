@@ -4,6 +4,7 @@
 * [Tutorials](chapter1.md)
    * [Beginning Web Application Development with Lucee](beginning_web_application_development_with_lucee.md)
        * [What is Lucee](what_is_lucee.md)
+* Lucee Server
 * [Lucee Language](lucee_language.md)
    * [Syntax](syntax.md)
        * [Script Quick Reference](script_cheat_sheet.md)
@@ -15,5 +16,4 @@
        * [Application.cfc Sample](applicationcfc_sample.md)
 * [Extending Lucee](extending_lucee.md)
    * [Custom Tags](custom_tags.md)
-* Lucee Server
 
