@@ -29,6 +29,7 @@
    * Clustering
    * Debugging
    * Object Modeling
+   * Scheduled Tasks
 * [Extending Lucee](extending_lucee.md)
    * [Custom Tags](custom_tags.md)
 
