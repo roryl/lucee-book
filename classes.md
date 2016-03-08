@@ -35,7 +35,7 @@ To define additional methods
 ```
 component {
   public void function myFunction(){
-  
+    
   }
 }
 ```
