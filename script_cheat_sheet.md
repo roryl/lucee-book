@@ -18,6 +18,7 @@
 - [Single Line Comment](#single-line-comment)
 - [Multi Line Comment](#multi-line-comment)
 - [Struct Literal](#struct-literal)
+- [Array Literal](#array-literal)
 
 ## If
 ```
