@@ -2,7 +2,9 @@
 
 There are two flavors to the Lucee Language, Tags and Script. The entire language is available in Tags or Script. Tags should be (almost always) only used for HTML templates.
 
+For a detailed review of script syntax see [](https://github.com/adamcameron/cfscript/blob/master/cfscript.md)
 
+For a cheat sheet see [](https://rorylaitila.gitbooks.io/lucee/content/script_cheat_sheet.html)
 
 ## Quick Overview
 
