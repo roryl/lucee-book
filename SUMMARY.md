@@ -20,6 +20,7 @@
    * [Syntax](syntax.md)
        * [Script Quick Reference](script_cheat_sheet.md)
    * [Operators](operators.md)
+       * Closures
    * Features
        * [Classes](classes.md)
        * [Types](types.md)
