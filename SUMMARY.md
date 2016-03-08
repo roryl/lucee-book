@@ -29,6 +29,7 @@
            * [CGI Variables](cgi_variables.md)
        * [Dynamic Evaluation](dynamic_evaluation.md)
        * [Java Integration](java_integration.md)
+       * Control Flow
 * [Developing Applications](developing_applications.md)
    * [Introduction](introduction.md)
    * [Application.cfc Lifecycle](applicationcfc_lifecycle.md)
