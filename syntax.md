@@ -41,7 +41,7 @@ Tags can have bodies or not. Tags without bodies do not need a closing bracket, 
 ```
 <cfset myVar = "test />
 ```
-Tags with bodies always need a closing bracket
+Tags with bodies always need a closing tag
 ```
 <cfsavecontent variable="myContent">
   Output some text
