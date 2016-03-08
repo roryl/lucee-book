@@ -51,5 +51,5 @@
 * [Community](community.md)
    * Frameworks & Libraries
    * Lucee Blogs
-   * Support
+   * [Support](support.md)
 
