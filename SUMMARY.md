@@ -9,6 +9,7 @@
    * [Syntax](syntax.md)
        * [Script Quick Reference](script_cheat_sheet.md)
    * [Operators](operators.md)
+   * Features
 * [Developing Applications](developing_applications.md)
    * [Introduction](introduction.md)
    * [Application.cfc Lifecycle](applicationcfc_lifecycle.md)
