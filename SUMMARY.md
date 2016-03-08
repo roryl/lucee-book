@@ -5,7 +5,7 @@
    * [Beginning Web Application Development with Lucee](beginning_web_application_development_with_lucee.md)
        * [What is Lucee](what_is_lucee.md)
 * [Lucee Server](lucee_server.md)
-   * Lucee Context
+   * [Lucee Context](lucee_context.md)
 * [Lucee Language](lucee_language.md)
    * [Syntax](syntax.md)
        * [Script Quick Reference](script_cheat_sheet.md)
