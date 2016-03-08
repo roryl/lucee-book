@@ -50,4 +50,5 @@
    * [Custom Tags](custom_tags.md)
 * [Community](community.md)
    * Frameworks & Libraries
+   * Lucee Blogs
 
