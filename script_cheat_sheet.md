@@ -7,6 +7,8 @@
 - [Installation](#installation)
 - [API Reference](#api-reference)
 
+<!-- toc --->
+
 ## If
 ```
 if(condition){
@@ -116,6 +118,22 @@ do {
    //Runs always whether there was an exception or not
  }
 ```
+
+##Tags In Script
+Style 1:
+```
+tagname arg=1 arg=2 {
+  //tag body
+}
+```
+Style 2 (Adobe CFML)
+```
+tagname(arg=1, arg=2){
+  //tag body
+}
+```
+
+##Single Line Commit
 
 
 
