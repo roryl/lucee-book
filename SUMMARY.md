@@ -24,7 +24,7 @@
    * [Application.cfc Lifecycle](applicationcfc_lifecycle.md)
        * [Application.cfc Settings](applicationcfc_settings.md)
        * [Application.cfc Sample](applicationcfc_sample.md)
-   * Scaffolding
+   * [Scaffolding](scaffolding.md)
    * Messaging
    * Caching
    * Clustering
