@@ -41,7 +41,7 @@ Here is a possible complex directory structure:
   - /services - Communicates with other domains
   - /vendor - Third party code
   - /util - Non domain / universal code
-  - /app - Public web application    
+  - /app - client web application    
     - /controllers - CFCs to route requests to the Model & Services
     - /views - Lucee Templates containing HTML
     - /layouts - Lucee Templates containing global layout HTML
