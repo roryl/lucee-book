@@ -19,4 +19,5 @@ Language features include:
 * Java Integration
 * Functional Programming Features
 * Dynamic Evaluation
+* Lifecycle Scopes
 
