@@ -1,7 +1,8 @@
 {
     "plugins": [
         "gist",
-        "anchors"
+        "anchors",
+        "structured-toc"
     ],
     "pluginsConfig": {}
 }
