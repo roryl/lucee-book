@@ -2,6 +2,8 @@
 
 Lucee is a dynamically typed, Object Oriented scripting language for server side web application programming. Lucee is also an application framework with many services to help you build web applications, see [Developing Applications](https://rorylaitila.gitbooks.io/lucee/content/developing_applications.html) for framework features.
 
+The easiest way to test out snippets of the Lucee language is with the [Command Line REPL](https://rorylaitila.gitbooks.io/lucee/content/command_line_repl.html)
+
 Language features include:
 
 * Classes (Known as Components in Lucee)
