@@ -2,7 +2,8 @@
     "plugins": [
         "gist",
         "anchors",
-        "structured-toc"
+        "structured-toc",
+        "edit-link"
     ],
     "pluginsConfig": {}
 }
