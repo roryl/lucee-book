@@ -6,9 +6,6 @@ Closures are a name given to a kind of [First Class Function](https://rorylaitil
 
 When setting a variable equal to a function, this creates a Closure. Any variables references inside the function have the scope from where they were created.
 
-{% gist id="https://gist.github.com/roryl/d14806856b35baeffc5e" %}{% endgist %}
-
-
 ```
 myClosure = function(){
 
