@@ -8,11 +8,11 @@ When setting a variable equal to a function, this creates a Closure. Any variabl
 
 {% gist id="https://gist.github.com/roryl/d14806856b35baeffc5e" %}{% endgist %}
 
-```
+<!--
 myClosure = function(){
 
 }
-```
+-->
 
 
 ##Define a Closure via Anonymous Function
