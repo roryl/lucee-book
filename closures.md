@@ -5,12 +5,14 @@ Closures are a name given to a kind of [First Class Function](https://rorylaitil
 ##Define a Closure via Function Expression
 
 When setting a variable equal to a function, this creates a Closure. Any variables references inside the function have the scope from where they were created
+
+
+
 ```
 myClosure = function(){
 
 }
 ```
-
 
 
 ##Define a Closure via Anonymous Function
