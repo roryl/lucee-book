@@ -11,6 +11,8 @@ myClosure = function(){
 }
 ```
 
+
+
 ##Define a Closure via Anonymous Function
 Many functions in Lucee like array.map() take a Closure as an argument, and these closures are defined inline without names
 ```
