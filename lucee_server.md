@@ -3,7 +3,7 @@
 Lucee is a Java based application server and is deployed to Java Servlet containers like Tomcat. Lucee can be run behind a Web Server like Apache or Nginx to provide additional capabilities of those servers like mod_rewrite, caching and serving static files.
 
 ##Running Lucee for Development
-The easiest way to begin running Lucee is to utilize [CommandBox](https://www.ortussolutions.com/products/commandbox) command line tool which will allow you to start and stop Lucee servers for development, and try out the Lucee language. 
+The easiest way to begin running Lucee is to utilize the [CommandBox](https://www.ortussolutions.com/products/commandbox) command line tool which will allow you to start and stop Lucee servers for development, and try out the Lucee language. 
 
 Read the [CommandBox documentation](http://commandbox.ortusbooks.com/content/) for full capabilities on running a [server](https://ortus.gitbooks.io/commandbox-documentation/content/embedded_server/embedded_server.html)
 
@@ -17,10 +17,11 @@ Path to any directory in command box and type start. CommandBox will start a Luc
 
 ![](commandbox-start.jpg)
 
-Here I ran three commands:
+The above image shows three commands being executed: 
+
 > mkdir learnlucee 
 
-This create a directory that I can use to store my files for development. You can create as many directories as you need anywhere
+This create a directory to store my files for development. You can create as many directories as you need anywhere.
 
 > cd learnlucee
 
@@ -32,7 +33,7 @@ This started up Lucee on a random port (it picks one that is available but you c
 
 ![](commandbox-started.jpg)
 
-Once it finihsed starting, CommandBox automatically opened the running Lucee, which is showing me a list of my (empty) learnlucee directory. I can now add files to this directory and begin programming in Lucee.
+Once it finihsed starting, CommandBox automatically opened the running Lucee in the default browser, which is showing a list of the (empty) learnlucee directory. Files can now be added to this directory to execute Lucee templates
 
 ![](commandbox-directory.jpg)
 
