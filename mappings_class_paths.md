@@ -10,4 +10,7 @@ Take for example the following directory structure
   * /views
     * myOtherTemplate.cfm
 
+
+
+
 getDirectoryFromPath(getCurrentTemplatePath())
