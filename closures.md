@@ -22,6 +22,7 @@ Many functions in Lucee like array.map() take a Closure as an argument, and thes
 
 <script src="https://gist.github.com/roryl/d14806856b35baeffc5e.js?file=anonymous_closure.cfm"></script>
 
+<noscript>
 ```
 var myArray = ["one","two","three"];
 var newArray = myArray.map(function(value){
@@ -29,6 +30,7 @@ var newArray = myArray.map(function(value){
 });
 dump(newArray); //outputs ONE, TWO, TREE
 ```
+</noscript>
 
 Here we passed an anonymous function (it had no name) to the map function.
 
