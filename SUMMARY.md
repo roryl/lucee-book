@@ -31,7 +31,7 @@
        * [Dynamic Evaluation](dynamic_evaluation.md)
        * [Java Integration](java_integration.md)
        * Control Flow
-   * Mappings (Class Paths)
+   * [Mappings (Class Paths)](mappings_class_paths.md)
 * [Developing Applications](developing_applications.md)
    * [Introduction](introduction.md)
    * [Application.cfc Lifecycle](applicationcfc_lifecycle.md)
