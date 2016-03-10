@@ -39,6 +39,33 @@ When creating closures, each closure contains references to its parent's scopes,
 
 <script src="https://gist.github.com/roryl/d14806856b35baeffc5e.js?file=closure_scopes_example.cfm"></script>
 
+<noscript>
+```
+<cfscript>
+outerClosure = function(){
+  var outer = "foo";
+  
+  innerClosure = function(){
+    var inner = "bar";
+    writeDump(outer); //dumps foo, shows that the inner can access the local scope of its parent
+  }  
+
+  writeDump(inner); //Errors for inner being undefined  	  
+  
+}
+
+outerClosure(); //Call outer closure
+
+otherClosure = function(){
+  writeDump(outer); //Errors for being undefined
+  writeDump(inner); //Errors for being undefined
+}
+
+otherClosure(); //Call the other closure showing that none of the interal variables can be accessed
+</cfscript>
+```
+</noscropt>
+
 
 
 
