@@ -64,7 +64,7 @@ otherClosure = function(){
 otherClosure(); //Call the other closure showing that none of the interal variables can be accessed
 </cfscript>
 ```
-</noscropt>
+</noscript>
 
 
 
