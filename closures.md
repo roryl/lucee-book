@@ -34,6 +34,11 @@ dump(newArray); //outputs ONE, TWO, TREE
 
 Here we passed an anonymous function (it had no name) to the map function.
 
+##Closure Scopes Example
+When creating closures, each closure contains references to its parent's scopes, but parents do not have reference to the child's local scope. 
+
+<script src="https://gist.github.com/roryl/d14806856b35baeffc5e.js?file=closure_scopes_example.cfm"></script>
+
 
 
 
