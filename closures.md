@@ -20,7 +20,7 @@ myClosure = function(){
 ##Define a Closure via Anonymous Function
 Many functions in Lucee like array.map() take a Closure as an argument, and these closures are defined inline without names
 
-
+<script src="https://gist.github.com/roryl/d14806856b35baeffc5e.js?file=anonymous_closure.cfm"></script>
 
 ```
 var myArray = ["one","two","three"];
