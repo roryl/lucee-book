@@ -112,6 +112,10 @@ Vagrant.configure(2) do |config|
      #Add index.cfm to the directory index
 	 sed -i -e 's/DirectoryIndex index.html index.html.var/DirectoryIndex index.html index.html.var index.cfm/g' /etc/httpd/conf/httpd.conf	 
   SHELL
+  
+  #Add an additional provisioner to start Apache. Because Apache relies on the mounted folders that vagrant creates, Apache will fail on initial boot
+  config.vm.provision "shell", inline: "apachectl start", run: "always"
+  
 end
 
 ```
