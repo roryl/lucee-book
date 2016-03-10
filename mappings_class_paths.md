@@ -12,5 +12,4 @@ Take for example the following directory structure
 
 
 
-
 getDirectoryFromPath(getCurrentTemplatePath())
