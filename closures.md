@@ -6,7 +6,7 @@ Closures are a name given to a kind of [First Class Function](https://rorylaitil
 
 When setting a variable equal to a function, this creates a Closure. Any variables references inside the function have the scope from where they were created.
 
-{% gist id="https://gist.github.com/roryl/d14806856b35baeffc5e" %}{% endgist %}
+{% gist id="https://gist.github.com/roryl/d14806856b35baeffc5e?file=basic_closure.cfm" %}{% endgist %}
 
 <noscript>
 ```
@@ -19,6 +19,9 @@ myClosure = function(){
 
 ##Define a Closure via Anonymous Function
 Many functions in Lucee like array.map() take a Closure as an argument, and these closures are defined inline without names
+
+
+
 ```
 var myArray = ["one","two","three"];
 var newArray = myArray.map(function(value){
