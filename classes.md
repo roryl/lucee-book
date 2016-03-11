@@ -129,7 +129,9 @@ The createObject function is provided to instantiate Components, but also Java, 
 <script src="https://gist.github.com/roryl/5a127d2d99c09924b3aa.js?file=create_object.cfc"></script>
 
 ```
-myObj = createObject("myComponent");
+<cfscript>
+  myObj = createObject("myComponent");
+</cfscript>
 ```
 
 ##Component Lookup Rules
@@ -152,6 +154,9 @@ We're going to instantiate subComponent.cfc from within rootComponent.cfc and in
 
 rootComponent.cfc:
 This will find the subComponent because it can be pathed from the webroot (/components/subComponent)
+
+<script src="https://gist.github.com/roryl/5a127d2d99c09924b3aa.js?file=component_implicit_path.cfc"></script>
+
 ```
 component {    
    public function init(){
@@ -161,6 +166,8 @@ component {
 ```
 
 You can also import Components to find them:
+
+<script src="https://gist.github.com/roryl/5a127d2d99c09924b3aa.js?file=component_imported_path.cfc"></script>
 
 ```
 import components.subComponent();
