@@ -27,6 +27,9 @@ The &lt;cfoutput&gt;&lt;/cfoutput&gt; tags tell Lucee to look for any variables 
 ##Conditional Logic
 Because Lucee's language control flow is completely available as HTML style tags, it lends itself naturally to HTML output. The example below uses the LOOP, IF, ELSEIF and ELSE tag to change what is displayed.
 
+<script src="https://gist.github.com/roryl/708a488afcf4a86f1931.js?file=conditional_logic.cfm"></script>
+
+<noscript>
 ```
 <cfset pets = ["dogs","cats","pigs"]>
 <cfoutput>
@@ -42,6 +45,7 @@ Because Lucee's language control flow is completely available as HTML style tags
 </cfloop>
 </cfoutput>
 ```
+</noscript>
 
 All Lucee tags, IF, IFELSE, ELSE, SWITCH, TRY, and more are available for use in templates.
 
