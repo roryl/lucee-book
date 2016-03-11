@@ -112,8 +112,6 @@ Page content about services
 ```
 </noscript>
 
-
-
 <script src="https://gist.github.com/roryl/708a488afcf4a86f1931.js?file=navigation.cfm"></script>
 
 <noscript>
@@ -140,12 +138,16 @@ When each of the websites pages is run, they will all use the common navigation.
 ##Best Practices
 Lucee's entire tag library, including complex functionality like making HTTP requests, sending email, and querying databases, are available as tags. For example, the query tag can select from a database
 
+<script src="https://gist.github.com/roryl/708a488afcf4a86f1931.js?file=cars_select.cfm"></script>
+
+<noscript>
 ```
 <cfquery name="myQuery">
   SELECT carModel
   FROM myTable
 </cfquery>
 ```
+</noscript>
 
 And this tag can be used in a template to output the data:
 
