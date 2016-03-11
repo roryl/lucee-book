@@ -64,10 +64,16 @@ See Types for a list of [Types](https://rorylaitila.gitbooks.io/lucee/content/ty
 In Lucee, method arguments can be optionally typed, optionally required, and have default values
 
 ####Typed Arguments
+
+<script src="https://gist.github.com/roryl/5a127d2d99c09924b3aa.js?file=typed_arguments.cfc"></script>
+
+<noscript>
 ```
 public function myFunc(string argumentName1, struct argumentName2){
 }
 ```
+</noscript>
+
 ####Required Arguments
 ```
 public function myFunc(required argumentName1, required argumentName2){
