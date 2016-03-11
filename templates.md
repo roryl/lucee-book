@@ -75,8 +75,7 @@ Sometimes content on a website is repeated on many pages, like the header naviga
 
 Here is an example of a three page website, made up of a Home page, an About Us page, and a Services page. There is a template for each page, an a template called navigation.cfm which each page includes. 
 
->home.cfm
-
+<script src="https://gist.github.com/roryl/708a488afcf4a86f1931.js?file=home.cfm"></script>
 
 ```
 <h1>Home</h1>
