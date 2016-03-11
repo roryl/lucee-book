@@ -4,3 +4,5 @@ Lucee is a dynamically typed and interpreted scripting language that runs on the
 
 Lucee is an Object Oriented Language, with First Class Functions, Closures, a large standard library, and a templating language included, which is much like a JSP tag library. It also includes functional programming features like map & reduce, and being based on Java, has access to the entire Java runtime library.
 
+
+
