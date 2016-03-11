@@ -119,6 +119,8 @@ When each of the websites pages is run, they will all use the common navigation.
 >
 >Page Content about home
 
+>Note: The include tag finds templates via their path from the webroot, or a mapping configured in Application.cfc
+
 ##Best Practices
 Lucee's entire tag library, including complex functionality like making HTTP requests, sending email, and querying databases, are available as tags. For example, the query tag can select from a database
 
