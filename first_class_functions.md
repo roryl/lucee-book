@@ -29,7 +29,7 @@ component {
 component { 
   
   public function init(){
-    var a = new a(); //instantiate a
+    var a = new component_a(); //instantiate a
     
     this.otherFunc = a.otherFunc; //Copy otherFunc from a to b
     
@@ -41,7 +41,7 @@ component {
   }
   
   private function call(required function func){
-    arguments.func(); //executes otherFunc, outputs "called!"
+    echo(arguments.func()); //An example of passing a function, executes otherFunc, outputs "called!"
   } 
 
 }
