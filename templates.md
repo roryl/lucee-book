@@ -87,9 +87,8 @@ Page content about home
 ```
 </noscript>
 
->about_us.cfm
 
-
+<script src="https://gist.github.com/roryl/708a488afcf4a86f1931.js?file=about_us.cfm"></script>
 ```
 <h1>About Us</h1>
 <cfinclude template="navigation.cfm" />
