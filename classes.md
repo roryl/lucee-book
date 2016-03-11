@@ -120,7 +120,7 @@ component {
 ###New Operator
 Using the New Operator, Lucee will instantiate the class and call the default constructor (if it exists)
 
-<script src="https://gist.github.com/roryl/5a127d2d99c09924b3aa.js?file=new_object.cfc"></script>
+<script src="https://gist.github.com/roryl/5a127d2d99c09924b3aa.js?file=new_object.cfm"></script>
 
 ```
 <cfscript>
@@ -131,7 +131,7 @@ Using the New Operator, Lucee will instantiate the class and call the default co
 ###CreateObject()
 The createObject function is provided to instantiate Components, but also Java, Com and Webservice Objects. It also allows instantiating components with dynamic variable names
 
-<script src="https://gist.github.com/roryl/5a127d2d99c09924b3aa.js?file=create_object.cfc"></script>
+<script src="https://gist.github.com/roryl/5a127d2d99c09924b3aa.js?file=create_object.cfm"></script>
 
 ```
 <cfscript>
