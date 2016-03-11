@@ -52,6 +52,9 @@ All Lucee tags, IF, IFELSE, ELSE, SWITCH, TRY, and more are available for use in
 ##Escaping Output
 When Lucee is exeucting code inside cfoutput tags, it is looking for any variables wrapped in #'s. If the template should output an actual # character, then two # together will do so, like ##
 
+<script src="https://gist.github.com/roryl/708a488afcf4a86f1931.js?file=escaping_output.cfm"></script>
+
+<noscript>
 ```
 <cfoutput>
 <div>
@@ -59,6 +62,7 @@ When Lucee is exeucting code inside cfoutput tags, it is looking for any variabl
 </div>
 </cfoutput>
 ```
+</noscript>
 
 This template would output:
 
