@@ -69,26 +69,45 @@ In Lucee, method arguments can be optionally typed, optionally required, and hav
 
 <noscript>
 ```
-public function myFunc(string argumentName1, struct argumentName2){
+component {
+  public function myFunc(string argumentName1, struct argumentName2){
+  }
 }
 ```
 </noscript>
 
 ####Required Arguments
+
+<script src="https://gist.github.com/roryl/5a127d2d99c09924b3aa.js?file=required_arguments.cfc"></script>
+
+<noscript>
 ```
 public function myFunc(required argumentName1, required argumentName2){
 }
 ```
+</noscript>
+
 ####Required & Typed Arguments
+
+<script src="https://gist.github.com/roryl/5a127d2d99c09924b3aa.js?file=required_and_typed_arguments.cfc"></script>
+
+<noscript>
 ```
 public function myFunc(required string argumentName1, required struct argumentName2){
 }
 ```
+</noscript>
+
 ####Default Arguments
+
+<script src="https://gist.github.com/roryl/5a127d2d99c09924b3aa.js?file=default_arguments.cfc"></script>
+
+<noscript>
 ```
 public function myFunc(required string argumentName1="test", required struct argumentName2={key:"value"}){
 }
 ```
+</noscript>
 
 
 ##Instantiation
