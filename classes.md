@@ -162,6 +162,7 @@ This will find the subComponent because it can be pathed from the webroot (/comp
 
 <script src="https://gist.github.com/roryl/5a127d2d99c09924b3aa.js?file=component_implicit_path.cfc"></script>
 
+<noscript>
 ```
 component {    
    public function init(){
@@ -169,11 +170,13 @@ component {
    }  
 }
 ```
+</noscript>
 
 You can also import Components to find them:
 
 <script src="https://gist.github.com/roryl/5a127d2d99c09924b3aa.js?file=component_imported_path.cfc"></script>
 
+<noscript>
 ```
 import components.subComponent;
 component {    
@@ -182,6 +185,8 @@ component {
    }  
 }
 ```
+</noscript>
+
 Notice that the import pathed from the webroot, but then we instantiated the component directly. 
 
 If your Components are not accessible from the webroot and are stored elsewhere in your system or outside of the webroot for security (a best practice). You need to add an Application Mapping to access them. 
