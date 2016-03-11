@@ -7,8 +7,9 @@ Lucee allows creating server side templates which can house HTML to be rendered 
 ##Basic Example
 Here is an example of a Lucee Template which outputs the time for a webpage:
 
+<script src="https://gist.github.com/roryl/708a488afcf4a86f1931.js?file=basic_template.cfm"></script>
 
->Save this code as mytemplate.cfm
+<noscript>
 ```
 <cfoutput>
 <div>
@@ -16,6 +17,7 @@ Here is an example of a Lucee Template which outputs the time for a webpage:
 </div>
 </cfoutput>
 ```
+</noscript>
 
 Lucee templates can combine HTML and Lucee code. In this example above, it outputs the time using the Lucee function now(). It is wrapped in ## to tell Lucee to evaluate now() instead of sending it to the browser.
 
@@ -126,7 +128,7 @@ Lucee's entire tag library, including complex functionality like making HTTP req
 
 ```
 <cfquery name="myQuery">
-  SELECT *
+  SELECT carModel
   FROM myTable
 </cfquery>
 ```
