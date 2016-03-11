@@ -34,6 +34,8 @@ You can define additional methods in your class, and they can have the following
 * Remote - Accessible to remote callers via web services, REST or invoking your components from HTTP
 
 To define additional methods
+
+<script src="https://gist.github.com/roryl/5a127d2d99c09924b3aa.js?file=single_function.cfc"></script>
 ```
 component {
   public void function myFunction(){
