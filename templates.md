@@ -116,6 +116,7 @@ Page content about services
 
 <script src="https://gist.github.com/roryl/708a488afcf4a86f1931.js?file=navigation.cfm"></script>
 
+<noscript>
 ```
 <ul>
   <li>Home</li>
@@ -123,6 +124,7 @@ Page content about services
   <li>About Us</li>
 </ul>
 ```
+</noscript>
 
 When each of the websites pages is run, they will all use the common navigation.cfm and be combined to product the result, for example on the homepage:
 
