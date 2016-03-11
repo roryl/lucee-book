@@ -1,9 +1,10 @@
-# Templates
+#Templates
 
 Lucee allows creating server side templates which can house HTML to be rendered and delivered to the web browser. These templates allow access to all Lucee "Built in Functions" (Lucee's standard function library) and block Tags like query, loop and savecontent. Combining these functions and tags with HTML allow you to build complex interfaces, or other kinds of output like XML, JSON, or PDFs. 
 
 >Note: The file extension of Lucee templates is .cfm
 
+##Basic Example
 Here is an example of a Lucee Template which outputs the time for a webpage:
 
 
@@ -20,7 +21,9 @@ Lucee templates can combine HTML and Lucee code. In this example above, it outpu
 
 The &lt;cfoutput&gt;&lt;/cfoutput&gt; tags tell Lucee to look for any variables wrapped in # signs and evaluate them. A common convention is to wrap all content &lt;cfoutput&gt;&lt;/cfoutput&gt; 
 
-Because Lucee's language control flow is completely available as HTML style tags, it lends itself naturally to HTML output. The example below uses the IF and ELSE tag to change what is displayed.
+
+##Conditional Logic
+Because Lucee's language control flow is completely available as HTML style tags, it lends itself naturally to HTML output. The example below uses the LOOP, IF, ELSEIF and ELSE tag to change what is displayed.
 
 ```
 <cfset pets = ["dogs","cats","pigs"]>
@@ -37,4 +40,23 @@ Because Lucee's language control flow is completely available as HTML style tags
 </cfloop>
 </cfoutput>
 ```
+
+All Lucee tags, IF, IFELSE, ELSE, SWITCH, TRY, and more are available for use in templates.
+
+##Escaping Output
+When Lucee is exeucting code inside cfoutput tags, it is looking for any variables wrapped in #'s. If the template should output an actual # character, then two # together will do so, like ##
+
+```
+<cfoutput>
+<div>
+  ##now()##
+</div>
+</cfoutput>
+```
+
+This template would output:
+
+> &#35;now()#
+
+Notice here that the output *was not* the time. The double ##s were ignored, so Lucee processed now() as text and sent it straight to the browser.
 
