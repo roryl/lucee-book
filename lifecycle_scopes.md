@@ -13,10 +13,10 @@ request.myVar = "bar"; //sets bar into myVar in the request scope
 These variable scopes are available from any script executing within an application. The global scopes are:
 
 ###Application
-Accessible for the entire life of your application until the applicationTimeout specified in the Application.cfc for your application. Care must be used when multiple requests are writing to the same application scoped variable. In these situations, use lock {} to syncronize write access. 
+Accessible for the entire life of the application, which is until the applicationTimeout specified in the Application.cfc expires. Care must be used when multiple requests are writing to the same application scoped variable. In these situations, use lock {} to syncronize write access. 
 
 ###Request
-Accessible for the life of a single web request. You do not need to lock access to this scope unless you are using thread {} and possibly accessing a request scoped variable from multiple threads. 
+Accessible for the life of a single web request. It is not necessary to lock access to this scope unless using thread {} and thus possibly accessing a request scoped variable from multiple threads. 
 
 ###Session
 Accessible for the life of a user session, until the sessionTimeout specified in Application.cfc is reached from no activity. Care must be used when multiple requests could come in from the same client simultaneously. In these situations, use lock {} to syncronize write access. 
@@ -26,16 +26,14 @@ Accessible for the life of a single request, the URL scope represents any URL qu
 > yourdomain.com?arg1=foo&arg2=bar
 
 ###FORM
-Accessible for the life of a single request, the FORM scope represents any parameter which has been sent (Posted) to your application using an HTML form or javascript
+Accessible for the life of a single request, the FORM scope represents any parameter which has been sent (Posted) to the application using an HTML form or javascript Ajax with POST
 
 ###CGI
-Accessible for the life of a single request, the CGI scope (which stangs for Common Gateway Interface) is all of the web server variables passed to Lucee by Tomcat, Apache or any web server running Lucee.
+Accessible for the life of a single request, the CGI scope (which stangs for Common Gateway Interface) is all of the web server variables passed to Lucee by Tomcat, Apache or any web server running in front of Lucee.
 
-A new of the CGI variables are:
+The full list of CGI variables is available in the [CGI Variables Reference](https://rorylaitila.gitbooks.io/lucee/content/cgi_variables.html)
 
-The full list is available in the [CGI Variables Reference](https://rorylaitila.gitbooks.io/lucee/content/cgi_variables.html)
-
-You do not need to lock read access to any of the Global scopes, only write access when there can potentially be a race condition of two clients writing to a global variable at the same time.
+It is not necessary to **read** lock access to any of the global scopes, only **write** access when there can potentially be a race condition of two clients writing to a global variable at the same time.
 
 
 ##Localized Scopes
