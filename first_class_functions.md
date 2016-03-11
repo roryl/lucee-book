@@ -51,4 +51,4 @@ component {
 Though this is a trivial example and doesn't imply any business case, complex passing of functions around is possible. 
 
 ###User Defined Functions vs. Closures
-In the example above it passed around what are called User Defined Functions (UDFs) example: "function myName(){}" - When executing UDFs, they have the scopes from *where they are called* This is in comparison to closures, whcih have the scope from *where they were created* This subtle difference is important when passing functions, depending on if you want that passed function to operate on the scopes from where it was created, vs where it is used. 
+In the example above it passed around what are called User Defined Functions (UDFs) example: `function myName(){}` - When executing UDFs, they have the scopes from *where they are called* This is in comparison to closures, whcih have the scope from *where they were created* This subtle difference is important when passing functions, depending on if you want that passed function to operate on the scopes from where it was created, vs where it is used. 
