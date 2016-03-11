@@ -145,6 +145,6 @@ And this tag can be used in a template to output the data:
 <cfoutput>
 ```
 
-However except for one off scripts, it is best to only use conditional or display logic (IF,Else,LOOP) in templates for outputting HTML, and avoid complex tags. Templates do not have any class structure to help you organize your code, and so complex code written in templates can be hard to organize. Complex code like database access, security and validation is best handled in Components.
+However except for one off scripts, it is best to only use conditional or display logic (If,Else,Loop) in templates for outputting HTML, and avoid complex tags. Templates do not have any class structure to help you organize your code, and so complex code written in templates can be hard to organize. Complex code like database access, security and validation is best handled in Components.
 
 
