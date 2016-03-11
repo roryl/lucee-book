@@ -34,7 +34,7 @@
        * Control Flow
    * [Mappings (Class Paths)](mappings_class_paths.md)
    * [Language Comparisons](language_comparisons.md)
-       * Lucee vs Java
+       * [Lucee vs Java](lucee_vs_java.md)
 * [Developing Applications](developing_applications.md)
    * [Introduction](introduction.md)
    * [Application.cfc Lifecycle](applicationcfc_lifecycle.md)
