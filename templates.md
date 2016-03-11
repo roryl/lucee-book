@@ -61,7 +61,9 @@ This template would output:
 Notice here that the output *was not* the time. The double ##s were ignored, so Lucee processed now() as text and sent it straight to the browser.
 
 ##Including Templates
-Sometimes content on a website is repeated on many pages, like the header navigation, and it can be useful to include one template in others so that you are not repeating your efforts. Lucee supports including one template within another using the include tag:
+Sometimes content on a website is repeated on many pages, like the header navigation, and it can be useful to include one template in others so that you are not repeating your efforts. Lucee supports including one template within another using the include tag. 
+
+Here is an example of a three page website, made up of a Home page, an About Us page, and a Services page. There is a template for each page, an a template called navigation.cfm which each page includes. 
 
 >home.cfm
 
@@ -70,7 +72,7 @@ Sometimes content on a website is repeated on many pages, like the header naviga
 <h1>Home</h1>
 <cfinclude template="navigation.cfm" />
 <p>
-<!--- Page content about home --->
+Page content about home
 </p>
 ```
 
@@ -81,7 +83,7 @@ Sometimes content on a website is repeated on many pages, like the header naviga
 <h1>About Us</h1>
 <cfinclude template="navigation.cfm" />
 <p>
-<!--- Page content about us --->
+Page content about us
 </p>
 ```
 
@@ -92,7 +94,7 @@ Sometimes content on a website is repeated on many pages, like the header naviga
 <h1>Servicess</h1>
 <cfinclude template="navigation.cfm" />
 <p>
-<!--- Page content about services --->
+Page content about services
 </p>
 ```
 
@@ -107,6 +109,15 @@ Sometimes content on a website is repeated on many pages, like the header naviga
   <li>About Us</li>
 </ul>
 ```
+
+When each of the websites pages is run, they will all use the common navigation.cfm and be combined to product the result:
+
+>####Home
+>* Home
+>* Services
+>* About Us
+>
+>Page Content about home
 
 ##Best Practices
 Lucee's entire tag library, including complex functionality like making HTTP requests, sending email, and querying databases, are available as tags. For example, the query tag can select from a database
