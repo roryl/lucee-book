@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+* About This Book
 * [Tutorials](chapter1.md)
    * [Beginning Web Application Development with Lucee](beginning_web_application_development_with_lucee.md)
        * [What is Lucee](what_is_lucee.md)
@@ -78,5 +79,4 @@
    * [Frameworks & Libraries](frameworks_&_libraries.md)
    * [Lucee Blogs](lucee_blogs.md)
    * [Support](support.md)
-* About This Book
 
