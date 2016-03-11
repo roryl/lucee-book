@@ -4,7 +4,7 @@ All function declarations in Lucee are first class functions, meaning that funct
 
 Consider the following two Components:
 
->a.cfc
+<script src="https://gist.github.com/roryl/468f346631ec9afa3cf9.js?file=component_a.cfc"></script>
 
 ```
 component { 
