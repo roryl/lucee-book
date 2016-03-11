@@ -23,12 +23,18 @@ The &lt;cfoutput&gt;&lt;/cfoutput&gt; tags tell Lucee to look for any variables 
 Because Lucee's language control flow is completely available as HTML style tags, it lends itself naturally to HTML output. The example below uses the IF and ELSE tag to change what is displayed.
 
 ```
-<cfset pets = ["dogs","cats"]>
+<cfset pets = ["dogs","cats","pigs"]>
 <cfoutput>
-<h1></h1>
-<cfloop array="#breeds#" item="#beedName#">
-  <cfif breenName IS "black lab">  
+<h1>Sounds a Pet Makes</h1>
+<cfloop array="#pets#" item="#beedName#">
+  <cfif breedName IS "dogs">
+    Woof!
+  </elseif breedNAme IS "cats">
+    meow!
+  </cfelse>
+    Thats an odd pet
+  </cfif>  
 </cfloop>
-
 </cfoutput>
+```
 
