@@ -42,7 +42,7 @@ It is not necessary to **read** lock access to any of the global scopes, only **
 The Variables Scope is global to a single Component. Any variables declared in a Component without the var keyword default to the variables scope. However, variables should always be explicitly scoped for readability and to prevent mistakes, and also slightly improves performance.
 
 ###Local Scope
-Any veriable instantiated within a function with the var keyword, lives in the local scope of that function and is not accessible to other functions in the Component or elsewhere. 
+Any variable instantiated within a function with the var keyword, lives in the local scope of that function and is not accessible to other functions in the Component or elsewhere. 
 ```
 component {
 
@@ -57,7 +57,7 @@ component {
   
 }
 ```
-This this example above, only the myFunc has access to myVar. If you wanted all functions to access myVar, you should declare it in the variables scope. That would change the example to the following:
+This this example above, only the myFunc has access to myVar. If multiple functions need to access myVar, it should be declared it in the variables scope. That would change the example to the following:
 
 ```
 component {
@@ -74,7 +74,7 @@ component {
   
 }
 ```
-You should always explicitly state the scope of your variables, and use var for your local variables. This will prevent subtle bugs that are hard to track.
+Variables should always be explicitly assigned to a scope, and use var for local variables. This will prevent subtle bugs that are hard to track if accidentally overriding a more global scope when it should have beena  local variable.
 
 It is also possible to access local variables as a collection using the local structure. 
 ```
