@@ -102,6 +102,7 @@ Page content about us
 
 <script src="https://gist.github.com/roryl/708a488afcf4a86f1931.js?file=services.cfm"></script>
 
+<noscript>
 ```
 <h1>Servicess</h1>
 <cfinclude template="navigation.cfm" />
@@ -109,6 +110,7 @@ Page content about us
 Page content about services
 </p>
 ```
+</noscript>
 
 
 
