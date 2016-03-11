@@ -11,3 +11,13 @@ A setting in the Application.cfc that tells Lucee how to include templates and i
 ## Tags
 
 A Tag is a primary part of the Lucee language and allows for building output in Templates.
+
+## User Defined Functions
+
+Functions written in Lucee which are not closures. 
+
+```
+function myFunc(){
+
+}
+```
