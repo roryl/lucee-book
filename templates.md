@@ -60,3 +60,5 @@ This template would output:
 
 Notice here that the output *was not* the time. The double ##s were ignored, so Lucee processed now() as text and sent it straight to the browser.
 
+
+
