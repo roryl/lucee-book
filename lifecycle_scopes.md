@@ -67,6 +67,7 @@ This this example above, only the myFunc has access to myVar. If multiple functi
 
 <script src="https://gist.github.com/roryl/08a89aa59430b797cdb4.js?file=component_variables.cfc"></script>
 
+<noscript>
 ```
 component {
 
@@ -82,6 +83,8 @@ component {
   
 }
 ```
+</noscript>
+
 Variables should always be explicitly assigned to a scope, and use var for local variables. This will prevent subtle bugs that are hard to track if accidentally overriding a more global scope when it should have beena  local variable.
 
 It is also possible to access local variables as a collection using the local structure. 
