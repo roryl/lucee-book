@@ -70,7 +70,7 @@ Sometimes content on a website is repeated on many pages, like the header naviga
 <h1>Home</h1>
 <cfinclude template="navigation.cfm" />
 <p>
-<!--- Page content here --->
+<!--- Page content about home --->
 </p>
 ```
 
