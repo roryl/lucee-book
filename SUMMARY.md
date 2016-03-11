@@ -38,6 +38,7 @@
        * [Lucee vs Java](lucee_vs_java.md)
        * Lucee vs PHP
        * Lucee vs Ruby
+       * Lucee vs Python
 * [Developing Applications](developing_applications.md)
    * [Introduction](introduction.md)
    * [Application.cfc Lifecycle](applicationcfc_lifecycle.md)
