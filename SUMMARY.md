@@ -36,7 +36,7 @@
        * Lucee vs Python
    * [Language Comparisons](language_comparisons.md)
        * [Lucee vs Java](lucee_vs_java.md)
-       * Lucee vs PHP
+       * [Lucee vs PHP](lucee_vs_php.md)
        * Lucee vs Ruby
        * Lucee vs Python
        * Lucee vs C#
