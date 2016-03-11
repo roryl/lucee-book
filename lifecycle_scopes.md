@@ -25,7 +25,7 @@ Accessible for the life of a user session, until the sessionTimeout specified in
 Accessible for the life of a single request, the URL scope represents any URL query parameters passed
 > yourdomain.com?arg1=foo&arg2=bar
 
-###FORM
+###Form
 Accessible for the life of a single request, the FORM scope represents any parameter which has been sent (Posted) to the application using an HTML form or javascript Ajax with POST
 
 ###CGI
