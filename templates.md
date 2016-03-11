@@ -60,5 +60,63 @@ This template would output:
 
 Notice here that the output *was not* the time. The double ##s were ignored, so Lucee processed now() as text and sent it straight to the browser.
 
+##Including Templates
+Sometimes content on a website is repeated on many pages, like the header navigation, and it can be useful to include one template in others so that you are not repeating your efforts. Lucee supports including one template within another using the include tag:
+
+>home.cfm
+
+
+```
+<h1>Home</h1>
+<cfinclude template="navigation.cfm" />
+<p>
+<!--- Page content here --->
+</p>
+```
+
+>about_us.cfm
+
+
+```
+<h1>About Us</h1>
+<cfinclude template="navigation.cfm" />
+<p>
+<!--- Page content here --->
+</p>
+```
+
+>services.cfm
+
+
+```
+<h1>Servicess</h1>
+<cfinclude template="navigation.cfm" />
+<p>
+<!--- Page content here --->
+</p>
+```
+
+
+
+>navigation.cfm
+
+```
+<ul>
+  <li>Home</li>
+  <li>Services</li>
+  <li>About Us</li>
+</ul>
+```
+
+##Best Practices
+Lucee's entire tag library, including complex functionality like making HTTP requests, sending email, and querying databases, are available as tags. For example, the query tag can select from a database
+
+```
+<cfquery name="myQuery">
+  SELECT *
+  FROM myTable
+</cfquery>
+```
+However except for one off scripts, it is best to only use conditional logic in templates for outputting HTML, and avoid complex tags. Templates do not have any class structure to help you organize your code, and so complex code written in many templates can be hard to organize. Complex code like database access, security and validation is best handled in Components.
 
 
