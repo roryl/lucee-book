@@ -39,6 +39,7 @@
        * Lucee vs PHP
        * Lucee vs Ruby
        * Lucee vs Python
+       * Lucee vs C#
 * [Developing Applications](developing_applications.md)
    * [Introduction](introduction.md)
    * [Application.cfc Lifecycle](applicationcfc_lifecycle.md)
