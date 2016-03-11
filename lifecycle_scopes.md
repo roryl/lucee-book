@@ -1,8 +1,8 @@
 # Lifecycle Scopes
 
-Lucee has built in Scopes which are data holders that you can put your variables into and keep them around for specific durations. All of the scopes are accessible via dotted notation from anywhere that the scope is valid to access it. There are global scopes, and non-global scopes. 
+Lucee has built in Scopes which are data holders that can contain any variables and keep them around for specific durations. All of the scopes are accessible via dotted notation from anywhere that the scope is valid to access it. There are global scopes, and non-global scopes. 
 
-To set a variable into a scope, you use dotted notation:
+To set a variable into a scope, use dotted notation:
 
 ```
 application.myVar = "foo"; //sets foo into myVar in the application scope
@@ -10,7 +10,7 @@ request.myVar = "bar"; //sets bar into myVar in the request scope
 ```
 
 ##Global Scopes
-These variable scopes are available from any script executing within your application. The global scopes are:
+These variable scopes are available from any script executing within an application. The global scopes are:
 
 ###Application
 Accessible for the entire life of your application until the applicationTimeout specified in the Application.cfc for your application. Care must be used when multiple requests are writing to the same application scoped variable. In these situations, use lock {} to syncronize write access. 
