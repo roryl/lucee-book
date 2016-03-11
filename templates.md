@@ -128,6 +128,21 @@ Lucee's entire tag library, including complex functionality like making HTTP req
   FROM myTable
 </cfquery>
 ```
+
+And this tag can be used in a template to output the data:
+
+>query_test.cfm
+
+```
+<cfquery name="myQuery">
+  SELECT carModel
+  FROM cars
+</cfquery>
+<cfloop query="#myQuery#">
+  #carModel#
+</cfloop>
+```
+
 However except for one off scripts, it is best to only use conditional logic in templates for outputting HTML, and avoid complex tags. Templates do not have any class structure to help you organize your code, and so complex code written in many templates can be hard to organize. Complex code like database access, security and validation is best handled in Components.
 
 
