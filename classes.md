@@ -12,11 +12,10 @@ component {
 }
 ```
 
-
-
-
 ##Default Constructor
 In lucee, you may define a default constructor for your Component by providing a function called init. There can only be one constructor and Lucee does not support method overloading
+
+<script src="https://gist.github.com/roryl/5a127d2d99c09924b3aa.js?file=default_constructor.cfc"></script>
 
 ```
 component {
