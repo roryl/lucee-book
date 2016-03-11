@@ -170,7 +170,7 @@ You can also import Components to find them:
 <script src="https://gist.github.com/roryl/5a127d2d99c09924b3aa.js?file=component_imported_path.cfc"></script>
 
 ```
-import components.subComponent();
+import components.subComponent;
 component {    
    public function init(){
      myObj = new subComponent();   
