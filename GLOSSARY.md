@@ -1,5 +1,5 @@
 # Glossary
-##Components
-##Mapping
-##Templates
 
+## Templates
+
+Test
