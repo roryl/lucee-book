@@ -1,2 +1,5 @@
 # Glossary
+##Components
+##Mapping
+##Templates
 
