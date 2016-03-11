@@ -77,6 +77,7 @@ Here is an example of a three page website, made up of a Home page, an About Us 
 
 <script src="https://gist.github.com/roryl/708a488afcf4a86f1931.js?file=home.cfm"></script>
 
+<noscript>
 ```
 <h1>Home</h1>
 <cfinclude template="navigation.cfm" />
@@ -84,6 +85,7 @@ Here is an example of a three page website, made up of a Home page, an About Us 
 Page content about home
 </p>
 ```
+</noscript>
 
 >about_us.cfm
 
