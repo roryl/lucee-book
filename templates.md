@@ -81,7 +81,7 @@ Sometimes content on a website is repeated on many pages, like the header naviga
 <h1>About Us</h1>
 <cfinclude template="navigation.cfm" />
 <p>
-<!--- Page content here --->
+<!--- Page content about us --->
 </p>
 ```
 
@@ -92,7 +92,7 @@ Sometimes content on a website is repeated on many pages, like the header naviga
 <h1>Servicess</h1>
 <cfinclude template="navigation.cfm" />
 <p>
-<!--- Page content here --->
+<!--- Page content about services --->
 </p>
 ```
 
