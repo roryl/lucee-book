@@ -110,7 +110,7 @@ Page content about services
 </ul>
 ```
 
-When each of the websites pages is run, they will all use the common navigation.cfm and be combined to product the result:
+When each of the websites pages is run, they will all use the common navigation.cfm and be combined to product the result, for example on the homepage:
 
 >####Home
 >* Home
