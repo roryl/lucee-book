@@ -6,6 +6,7 @@ Consider the following two Components:
 
 <script src="https://gist.github.com/roryl/468f346631ec9afa3cf9.js?file=component_a.cfc"></script>
 
+<noscript>
 ```
 component { 
   
@@ -19,8 +20,10 @@ component {
 
 }
 ```
+</noscript>
 
-b.cfc
+<script src="https://gist.github.com/roryl/468f346631ec9afa3cf9.js?file=component_b.cfc"></script>
+
 ```
 component { 
   
