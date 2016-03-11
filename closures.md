@@ -1,10 +1,10 @@
 # Closures
 
-Closures are a name given to a kind of [First Class Function](https://rorylaitila.gitbooks.io/lucee/content/first_class_functions.html) but when created,keep reference to the scopes from *where they were created*. This is useful because it allows you to pass the Closure around, just like passing a variable. But whereas a variable is simply a holder of a data element, a Closure is a function which containsreferences to its creation. In Lucee, Closures can be assigned or they can be anonymous. Many of the functional features of Lucee require the use of Closures.
+Closures are a name given to a type of [First Class Function](https://rorylaitila.gitbooks.io/lucee/content/first_class_functions.html) that when created, keep reference to the scopes from *where they were created*. This is useful because it allows passing the Closure around, just like passing a variable. But whereas a variable is simply a holder of a data element, a Closure is a function which contains references to the variables available during its creation. In Lucee, Closures can be assigned or they can be anonymous. Many of the functional features of Lucee require the use of Closures.
 
 ##Define a Closure via Function Expression
 
-When setting a variable equal to a function, this creates a Closure. Any variables references inside the function have the scope from where they were created.
+When setting a variable equal to a function, this creates a Closure. Any variables references inside the function have acess to the parent scopes from where they were created. This includes any local variables of parent functions, Components, and global scopes like application, session and request.
 
 <script src="https://gist.github.com/roryl/d14806856b35baeffc5e.js?file=basic_closure.cfm"></script>
 
@@ -32,10 +32,10 @@ dump(newArray); //outputs ONE, TWO, TREE
 ```
 </noscript>
 
-Here we passed an anonymous function (it had no name) to the map function.
+Here we passed an anonymous function (it had no name) to the map function.  For each element in the array, map called the closure and passed in the element.
 
 ##Closure Scopes Example
-When creating closures, each closure contains references to its parent's scopes, but parents do not have reference to the child's local scope. 
+When creating closures, each closure contains references to its parents scopes, but parents do not have reference to the childs local scope. 
 
 <script src="https://gist.github.com/roryl/d14806856b35baeffc5e.js?file=closure_scopes_example.cfm"></script>
 
