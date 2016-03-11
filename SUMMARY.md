@@ -33,7 +33,7 @@
        * [Java Integration](java_integration.md)
        * Control Flow
    * [Mappings (Class Paths)](mappings_class_paths.md)
-   * Language Comparisons
+   * [Language Comparisons](language_comparisons.md)
 * [Developing Applications](developing_applications.md)
    * [Introduction](introduction.md)
    * [Application.cfc Lifecycle](applicationcfc_lifecycle.md)
