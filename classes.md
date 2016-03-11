@@ -118,13 +118,13 @@ component {
 
 ##Instantiation
 ###New Operator
-Using the New Operator, Lucee will instantiate the class and call the default constructure (if it exists)
+Using the New Operator, Lucee will instantiate the class and call the default constructor (if it exists)
 ```
 myObj = new myComponent();
 ```
 
 ###CreateObject()
-The createObject function is provided to instantiate Components, but also Java, Com and Webservice Objects. It also allows instnatiating components with dynamic variable names
+The createObject function is provided to instantiate Components, but also Java, Com and Webservice Objects. It also allows instantiating components with dynamic variable names
 
 <script src="https://gist.github.com/roryl/5a127d2d99c09924b3aa.js?file=create_object.cfc"></script>
 
