@@ -24,6 +24,7 @@ component {
 
 <script src="https://gist.github.com/roryl/468f346631ec9afa3cf9.js?file=component_b.cfc"></script>
 
+<noscript>
 ```
 component { 
   
@@ -45,6 +46,7 @@ component {
 
 }
 ```
+</noscript>
 
 Though this is a trivial example and doesn't imply any business case, complex passing of functions around is possible. 
 
