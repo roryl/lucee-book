@@ -39,7 +39,7 @@ It is not necessary to **read** lock access to any of the global scopes, only **
 ##Localized Scopes
 
 ###Variables Scope
-The Variables Scope is global to a single Component. Any variables declared in a Component without the var keyword default to the variables scope. However, you should always explicitly scope your variables for readability and to prevent mistakes.
+The Variables Scope is global to a single Component. Any variables declared in a Component without the var keyword default to the variables scope. However, variables should always be explicitly scoped for readability and to prevent mistakes, and also slightly improves performance.
 
 ###Local Scope
 Any veriable instantiated within a function with the var keyword, lives in the local scope of that function and is not accessible to other functions in the Component or elsewhere. 
