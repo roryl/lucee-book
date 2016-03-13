@@ -15,7 +15,7 @@ component {
 </noscript>
 
 ##Default Constructor
-In lucee, you may define a default constructor for your Component by providing a function called init. There can only be one constructor and Lucee does not support method overloading
+In lucee, components may have a default constructor by providing a function called init. There can only be one constructor and Lucee does not support method overloading
 
 {% gist id="https://gist.github.com/roryl/5a127d2d99c09924b3aa",file="default_constructor.cfc" %}{% endgist %}
 
@@ -32,11 +32,11 @@ component {
 </noscript>
 
 ##Methods
-You can define additional methods in your class, and they can have the following access levels:
+Components can define additional methods and they can have the following access levels:
 * Public - Accessible to all callers
 * Private - Accessible to only callers within this class
 * Package - Accessible to other Components in a package
-* Remote - Accessible to remote callers via web services, REST or invoking your components from HTTP
+* Remote - Accessible to remote callers via web services, REST or invoking components from HTTP
 
 To define additional methods
 
@@ -60,7 +60,7 @@ The above declaration represents the following
   }  
 ```
 
-See Types for a list of [Types](https://rorylaitila.gitbooks.io/lucee/content/types.html) that you can annotate your functions with.
+See Types for a list of [Types](https://rorylaitila.gitbooks.io/lucee/content/types.html) that functions can be annotated with.
 
 ###Method Arguments
 In Lucee, method arguments can be optionally typed, optionally required, and have default values
@@ -135,7 +135,7 @@ Using the New Operator, Lucee will instantiate the class and call the default co
 </noscript>
 
 ###CreateObject()
-The createObject function is provided to instantiate Components, but also Java, Com and Webservice Objects. It also allows instantiating components with dynamic variable names
+The createObject function is provided to instantiate Components, but also Java, Com and Webservice Objects. It also allows instantiating components with dynamic variable names.
 
 {% gist id="https://gist.github.com/roryl/5a127d2d99c09924b3aa",file="create_object.cfm" %}{% endgist %}
 
@@ -180,7 +180,7 @@ component {
 ```
 </noscript>
 
-You can also import Components to find them:
+Components can also be imported:
 
 {% gist id="https://gist.github.com/roryl/5a127d2d99c09924b3aa",file="component_imported_path.cfc" %}{% endgist %}
 
