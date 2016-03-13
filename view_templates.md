@@ -11,7 +11,7 @@ The Classic Lucee Templates section describes how to make HTML output by combini
 For complex views or for when building a view library that others may use, Lucee custom tags allow creating custom view tags that can output HTML and perform custom logic. These are similar to Java JSP tags. 
 
 ##Lucee Handlebars.js
-For those following a logic-less template philosophy, or for building isomorphic javascript apps, the Lucee community has implemented a popular templating language called [Handlebars.js](http://handlebarsjs.com/)
+For those following a logic-less template philosophy, or for building isomorphic javascript apps, the Lucee community has implemented a popular templating language called [Handlebars.js](http://handlebarsjs.com/), and it is called Handlebars.lucee
 
 ```
 <h1>Comments</h1>
