@@ -63,6 +63,7 @@
        * Persistent Scope Caching
        * ORM Caching
        * RAM Disk Caching
+       * Query of Queries
    * Clustering
    * Debugging
    * Object Modeling
