@@ -32,7 +32,7 @@ savecontent variable="myContent {
 ```
 </noscript>
 
-View the [script reference](script_reference.html) for all language constructs
+View the [script reference](https://rorylaitila.gitbooks.io/lucee/content/script_cheat_sheet.html) for all language constructs
 
 ### Tags 
 
