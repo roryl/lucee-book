@@ -22,6 +22,8 @@ The trailing ";" denoting the end of the statement can be ommitted as long as ne
 
 Lucee script supports all Tags in script by simply wrapping the code block in brackets
 
+<script src="https://gist.github.com/roryl/5817942eccef2bad2281.js?file=script_tags.cfm"></script>
+
 <noscript>
 ```
 savecontent variable="myContent {
