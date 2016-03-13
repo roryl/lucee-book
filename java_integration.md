@@ -30,7 +30,7 @@ javaArray = javaArray.init();
 ```
 </noscript>
 
-This will initialize the Java class matching a constructor whose arguments match what was passed into the init function. Now the class is fully instantiated and methods can be called on it:
+This example above initialized the Java class matching a constructor whose arguments match what was passed into the init function. Now the class is fully instantiated and methods can be called on it like in the example below:
 
 {% gist id="https://gist.github.com/roryl/c8c5fd83bf367c70cd09",file="output_java.cfm" %}{% endgist %}
 
