@@ -1,7 +1,7 @@
 # Caching
-Simple applications usually do not need caching but as your application grows more complex, you may need to employ caching strategies to speed up execution. You should always try to avoid caching until it is necessary. Caching data can add complexity to your application, and that complexity has to be worth it. If you are not seeing any slowness in your application yet, then don't bother caching.
+Simple applications usually do not need caching but as an application grows more complex, it may need to employ caching strategies to speed up execution. Developers should try to avoid caching until it is necessary. Caching data can add complexity to an application, and that complexity has to be worth it. If an application is not experiencing any slowness, then its generally better to not implement caching.
 
-Lucee has one of the most robust caching solutions on the market and caching is available at every level, even in the language syntax itself. The right type of caching you need to use depends on the performance constraints of your particular application and the structure of your code. Typically, go for the easiest thing that works!
+Lucee has one of the most robust caching solutions and caching is available at every level, even in the language syntax itself. The right type of caching to use depends on the performance constraints of the particular application and the structure of the code. Typically, go for the easiest thing that works!
 
 This section gives an overview of the available caching features.
 
@@ -9,7 +9,10 @@ This section gives an overview of the available caching features.
 Lucee can cache whole Lucee HTML templates so that they are only generated once, and then subsequent requests are from the cache
 
 ##Query Caching
-Lucee can cache your SQL queries by reading the content of your SQL Statements and saving the results. It know when you make the same query again, and it serves the data from the cache. This is like caching in your SQL server, but gives you control from within Lucee.
+Lucee can cache SQL queries by reading the content of a SQL Statements and saving the results. It knows when the same query is requested, and it serves the data from the cache instead. This is like caching within the SQL server, but gives you control from within Lucee.
+
+##Query of Queries
+Lucee can use SQL statements to re-query a recordset already held in memory. This is really useful when an application needs to continually query an initial record set (for example when filtering records repeatedly) and it would be expensive to make successive round trips to the database.
 
 ##Object Caching
 Lucee can cache any object or variable that you create into a cache, and you can retrieve it as needed.
