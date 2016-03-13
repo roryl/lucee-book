@@ -91,6 +91,7 @@
            * [Configure ORM](configure_orm.md)
    * Parallelism
        * Threading
+       * Functional Methods
    * Migrations
        * ORM Migrations
        * Advanced Migrations
