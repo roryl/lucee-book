@@ -8,3 +8,10 @@ All examples in this book are stored on github and public for download like the 
 ![](example.png)
 
 ##Contributors
+
+###Contributing Tips
+
+####Plugins
+The following plugins are in use in this book:
+
+* [Gist](https://www.npmjs.com/package/gitbook-plugin-gist)
