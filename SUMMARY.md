@@ -44,7 +44,7 @@
        * Lucee vs C#
        * Lucee vs Node.JS
    * [Style Guide](style_guide.md)
-   * Standard Library Reference
+   * [Standard Library Reference](standard_library_reference.md)
 * [Developing Applications](developing_applications.md)
    * [Introduction](introduction.md)
    * [Application.cfc Lifecycle](applicationcfc_lifecycle.md)
