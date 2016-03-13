@@ -120,6 +120,8 @@ component {
 ###Type Checking Multiple Interfaces
 In Lucee, it is not possible for a type annotation of a function argument or a return type, to specify that the value implements multiple interfaces. In order to defensibly guard that the function argument passed implments an interface, use additional guard assertions for each interface  required.
 
+{% gist id="https://gist.github.com/roryl/8b646c334f8d5658e9fe",file="usesInterfaceGuard.cfc" %}{% endgist %}
+
 ```
 component {
 
@@ -133,6 +135,7 @@ component {
 }
 ```
 
+This code above makes use of Lucee's component reflection capabilities of the `getMetaData()` function to check if the component implements the interface. The structKeyExists() function will throw an error if it does not find the interface.
 
 
 
