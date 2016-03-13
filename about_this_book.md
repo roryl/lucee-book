@@ -11,6 +11,8 @@ All examples in this book are stored on github and public for download like the 
 
 ###Contributing Tips
 
+
+
 ####Plugins
 The following plugins are in use in this book:
 
