@@ -197,6 +197,6 @@ component {
 
 Notice that the import pathed from the webroot, but then we instantiated the component directly. 
 
-If your Components are not accessible from the webroot and are stored elsewhere in your system or outside of the webroot for security (a best practice). You need to add an Application Mapping to access them. 
+If Components are not accessible from the webroot and are stored elsewhere in on the file system system or outside of the webroot for security (a best practice), then they need an [Application Mapping](https://rorylaitila.gitbooks.io/lucee/content/mappings_class_paths.html) to access them. 
 
 
