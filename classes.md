@@ -4,7 +4,7 @@ In lucee, classes are called Components and have the file extension .cfc. Lucee 
 
 ##Component Definition
 
-<script src="https://gist.github.com/roryl/5a127d2d99c09924b3aa.js?file=empty_component.cfc"></script>
+{% gist id="https://gist.github.com/roryl/5a127d2d99c09924b3aa",file="empty_component.cfc" %}{% endgist %}
 
 <noscript>
 ```
