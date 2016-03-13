@@ -35,6 +35,11 @@ The full list of CGI variables is available in the [CGI Variables Reference](htt
 
 It is not necessary to **read** lock access to any of the global scopes, only **write** access when there can potentially be a race condition of two clients writing to a global variable at the same time.
 
+###Cookie
+Accessible for the life of a single request, the Cookie scope is created by Lucee based on the cookies provided by the user's browser. It contains the same data as is in the cgi.http_cookie variable, but it is parsed into  a structure for you like below
+
+![](cookie_example.png)
+
 
 ##Localized Scopes
 
