@@ -4,7 +4,7 @@ Lucee contains a large standard library of tags, functions and object functions.
 
 The list below are links to the major sections of the [Standard Library Docs](http://luceedocs.herokuapp.com/) for reader convenience.
 
-[Tag Reference](http://luceedocs.herokuapp.com/tags)
-[Function Reference](http://luceedocs.herokuapp.com/functions)
-[Object Member Reference](http://luceedocs.herokuapp.com/functions)
+* [Tag Reference](http://luceedocs.herokuapp.com/tags)
+* [Function Reference](http://luceedocs.herokuapp.com/functions)
+* [Object Member Reference](http://luceedocs.herokuapp.com/functions)
 
