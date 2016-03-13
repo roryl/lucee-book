@@ -6,8 +6,11 @@ Vagrant simply wraps a [VirtualBox VM](https://www.virtualbox.org/wiki/Downloads
 
 ##Sample Vagrant File
 
-This vagrant file cane be used to configure a Lucee VM. This section does not go into the specific of using Vagrant, for that follow a [Vagrant Tutorial](https://www.vagrantup.com/docs/). This vagrant file below uses a CentOS 6 VM and is not security hardended, it is only intended for development pruposes. It installs Lucee, Apache and MySQL, which is a common configuration.
+This vagrant file cane be used to configure a VM and install Lucee. This section does not go into the specific of using Vagrant, for that follow a [Vagrant Tutorial](https://www.vagrantup.com/docs/). This vagrant file below uses a CentOS 6 VM and is not security hardended, it is only intended for development purposes. It installs Lucee, Apache and MySQL, which is a common configuration.
 
+<script src="https://gist.github.com/roryl/d0dec15fb47bdcec19ab.js"></script>
+
+<noscript>
 ```
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
@@ -119,3 +122,4 @@ Vagrant.configure(2) do |config|
 end
 
 ```
+</noscript>
