@@ -120,6 +120,19 @@ component {
 ###Type Checking Multiple Interfaces
 In Lucee, it is not possible for a type annotation of a function argument or a return type, to specify that the value implements multiple interfaces. In order to defensibly guard that the function argument passed implments an interface, use additional guard assertions for each interface  required.
 
+```
+component {
+
+	public function init(required IMyInterface object){
+
+		//Throws an error if the argument does not implement the IOtherInterface
+		structKeyExists(getMetaData(arguments.object).implements,"IOtherInterface");
+
+	}
+
+}
+```
+
 
 
 
