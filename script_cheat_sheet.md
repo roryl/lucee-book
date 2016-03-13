@@ -22,9 +22,7 @@
 
 ## If
 
-<script src="https://gist.github.com/roryl/11c5a5ab8cf061ab1621.js?file=if.cfm"></script>
-
-
+{% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="if.cfm" %}{% endgist %}
 
 
 ## If/else
