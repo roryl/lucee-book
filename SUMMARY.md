@@ -33,6 +33,7 @@
        * [Dynamic Evaluation](dynamic_evaluation.md)
        * [Java Integration](java_integration.md)
        * Control Flow
+       * Interfaces
    * [Mappings (Class Paths)](mappings_class_paths.md)
        * Lucee vs Python
    * [Language Comparisons](language_comparisons.md)
