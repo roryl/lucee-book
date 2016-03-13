@@ -6,5 +6,7 @@ Lucee is an Object Oriented Language, with First Class Functions, Closures, a la
 
 Lucee does not have Static functions or properties. 
 
+Lucee does not have typed arrays java. For example, in the form of int[] where in java this type the array such that all members of the array should be an int. Arrays in Lucee can contain any value of any type.
+
 
 
