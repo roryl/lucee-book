@@ -38,7 +38,7 @@ View the [script reference](script_reference.html) for all language constructs
 
 The tag based language loosely resembles HTML.
 
-<script src="https://gist.github.com/roryl/5817942eccef2bad2281.js?file=setting_a_variable.cfm"></script>
+<script src="https://gist.github.com/roryl/5817942eccef2bad2281.js?file=setting_a_variable_tag.cfm"></script>
 
 <noscript>
 ```
