@@ -35,7 +35,6 @@
        * Control Flow
        * [Interfaces](interfaces.md)
    * [Mappings (Class Paths)](mappings_class_paths.md)
-       * Lucee vs Python
    * [Language Comparisons](language_comparisons.md)
        * [Lucee vs Java](lucee_vs_java.md)
        * [Lucee vs PHP](lucee_vs_php.md)
