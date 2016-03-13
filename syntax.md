@@ -20,13 +20,15 @@ myVar = "test";
 
 The trailing ";" denoting the end of the statement can be ommitted as long as new statements are on a new line, but convention is to keep the ";"
 
-Lucee script supports all Tags in script by simply wrapping the code block in handlebar brackets
+Lucee script supports all Tags in script by simply wrapping the code block in brackets
 
+<noscript>
 ```
 savecontent variable="myContent {
   echo("Output some test");
 }
 ```
+</noscript>
 
 There is also an alternative style which looks more like a block function
 ```
