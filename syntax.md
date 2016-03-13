@@ -32,12 +32,6 @@ savecontent variable="myContent {
 ```
 </noscript>
 
-There is also an alternative style which looks more like a block function
-```
-savecontent(variable="myContent){
-  echo("Output some test");
-}
-```
 View the [script reference](script_reference.html) for all language constructs
 
 ### Tags 
