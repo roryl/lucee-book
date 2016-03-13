@@ -25,6 +25,8 @@ Use of `getMetaData()` requires an instantiated component, which is useful when 
 
 {% gist id="https://gist.github.com/roryl/2f2a68e2198d7401dd00",file="reflection_source.cfc" %}{% endgist %}
 
-This will produce the same dump output as in the preceeding example.
+This will produce the same dump output as in the preceeding example. The string passed to getComponentMetaData() is the dot delimited path to the component. 
 
-The reason one may use getMetaData() rather than getComponentMetaData() is when they do not know the source file of the Component being inspected, but simply have a reference to an already existing Component. 
+The reason one may use getMetaData() rather than getComponentMetaData() is when they do not know the source file of the Component being inspected, but simply have a reference to an already existing Component.
+
+getComponentMetaData is slower than getMetaData because it must read in the source file first.
