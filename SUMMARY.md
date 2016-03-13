@@ -56,6 +56,7 @@
    * [View Templates](view_templates.md)
        * Classic Lucee Templates
        * Lucee Custom Tags
+       * Lucee Handlebars.js
    * Traditional Request Handling
        * Post-Redirect-Get
        * Get-Post-Return
