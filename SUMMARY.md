@@ -42,7 +42,7 @@
        * Lucee vs Python
        * Lucee vs C#
        * Lucee vs Node.JS
-   * Style Guide
+   * [Style Guide](style_guide.md)
 * [Developing Applications](developing_applications.md)
    * [Introduction](introduction.md)
    * [Application.cfc Lifecycle](applicationcfc_lifecycle.md)
