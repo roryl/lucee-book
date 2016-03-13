@@ -48,6 +48,8 @@ component implements="IMyInterface" {
 ```
 </noscript>
 
+Components can implement multiple interfaces by supplying a comma separated list for the implements attribute
+
 ##Using Interface Type Checking
 
 ###In Function Arguments
@@ -69,5 +71,21 @@ component {
 
 
 ###As a Return Type
-Functions can have an Interface as a return type to ensure that the object returned implements the interface
+Functions can have an Interface as a return type to ensure that the object returned implements the interface.
+
+The following example shows a function getObject() which will ensure that the return value implements IMyInterface
+
+```
+component {
+
+	public function init(){
+		return this;
+	}
+
+	public IMyInterface function getObject(){
+		return new MyInterfaceImpl();
+	}	
+
+}
+```
 
