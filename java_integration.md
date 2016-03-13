@@ -43,3 +43,11 @@ The above example does not have to be so verbose, it is possible to accomplish t
 
 {% gist id="https://gist.github.com/roryl/c8c5fd83bf367c70cd09",file="inline_java.cfm" %}{% endgist %}
 
+<noscript>
+```
+<cfscript>
+echo(createObject("java", "java.util.ArrayList").init().size()); //outputs the size of the array
+</cfscript>
+```
+</noscript>
+
