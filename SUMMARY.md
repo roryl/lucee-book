@@ -17,7 +17,7 @@
        * [CentOS (Generic)](centos_generic.md)
        * Windows IIS
        * OSX
-   * System Directories
+   * [System Directories](system_directories.md)
 * [Lucee Language](lucee_language.md)
    * [Command Line REPL](command_line_repl.md)
    * [Syntax](syntax.md)
