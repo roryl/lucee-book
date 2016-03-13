@@ -95,7 +95,7 @@ component {
 
 ####Required & Typed Arguments
 
-<script src="https://gist.github.com/roryl/5a127d2d99c09924b3aa.js?file=required_and_typed_arguments.cfc"></script>
+{% gist id="https://gist.github.com/roryl/5a127d2d99c09924b3aa",file="required_and_typed_arguments.cfc" %}{% endgist %}
 
 <noscript>
 ```
@@ -108,7 +108,7 @@ component {
 
 ####Default Arguments
 
-<script src="https://gist.github.com/roryl/5a127d2d99c09924b3aa.js?file=default_arguments.cfc"></script>
+{% gist id="https://gist.github.com/roryl/5a127d2d99c09924b3aa",file="default_arguments.cfc" %}{% endgist %}
 
 <noscript>
 ```
@@ -124,7 +124,7 @@ component {
 ###New Operator
 Using the New Operator, Lucee will instantiate the class and call the default constructor (if it exists)
 
-<script src="https://gist.github.com/roryl/5a127d2d99c09924b3aa.js?file=new_object.cfm"></script>
+{% gist id="https://gist.github.com/roryl/5a127d2d99c09924b3aa",file="new_object.cfm" %}{% endgist %}
 
 <noscript>
 ```
@@ -137,7 +137,7 @@ Using the New Operator, Lucee will instantiate the class and call the default co
 ###CreateObject()
 The createObject function is provided to instantiate Components, but also Java, Com and Webservice Objects. It also allows instantiating components with dynamic variable names
 
-<script src="https://gist.github.com/roryl/5a127d2d99c09924b3aa.js?file=create_object.cfm"></script>
+{% gist id="https://gist.github.com/roryl/5a127d2d99c09924b3aa",file="create_object.cfm" %}{% endgist %}
 
 <noscript>
 ```
@@ -168,7 +168,7 @@ We're going to instantiate subComponent.cfc from within rootComponent.cfc and in
 rootComponent.cfc:
 This will find the subComponent because it can be pathed from the webroot (/components/subComponent)
 
-<script src="https://gist.github.com/roryl/5a127d2d99c09924b3aa.js?file=component_implicit_path.cfc"></script>
+{% gist id="https://gist.github.com/roryl/5a127d2d99c09924b3aa",file="component_implicit_path.cfc" %}{% endgist %}
 
 <noscript>
 ```
@@ -182,7 +182,7 @@ component {
 
 You can also import Components to find them:
 
-<script src="https://gist.github.com/roryl/5a127d2d99c09924b3aa.js?file=component_imported_path.cfc"></script>
+{% gist id="https://gist.github.com/roryl/5a127d2d99c09924b3aa",file="component_imported_path.cfc" %}{% endgist %}
 
 <noscript>
 ```
