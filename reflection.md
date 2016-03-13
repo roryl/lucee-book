@@ -13,7 +13,7 @@ Take for example the following component:
 
 To reflect this component, instantiate it and use the getMetaData() function on it:
 
-{% gist id="https://gist.github.com/roryl/2f2a68e2198d7401dd00",file="reflection_instantiated.cfc" %}{% endgist %}
+{% gist id="https://gist.github.com/roryl/2f2a68e2198d7401dd00",file="reflection_instantiated.cfm" %}{% endgist %}
 
 This example above dumps the result of the metaData variable, which looks like this
 
