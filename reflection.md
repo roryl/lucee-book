@@ -23,7 +23,7 @@ This example above dumps the result of the metaData variable, which looks like t
 
 Use of `getMetaData()` requires an instantiated component, which is useful when wanting to introspect a component at runtime. However it is also possible to introspect the source file of a component:
 
-{% gist id="https://gist.github.com/roryl/2f2a68e2198d7401dd00",file="reflection_source.cfc" %}{% endgist %}
+{% gist id="https://gist.github.com/roryl/2f2a68e2198d7401dd00",file="reflection_source.cfm" %}{% endgist %}
 
 This will produce the same dump output as in the preceeding example. The string passed to getComponentMetaData() is the dot delimited path to the component. 
 
