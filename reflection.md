@@ -14,3 +14,17 @@ Take for example the following component:
 To reflect this component, instantiate it and use the getMetaData() function on it:
 
 {% gist id="https://gist.github.com/roryl/2f2a68e2198d7401dd00",file="reflection_instantiated.cfc" %}{% endgist %}
+
+This example above dumps the result of the metaData variable, which looks like this
+
+>note: For conciseness, some of the data elements dumped have been hidden
+
+![](reflection_dump.png)
+
+Use of `getMetaData()` requires an instantiated component, which is useful when wanting to introspect a component at runtime. However it is also possible to introspect the source file of a component:
+
+{% gist id="https://gist.github.com/roryl/2f2a68e2198d7401dd00",file="reflection_source.cfc" %}{% endgist %}
+
+This will produce the same dump output as in the preceeding example.
+
+The reason one may use getMetaData() rather than getComponentMetaData() is when they do not know the source file of the Component being inspected, but simply have a reference to an already existing Component. 
