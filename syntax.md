@@ -2,14 +2,15 @@
 
 There are two flavors to the Lucee Language, Tags and Script. The entire language is available in Tags or Script. Tags should (almost always) only be used for HTML templates.
 
-For a detailed review of script syntax see [](https://github.com/adamcameron/cfscript/blob/master/cfscript.md)
-
-For a cheat sheet see [](https://rorylaitila.gitbooks.io/lucee/content/script_cheat_sheet.html)
+* [See a detailed review of script syntax ](https://github.com/adamcameron/cfscript/blob/master/cfscript.md)
+* [See a synxtax cheat sheet](https://rorylaitila.gitbooks.io/lucee/content/script_cheat_sheet.html)
 
 ## Quick Overview
 
 ### Script
-The script based language loosely resembles javascript 
+The script based language resembles javascript 
+
+<script src="https://gist.github.com/roryl/5817942eccef2bad2281.js?file=setting_a_variable.cfm"></script>
 ```
 myVar = "test";
 ```
