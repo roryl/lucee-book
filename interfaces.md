@@ -30,7 +30,7 @@ interface {
 
 Once an interface is created, a normal Component can be created that implements the interface
 
-{% gist id="https://gist.github.com/roryl/8b646c334f8d5658e9fe",file="IMyInterfaceImpl.cfc" %}{% endgist %}
+{% gist id="https://gist.github.com/roryl/8b646c334f8d5658e9fe",file="MyInterfaceImpl.cfc" %}{% endgist %}
 
 <noscript>
 ```
@@ -72,7 +72,7 @@ component implements="IMyInterface,IOtherInterface" {
 ```
 </noscript>
 
-> Note: If implementing multiple interfaces, all function definitions must be identical. Lucee does not currently support method overloading. 
+> Note: If implementing multiple interfaces, all function definitions in the interfaces must be identical. Lucee does not currently support method overloading. 
 
 ##Using Interface Type Checking
 
@@ -101,6 +101,7 @@ The following example shows a function getObject() which will ensure that the re
 
 {% gist id="https://gist.github.com/roryl/8b646c334f8d5658e9fe",file="returnInterface.cfc" %}{% endgist %}
 
+<noscript>
 ```
 component {
 
@@ -114,4 +115,12 @@ component {
 
 }
 ```
+</noscript>
+
+###Type Checking Multiple Interfaces
+In Lucee, it is not possible for a type annotation of a function argument or a return type, to specify that the value implements multiple interfaces. In order to defensibly guard that the function argument passed implments an interface, use additional guard assertions for each interface  required.
+
+
+
+
 
