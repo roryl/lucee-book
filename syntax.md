@@ -60,6 +60,7 @@ Tags with bodies always need a closing tag
 
 <script src="https://gist.github.com/roryl/5817942eccef2bad2281.js?file=closing_tag_bodies.cfm"></script>
 
+<noscript>
 ```
 <cfsavecontent variable="myContent">
   Output some text
