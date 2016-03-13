@@ -1,8 +1,8 @@
 # Vagrant
 
-For simple development tasks, CommandBox provides an [embedded development server](https://rorylaitila.gitbooks.io/lucee/content/lucee_server.html) which is easy to get started, however it is not suitable for running production servers. If you want to develop locally with a full VM that mirrors your production environment, [Vagrant](https://www.vagrantup.com) is a useful tool for this. 
+For simple development tasks, CommandBox provides an [embedded development server](https://rorylaitila.gitbooks.io/lucee/content/lucee_server.html) which is easy to get started, however it is not suitable for running production servers. For those that wish to develop locally with a full VM that mirrors a normal production environemnt, [Vagrant](https://www.vagrantup.com) is a useful tool for this. 
 
-Vagrant simply wraps a [VirtualBox VM](https://www.virtualbox.org/wiki/Downloads) and provides easy to use networking and file synchronization between your development environment and the VM. It also provides hooks for scripting automated setups of your environment. 
+Vagrant simply wraps a [VirtualBox VM](https://www.virtualbox.org/wiki/Downloads) and provides easy to use networking and file synchronization between a development environment and the VM. It also provides hooks for scripting automated setups of an environment. 
 
 ##Sample Vagrant File
 
