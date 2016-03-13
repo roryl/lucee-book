@@ -37,9 +37,15 @@ View the [script reference](script_reference.html) for all language constructs
 ### Tags 
 
 The tag based language loosely resembles HTML.
+
+<script src="https://gist.github.com/roryl/5817942eccef2bad2281.js?file=setting_a_variable.cfm"></script>
+
+<noscript>
 ```
-<cfset myVar = "test>
+<cfset myVar = "test">
 ```
+</noscript>
+
 Tags can have bodies or not. Tags without bodies do not need a closing bracket, but some people prefer them stylistically 
 ```
 <cfset myVar = "test />
