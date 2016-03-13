@@ -66,4 +66,5 @@ Tags with bodies always need a closing tag
   Output some text
 </cfsavecontent>
 ```
+</noscript>
 
