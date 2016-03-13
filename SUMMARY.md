@@ -34,6 +34,7 @@
        * [Java Integration](java_integration.md)
        * Control Flow
        * [Interfaces](interfaces.md)
+   * Lucee vs Python
    * [Mappings (Class Paths)](mappings_class_paths.md)
        * Lucee vs Python
    * [Language Comparisons](language_comparisons.md)
