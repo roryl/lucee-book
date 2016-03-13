@@ -17,7 +17,8 @@ component {
 ##Default Constructor
 In lucee, you may define a default constructor for your Component by providing a function called init. There can only be one constructor and Lucee does not support method overloading
 
-<script src="https://gist.github.com/roryl/5a127d2d99c09924b3aa.js?file=default_constructor.cfc"></script>
+{% gist id="https://gist.github.com/roryl/5a127d2d99c09924b3aa",file="default_constructor.cfc" %}{% endgist %}
+
 
 <noscript>
 ```
@@ -39,7 +40,8 @@ You can define additional methods in your class, and they can have the following
 
 To define additional methods
 
-<script src="https://gist.github.com/roryl/5a127d2d99c09924b3aa.js?file=single_function.cfc"></script>
+{% gist id="https://gist.github.com/roryl/5a127d2d99c09924b3aa",file="single_function.cf" %}{% endgist %}
+
 
 <noscript>
 ```
@@ -65,7 +67,8 @@ In Lucee, method arguments can be optionally typed, optionally required, and hav
 
 ####Typed Arguments
 
-<script src="https://gist.github.com/roryl/5a127d2d99c09924b3aa.js?file=typed_arguments.cfc"></script>
+{% gist id="https://gist.github.com/roryl/5a127d2d99c09924b3aa",file="typed_arguments.cfc" %}{% endgist %}
+
 
 <noscript>
 ```
@@ -78,7 +81,8 @@ component {
 
 ####Required Arguments
 
-<script src="https://gist.github.com/roryl/5a127d2d99c09924b3aa.js?file=required_arguments.cfc"></script>
+{% gist id="https://gist.github.com/roryl/5a127d2d99c09924b3aa",file="required_arguments.cfc" %}{% endgist %}
+
 
 <noscript>
 ```
