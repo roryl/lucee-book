@@ -16,6 +16,10 @@ echo(test); //outputs foo
 ```
 </noscript>
 
+Its also possible to use the `getVariable()` function to dynamically evaluate a variable name
+
+
+
 ##Evaluate
 When doing more complex dynamic evaluations, you can make use of the evalute() function which will execute the Lucee code as if it was normally executed. This example below produces the same output as above. 
 
