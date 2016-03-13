@@ -25,6 +25,7 @@
    * [Features](features.md)
        * [Classes](classes.md)
            * Properties
+           * Implicit Property Functions
        * [Types](types.md)
        * [Closures](closures.md)
        * [Templates](templates.md)
