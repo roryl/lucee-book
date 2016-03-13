@@ -67,3 +67,7 @@ component {
 ```
 </noscript>
 
+
+###As a Return Type
+Functions can have an Interface as a return type to ensure that the object returned implements the interface
+
