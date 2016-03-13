@@ -34,7 +34,7 @@
        * [Java Integration](java_integration.md)
        * Control Flow
        * [Interfaces](interfaces.md)
-       * Reflection
+       * [Reflection](reflection.md)
    * [Mappings (Class Paths)](mappings_class_paths.md)
    * [Language Comparisons](language_comparisons.md)
        * [Lucee vs Java](lucee_vs_java.md)
