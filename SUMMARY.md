@@ -90,6 +90,7 @@
            * [Architecture](architecture.md)
            * [Configure ORM](configure_orm.md)
    * Parallelism
+       * Threading
    * Migrations
        * ORM Migrations
        * Advanced Migrations
