@@ -12,7 +12,7 @@ Language features include:
 * [Type Coercion](https://rorylaitila.gitbooks.io/lucee/content/types.html#type-coercion)
 * [Templates (for HTML rendering)](https://rorylaitila.gitbooks.io/lucee/content/templates.html)
 * [Interfaces](https://rorylaitila.gitbooks.io/lucee/content/interfaces.html)
-* Standard Library "Built in Functions" 
+* [Large standard Library of "Built in Functions" and tags](https://rorylaitila.gitbooks.io/lucee/content/standard_library_reference.html) 
 * [First Class Functions](https://rorylaitila.gitbooks.io/lucee/content/first_class_functions.html)
 * [Closures](https://rorylaitila.gitbooks.io/lucee/content/closures.html)
 * Declarative Programming Features
