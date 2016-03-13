@@ -16,8 +16,9 @@ echo(test); //outputs foo
 ```
 </noscript>
 
-Its also possible to use the `getVariable()` function to dynamically evaluate a variable name
+Its also possible to use the `getVariable()` function to dynamically evaluate a variable name:
 
+{% gist id="https://gist.github.com/roryl/95f6bd166627abb425a4",file="get_variable.cfm" %}{% endgist %}
 
 
 ##Evaluate
