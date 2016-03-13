@@ -11,9 +11,13 @@ There are two flavors to the Lucee Language, Tags and Script. The entire languag
 The script based language resembles javascript 
 
 <script src="https://gist.github.com/roryl/5817942eccef2bad2281.js?file=setting_a_variable.cfm"></script>
+
+<noscript>
 ```
 myVar = "test";
 ```
+</noscript>
+
 The trailing ";" denoting the end of the statement can be ommitted as long as new statements are on a new line, but convention is to keep the ";"
 
 Lucee script supports all Tags in script by simply wrapping the code block in handlebar brackets
