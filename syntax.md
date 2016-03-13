@@ -48,6 +48,8 @@ The tag based language loosely resembles HTML.
 
 Tags can have bodies or not. Tags without bodies do not need a closing bracket, but some people prefer them stylistically 
 
+<script src="https://gist.github.com/roryl/5817942eccef2bad2281.js?file=optional_closing.cfm"></script>
+
 <noscript>
 ```
 <cfset myVar = "test" />
