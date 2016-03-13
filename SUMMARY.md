@@ -81,6 +81,7 @@
            * [Introducing Lucee ORM](introducing_lucee_orm.md)
            * [Architecture](architecture.md)
            * [Configure ORM](configure_orm.md)
+   * Parallelism
 * [Extending Lucee](extending_lucee.md)
    * [Custom Tags](custom_tags.md)
    * Installing Extensions
