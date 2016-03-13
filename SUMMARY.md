@@ -24,6 +24,7 @@
    * [Operators](operators.md)
    * [Features](features.md)
        * [Classes](classes.md)
+           * Properties
        * [Types](types.md)
        * [Closures](closures.md)
        * [Templates](templates.md)
