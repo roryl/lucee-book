@@ -48,6 +48,7 @@ component implements="IMyInterface" {
 ```
 </noscript>
 
+###Multiple Interfaces
 Components can implement multiple interfaces by supplying a comma separated list for the implements attribute
 
 {% gist id="https://gist.github.com/roryl/8b646c334f8d5658e9fe",file="implementsMultiple.cfc" %}{% endgist %}
@@ -71,6 +72,8 @@ component implements="IMyInterface,IOtherInterface" {
 ```
 </noscript>
 
+> Note: If implementing multiple interfaces, all function definitions must be identical. Lucee does not currently support method overloading. 
+
 ##Using Interface Type Checking
 
 ###In Function Arguments
@@ -92,9 +95,11 @@ component {
 
 
 ###As a Return Type
-Functions can have an Interface as a return type to ensure that the object returned implements the interface.
+Functions can have an Interface as a return type to ensure that the value returned from the function call implements the interface.
 
 The following example shows a function getObject() which will ensure that the return value implements IMyInterface
+
+{% gist id="https://gist.github.com/roryl/8b646c334f8d5658e9fe",file="returnsInterface.cfc" %}{% endgist %}
 
 ```
 component {
