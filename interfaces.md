@@ -50,6 +50,27 @@ component implements="IMyInterface" {
 
 Components can implement multiple interfaces by supplying a comma separated list for the implements attribute
 
+{% gist id="https://gist.github.com/roryl/8b646c334f8d5658e9fe",file="implementsMultiple.cfc" %}{% endgist %}
+
+<noscript>
+```
+component implements="IMyInterface,IOtherInterface" {
+
+	public function myFunc(required string myString){
+    	return arguments.myString;
+  	}
+  
+  	public function myOtherFunc(required array myArray){
+    	return myArray;
+  	}
+
+  	public function someOtherFunc(){
+		
+	}
+}
+```
+</noscript>
+
 ##Using Interface Type Checking
 
 ###In Function Arguments
