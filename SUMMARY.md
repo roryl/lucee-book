@@ -91,6 +91,7 @@
            * [Configure ORM](configure_orm.md)
    * Parallelism
    * Migrations
+       * ORM Migrations
 * [Extending Lucee](extending_lucee.md)
    * [Custom Tags](custom_tags.md)
    * Installing Extensions
