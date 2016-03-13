@@ -54,6 +54,7 @@
        * [Application.cfc Sample](applicationcfc_sample.md)
    * [Scaffolding](scaffolding.md)
    * [View Templates](view_templates.md)
+       * Classic Lucee Templates
    * Traditional Request Handling
        * Post-Redirect-Get
        * Get-Post-Return
