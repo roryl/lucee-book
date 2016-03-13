@@ -34,9 +34,9 @@
 
 
 
-## If/else if
+## If/else if/else
 
-<script src="https://gist.github.com/roryl/11c5a5ab8cf061ab1621.js?file=if_elseif_if.cfm"></script>
+<script src="https://gist.github.com/roryl/11c5a5ab8cf061ab1621.js?file=if_elseif_else.cfm"></script>
 
 
 
