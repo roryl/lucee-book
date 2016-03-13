@@ -9,3 +9,4 @@ Introspecting Lucee components is accomplished with two functions in the standar
 
 Take for exampe the following component:
 
+{% gist id="https://gist.github.com/roryl/2f2a68e2198d7401dd00",file="basicComponent.cfc" %}{% endgist %}
