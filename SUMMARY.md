@@ -92,6 +92,7 @@
    * Parallelism
        * Threading
        * Functional Methods
+       * Synchronized 
    * Migrations
        * ORM Migrations
        * Advanced Migrations
