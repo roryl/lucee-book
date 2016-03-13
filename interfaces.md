@@ -1,6 +1,6 @@
 # Interfaces
 
-Lucee supports Interfaces which Components can implmenet multiple interfaces. Combined with the use of Mixins, Lucee Interface can help type check and document concise code.
+Lucee supports Interfaces which Components can implment multiple interfaces. Combined with the use of Mixins, Lucee Interface can help type check and document concise code.
 
 ##Creating an Interface
 
@@ -47,3 +47,23 @@ component implements="IMyInterface" {
 }
 ```
 </noscript>
+
+##Using Interface Type Checking
+
+###In Function Arguments
+Function arguments can have a type annotation which checks that the object being passed in the argument conforms to the given interface. 
+
+{% gist id="https://gist.github.com/roryl/8b646c334f8d5658e9fe",file="usesInterface.cfc" %}{% endgist %}
+
+<noscript>
+```
+component {
+
+	public function init(required IMyInterface object){
+      //Will error if the object passed in did not implement IMyInterface
+	}
+
+}
+```
+</noscript>
+
