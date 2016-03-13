@@ -1,6 +1,6 @@
 # Interfaces
 
-Lucee supports Interfaces which Components can implment multiple interfaces. Combined with the use of Mixins, Lucee Interface can help type check and document concise code.
+Lucee supports Interfaces which Components can implment multiple interfaces. Combined with the use of Mixins, Lucee Interfaces can help type check and document concise code.
 
 ##Creating an Interface
 
