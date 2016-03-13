@@ -47,9 +47,13 @@ The tag based language loosely resembles HTML.
 </noscript>
 
 Tags can have bodies or not. Tags without bodies do not need a closing bracket, but some people prefer them stylistically 
+
+<noscript>
 ```
-<cfset myVar = "test />
+<cfset myVar = "test" />
 ```
+</noscript>
+
 Tags with bodies always need a closing tag
 ```
 <cfsavecontent variable="myContent">
