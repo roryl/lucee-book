@@ -34,6 +34,7 @@ This example above initialized the Java class matching a constructor whose argum
 
 {% gist id="https://gist.github.com/roryl/c8c5fd83bf367c70cd09",file="output_java.cfm" %}{% endgist %}
 
+<noscript>
 ```
 <cfscript>
 javaArray = createObject("java", "java.util.ArrayList");
@@ -41,6 +42,7 @@ javaArray = javaArray.init();
 echo(javaArray.size()); //outputs the size of the array
 </cfscript>
 ```
+</noscript>
 
 The above example does not have to be so verbose, it is possible to accomplish the same all in one line:
 
