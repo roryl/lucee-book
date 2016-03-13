@@ -15,22 +15,22 @@ Lucee can cache SQL queries by reading the content of a SQL Statements and savin
 Lucee can use SQL statements to re-query a recordset already held in memory. This is really useful when an application needs to continually query an initial record set (for example when filtering records repeatedly) and it would be expensive to make successive round trips to the database.
 
 ##Object Caching
-Lucee can cache any object or variable that you create into a cache, and you can retrieve it as needed.
+Lucee can cache any object or variable that into a configured cache, and you can be retrieved as needed.
 
 ##Function Caching
 Lucee has language level support for caching the results of functions based on the arguments supplied. This makes quick work of speeding up complex functions.
 
 ##Template Fragment Caching
-If you need only part of a Lucee template to be cached, but the remainingh part to stay dynamic, you can acheive this with Template Fragment caching
+If only part of a Lucee template needs to be cached, but the remaining part needs to stay dynamic, this can be acheived with Template Fragment caching.
 
 ##Persistent Scope Caching
-Lucee implements a number of persistent variable scopes, Application, Session, Client & cluster, which can be used for simple caching scenarios
+Lucee implements a number of persistent variable scopes, Application, Session, Client, Cookie & cluster, which can be used for simple caching scenarios.
 
 ##ORM Caching
 The Lucee ORM supports caching ORM Entities to reduce load on the underlying datasource and speed up large number of entities
 
 ##RAM Disk Caching
-Lucee can load files (images, CSVs, videos, etc) into RAM disk and operat on those files in RAM which is significantly faster than the local file system in many cases
+Lucee can load files (images, CSVs, videos, etc) into RAM disk and operate on those files in RAM which is significantly faster than the local file system in many cases.
 
 
 
