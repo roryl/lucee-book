@@ -92,6 +92,7 @@
    * Parallelism
    * Migrations
        * ORM Migrations
+       * Advanced Migrations
 * [Extending Lucee](extending_lucee.md)
    * [Custom Tags](custom_tags.md)
    * Installing Extensions
