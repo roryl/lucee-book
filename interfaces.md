@@ -99,7 +99,7 @@ Functions can have an Interface as a return type to ensure that the value return
 
 The following example shows a function getObject() which will ensure that the return value implements IMyInterface
 
-{% gist id="https://gist.github.com/roryl/8b646c334f8d5658e9fe",file="returnsInterface.cfc" %}{% endgist %}
+{% gist id="https://gist.github.com/roryl/8b646c334f8d5658e9fe",file="returnInterface.cfc" %}{% endgist %}
 
 ```
 component {
