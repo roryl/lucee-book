@@ -38,7 +38,7 @@
        * Control Flow
        * [Interfaces](interfaces.md)
        * [Reflection](reflection.md)
-       * Functional Programming
+       * [Functional Programming](functional_programming.md)
    * [Mappings (Class Paths)](mappings_class_paths.md)
    * [Language Comparisons](language_comparisons.md)
        * [Lucee vs Java](lucee_vs_java.md)
