@@ -19,7 +19,6 @@ Language features include:
 * Mixins
 * Meta Programming Capabilities
 * [Java Integration](https://rorylaitila.gitbooks.io/lucee/content/java_integration.html)
-* Functional Programming Features
 * [Dynamic Evaluation](https://rorylaitila.gitbooks.io/lucee/content/dynamic_evaluation.html)
 * [Application Lifecycle Scopes](https://rorylaitila.gitbooks.io/lucee/content/lifecycle_scopes.html)
 
