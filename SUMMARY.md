@@ -61,6 +61,7 @@
    * Traditional Request Handling
        * Post-Redirect-Get
        * Get-Post-Return
+       * Resource Based Routing
    * Messaging
    * [Caching](caching.md)
        * Template Caching
