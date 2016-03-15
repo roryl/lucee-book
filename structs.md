@@ -1,6 +1,6 @@
 # Structs
 
-Structs in Lucee are hashmaps meaning that struct members have a key to reference the member objects.
+Structs in Lucee are hashmaps meaning that struct members have a key to reference the member.
 
 ##Creating Structs
 
@@ -33,5 +33,15 @@ In the preceeding example, all of the keys were uppercased when dumped. While Lu
 
 ![](struct_dump_quoted.png)
 
+##Referencing Struct Keys
+{% gist id="https://gist.github.com/roryl/19296468d648117f1fb2",file="struct_referencing.cfm" %}{% endgist %}
+
+
+##Dynamically Referencing Keys
+{% gist id="https://gist.github.com/roryl/19296468d648117f1fb2",file="struct_dynamic.cfm" %}{% endgist %}
+
+##Looping Structs
+
+{% gist id="https://gist.github.com/roryl/19296468d648117f1fb2",file="struct_loop.cfm" %}{% endgist %}
 
 
