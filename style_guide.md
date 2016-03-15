@@ -21,5 +21,12 @@ var myArray = [];
 
 When using tags in templates like `<cfset>`, keep them lowercase
 
+##Quote Attributes
+Tags in Lucee can take strings or variables, for exmaple
+
+`loop array=myArray index="i" {}` or `loop array="#myArray#" index="i" {}`
+
+The common convention is to always quote attributes so that there is visual consistency in the attributes like in the second example above.
+
 
 
