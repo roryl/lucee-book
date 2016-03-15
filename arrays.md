@@ -22,6 +22,20 @@ Arrays can be created with elements or empty and elements added later.
 
 {% gist id="https://gist.github.com/roryl/cc95907c4837ca032b45",file="referencing_arrays.cfm" %}{% endgist %}
 
+###Dyanmic References
+Dynamic variables work as expected
+
+{% gist id="https://gist.github.com/roryl/cc95907c4837ca032b45",file="array_dynamic.cfm" %}{% endgist %}
+
+##Dumping Arrays
+
+{% gist id="https://gist.github.com/roryl/cc95907c4837ca032b45",file="array_dump.cfm" %}{% endgist %}
+
+Will look like: 
+
+![](array_dump.png)
+
+
 ##Looping Arrays
 
 ###For Loop
