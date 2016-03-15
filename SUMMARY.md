@@ -30,6 +30,7 @@
        * [Types](types.md)
            * Arrays
            * Structs
+           * Queries
        * [Closures](closures.md)
        * [Templates](templates.md)
        * [First Class Functions](first_class_functions.md)
