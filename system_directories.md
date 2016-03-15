@@ -16,7 +16,7 @@ On any given platform Lucee installs itself into some standard directories. For 
 
 ##Using Lucee Directory Placeholders
 
-Use the `expandPath()` method to evaluate a placeholder
+Use the `expandPath()` method to evaluate a placeholder. The example below shows the results of each placeholder on a Lucee server running on windows via CommandBox. Different operating systems and Lucee installation types will have different results. 
 
 {% gist id="https://gist.github.com/roryl/46ce13d0be02ebf627cb",file="placeholder.cfm" %}{% endgist %}
 
