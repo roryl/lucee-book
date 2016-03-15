@@ -9,7 +9,21 @@ Query objects conceptually look and act like a database table, like a spreadshee
 In these examples, they will use a Query object created manually.
 
 ##Creating a Query Object
+Query objects can be created on the fly as we do in these examples. Below is a basic query with three columns and three rows
+
 {% gist id="https://gist.github.com/roryl/0b45eb21342466f5243d",file="query_create.cfm" %}{% endgist %}
+
+When dumping this query in the example, it looks like this:
+
+>Dump of myQuery
+![](query_create.png)
+
+Its also possible to create a query with no data
+
+{% gist id="https://gist.github.com/roryl/0b45eb21342466f5243d",file="query_createempty.cfm" %}{% endgist %}
+
+>Dump of an empty myQuery
+>
 
 ##Adding new Rows
 New rows can be appended onto the ends of query objects. The addRow() function takes data, as in this example, or it can be empty in which case it appends an empty row.
