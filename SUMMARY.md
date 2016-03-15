@@ -29,7 +29,7 @@
            * Implicit Property Functions
        * [Types](types.md)
            * [Arrays](arrays.md)
-           * Structs
+           * [Structs](structs.md)
            * Queries
            * Dates
            * Lists
