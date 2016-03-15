@@ -36,8 +36,3 @@ Lucee Array indexes start at 1
 
 Arrays have many functions, see all uses here: http://luceedocs.herokuapp.com/objects
 
-The examples below address some of the trickier uses.
-###Map
-
-###Each
-
