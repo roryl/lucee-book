@@ -30,7 +30,7 @@
        * [Types](types.md)
            * [Arrays](arrays.md)
            * [Structs](structs.md)
-           * Queries
+           * [Queries](queries.md)
            * Dates
            * Lists
        * [Closures](closures.md)
