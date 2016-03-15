@@ -3,7 +3,7 @@
 Lucee is a Java based application server and is deployed to Java Servlet containers like Tomcat. Lucee can be run behind a Web Server like Apache or Nginx to provide additional capabilities of those servers like mod_rewrite, caching and serving static files.
 
 ##Running Lucee for Development Quick Start
-The easiest way to begin running Lucee is to utilize the [CommandBox](https://www.ortussolutions.com/products/commandbox) command line tool which will can start and stop Lucee servers for development and try out the Lucee language. 
+The easiest way to begin running Lucee is to utilize the [CommandBox](https://www.ortussolutions.com/products/commandbox) command line tool which can start and stop Lucee servers for development and try out the Lucee language. 
 
 Read the [CommandBox documentation](http://commandbox.ortusbooks.com/content/) for full capabilities on running a [server](https://ortus.gitbooks.io/commandbox-documentation/content/embedded_server/embedded_server.html)
 
