@@ -1,6 +1,8 @@
 # Arrays Examples
 
-Lucee Array indexes start at 1
+Lucee Array indexes start at 1 and are passed by reference. If the elements in the array are Boolean, Numeric or Strings (simple values) they are passed by value. All other complex types are passed by reference. 
+
+Lucee does not have Array types, wherein all members of an array must be of a certain type. An array in Lucee can hold any type. 
 
 ##Creating Arrays
 
