@@ -38,10 +38,6 @@ Will look like:
 
 ##Looping Arrays
 
-###For Loop
-
-{% gist id="https://gist.github.com/roryl/cc95907c4837ca032b45",file="array_for_loop.cfm" %}{% endgist %}
-
 ###For In Loop
 
 {% gist id="https://gist.github.com/roryl/cc95907c4837ca032b45",file="array_for_in_loop.cfm" %}{% endgist %}
@@ -57,6 +53,12 @@ Will look like:
 ###Each
 
 {% gist id="https://gist.github.com/roryl/cc95907c4837ca032b45",file="array_each.cfm" %}{% endgist %}
+
+###For Loop
+
+This is the classic method of looping over an array, and similar to javascript. However the previous methods at a little less verbose.
+
+{% gist id="https://gist.github.com/roryl/cc95907c4837ca032b45",file="array_for_loop.cfm" %}{% endgist %}
 
 ##Advanced Array Usage
 
