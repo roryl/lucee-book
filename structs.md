@@ -42,7 +42,7 @@ In the preceeding example, all of the keys were uppercased when dumped. While Lu
 
 ##Looping Structs
 
-{% gist id="https://gist.github.com/roryl/19296468d648117f1fb2",file="struct_loop.cfm" %}{% endgist %}
+{% gist id="https://gist.github.com/roryl/19296468d648117f1fb2",file="struct_looping.cfm" %}{% endgist %}
 
 
 ##Advanced Struct Usage
