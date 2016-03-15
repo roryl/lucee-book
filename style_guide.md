@@ -2,7 +2,7 @@
 
 While each project and developer will settle on their own conventions, these are the common coding styles used in the Lucee commnuity.
 
-##camelCase
+##camelCase functions and components
 
 Use camelCase for function names, whether built in, component functions or user defind functions
 
@@ -16,4 +16,10 @@ A common convention is to upercase the first work of Components, but lower case 
 var MyObj = new MyObj();
 var myArray = [];
 ```
+
+##Tags lowercase
+
+When using tags in templates like `<cfset>`, keep them lowercase
+
+
 
