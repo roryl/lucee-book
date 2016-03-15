@@ -23,7 +23,7 @@ Its also possible to create a query with no data
 {% gist id="https://gist.github.com/roryl/0b45eb21342466f5243d",file="query_createempty.cfm" %}{% endgist %}
 
 >Dump of an empty myQuery
->
+>![](query_create_empty.png)
 
 ##Adding new Rows
 New rows can be appended onto the ends of query objects. The addRow() function takes data, as in this example, or it can be empty in which case it appends an empty row.
@@ -57,3 +57,18 @@ To get all of the data from a particular column out of a query, use the `columnD
 >Dump of columnData()
 >
 >![](query_column_data.png)
+
+
+##Looping over Queries
+There are a few methods to loop over queries depending on what meta needed within the loop.
+
+###For Row in Query
+This method loops over each row in the query
+
+{% gist id="https://gist.github.com/roryl/0b45eb21342466f5243d",file="query_for_in.cfm" %}{% endgist %}
+
+When dumping the row, it gives us a structore of the rows data where the keys in the structure are the column names:
+
+>Results of all the dumps in the example above
+>
+>![](query_for_in.png)
