@@ -4,7 +4,19 @@ Lucee Array indexes start at 1
 
 ##Creating Arrays
 
+Arrays can be created with elements or empty and elements added later.
+
+###Create an Array with some elements
 {% gist id="https://gist.github.com/roryl/cc95907c4837ca032b45",file="create_array.cfm" %}{% endgist %}
+
+###Create an Empty Array
+
+{% gist id="https://gist.github.com/roryl/cc95907c4837ca032b45",file="empty_array.cfm" %}{% endgist %}
+
+###Appending Elements to an Array
+
+{% gist id="https://gist.github.com/roryl/cc95907c4837ca032b45",file="array_append.cfm" %}{% endgist %}
+
 
 ##Referencing Arrays
 
