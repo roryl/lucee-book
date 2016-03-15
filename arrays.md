@@ -10,7 +10,11 @@ Lucee Array indexes start at 1
 
 ###For Loop
 
+###For In Loop
+
 ###Loop Tag
+
+###Loop Tag with with Index
 
 ###Each
 
