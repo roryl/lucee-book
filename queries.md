@@ -67,8 +67,17 @@ This method loops over each row in the query
 
 {% gist id="https://gist.github.com/roryl/0b45eb21342466f5243d",file="query_for_in.cfm" %}{% endgist %}
 
-When dumping the row, it gives us a structore of the rows data where the keys in the structure are the column names:
+The for [row] in [query] syntax returns the row data for each iteration of the loop, in a structure format. 
 
->Results of all the dumps in the example above
+>Since this example loops over three rows, it made three dumps, one for each row
 >
 >![](query_for_in.png)
+
+
+###Looping with the Recordcount
+It's possible to loop over a query and obtain a reference to the row number 
+
+{% gist id="https://gist.github.com/roryl/0b45eb21342466f5243d",file="query_for_recordcount.cfm" %}{% endgist %}
+
+The difference with this loop, is there is no implicit reference to the whole row. The loop body has access to the myQuery object, and the index ("i" in this case). Thus the column & row data is accessed in the format `queryObject.columnName[index]`
+
