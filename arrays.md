@@ -29,6 +29,8 @@ Dynamic variables work as expected
 
 ##Dumping Arrays
 
+Dumping an array like in this following example:
+
 {% gist id="https://gist.github.com/roryl/cc95907c4837ca032b45",file="array_dump.cfm" %}{% endgist %}
 
 Will look like: 
