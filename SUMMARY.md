@@ -31,6 +31,7 @@
            * Arrays
            * Structs
            * Queries
+           * Dates
        * [Closures](closures.md)
        * [Templates](templates.md)
        * [First Class Functions](first_class_functions.md)
