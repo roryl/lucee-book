@@ -2,6 +2,8 @@
 
 Structs in Lucee are hashmaps meaning that struct members have a key to reference the member.
 
+The default type of structure created with the notation below is unordered, such that when looping over the keys in the struct, or dumping the struct, they may appear in any order. To mainain the order of keys when adding, the structNew() function must be used.
+
 ##Creating Structs
 
 ###An Empty Struct
@@ -16,6 +18,12 @@ Structs in Lucee are hashmaps meaning that struct members have a key to referenc
 Structs can infinitely next structs and complex data type (arrays can nest structs too)
 
 {% gist id="https://gist.github.com/roryl/19296468d648117f1fb2",file="struct_create_nested.cfm" %}{% endgist %}
+
+##Creating an Ordered Struct
+
+Use the structNew() function to create an ordered struct which maintains the order of the keys when looping, dumping or serializing.
+
+{% gist id="https://gist.github.com/roryl/19296468d648117f1fb2",file="struct_create_ordered.cfm" %}{% endgist %}
 
 ##Inserting Items into an Existing Struct
 
