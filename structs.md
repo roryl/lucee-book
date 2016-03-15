@@ -45,3 +45,7 @@ In the preceeding example, all of the keys were uppercased when dumped. While Lu
 {% gist id="https://gist.github.com/roryl/19296468d648117f1fb2",file="struct_loop.cfm" %}{% endgist %}
 
 
+##Advanced Struct Usage
+
+Structs have many functions, see all uses here: http://luceedocs.herokuapp.com/objects
+Note: The member functions available on the struct object like .insert() duplicate the older "Built in Function" (BIF) style (like structInsert()). Modern convention is to use the new style, but the old BIFs are still provided for compatibility with older versions of Lucee.
