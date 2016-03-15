@@ -36,3 +36,5 @@ Lucee Array indexes start at 1
 
 Arrays have many functions, see all uses here: http://luceedocs.herokuapp.com/objects
 
+>Note: The member functions available on the Array object like .sort() duplicate the older "Built in Function" (BIF) style (like arraySort()). Modern convention is to use the new style, but the old BIFs are still provided for compatibility with older version of Lucee.
+
