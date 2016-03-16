@@ -36,7 +36,7 @@ New rows can be appended onto the ends of query objects. The addRow() function t
 >
 ![](query_add_row.png)
 
-This dump above shows a new row being added to the previously empty query
+This dump above shows a new row being added to the empty query this example created
 
 
 ##Adding New Columns
