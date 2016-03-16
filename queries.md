@@ -73,11 +73,37 @@ The for [row] in [query] syntax returns the row data for each iteration of the l
 >
 >![](query_for_in.png)
 
+This method is very clean and straight forward when the intention is to loop over all rows, the only downside is the loop body does not have access to the index, and it can't constrain to a maximum number of rows (without using `break;` to exit the loop). It also can't skip rows (for example, return every 5th record). The next looping style can do these things. 
 
-###Looping with the Recordcount
-It's possible to loop over a query and obtain a reference to the row number 
+###Looping with the Recordcount & ID
+It's possible to loop over a query and obtain a reference to the row number, by doing a traditional loop with the `recordCount()` function that the query object exposes
 
 {% gist id="https://gist.github.com/roryl/0b45eb21342466f5243d",file="query_for_recordcount.cfm" %}{% endgist %}
 
 The difference with this loop, is there is no implicit reference to the whole row. The loop body has access to the myQuery object, and the index ("i" in this case). Thus the column & row data is accessed in the format `queryObject.columnName[index]`
 
+Though this looping mechanism would allow limiting the total number of rows, or skipping rows
+
+
+
+###Loop
+
+The loop tag is another method of looping over query objects and works a little differently from the preceeding two examples. 
+
+{% gist id="https://gist.github.com/roryl/0b45eb21342466f5243d",file="query_for_recordcount.cfm" %}{% endgist %}
+
+With the loop tag, the tag body has variable which references the column of the particular row the loop is currently on. Thus by the `echo(col1)` that is implicitly returning the value from col1 for the current row of the loop. 
+
+The loop tag has additional attribtes that can be used to control the iterations:
+
+* maxrows - Will set the maximum number of rows to loop over
+* startrow - Will set the row at which the loop should start
+* endrow - Will set the row at which the loop should end
+
+{% gist id="https://gist.github.com/roryl/0b45eb21342466f5243d",file="query_loop_attirbutes.cfm" %}{% endgist %}
+
+The example above which has 6 rows, but the  `startrow=2` and `maxrows=2` are set, and so it only outputs those two rows.
+
+>foo | bar | baz | 
+>
+>ford | chevy | kia | 
