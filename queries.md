@@ -2,7 +2,7 @@
 
 This article deals with working with existing query objects (recordsets). To see how to make SQL statments in Lucee, see the article on [SQL Persistence](https://rorylaitila.gitbooks.io/lucee/content/sqlrdbms.html)
 
-Query objects in Lucee are a powerful type of variable that acts a bit line an array, and a bit like a structure. It is the data type that Lucee returns SQL record sets into, and is also useful as a data structure for non SQL operations. Lucee Query objects are created from SQL statements, the ORM, Other Query objects, Directory functions, HTTP requests, and more. 
+Query objects in Lucee are a powerful type of object that acts a bit like an array, and a bit like a structure. It is the data type that Lucee returns SQL record sets into, and is also useful as a data structure for non SQL operations. Lucee Query objects are created from SQL statements, the ORM, Other Query objects, Directory functions, HTTP requests, and more. 
 
 Query objects conceptually look and act like a database table, like a spreadsheet. They have columns and rows.
 
@@ -16,13 +16,15 @@ Query objects can be created on the fly as we do in these examples. Below is a b
 When dumping this query in the example, it looks like this:
 
 >Dump of myQuery
+>
 ![](query_create.png)
 
 Its also possible to create a query with no data
 
-{% gist id="https://gist.github.com/roryl/0b45eb21342466f5243d",file="query_createempty.cfm" %}{% endgist %}
+{% gist id="https://gist.github.com/roryl/0b45eb21342466f5243d",file="query_create_empty.cfm" %}{% endgist %}
 
 >Dump of an empty myQuery
+>
 >![](query_create_empty.png)
 
 ##Adding new Rows
