@@ -102,7 +102,7 @@ The loop tag has additional attribtes that can be used to control the iterations
 * startrow - Will set the row at which the loop should start
 * endrow - Will set the row at which the loop should end
 
-{% gist id="https://gist.github.com/roryl/0b45eb21342466f5243d",file="query_loop_attirbutes.cfm" %}{% endgist %}
+{% gist id="https://gist.github.com/roryl/0b45eb21342466f5243d",file="query_loop_attributes.cfm" %}{% endgist %}
 
 The example above which has 6 rows, but the  `startrow=2` and `maxrows=2` are set, and so it only outputs those two rows.
 
