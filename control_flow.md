@@ -70,5 +70,21 @@ Functions in Lucee can have multiple return values which can exit a function ear
 {% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="while_loop.cfm" %}{% endgist %}
 
 ###Loop Tag
+The loop tag is an alternative style which has additional features for [arrays](https://rorylaitila.gitbooks.io/lucee/content/arrays.html), [structs](https://rorylaitila.gitbooks.io/lucee/content/structs.html), [queries](https://rorylaitila.gitbooks.io/lucee/content/queries.html) and lists
+
+See:
+* [Looping Arrays](https://rorylaitila.gitbooks.io/lucee/content/arrays.html#looping-arrays)
+* [Looping Structs](https://rorylaitila.gitbooks.io/lucee/content/structs.html#looping-structs) TODO
+* [Looping Queries](https://rorylaitila.gitbooks.io/lucee/content/queries.html#loop)
 
 {% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="loop.cfm" %}{% endgist %}
+
+###Looping Labels
+Its possible to break out of loops and resume execution at particular lables. This is particularly useful when executing nested loops, but when breaking out of a child loop, wanting to continue execution at a parent.
+
+####For Loop with Label;
+{% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="for_loop_label.cfm" %}{% endgist %}
+
+####Nested For Loops with Labels
+{% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="for_loop_label_nested.cfm" %}{% endgist %}
+
