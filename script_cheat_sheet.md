@@ -27,102 +27,101 @@
 
 ## If/else
 
-<script src="https://gist.github.com/roryl/11c5a5ab8cf061ab1621.js?file=if_else.cfm"></script>
-
+{% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="if_else.cfm" %}{% endgist %}
 
 
 
 ## If/else if/else
 
-<script src="https://gist.github.com/roryl/11c5a5ab8cf061ab1621.js?file=if_elseif_else.cfm"></script>
+{% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="if_elseif_else.cfm" %}{% endgist %}
 
 
 
 ##For Loop
 
-<script src="https://gist.github.com/roryl/11c5a5ab8cf061ab1621.js?file=for.cfm"></script>
+{% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="for.cfm" %}{% endgist %}
 
 
 
 ##For IN Loop Array
 
-<script src="https://gist.github.com/roryl/11c5a5ab8cf061ab1621.js?file=for_in_array.cfm"></script>
+{% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="for_in_array.cfm" %}{% endgist %}
 
 
 
 
 ##For IN loop struct
 
-<script src="https://gist.github.com/roryl/11c5a5ab8cf061ab1621.js?file=for_in_struct.cfm"></script>
+{% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="for_in_struct.cfm" %}{% endgist %}
 
 
 
 
 #For IN loop Query
 
-<script src="https://gist.github.com/roryl/11c5a5ab8cf061ab1621.js?file=for_in_query.cfm"></script>
+{% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="for_in_query.cfm" %}{% endgist %}
 
 
 
 ##Array Loop
 Usefull for maintaining a reference to the index and the array element
 
-<script src="https://gist.github.com/roryl/11c5a5ab8cf061ab1621.js?file=array_loop.cfm"></script>
+{% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="array_loop.cfm" %}{% endgist %}
 
 
 
 ##While Loop
-<script src="https://gist.github.com/roryl/11c5a5ab8cf061ab1621.js?file=while_loop.cfm"></script>
+{% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="while_loop.cfm" %}{% endgist %}
 
 
 ##Closure
 Implements a closure, which passing this function around keeps a reference to the scopes from where it was created
 
-<script src="https://gist.github.com/roryl/11c5a5ab8cf061ab1621.js?file=closure.cfm"></script>
+{% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="closure.cfm" %}{% endgist %}
 
 
 ##User Defined Function
 User defined functions can be called from anywhere within the script but when they are passed around they do not contain a reference to where they were created
 
-<script src="https://gist.github.com/roryl/11c5a5ab8cf061ab1621.js?file=user_defined_function.cfm"></script>
+{% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="user_defined_function.cfm" %}{% endgist %}
 
 
 
 
 ##Do While Loop
-<script src="https://gist.github.com/roryl/11c5a5ab8cf061ab1621.js?file=do_while_loop.cfm"></script>
+{% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="do_while_loop.cfm" %}{% endgist %}
 
 
 
 
 ##Try Catch Finally
 
-<script src="https://gist.github.com/roryl/11c5a5ab8cf061ab1621.js?file=try_catch_finally.cfm"></script>
+{% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="try_catch_finally.cfm" %}{% endgist %}
 
 
 ##Tags In Script
 
-<script src="https://gist.github.com/roryl/11c5a5ab8cf061ab1621.js?file=tags_in_script.cfm"></script>
+{% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="tags_in_script.cfm" %}{% endgist %}
 
 
 ##Single Line Comment
 
-<script src="https://gist.github.com/roryl/11c5a5ab8cf061ab1621.js?file=single_comment.cfm"></script>
+{% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="single_comment.cfm" %}{% endgist %}
 
 
 ##Multi Line Comment
 
-<script src="https://gist.github.com/roryl/11c5a5ab8cf061ab1621.js?file=multi_comment.cfm"></script>
+{% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="multi_comment.cfm" %}{% endgist %}
 
 
 ##Struct Literal
 
-<script src="https://gist.github.com/roryl/11c5a5ab8cf061ab1621.js?file=struct_literal.cfm"></script>
+{% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="struct_literal.cfm" %}{% endgist %}
 
 
 ##Array Literal
 
-<script src="https://gist.github.com/roryl/11c5a5ab8cf061ab1621.js?file=array_literal.cfm"></script>
+{% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="array_literal.cfm" %}{% endgist %}
 
 
 
