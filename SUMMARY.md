@@ -79,7 +79,7 @@
        * ORM Caching
        * RAM Disk Caching
    * Clustering
-   * Debugging
+   * [Debugging](debugging.md)
    * Object Modeling
    * Scheduled Tasks
    * Automated Testing
