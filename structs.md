@@ -1,8 +1,10 @@
 # Structs
 
-Structs in Lucee are hashmaps meaning that struct members have a key to reference the member.
+Structs in Lucee are containers for data where there is a 'key' that references a 'value'. When dumping a struct it looks like:
 
-The default type of structure created with the notation below is unordered, such that when looping over the keys in the struct, or dumping the struct, they may appear in any order. To mainain the order of keys when adding, the structNew() function must be used.
+![](struct_dump.png)
+
+The default type of structure created with the notation below is unordered, such that when looping over the keys in the struct, or dumping the struct, the data may appear in any order. To mainain the order of keys when adding, the structNew() function must be used.
 
 ##Creating Structs
 
