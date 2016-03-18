@@ -50,4 +50,22 @@ Use continue to skip an iteration of a loop and resume at the next iteration
 {% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="loop_continue.cfm" %}{% endgist %}
 
 ###return
+Functions in Lucee can have multiple return values which can exit a function early for controlling flow.
+
 {% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="return.cfm" %}{% endgist %}
+
+###for loop
+
+{% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="for_loop.cfm" %}{% endgist %}
+
+###for in loop
+
+{% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="for_in_loop.cfm" %}{% endgist %}
+
+###Do While loop
+
+{% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="do_while_loop.cfm" %}{% endgist %}
+
+###While Loop
+{% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="while_loop.cfm" %}{% endgist %}
+
