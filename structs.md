@@ -11,9 +11,17 @@ The default type of structure created with the notation below is unordered, such
 ###An Empty Struct
 {% gist id="https://gist.github.com/roryl/19296468d648117f1fb2",file="struct_create_empty.cfm" %}{% endgist %}
 
+When dumped an empty struct has no data:
+
+![](struct_empty.png)
+
 ###With Data
 {% gist id="https://gist.github.com/roryl/19296468d648117f1fb2",file="struct_create.cfm" %}{% endgist %}
 
+
+Struct Dump:
+
+![](struct_dump.png)
 
 ###With Nested Data
 
@@ -21,11 +29,19 @@ Structs can infinitely next structs and complex data type (arrays can nest struc
 
 {% gist id="https://gist.github.com/roryl/19296468d648117f1fb2",file="struct_create_nested.cfm" %}{% endgist %}
 
+Nested Struct Dump:
+
+![](struct_nested.png)
+
 ##Creating an Ordered Struct
 
 Use the structNew() function to create an ordered struct which maintains the order of the keys when looping, dumping or serializing.
 
 {% gist id="https://gist.github.com/roryl/19296468d648117f1fb2",file="struct_create_ordered.cfm" %}{% endgist %}
+
+Dump of an Ordered Struct:
+
+![](sturct_ordered.png)
 
 ##Inserting Items into an Existing Struct
 
