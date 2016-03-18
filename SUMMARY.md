@@ -40,7 +40,7 @@
            * [CGI Variables](cgi_variables.md)
        * [Dynamic Evaluation](dynamic_evaluation.md)
        * [Java Integration](java_integration.md)
-       * Control Flow
+       * [Control Flow](control_flow.md)
        * [Interfaces](interfaces.md)
        * [Reflection](reflection.md)
    * [Mappings (Class Paths)](mappings_class_paths.md)
