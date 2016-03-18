@@ -56,7 +56,7 @@ Functions in Lucee can have multiple return values which can exit a function ear
 
 ###for loop
 
-{% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="for_loop.cfm" %}{% endgist %}
+{% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="for.cfm" %}{% endgist %}
 
 ###for in loop
 
