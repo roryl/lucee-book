@@ -19,7 +19,7 @@
 * [do while loop](#do-while-loop)
 * [while loop](#while-loop)
 * [Loop Tag](#loop-tag)
-* [Looping with Labels](#looping-labels)
+* [Looping with Labels](#looping-with-labels)
 
 ---
 
