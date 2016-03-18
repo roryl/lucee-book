@@ -25,7 +25,7 @@
    * [Operators](operators.md)
    * [Features](features.md)
        * [Classes](classes.md)
-           * Properties
+           * [Properties](properties.md)
            * Implicit Property Functions
        * [Types](types.md)
            * [Arrays](arrays.md)
