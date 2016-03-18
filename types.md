@@ -23,6 +23,7 @@ The simple types of String, Boolean and Numeric are passed by value, meaning tha
 * Object
 * Date
 * Query
+* XML
 
 ###Pass by Reference
 The complex types are passed by reference, meaning that when assigning a complex variable to another variable, both variables will contain reference to the same underlying data object. Changing the data will impact both variable references. To create a copy of a value and not pass by reference, use the `duplicate()` function
