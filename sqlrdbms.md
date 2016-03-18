@@ -17,7 +17,7 @@ Lucee has native integration with every popular SQL database on the market and c
 * Sybase
 
 ##Configuring Datasources
-Access to the SQL database is setup by configuring a datasource in the Lucee Admin or in your Application.cfc
+Access to the SQL database is setup by configuring a datasource in the Lucee Admin or in an Application.cfc
 
 ###Lucee Admin
 
