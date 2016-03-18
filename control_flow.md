@@ -69,3 +69,6 @@ Functions in Lucee can have multiple return values which can exit a function ear
 ###While Loop
 {% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="while_loop.cfm" %}{% endgist %}
 
+###Loop Tag
+
+{% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="loop.cfm" %}{% endgist %}
