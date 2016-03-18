@@ -2,24 +2,24 @@
 
 ##Decisions
 
-* if
-* if/else
-* if/elsif/else
-* switch
+* [if](#if)
+* [if/else](#if-else)
+* [if/elsif/else](#if-else-if-else)
+* [switch](#switch)
 
 ##Branching
 
-* break;
-* continue;
-* return;
+* [break;](#break)
+* [continue;](#continue)
+* [return;](#return)
 
 ##Looping
-* for
-* for in loop
-* do while
-* while do
-* Loop
-* Looping Labels
+* [for loop](#for-loop)
+* [for in loop](#for-in-loop)
+* [do while loop](#do-while-loop)
+* [while loop](#while-loop)
+* [Loop Tag](#loop-tag)
+* [Looping with Labels](#looping-labels)
 
 ---
 
@@ -79,7 +79,7 @@ See:
 
 {% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="loop.cfm" %}{% endgist %}
 
-###Looping Labels
+###Looping with Labels
 It is possible to `break;` out of loop and `continue;' loops and resume execution at particular lables. This is particularly useful when executing nested loops, and when breaking out of a child loop, wanting to continue execution at a parent, or after a parent.
 
 ####For Loop with Label;
