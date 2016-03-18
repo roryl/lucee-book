@@ -80,15 +80,49 @@ See:
 {% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="loop.cfm" %}{% endgist %}
 
 ###Looping Labels
-It is possible to break out of loops and resume execution at particular lables. This is particularly useful when executing nested loops, and when breaking out of a child loop, wanting to continue execution at a parent.
+It is possible to `break;` out of loop and `continue;' loops and resume execution at particular lables. This is particularly useful when executing nested loops, and when breaking out of a child loop, wanting to continue execution at a parent, or after a parent.
 
 ####For Loop with Label;
 {% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="for_loop_label.cfm" %}{% endgist %}
 
 ####Nested For Loops with Labels
+This exits out of the child loop and continues after the parent loop
 {% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="for_loop_label_nested.cfm" %}{% endgist %}
 
 ####Nested Loop tags with Label
-
+Labels are also possible with loop tags using the label attribute
 {% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="loop_label.cfm" %}{% endgist %}
 
+####Nested Loop using Continue
+While the previous examples used `break;` to exit the loop and resume after the label, its also possible to use continue, which results the next iteration of the loop, at the label:
+
+{% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="for_loop_label_nested_continue.cfm" %}{% endgist %}
+
+The above sample would produce: 
+
+inner loop with 1 <br>
+inner loop with 2 <br>
+Top of loop with 2 <br>
+inner loop with 1<br>
+inner loop with 2<br>
+Top of loop with 3<br>
+inner loop with 1<br>
+inner loop with 2<br>
+Top of loop with 4<br>
+inner loop with 1<br>
+inner loop with 2<br>
+Top of loop with 5<br>
+inner loop with 1<br>
+inner loop with 2<br>
+After loop<br>
+
+The sample example but with a break
+
+{% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="for_loop_label_nested_break.cfm" %}{% endgist %}
+
+, produces:
+
+Top of loop with 1<br>
+inner loop with 1<br>
+inner loop with 2<br>
+After loop<br>
