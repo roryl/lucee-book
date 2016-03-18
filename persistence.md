@@ -4,6 +4,9 @@ Most web applications have to store something at some point in order to be usefu
 ##SQL Databases
 Lucee supports persisting to many different datastores including all popular RDBMS (MySQL, SQL Server, PostgreSQL, Oracle) and NoSQL Datastores CouchDB, MongoDB and others.
 
+##NoSQL Databases
+The Lucee community has created extensions to operate with popular NoSQL databases. And any NoSQL database that provides a JDBC connector can be used with Lucee as a standard datasource
+
 ##Files
 Lucee has native support for local file storage, RAM filesystem, FTP, & AWS s3, HTTP, and ZIP files
 
