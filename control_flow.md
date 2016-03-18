@@ -96,7 +96,7 @@ This exits out of the child loop and continues after the parent loop
 
 ####Nested Loop tags with Label
 Labels are also possible with loop tags using the label attribute
-{% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="loop_label.cfm" %}{% endgist %}
+{% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="loop_label_nested.cfm" %}{% endgist %}
 
 ####Nested Loop using Continue
 While the previous examples used `break;` to exit the loop and resume after the label, its also possible to use continue, which results the next iteration of the loop, at the label:
