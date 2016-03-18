@@ -21,7 +21,7 @@ Access to the SQL database is setup by configuring a datasource in the Lucee Adm
 
 ###Lucee Admin
 
-To configure a Datasource for your [Web Context](https://rorylaitila.gitbooks.io/lucee/content/lucee_context.html#web-context), or for all websites via the [Server Context](https://rorylaitila.gitbooks.io/lucee/content/lucee_context.html#server-context):
+To configure a Datasource for the [Web Context](https://rorylaitila.gitbooks.io/lucee/content/lucee_context.html#web-context), or for all websites via the [Server Context](https://rorylaitila.gitbooks.io/lucee/content/lucee_context.html#server-context):
 
 1. >log into the Lucee Admin and go to Datasources. 
 
