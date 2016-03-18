@@ -80,11 +80,15 @@ See:
 {% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="loop.cfm" %}{% endgist %}
 
 ###Looping Labels
-Its possible to break out of loops and resume execution at particular lables. This is particularly useful when executing nested loops, but when breaking out of a child loop, wanting to continue execution at a parent.
+It is possible to break out of loops and resume execution at particular lables. This is particularly useful when executing nested loops, and when breaking out of a child loop, wanting to continue execution at a parent.
 
 ####For Loop with Label;
 {% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="for_loop_label.cfm" %}{% endgist %}
 
 ####Nested For Loops with Labels
 {% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="for_loop_label_nested.cfm" %}{% endgist %}
+
+####Nested Loop tags with Label
+
+{% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="loop_label.cfm" %}{% endgist %}
 
