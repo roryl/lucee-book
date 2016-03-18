@@ -59,7 +59,7 @@ Functions in Lucee can have multiple return values which can exit a function ear
 {% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="for.cfm" %}{% endgist %}
 
 ###for in loop
-The for in construct can be used with the collection types arrays, structs and queries. Below is an example for arrays. For other examples, see:
+The for in construct can be used with for [arrays](https://rorylaitila.gitbooks.io/lucee/content/arrays.html), [structs](https://rorylaitila.gitbooks.io/lucee/content/structs.html), and [queries](https://rorylaitila.gitbooks.io/lucee/content/queries.html). Below is an example for arrays. For other examples, see:
 
 * [Looping Arrays](https://rorylaitila.gitbooks.io/lucee/content/arrays.html#looping-arrays)
 * [Looping Structs](https://rorylaitila.gitbooks.io/lucee/content/structs.html#looping-structs) TODO
@@ -85,7 +85,7 @@ See:
 {% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="loop.cfm" %}{% endgist %}
 
 ###Looping with Labels
-It is possible to `break;` out of loop and `continue;' loops and resume execution at particular lables. This is particularly useful when executing nested loops, and when breaking out of a child loop, wanting to continue execution at a parent, or after a parent.
+It is possible to `break;` out of loop and `continue;` loops and resume execution at particular lables. This is particularly useful when executing nested loops, and when breaking out of a child loop, wanting to continue execution at a parent, or after a parent.
 
 ####For Loop with Label;
 {% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="for_loop_label.cfm" %}{% endgist %}
