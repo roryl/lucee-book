@@ -27,11 +27,11 @@ To configure a Datasource for the [Web Context](https://rorylaitila.gitbooks.io/
 
 ![](datasources_1.png)
 
-2. > Enter a name for your datasource and select the Type of datasource it is
+2. > Enter a name for the datasource and select the Type of datasource it is
 
 ![](datasource_2.png)
 
-3. > Configure your datasource with the appropriate settings.
+3. > Configure the datasource with the appropriate settings.
 
 ![](datasources_3.png)
 
