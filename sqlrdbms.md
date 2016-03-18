@@ -37,10 +37,10 @@ To configure a Datasource for your [Web Context](https://rorylaitila.gitbooks.io
 
 
 ###Application.cfc Configuration
-The entire datasource can be configured in your Application.cfc so that your datasource is portable without needing to manually configure in the admin. The easiest way to do this is to setup the datasource in the admin in the above example, and then copy the config that the Admin gives you.
+The entire datasource can be configured in an Application.cfc so that the datasource definition is portable without needing to manually configure in the admin. The easiest way to do this is to setup the datasource in the admin in the above example, and then copy the config that the Admin provides.
 
 1. > Setup the datasource as described in the Lucee Admin section
-2. > Edit your datasource that you created, and at the bottom Lucee will tell you the configuration that you can put into your Application.cfc
+2. > Edit the datasource that was created, and at the bottom Lucee will provide the configuration that can put into the Application.cfc
 
 ![](datasources_4.png)
 
