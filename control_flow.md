@@ -59,8 +59,13 @@ Functions in Lucee can have multiple return values which can exit a function ear
 {% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="for.cfm" %}{% endgist %}
 
 ###for in loop
+The for in construct can be used with the collection types arrays, structs and queries. Below is an example for arrays. For other examples, see:
 
-{% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="for_in_loop.cfm" %}{% endgist %}
+* [Looping Arrays](https://rorylaitila.gitbooks.io/lucee/content/arrays.html#looping-arrays)
+* [Looping Structs](https://rorylaitila.gitbooks.io/lucee/content/structs.html#looping-structs) TODO
+* [Looping Queries](https://rorylaitila.gitbooks.io/lucee/content/queries.html#loop)
+
+{% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="for_in_array.cfm" %}{% endgist %}
 
 ###Do While loop
 
