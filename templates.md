@@ -88,8 +88,7 @@ Page content about home
 ```
 </noscript>
 
-
-<script src="https://gist.github.com/roryl/708a488afcf4a86f1931.js?file=about_us.cfm"></script>
+{% gist id="roryl/708a488afcf4a86f1931",file="about_us.cfm" %}{% endgist %}
 
 <noscript>
 ```
@@ -101,7 +100,7 @@ Page content about us
 ```
 </noscript>
 
-<script src="https://gist.github.com/roryl/708a488afcf4a86f1931.js?file=services.cfm"></script>
+{% gist id="roryl/708a488afcf4a86f1931",file="services.cfm" %}{% endgist %}
 
 <noscript>
 ```
