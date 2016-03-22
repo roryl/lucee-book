@@ -136,9 +136,9 @@ When each of the websites pages is run, they will all use the common navigation.
 >Note: The include tag finds templates via their path from the webroot, or a mapping configured in Application.cfc
 
 ##Best Practices
-Lucee's entire tag library, including complex functionality like making HTTP requests, sending email, and querying databases, are available as tags. For example, the query tag can select from a database
+Lucee's entire tag library, including complex functionality like making HTTP requests, sending email, and querying databases, are available as tags. For example, the query tag can select from a database.
 
-<script src="https://gist.github.com/roryl/708a488afcf4a86f1931.js?file=cars_select.cfm"></script>
+{% gist id="roryl/708a488afcf4a86f1931",file="cars_select.cfm" %}{% endgist %}
 
 <noscript>
 ```
@@ -151,7 +151,7 @@ Lucee's entire tag library, including complex functionality like making HTTP req
 
 And this tag can be used in a template to output the data:
 
-<script src="https://gist.github.com/roryl/708a488afcf4a86f1931.js?file=cars_output.cfm"></script>
+{% gist id="roryl/708a488afcf4a86f1931",file="cars_output.cfm" %}{% endgist %}
 
 <noscript>
 ```
