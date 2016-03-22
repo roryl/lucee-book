@@ -49,7 +49,7 @@ The Variables Scope is global to a single Component. Any variables declared in a
 ###Local Scope
 Any variable instantiated within a function with the var keyword, lives in the local scope of that function and is not accessible to other functions in the Component or elsewhere. 
 
-<script src="https://gist.github.com/roryl/08a89aa59430b797cdb4.js?file=component_local.cfc"></script>
+{% gist id="roryl/08a89aa59430b797cdb4",file="component_local.cfc" %}{% endgist %}
 
 <noscript>
 ```
@@ -70,7 +70,7 @@ component {
 
 This this example above, only the myFunc has access to myVar. If multiple functions need to access myVar, it should be declared it in the variables scope. That would change the example to the following:
 
-<script src="https://gist.github.com/roryl/08a89aa59430b797cdb4.js?file=component_variables.cfc"></script>
+{% gist id="roryl/08a89aa59430b797cdb4",file="component_variables.cfc" %}{% endgist %}
 
 <noscript>
 ```
@@ -94,7 +94,7 @@ Variables should always be explicitly assigned to a scope, and use var for local
 
 It is also possible to access local variables as a collection using the local structure. 
 
-<script src="https://gist.github.com/roryl/08a89aa59430b797cdb4.js?file=component_variables.cfc?file=component_local_struct.cfc"></script>
+{% gist id="roryl/08a89aa59430b797cdb4",file="component_local_struct.cfc" %}{% endgist %}
 
 <noscript>
 ```
