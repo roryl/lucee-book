@@ -25,7 +25,7 @@ jmxremote.access manages permissions and looks like this:
 userone readwrite
 anotheruser readwrite
 ```
-And jmxremote.password as follows:
+And jmxremote.password is implemented as follows:
 ```
 userone c0mpl3xpass
 anotheruser anotherpassword
