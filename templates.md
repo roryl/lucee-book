@@ -27,7 +27,7 @@ The &lt;cfoutput&gt;&lt;/cfoutput&gt; tags tell Lucee to look for any variables 
 ##Conditional Logic
 Because Lucee's language control flow is completely available as HTML style tags, it lends itself naturally to HTML output. The example below uses the LOOP, IF, ELSEIF and ELSE tag to change what is displayed.
 
-<script src="https://gist.github.com/roryl/708a488afcf4a86f1931.js?file=conditional_logic.cfm"></script>
+{% gist id="roryl/708a488afcf4a86f1931",file="conditional_logic.cfm" %}{% endgist %}
 
 <noscript>
 ```
@@ -52,7 +52,7 @@ All Lucee tags, IF, IFELSE, ELSE, SWITCH, TRY, and more are available for use in
 ##Escaping Output
 When Lucee is exeucting code inside cfoutput tags, it is looking for any variables wrapped in #'s. If the template should output an actual # character, then two # together will do so, like ##
 
-<script src="https://gist.github.com/roryl/708a488afcf4a86f1931.js?file=escaping_output.cfm"></script>
+{% gist id="roryl/708a488afcf4a86f1931",file="escaping_output.cfm" %}{% endgist %}
 
 <noscript>
 ```
@@ -73,9 +73,10 @@ Notice here that the output *was not* the time. The double ##s were ignored, so 
 ##Including Templates
 Sometimes content on a website is repeated on many pages, like the header navigation, and it can be useful to include one template in others so that you are not repeating your efforts. Lucee supports including one template within another using the include tag. 
 
-Here is an example of a three page website, made up of a Home page, an About Us page, and a Services page. There is a template for each page, an a template called navigation.cfm which each page includes. 
+Here is an example of a three page website, made up of a Home page, an About Us page, and a Services page. There is a template for each page, an a template called navigation.cfm which each page includes.
 
-<script src="https://gist.github.com/roryl/708a488afcf4a86f1931.js?file=home.cfm"></script>
+{% gist id="roryl/708a488afcf4a86f1931",file="home.cfm" %}{% endgist %}
+
 
 <noscript>
 ```
