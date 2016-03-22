@@ -18,7 +18,7 @@ Change 'YOUR.IP.GOES.HERE' to the local IP of the server.
 
 You will need to restart tomcat after this change.
 #### User Security
-You will need to create two files $CATALINA_HOME/conf/jmxremote.access and $CATALINA_HOME/conf/jmxremote.password. 
+You will need to create two files: $CATALINA_HOME/conf/jmxremote.access and $CATALINA_HOME/conf/jmxremote.password. 
 
 jmxremote.access manages permissions and looks like this:
 ```
