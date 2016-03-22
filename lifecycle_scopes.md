@@ -116,5 +116,8 @@ component {
 </noscript>
 
 ##Scope Lookup / Cascading
-Lucee looks for variables starting from the most specific all the way up to the most global. If a variable is not scoped, Lucee will search all scopes for it. This can be a performance penalty if doing a lot of lookups, therefore follow the [style guide for scoping variables](https://rorylaitila.gitbooks.io/lucee/content/style_guide.html)
+Lucee looks for variables starting from the most specific all the way up to the most global. If a variable is not scoped, Lucee will search all scopes for it. This can be a performance penalty if doing a lot of lookups, therefore follow the [style guide for scoping variables](https://rorylaitila.gitbooks.io/lucee/content/style_guide.html#scope-nonlocal-variables)
+
+The order in which Lucee looks up scopes is:
+
 
