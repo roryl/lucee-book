@@ -56,5 +56,33 @@ component {
 }
 ```
 
+##Var local variables
+In Lucee, variables scopes to a local function are declared with the var keyword
+
+```
+function myFunc(){
+  var myVariable = "foo";
+}
+```
+
+
+
+It is also possible to use the "local" scope:
+```
+function myFunc(){
+  local.myVariable = "foo";
+}
+```
+
+Best practice is to use var for all local variables, and instantiate all variables at the top of the function, where possible. Although the var keyword can be used anywhere within the function if need be.
+
+```
+function myFunc(){
+  var myVariable = "foo";
+  var myOtherVariable = "bar";
+}
+```
+
+
 
 
