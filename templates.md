@@ -7,7 +7,7 @@ Lucee allows creating server side templates which can house HTML to be rendered 
 ##Basic Example
 Here is an example of a Lucee Template which outputs the time for a webpage:
 
-<script src="https://gist.github.com/roryl/708a488afcf4a86f1931.js?file=basic_template.cfm"></script>
+{% gist id="roryl/708a488afcf4a86f1931",file="basic_template.cfm" %}{% endgist %}
 
 <noscript>
 ```
