@@ -3,6 +3,7 @@
 * [Introduction](README.md)
 * [About This Book](about_this_book.md)
    * [Gist Examples Directory](gist_examples_directory.md)
+   * Helpful Community Documentation
 * [Tutorials](chapter1.md)
    * [Beginning Web Application Development with Lucee](beginning_web_application_development_with_lucee.md)
        * [What is Lucee](what_is_lucee.md)
