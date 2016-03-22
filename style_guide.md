@@ -85,6 +85,20 @@ function myFunc(){
 }
 ```
 
+Because Lucee always looks in the local scope first, convention is to not scope local variables `local.myVariable` and instead reference them directly. However take care to always `var` declare them first, otherwise they will be in the variables scope:
+
+```
+component {
+   variables.myVariable = "foo";
+   
+   public function myFunc(){
+     myVariable = "bar";
+     echo(variables.myVariable); //outputs bar, because we did not declare a local variable it overwrote the `variables.myVariable`
+     
+   }
+}
+```
+
 
 
 
