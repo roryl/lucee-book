@@ -28,7 +28,7 @@ Tags in Lucee can take strings or variables, for exmaple
 
 The common convention is to always quote attributes so that there is visual consistency in the attributes like in the second example above.
 
-##Scope Non-local functions
+##Scope Non-local Variables
 Variables in Lucee can exist in one of many [scopes](https://rorylaitila.gitbooks.io/lucee/content/lifecycle_scopes.html), Local, Variables, This, Application, Session, etc. Lucee will look up the chain of available scopes to find a variable, but this costs performance and is unclear to other developers. The best practice is to always preface variables with the scope they are in, except for local function variables
 
 ```
