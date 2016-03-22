@@ -37,4 +37,4 @@ You will want to run jstatd while using Visual VM. There's a bit of parameters s
 #!/bin/bash
 /your/local/path/jdk/jre/bin/jstatd -J-Djava.security.policy=/your/local/path/tomcat/conf/tools.policy
 ```
-Save it as `visualvm` or the like, with execute permissions. Run this from the command line while you are running VisualVM and terminate the process when complete.
+Again, update `/your/local/path` as appropriate. Save it as `visualvm` or the like, with execute permissions. Run this from the command line while you are running VisualVM and terminate the process when complete.
