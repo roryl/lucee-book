@@ -80,6 +80,8 @@ Best practice is to use var for all local variables, and instantiate all variabl
 function myFunc(){
   var myVariable = "foo";
   var myOtherVariable = "bar";
+  
+  echo(myVariable);
 }
 ```
 
