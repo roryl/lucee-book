@@ -10,7 +10,7 @@ Use camelCase for function names, whether built in, component functions or user 
 var file = fileNew();
 ```
 
-A common convention is to upercase the first work of Components, but lower case any other variables
+A common convention is to upercase the first word of Components, but lower case any other variables
 
 ```
 var MyObj = new MyObj();
@@ -27,6 +27,34 @@ Tags in Lucee can take strings or variables, for exmaple
 `loop array=myArray index="i" {}` or `loop array="#myArray#" index="i" {}`
 
 The common convention is to always quote attributes so that there is visual consistency in the attributes like in the second example above.
+
+##Scope Non-local functions
+Variables in Lucee can exist in one of many scopes, Local, Variables, This, Application, Session, etc. Lucee will look up the chain of available scopes to find a variable, but this costs performance and is unclear to other developers. The best practice is to always preface variables with the scope they are in, except for local function variables
+
+```
+<cfscript>
+application.myVariable = "foo";
+
+echo(myVariable); //outputs foo
+echo(application.myVariable); //outputs foo
+</cfscript>
+```
+
+Although in the proceeding example, both calls to myVariable will work (because Lucee will check all scopes for myVariable if it can't find it), the second `application.myVariable` is faster for Lucee to execute and is more clear.
+
+Scoping variables is particularly important in the case of CFCs. The shared CFC variable state is the "variables" scope, and Lucee will put any unscoped variables into the variables scope by default. This can lead to subtle bugs and race conditions, so its always best to scope CFC variables too.
+
+```
+component {
+   variables.myVariable = "foo";
+   
+   public function myFunc(){
+     var myVariable = "bar";
+     echo(myVariable); //outputs bar
+     echo(variables.myVariable); //outputs foo
+   }
+}
+```
 
 
 
