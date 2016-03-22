@@ -88,7 +88,7 @@
        * Java Virtual Machine
    * Performance Tuning
        * Lucee Language & Compiler
-       * Java Virtual Machine
+       * [Java Virtual Machine](java_virtual_machine.md)
    * Deploying
    * REST
    * Serialization
