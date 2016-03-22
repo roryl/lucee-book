@@ -112,7 +112,7 @@ Page content about services
 ```
 </noscript>
 
-<script src="https://gist.github.com/roryl/708a488afcf4a86f1931.js?file=navigation.cfm"></script>
+{% gist id="roryl/708a488afcf4a86f1931",file="navigation.cfm" %}{% endgist %}
 
 <noscript>
 ```
