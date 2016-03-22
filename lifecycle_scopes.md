@@ -1,7 +1,15 @@
 # Lifecycle Scopes
 
-Lucee has built in Scopes which are data holders that can contain any variables and keep them around for specific durations. All of the scopes are accessible via dotted notation from anywhere that the scope is valid to access it. There are global scopes, and non-global scopes. 
+Lucee has built in Scopes which are data holders that can contain any variables and keep them around for a specific duration. All of the scopes are accessible via dotted notation from anywhere that the scope has valid to access it. 
 
+There are two primary categorizations of scopes:
+
+* [Global Scopes](#global-scopes)
+* [Localized Scopes](#localized-scopes)
+
+It is also important to understand the [Scope Lookup/Cascading](#scope-lookup-cascading) rules. 
+
+###Setting any variable into a scope
 To set a variable into a scope, use dotted notation:
 
 ```
@@ -68,7 +76,7 @@ component {
 ```
 </noscript>
 
-This this example above, only the myFunc has access to myVar. If multiple functions need to access myVar, it should be declared it in the variables scope. That would change the example to the following:
+In the example above, only the myFunc() function has access to myVar. If multiple functions need to access myVar, it should be declared it in the variables scope. That would change the example to the following:
 
 {% gist id="roryl/08a89aa59430b797cdb4",file="component_variables.cfc" %}{% endgist %}
 
@@ -90,7 +98,7 @@ component {
 ```
 </noscript>
 
-Variables should always be explicitly assigned to a scope, and use var for local variables. This will prevent subtle bugs that are hard to track if accidentally overriding a more global scope when it should have beena  local variable.
+Variables should always be explicitly assigned to a scope, and use var for local variables. This will prevent subtle bugs that are hard to track if accidentally overriding a more global scope when it should have been a  local variable.
 
 It is also possible to access local variables as a collection using the local structure. 
 
@@ -106,4 +114,7 @@ component {
 }
 ```
 </noscript>
+
+##Scope Lookup / Cascading
+Lucee looks for variables starting from the most specific all the way up to the most global. If a variable is not scoped, Lucee will search all scopes for it. This can be a performance penalty if doing a lot of lookups, therefore follow the [style guide for scoping variables](https://rorylaitila.gitbooks.io/lucee/content/style_guide.html)
 
