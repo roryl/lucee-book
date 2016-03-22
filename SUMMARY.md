@@ -86,6 +86,7 @@
    * Automated Testing
    * Securing
    * Performance Tuning
+       * Lucee Language & Compiler
    * Deploying
    * REST
    * Serialization
