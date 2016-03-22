@@ -14,8 +14,11 @@ component {
 ```
 </noscript>
 
+##Implicit Constructor
+Any code within the body of the component before any functions are defined is known as the "implicit constructor". This code will be executed on each instantiation of the CFC no matter the instantiation method. This can be used for code which must always be run. This was the original constructor strategy for Lucee, but most applications today use the Default Constructor described below.
+
 ##Default Constructor
-In lucee, components may have a default constructor by providing a function called init. There can only be one constructor and Lucee does not support method overloading
+In lucee, components may have a default constructor method by providing a function called init. There can only be one constructor and Lucee does not support method overloading
 
 {% gist id="https://gist.github.com/roryl/5a127d2d99c09924b3aa",file="default_constructor.cfc" %}{% endgist %}
 
