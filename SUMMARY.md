@@ -85,7 +85,7 @@
    * Scheduled Tasks
    * Automated Testing
    * Securing
-   * Tuning
+   * Performance Tuning
    * Deploying
    * REST
    * Serialization
