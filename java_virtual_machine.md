@@ -8,7 +8,7 @@ You will need to download/install the Java JDK on your workstation (not the serv
 Download URLs change frequently so use this: https://www.google.com/?#q=jdk+download
 
 ### Server
-There are several Tomcat configurations that must be implemented, along with an implementation of 
+There are several Tomcat configurations that must be implemented along with a simple script.
 #### Tomcat Config
 Update your setenv.sh config to include the following:
 
