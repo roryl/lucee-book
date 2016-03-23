@@ -20,14 +20,26 @@ Lucee provides a function 'getMemoryUsage()' which will return the memory in use
 
 ###Java Visual VM
 
-### Workstation
+####Configuration
+
+Visual VM is run on a workstation like Windows or OSX, and it connects to a running Lucee server.
+
+1. [Workstation](#1-workstation)
+2. Server
+  1. Tomcat Configuration
+  2. User Security
+  3. Visual VM Script
+
+####Workstation Configuration
+#####1. Install the JDK
 You will need to download/install the Java JDK on your workstation (not the server!) to use VisualVM. While backward compatability is sometimes available, as a best practice you should check the version of the JVM you are running tomcat on and use the same JDK verison.
 
 Download URLs change frequently so use this: https://www.google.com/?#q=jdk+download
 
-### Server
-There are several Tomcat configurations that must be implemented along with a simple script.
-#### Tomcat Config
+####Server Configuration
+There are several Tomcat configurations that must be implemented along with a simple script. This article only discusses Tomcat, the default servlet container shipped for a production Lucee installation.
+
+##### 1.Tomcat Configuration
 Update your setenv.sh config to include the following:
 
 >export CATALINA_OPTS="-Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=8999 -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=true -Djava.rmi.server.hostname=YOUR.IP.GOES.HERE -Dcom.sun.management.jmxremote.password.file=$CATALINA_HOME/conf/jmxremote.password -Dcom.sun.management.jmxremote.access.file=$CATALINA_HOME/conf/jmxremote.access";
@@ -35,7 +47,8 @@ Update your setenv.sh config to include the following:
 Change 'YOUR.IP.GOES.HERE' to the local IP of the server.
 
 You will need to restart tomcat after this change.
-#### User Security
+
+##### 2.User Security
 You will need to create two files: $CATALINA_HOME/conf/jmxremote.access and $CATALINA_HOME/conf/jmxremote.password. 
 
 jmxremote.access manages permissions and looks like this:
@@ -49,8 +62,8 @@ userone c0mpl3xpass
 anotheruser anotherpassword
 ```
 
-#### VisualVM Script
-You will want to run jstatd while using Visual VM. There's a bit of parameters so it's easiest to script it:
+##### 3. VisualVM Script
+In order for VisualVM to connect to the running server instance, the jstatd program needs to be running. Its easiest to create a shell script to execute this program:
 ```
 #!/bin/bash
 /your/local/path/jdk/jre/bin/jstatd -J-Djava.security.policy=/your/local/path/tomcat/conf/tools.policy
