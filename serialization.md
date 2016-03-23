@@ -2,8 +2,8 @@
 
 Serialization allows turning any complex objects (Components, Arrays, Structs, Queries) into a string representation that can be transferred or stored. The two common scenarios for serialization are 1) Persisting complex Lucee objects to a database or file system, or transfering them between systems, and 2) Turning objects into Json for an API or client use.
 
-* Persisting Complex Objects
-* Serializing to Json
+* [Persisting & Transferring Complex Objects](#persisting-transfering-complex-objects)
+* [Serializing to Json](#serializing-to-json)
 
 ##Persisting & Transferring Complex Objects
 There are sometimes use cases for saving objects to persistent storage directly, and loading them back, without saving the object's data into a structured data store like a SQL database. There are also times when say a Component might want to be transfered between systems, but creating a formal API is overfill. As long as the system both writing and reading the serialized objects is Lucee, any object in Lucee can be saved and recreated.
@@ -108,4 +108,48 @@ Which the output looks like:
 ![](serialize_component_dump.png)
 
 
+## Serializing to JSON
 
+When building web services or REST APIs for example, it is often common to return data in json format. Lucee can serialize structs, arrays & queries into json objects. Serializing to json does not work for components because json is not a sufficient language for serializing all of the data that components can contain.
+
+Serializing and deserializing Json is very similar to the examples above, but uses the `serializeJson()` and `deserializeJson()` functions
+
+###Json Serialization Example
+
+{% gist id="roryl/61c1b10a8fa4c2ba542a",file="serialize_json.cfm" %}{% endgist %}
+
+<noscript>
+```
+<cfscript>
+myStruct = {foo:"bar", baz:queryNew("test","varchar",[{test:"my data"}])};
+structText = serializeJson(myStruct);
+echo(structText);
+</cfscript>
+```
+</noscript>
+
+The output for serializeJson is a valid json object: 
+
+`{"BAZ":{"COLUMNS":["TEST"],"DATA":[["my data"]]},"FOO":"bar"}`
+
+Notice how it serialized the query different than the first example. This is because Json doesn't know about Lucee queries, so the json for a query is an object with columns and data.
+
+An example to deserialize the json back into objects:
+
+{% gist id="roryl/61c1b10a8fa4c2ba542a",file="deserialize_json.cfm" %}{% endgist %}
+
+<noscript>
+```
+<cfscript>
+structText = '{"BAZ":{"COLUMNS":["TEST"],"DATA":[["my data"]]},"FOO":"bar"}';
+myStruct = deserializeJson(structText);
+writeDump(myStruct);
+</cfscript>
+```
+</noscript>
+
+This example outputs: 
+
+![](deserialize_json.png)
+
+Notice the primary difference is that when deserializing the json, we no longer have a native Lucee query object, but simply structures & arrays. Deserializing json always returns structures or arrays.
