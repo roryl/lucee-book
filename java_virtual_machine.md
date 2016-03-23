@@ -1,5 +1,17 @@
 # Java Virtual Machine
 
+Lucee is a Java servlet application and can be tuned like any Java application. Advanced JVM tuning strategies appropriate for any Java application can also apply to Lucee. This artlce discusses strategies for profiling the JVM and making adjustments. There are two primary tasks for any JVM tuning: monitoring memory and thread usage, and tuning the garbage collection.
+
+For more in depth explanation of the JVM, see these resources:
+
+
+##Monitoring Memory & Thread Usage
+
+
+
+*Lucee Administrator
+*Visual VM
+
 ## Enable VisualVM
 
 ### Workstation
