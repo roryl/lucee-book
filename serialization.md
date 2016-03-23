@@ -6,14 +6,14 @@ Serialization allows turning any complex objects (Components, Arrays, Structs, Q
 * [Serializing to Json](#serializing-to-json)
 
 ##Persisting & Transferring Complex Objects
-There are sometimes use cases for saving objects to persistent storage directly, and loading them back, without saving the object's data into a structured data store like a SQL database. There are also times when say a Component might want to be transfered between systems, but creating a formal API is overfill. As long as the system both writing and reading the serialized objects is Lucee, any object in Lucee can be saved and recreated.
+There are sometimes use cases for saving objects to persistent storage directly, and loading them back, without saving the object's data into a structured data store like a SQL database. There are also times when say a Component might want to be transfered between systems, but creating a formal API is overkill. As long as the system both writing and reading the serialized objects is Lucee, any object in Lucee can be saved and recreated.
 
 > To serialize (turn it into text) any Lucee object, use the `serialize()` function
 
 > To deserialize (get back a real object) any Lucee object, use the `evaluate()` function
 
 ###Serialization Example
-This example serializes a simple structure with a nested query structure with a row of data.
+This example serializes a simple struct that has a query nested inside of it.
 
 {% gist id="roryl/61c1b10a8fa4c2ba542a",file="serialize.cfm" %}{% endgist %}
 
