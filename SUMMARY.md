@@ -96,6 +96,7 @@
        * [SQL/RDBMs](sqlrdbms.md)
            * Transactions
            * Querying
+           * Stored Procedures
        * [NoSQL](nosql.md)
        * Files
        * [ORM Object Graph](orm.md)
