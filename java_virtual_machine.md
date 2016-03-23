@@ -7,12 +7,18 @@ For more in depth explanation of the JVM, see these resources:
 
 ##Monitoring Memory & Thread Usage
 
+There are two areas to see memory usage by the JVM, in the Lucee administrator, and with the Java Visual VM tool, which is a part of the Java Development kit. The Lucee administrator is good for quick adjustments, and the Visual VM tool is good for complex issues and really understanding what the JVM is doing.
+
+* Lucee getMemoryUsage()
+* Visual VM
+
+###Lucee getMemoryUsage
+Lucee provides a function 'getMemoryUsage()' which will return the memory in use by the JVM that Lucee is running on. When output, it looks like:
+
+![](memory_usage.png)
 
 
-*Lucee Administrator
-*Visual VM
-
-## Enable VisualVM
+###Java Visual VM
 
 ### Workstation
 You will need to download/install the Java JDK on your workstation (not the server!) to use VisualVM. While backward compatability is sometimes available, as a best practice you should check the version of the JVM you are running tomcat on and use the same JDK verison.
