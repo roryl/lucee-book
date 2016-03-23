@@ -3,7 +3,7 @@
         "gist",
         "anchors",
         "structured-toc",
-        "collapsible-menu"
+        "-collapsible-menu"
     ],
     "pluginsConfig": {}
 }
