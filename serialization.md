@@ -15,6 +15,8 @@ There are sometimes use cases for saving objects to persistent storage directly,
 ###Serialization Example
 This example serializes a simple structure with a nested query structure with a row of data.
 
+{% gist id="roryl/61c1b10a8fa4c2ba542a",file="serialize.cfm" %}{% endgist %}
+
 <noscript>
 ```
 <cfscript>
@@ -32,7 +34,9 @@ The output of the echo is:
 
 When Lucee serializes complex objects, notice how it is very similar to Json, but there are differences. For exmaple, the query is turned into a function `query()` which when deserialized, will create the query again. This is something not possible in Json.
 
-To get the structure back, use the `evaluate()` function:
+To deserialize that string about and get the structure back, use the `evaluate()` function:
+
+{% gist id="roryl/61c1b10a8fa4c2ba542a",file="deserialize.cfm" %}{% endgist %}
 
 <noscript>
 ```
@@ -53,6 +57,8 @@ Here is an example of serializing a Component:
 
 First, a basic component:
 
+{% gist id="roryl/61c1b10a8fa4c2ba542a",file="basicComponent.cfc" %}{% endgist %}
+
 <noscript>
 ```
 component {
@@ -66,6 +72,8 @@ component {
 </noscript>
 
 Then serialize the component:
+
+{% gist id="roryl/61c1b10a8fa4c2ba542a",file="serialize_component.cfm" %}{% endgist %}
 
 <noscript>
 ```
@@ -81,8 +89,9 @@ It results in the output:
 
 `evaluateComponent('examples.serialization.basicComponent','c31d231165a410c67a9a8c57da575e88',{'FOO':'bar'},{})`
 
-Which this can be deserialized back into the original component
+Which this can be deserialized back into the original component:
 
+{% gist id="roryl/61c1b10a8fa4c2ba542a",file="deserialize_component.cfm" %}{% endgist %}
 
 <noscript>
 ```
@@ -93,6 +102,10 @@ writeDump(myComponent);
 </cfscript>
 ```
 </noscript>
+
+Which the output looks like:
+
+![](serialize_component_dump.png)
 
 
 
