@@ -95,6 +95,7 @@
    * [Persistence](persistence.md)
        * [SQL/RDBMs](sqlrdbms.md)
            * Transactions
+           * Querying
        * [NoSQL](nosql.md)
        * Files
        * [ORM Object Graph](orm.md)
