@@ -91,7 +91,7 @@
        * [Java Virtual Machine](java_virtual_machine.md)
    * Deploying
    * REST
-   * Serialization
+   * [Serialization](serialization.md)
    * [Persistence](persistence.md)
        * [SQL/RDBMs](sqlrdbms.md)
            * Transactions
