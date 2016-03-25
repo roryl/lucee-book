@@ -34,7 +34,7 @@ The output of the echo is:
 
 When Lucee serializes complex objects, notice how it is very similar to Json, but there are differences. For exmaple, the query is turned into a function `query()` which when deserialized, will create the query again. This is something not possible in Json.
 
-To deserialize that string about and get the structure back, use the `evaluate()` function:
+To deserialize that string above and get the structure back, use the `evaluate()` function:
 
 {% gist id="roryl/61c1b10a8fa4c2ba542a",file="deserialize.cfm" %}{% endgist %}
 
