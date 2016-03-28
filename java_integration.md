@@ -3,7 +3,11 @@
 Lucee is built on Java and makes integrating with existing Java libraries in both directions (calling Java from Lucee, or Lucee from Java). This makes it possible to build parts of an application in Lucee which is a higher level language, and parts in Java, which has many existing libraries and may perform better for some use cases.
 
 ##Calling Java Classes
-Because Lucee is a Java application, any of the Java library is available within Lucee scripts without any additional configuration. 
+Because Lucee is a Java application, any of the Java library is available within Lucee scripts. Java libraries you'll use in Lucee are typically of the following types:
+
+* [Java Standard Library](#-instantiating-a-java-standard-library-class)
+* [Third Party Java Libraries](#Instantiating-third-party Java-libraries)
+* [Custom Java code](#compiling-and-running-java-source-files)
 
 ###Instantiating a Java standard library class
 The first thing to do is akin to importing the java class that is to be used. In Lucee, this is done with the createObject() function.
@@ -109,3 +113,9 @@ writeDump(Handlebars);
 
 Further Resources: 
 https://github.com/getrailo/railo/wiki/Tutorial--Using-Java-in-Railo
+
+###Custom Java Code
+Developing Lucee code (in .CFCs and .CFMs) does not require compiling, but Java source code files (.java file extension) do need to be compiled before instantiating. When working on a codebase where both the Java and Lucee code is being written, having to compile changes to Java classes and then test in Lucee can be tedious. It is possible to have Lucee compile .java files so that the normal save-file and browser refresh workflow is possible.
+
+To have Lucee compile Java classes makes use of a function to compile the Java source code, described below, and the this.javasettings watchInterval as described above.
+
