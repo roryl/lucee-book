@@ -84,8 +84,14 @@ For one off instatniations, its possible to define the jar files to load with th
 | -- | -- | -- | -- |
 | Type | yes |  | Must be 'java' to tell Lucee it is instantiating a Java object |
 | Classname | yes |  | The Java class being instantiated, must be the full package and class name |
-| Path | yes |  | An list of jar files or directories containing jar files |
+| Path | yes |  | An array or list of jar files or directories containing jar files |
 | Delimiter | | , | The delimiter for the list of jar files, defaults to a comma  |
+
+This example below shows loading the Handlebars.java library to use the Handlebars templating language inside Lucee.
+
+{% gist id="https://gist.github.com/roryl/c8c5fd83bf367c70cd09",file="java_load_jar.cfm" %}{% endgist %}
+
+
 
 
 Further Resources: 
