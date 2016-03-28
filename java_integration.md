@@ -3,7 +3,7 @@
 Lucee is built on Java and makes integrating with existing Java libraries in both directions (calling Java from Lucee, or Lucee from Java). This makes it possible to build parts of an application in Lucee which is a higher level language, and parts in Java, which has many existing libraries and may perform better for some use cases.
 
 ##Calling Java Classes
-Because Lucee is a Java application, any of the Java standard library is available within Lucee scripts without any additional configuration. 
+Because Lucee is a Java application, any of the Java library is available within Lucee scripts without any additional configuration. 
 
 ###Instantiating a Java standard library class
 The first thing to do is akin to importing the java class that is to be used. In Lucee, this is done with the createObject() function.
@@ -105,12 +105,6 @@ writeDump(Handlebars);
 </cfscript>
 ```
 </noscript>
-
-
-
-
-
-
 
 
 Further Resources: 
