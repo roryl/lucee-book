@@ -91,6 +91,25 @@ This example below shows loading the Handlebars.java library to use the Handleba
 
 {% gist id="https://gist.github.com/roryl/c8c5fd83bf367c70cd09",file="java_load_jar.cfm" %}{% endgist %}
 
+<noscript>
+```
+<cfscript>
+//Load a comma separated list of jar files
+Handlebars = createObject('java','com.github.jknack.handlebars.Handlebars','handlebars-4.0.3.jar,commons-lang3-3.1.jar,antlr4-runtime-4.5.1-1.jar').init();
+
+//Load an array of jar files
+Handlebars = createObject('java','com.github.jknack.handlebars.Handlebars',['handlebars-4.0.3.jar','commons-lang3-3.1.jar','antlr4-runtime-4.5.1-1.jar']).init();
+
+//Dump the created java object
+writeDump(Handlebars);
+</cfscript>
+```
+</noscript>
+
+
+
+
+
 
 
 
