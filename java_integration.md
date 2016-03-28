@@ -56,3 +56,37 @@ echo(createObject("java", "java.util.ArrayList").init().size()); //outputs the s
 ```
 </noscript>
 
+###Instantiating third party Java libraries
+In order to use third party java libraries, Lucee must be able to find them. Like any Java application, Lucee will load any java libraries on the  classpath, but Lucee also supports dynamically loading libraries at runtime.
+
+####Defining Java libraries in the Application.cfc
+The Application.cfc can have a setting to tell Lucee where to find additional java libraries
+
+`this.javaSettings = {LoadPaths = [".\java_lib\",".\java\myjar.jar"], loadColdFusionClassPath = true, reloadOnChange= true, watchInterval = 100, watchExtensions = "jar,class,xml"}`
+
+| Paremeter | Description | Required? | Default Value |
+| -- | -- | -- | -- |
+| LoadPaths | An array of directories containing jar files or an array of paths to jar files. It will also accept a single directory or path to a Jar file| yes | |
+| loadCFMLClassPath | Whether to load the underlying Lucee classes. This is only for advanced use cases and should be rare as functionality may change | yes | false |
+| reloadOnChange | Instructs Lucee to reload the java libraries when they have changed without needing to restart the Lucee server | no | false |
+| watchInterval | How many seconds to wait between checking for changes to the java libraries. This only applies if reloadOnChange is true | no | 60 |
+| watchExtensions | Specifies which file extensions to watch for changes. By default only .class and .jar files are monitored | no | false
+
+[Support for this.javasettings was added in Lucee version 4](https://issues.jboss.org/browse/RAILO-1971)
+
+
+####Defining Java libraries during instantiation
+For one off instatniations, its possible to define the jar files to load with the createObject function. 
+
+`createObject('java',String className,String paths, String delimiter )`
+
+| Parameter | Required | Default | Description |
+| -- | -- | -- | -- |
+| Type | yes |  | Must be 'java' to tell Lucee it is instantiating a Java object |
+| Classname | yes |  | The Java class being instantiated, must be the full package and class name |
+| Path | yes |  | An list of jar files or directories containing jar files |
+| Delimiter | | , | The delimiter for the list of jar files, defaults to a comma  |
+
+
+Further Resources: 
+https://github.com/getrailo/railo/wiki/Tutorial--Using-Java-in-Railo
