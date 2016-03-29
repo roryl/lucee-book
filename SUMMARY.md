@@ -42,7 +42,7 @@
        * [Dynamic Evaluation](dynamic_evaluation.md)
        * [Java Integration](java_integration.md)
            * [Calling Lucee from Java](calling_lucee_from_java.md)
-           * Using Lucee to Compile .Java
+           * [Using Lucee to Compile .Java](using_lucee_to_compile_java.md)
        * [Control Flow](control_flow.md)
        * [Interfaces](interfaces.md)
        * [Reflection](reflection.md)
