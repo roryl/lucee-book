@@ -1,16 +1,18 @@
 # Java Integration
 
-Lucee is built on Java and makes integrating with existing Java libraries in both directions (calling Java from Lucee, or Lucee from Java). This makes it possible to build parts of an application in Lucee which is a higher level language, and parts in Java, which has many existing libraries and may perform better for some use cases.
+Lucee is built on Java and makes integrating with existing Java libraries in both directions (calling Java from Lucee, or Lucee from Java). This makes it possible to build parts of an application in Lucee, and parts in Java, which has many existing libraries and may perform better for some use cases.
 
 ##Calling Java Classes
-Because Lucee is a Java application, any of the Java library is available within Lucee scripts. Java libraries you'll use in Lucee are typically of the following types:
+Because Lucee is a Java application, any Java library can be used within Lucee. Java libraries you'll use in Lucee are typically of the following types:
 
 * [Java Standard Library](#-instantiating-a-java-standard-library-class)
-* [Third Party Java Libraries](#Instantiating-third-party Java-libraries)
+* [Third Party Java Libraries](#instantiating-third-party java-libraries)
 * [Custom Java code](#compiling-and-running-java-source-files)
 
 ###Instantiating a Java standard library class
-The first thing to do is akin to importing the java class that is to be used. In Lucee, this is done with the createObject() function.
+The entire Java standard library that ships with the JVM is available to Lucee code without any additional configuration.
+
+To utilize a Java standard library class, it first must brought into Lucee, which is kind of like a class import. In Lucee, this is done with the createObject() function.
 
 {% gist id="https://gist.github.com/roryl/c8c5fd83bf367c70cd09",file="create_java.cfm" %}{% endgist %}
 
@@ -22,7 +24,7 @@ javaArray = createObject("java", "java.util.ArrayList");
 ```
 </noscript>
 
-The above merely readies the Java class but has not called any constructors. To call the constructor use the init() method:
+The above merely readies the Java class but has not called any constructors. To call a constructor use the init() method:
 
 {% gist id="https://gist.github.com/roryl/c8c5fd83bf367c70cd09",file="initialize_java.cfm" %}{% endgist %}
 
@@ -80,7 +82,7 @@ The Application.cfc can have a setting to tell Lucee where to find additional ja
 
 
 ####Defining Java libraries during instantiation
-For one off instatniations, its possible to define the jar files to load with the createObject function. 
+For one off instantiations, its possible to define the jar files to load with the createObject function. 
 
 `createObject('java',String className,String paths, String delimiter )`
 
