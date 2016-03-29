@@ -5,8 +5,8 @@ Lucee is built on Java and makes integrating with existing Java libraries in bot
 ##Calling Java Classes
 Because Lucee is a Java application, any Java library can be used within Lucee. Java libraries you'll use in Lucee are typically of the following types:
 
-* [Java Standard Library](#-instantiating-a-java-standard-library-class)
-* [Third Party Java Libraries](#instantiating-third-party java-libraries)
+* [Java Standard Library](#instantiating-a-java-standard-library-class)
+* [Third Party Java Libraries](#instantiating-third-party-java-libraries)
 * [Custom Java code](#compiling-and-running-java-source-files)
 
 ###Instantiating a Java standard library class
