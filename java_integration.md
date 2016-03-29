@@ -114,8 +114,10 @@ writeDump(Handlebars);
 
 
 Further Resources: 
-https://github.com/getrailo/railo/wiki/Tutorial--Using-Java-in-Railohttps://issues.jboss.org/browse/RAILO-1817
-https://issues.jboss.org/browse/RAILO-2398
+* https://github.com/getrailo/railo/wiki/Tutorial--Using-Java-in-Railo
+* https://github.com/getrailo/railo/wiki/using_Railo_in_Java
+* https://issues.jboss.org/browse/RAILO-1817
+* Compiling Java in line: https://issues.jboss.org/browse/RAILO-2398
 
 ###Custom Java Code
 Developing Lucee code (in .CFCs and .CFMs) does not require compiling, but Java source code files (.java file extension) do need to be compiled before instantiating. When working on a codebase where both the Java and Lucee code is being written, having to compile changes to Java classes and then test in Lucee can be tedious. It is possible to have Lucee compile .java files so that the normal save-file and browser refresh workflow is possible.
