@@ -41,7 +41,7 @@
            * [CGI Variables](cgi_variables.md)
        * [Dynamic Evaluation](dynamic_evaluation.md)
        * [Java Integration](java_integration.md)
-           * Calling Lucee from Java
+           * [Calling Lucee from Java](calling_lucee_from_java.md)
        * [Control Flow](control_flow.md)
        * [Interfaces](interfaces.md)
        * [Reflection](reflection.md)
