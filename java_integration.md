@@ -68,7 +68,7 @@ In order to use third party java libraries, Lucee must be able to find them. Lik
 ####Defining Java libraries in the Application.cfc
 The Application.cfc can have a setting to tell Lucee where to find additional java libraries
 
-`this.javaSettings = {LoadPaths = [".\java_lib\",".\java\myjar.jar"], loadColdFusionClassPath = true, reloadOnChange= true, watchInterval = 100, watchExtensions = "jar,class,xml"}`
+`this.javaSettings = {LoadPaths = [".\java_lib\",".\java\myjar.jar"], loadCFMLClassPath = true, reloadOnChange= true, watchInterval = 100, watchExtensions = "jar,class,xml"}`
 
 | Parameter | Required? | Default Value |  Description |
 | -- | -- | -- | -- |
