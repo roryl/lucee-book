@@ -79,6 +79,14 @@ The Application.cfc can have a setting to tell Lucee where to find additional ja
 | watchExtensions | no | false |  Specifies which file extensions to watch for changes. By default only .class and .jar files are monitored |
 
 [Support for this.javasettings was added in Lucee version 4](https://issues.jboss.org/browse/RAILO-1971)
+> Note, there appears to be an issue with watchinterval and detecting changed classes https://luceeserver.atlassian.net/browse/LDEV-800 as a workaround, use the admin tag to restart the Lucee instance and pick up Java library changes:
+
+```
+<cfscript>
+//Set the password to the password of your server administrator
+admin action="restart" type="server" password="";
+</cfscript>
+```
 
 
 ####Defining Java libraries during instantiation
