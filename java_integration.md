@@ -70,13 +70,13 @@ The Application.cfc can have a setting to tell Lucee where to find additional ja
 
 `this.javaSettings = {LoadPaths = [".\java_lib\",".\java\myjar.jar"], loadColdFusionClassPath = true, reloadOnChange= true, watchInterval = 100, watchExtensions = "jar,class,xml"}`
 
-| Paremeter | Description | Required? | Default Value |
+| Parameter | Required? | Default Value |  Description |
 | -- | -- | -- | -- |
-| LoadPaths | An array of directories containing jar files or an array of paths to jar files. It will also accept a single directory or path to a Jar file| yes | |
-| loadCFMLClassPath | Whether to load the underlying Lucee classes. This is only for advanced use cases and should be rare as functionality may change | yes | false |
-| reloadOnChange | Instructs Lucee to reload the java libraries when they have changed without needing to restart the Lucee server | no | false |
-| watchInterval | How many seconds to wait between checking for changes to the java libraries. This only applies if reloadOnChange is true | no | 60 |
-| watchExtensions | Specifies which file extensions to watch for changes. By default only .class and .jar files are monitored | no | false
+| LoadPaths | yes | | An array of directories containing jar files or an array of paths to jar files. It will also accept a single directory or path to a Jar file|
+| loadCFMLClassPath | yes | false | Whether to load the underlying Lucee classes. This is only for advanced use cases and should be rare as functionality may change |
+| reloadOnChange | no | false | Instructs Lucee to reload the java libraries when they have changed without needing to restart the Lucee server |
+| watchInterval | no | 60 | How many seconds to wait between checking for changes to the java libraries. This only applies if reloadOnChange is true |
+| watchExtensions | no | false |  Specifies which file extensions to watch for changes. By default only .class and .jar files are monitored |
 
 [Support for this.javasettings was added in Lucee version 4](https://issues.jboss.org/browse/RAILO-1971)
 
