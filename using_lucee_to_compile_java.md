@@ -8,8 +8,9 @@ The following Application.cfc will compile any Java classes it finds in its cont
 
 {% gist id="roryl/3580c74e7749ba8bd7e7d7d07278cc66",file="Application.cfc" %}{% endgist %}
 
-```
+
 <noscript>
+```
 component {
   	this.javaSettings = {LoadPaths = ["./"], loadCFMLClassPath = true, reloadOnChange= true, watchInterval = 2, watchExtensions = "jar,class,xml"}
 
@@ -54,8 +55,9 @@ component {
 	    return result;
 	}
 }
-</noscript>
 ```
+</noscript>
+
 
 This method was found from: https://issues.jboss.org/browse/RAILO-2398
 
