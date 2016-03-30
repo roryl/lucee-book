@@ -5,13 +5,15 @@ This article assumes that you are not using a Framework. If you are using a fram
 
 ##Classic Lucee Templates
 
-The Classic Lucee Templates section describes how to make HTML output by combining Lucee standard library tags and HTML. This is the "classic" approach, because it is the original method of building templates, but it is by no means antiquated!
+The Classic Lucee Templates section describes how to make HTML output by combining Lucee standard library tags and HTML. This is the "classic" approach, because it is the original method of building templates, but it is by no means antiquated. This is a very useful method for fully server side or more simple applications.
 
 ##Lucee Template Custom Tags
 For complex views or for when building a view library that others may use, Lucee custom tags allow creating custom view tags that can output HTML and perform custom logic. These are similar to Java JSP tags. 
 
 ##Lucee Handlebars.js
-For those following a logic-less template philosophy, or for building isomorphic javascript apps, the Lucee community has implemented a popular templating language called [Handlebars.js](http://handlebarsjs.com/), and it is called Handlebars.lucee
+For those following a logic-less template philosophy, or for building isomorphic javascript apps, the Lucee community has implemented a popular templating language called [Handlebars.js](http://handlebarsjs.com/), and it is called [Handlebars.lucee](https://github.com/roryl/handlebars.lucee)
+
+Handlebars templates do not contain any logic and are typically used to output graphs of nested json data
 
 ```
 <h1>Comments</h1>
