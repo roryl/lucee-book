@@ -125,6 +125,4 @@ Further Resources:
 * Compiling Java in line: https://issues.jboss.org/browse/RAILO-2398
 
 ###Custom Java Code
-Developing Lucee code (in .CFCs and .CFMs) does not require compiling, but Java source code files (.java file extension) do need to be compiled before instantiating. When working on a codebase where both the Java and Lucee code is being written, having to compile changes to Java classes and then test in Lucee can be tedious. It is possible to have Lucee compile .java files so that the normal save-file and browser refresh workflow is possible.
-
-To have Lucee compile Java classes makes use of a function to compile the Java source code, described below, and the this.javasettings watchInterval as described above.
+Any Java code that you write can be utilized just like a third party library above. Make sure that your .java classes are compiled to .class or .jar files and visible to be loaded using one of the methods listed for third party libraries. For just a new custom java classes, its possible to [have Lucee compile java classes](https://rorylaitila.gitbooks.io/lucee/content/using_lucee_to_compile_java.html).
