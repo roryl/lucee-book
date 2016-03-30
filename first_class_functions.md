@@ -4,7 +4,7 @@ All function declarations in Lucee are first class functions, meaning that funct
 
 Consider the following two Components:
 
-<script src="https://gist.github.com/roryl/468f346631ec9afa3cf9.js?file=component_a.cfc"></script>
+{% gist id="roryl/468f346631ec9afa3cf9",file="component_a.cfc" %}{% endgist %}
 
 <noscript>
 ```
@@ -22,7 +22,8 @@ component {
 ```
 </noscript>
 
-<script src="https://gist.github.com/roryl/468f346631ec9afa3cf9.js?file=component_b.cfc"></script>
+{% gist id="roryl/468f346631ec9afa3cf9",file="component_b.cfc" %}{% endgist %}
+
 
 <noscript>
 ```
