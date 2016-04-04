@@ -98,6 +98,41 @@ ALTER TABLE cf_session_data ADD PRIMARY KEY(cfid,name);
 https://github.com/getrailo/railo/wiki/Using-database-for-session-data-storage
 
 ##Client Clustering
+Enabled client storage is the same as session storage above, but the Application.cfc simply needs to enable client storage. This will create a table "cf_client_data"
+
+{% gist id="roryl/201a70ad0bbbc27f84c7cc538c95b43d",file="Application.cfc" %}{% endgist %}
+
+<noscript>
+```
+component {
+
+	this.datasources["lucee_sessions"] = {
+		  class: 'org.gjt.mm.mysql.Driver'
+		, connectionString: 'jdbc:mysql://192.168.33.10:3306/lucee_sessions?useUnicode=true&characterEncoding=UTF-8&useLegacyDatetimeCode=true'
+		, username: 'lucee_sessions'
+		, password: "encrypted:8c3ea865feab8133a7614f58aee150cddee0ed6f82a476f1"
+		
+		// optional settings
+		, storage:true // default: false
+	};
+
+	this.sessionTimeout = createTimeSpan(0,0,20,0); //Set a default session timeout of 20 minutes
+	this.sessionStorage = "lucee_sessions"; //Set our session storage to the lucee_sessions datasource
+
+	this.clientTimeout = createTimeSpan(0,1,0,0);
+	this.clientManagement = true;
+	this.clientStorage = "lucee_sessions";
+
+	function onSessionStart(){
+		session.someData = "My Data";
+	}
+
+	function onRequestStart(){
+		client.myData = "My Client Data";
+	}
+}
+```
+</noscript>
 
 ##Cluster Cache
 http://stackoverflow.com/questions/31053742/railo-lucee-ehcache-sessionstorage-not-synchronizing
