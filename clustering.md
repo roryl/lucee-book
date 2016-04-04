@@ -135,7 +135,7 @@ component {
 </noscript>
 
 ##Enabling Cache Replication
-For sharing complex data across a cluster that is not related to a specific user session or client, use a Lucee EHCache that is enabled for distributed replication. The [caching strategies](https://rorylaitila.gitbooks.io/lucee/content/caching.html) that can be used with the distributed cache are:
+For sharing complex data across a cluster that is not related to a specific user session or client scope, use a Lucee EHCache that is enabled for distributed replication. The [caching strategies](https://rorylaitila.gitbooks.io/lucee/content/caching.html) that can be used with the distributed cache are:
 
 * Functions
 * Objects (CFCs, structs & arrays)
@@ -145,6 +145,33 @@ For sharing complex data across a cluster that is not related to a specific user
 
 This section deals merely with configuring the distributed cache between two Lucee instances. For general caching setup see the caching section.
 
+Setting up a distributed cache is as simple as configuring an EHCache on two Lucee instances. The following requirements must be met:
+
+1. The cache on every Lucee instance share the same name
+2. Each Lucee instance is on the same network and can reach each other
+  3. While it is possible to configure a distributed cache between instances not on the same network, this is an advanced scenario and is not discussed here. A good understanding of [EHCache](http://www.ehcache.org/) for an advanced configuration.
+
+**For Each Lucee Instance Do the Following**
+
+###1. Setup The Cache
+In the Lucee Admin, go to Services > Cache
+
+####Create a EHCache
+
+![](create.png)
+
+####Enable Distributed
+
+Switch the Distribution Type from "off" to "automatic"
+
+![](setup.png)
+
+####Set the Default Cache Types
+Go back to Services > Cache and set the default cache types that you want shared between these caches. This gives a lot of flexibility for some types to be distributed, and others not. There can be only one default type per cache. Each type will need its own distributed cache to share that type. 
+
+![](default_cache.png)
 
 
-http://stackoverflow.com/questions/31053742/railo-lucee-ehcache-sessionstorage-not-synchronizing
+Community Notes:
+
+- http://stackoverflow.com/questions/31053742/railo-lucee-ehcache-sessionstorage-not-synchronizing
