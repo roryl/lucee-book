@@ -107,7 +107,7 @@
            * [Introducing Lucee ORM](introducing_lucee_orm.md)
            * [Architecture](architecture.md)
            * [Configure ORM](configure_orm.md)
-   * Parallelism
+   * Concurrency
        * Threading
        * Parallel Functions
        * Synchronized
