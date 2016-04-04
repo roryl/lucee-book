@@ -16,11 +16,12 @@ Sharing data across a cluster has drawbacks and is not a universal solution to a
 Lucee itself does not provide routing and load balancing, as this is handled by a web server (Apache, IIS, NginX). Typically Lucee is installed with Apache, and this guide describes how to configure a basic Apache load balancer. However there are many load balancing solutions. If Lucee is configured for clustering, any load balancer that you deploy should work as well as any other at the Lucee layer.
 
 ###Stateless Applications
-Avoid storing application and user state in global variables (application, session, client) if this data needs to be available and synchronized across the cluster. Every bit of data that needs to be shared opens up opportunity to race conditions or forgetting to synchronize the data. Instead, keep the Lucee application *stateless* by loading all of the data necessary for each request on every request, and then naturally any request can be served by any Lucee instance in the cluster. Only seek to share the data across the cluster which is causing performance bottlenecks.
+Avoid storing application and user state in global variables (application, session, client) if this data needs to be available and synchronized across the cluster. Every bit of data that needs to be shared opens up opportunity to race conditions or complexity. Instead, keep the Lucee application *stateless* by loading all of the data necessary for each request on every request, and then naturally any request can be served by any Lucee instance in the cluster. Only seek to share the data across the cluster necessary to improve performance.
 
-###Use Sticky Sessions
+###Sticky Sessions
 When configuring your load balancer, *sticky sessions* will ensure that a single Lucee instance serves the same user for the entire time that the user is engaged. Using sticky sessions will limit opportunities for race conditions, where saving/reading session data is not synchronized in time across instances in the cluster between requests. This is most an issue in ajax heavy applications which may fire multiple requests to the cluster at the same time.
 
+If not using sticky sessions, it is necessary to specify `this.sessionCluster = true;` in the Application.cfc to ensure that each request synchronizes the session back to the datastore immediately. If saving a lot of data into the session scope, this may impact performance.
 
 ##Enabling Session Clustering
 Multiple Lucee instances can share session data by storing the session data a database. While this incurs a performance penalty, storing sessions in a database confers the following benefits: 
@@ -183,3 +184,4 @@ Go back to Services > Cache and set the default cache types that you want shared
 Community Notes:
 
 - http://stackoverflow.com/questions/31053742/railo-lucee-ehcache-sessionstorage-not-synchronizing
+- https://groups.google.com/forum/#!topic/lucee/22_1wwR5q7c
