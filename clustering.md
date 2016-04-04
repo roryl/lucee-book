@@ -143,6 +143,8 @@ For sharing complex data across a cluster that is not related to a specific user
 * Templates
 * Includes
 
-See
+This section deals merely with configuring the distributed cache between two Lucee instances. For general caching setup see the caching section.
+
+
 
 http://stackoverflow.com/questions/31053742/railo-lucee-ehcache-sessionstorage-not-synchronizing
