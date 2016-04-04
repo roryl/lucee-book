@@ -1,6 +1,14 @@
 # Clustering
 Clustering allows sharing data among multiple Lucee server instances for load balancing and failover. Currently the only *variable scopes* that can be shared across the cluster are Session and Client variables. To share other types of data across instances, store the data in a database, or configure a distributed cache. Lucee does not have specific "clustering" settings, but supports features which enable you to develop applications in a clustered manner.
 
+1. [Clustering Considerations](#clustering-considerations)
+  2. [Load Balancers](#load-balancers)
+  3. [Stateless Applications](#stateless-applications)
+  4. [Use Sticky Sessions](#use-sticky-sessions)
+5. [Enabling Session Clustering](#enabling-session-clustering)
+6. [Enabling Client Clustering](#enabling-client-clustering)
+7. [Enabling Cache Clustering](#enabling-cache_clustering)
+
 ##Clustering Considerations
 Sharing data across a cluster has drawbacks and is not a universal solution to all performance and data sharing needs. Implementing the following recommendations will make clustering easier to achieve.
 
@@ -134,7 +142,7 @@ component {
 ```
 </noscript>
 
-##Enabling Cache Replication
+##Enabling Cache Clustering
 For sharing complex data across a cluster that is not related to a specific user session or client scope, use a Lucee EHCache that is enabled for distributed replication. The [caching strategies](https://rorylaitila.gitbooks.io/lucee/content/caching.html) that can be used with the distributed cache are:
 
 * Functions
