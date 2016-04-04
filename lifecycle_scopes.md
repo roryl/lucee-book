@@ -25,7 +25,7 @@ These variable scopes are available from any script executing within an applicat
 Accessible for the entire life of the application, which is until the applicationTimeout specified in the Application.cfc expires. Care must be used when multiple requests are writing to the same application scoped variable. In these situations, use lock {} to syncronize write access.
 
 ###Session
-Accessible for the life of a user session, until the sessionTimeout specified in Application.cfc is reached from no activity. Care must be used when multiple requests could come in from the same client simultaneously. In these situations, use lock {} to syncronize write access. 
+Accessible for the life of a user session, until the sessionTimeout specified in Application.cfc is reached from no activity. Care must be used when multiple read & write requests could come in from the same client simultaneously and overlap. In these situations, use lock {} to syncronize write access. See [Lucee Clustering](https://rorylaitila.gitbooks.io/lucee/content/clustering.html) on sharing session data across multiple Lucee instances. 
 
 ###Cookie
 Accessible for the life of a single request, the Cookie scope is created by Lucee based on the cookies provided by the user's browser. It contains the same data as is in the cgi.http_cookie variable, but it is parsed into  a structure for you like below
@@ -33,12 +33,10 @@ Accessible for the life of a single request, the Cookie scope is created by Luce
 ![](cookie_example.png)
 
 ###Client
-Contains variables that should be persistent for a particular browser client. By default, client variables are stored as cookies, and so are synonymous with the cookie scope. However, client variables can also be stored is a database where a cookie ID is used to loop up the database entry and populate the client scope.
+Contains variables that should be persistent for a particular browser client. By default, client variables are stored as cookies, and so are synonymous with the cookie scope. However, client variables can also be stored is a database where a cookie ID is used to loop up the database entry and populate the client scope. See [Lucee Clustering](https://rorylaitila.gitbooks.io/lucee/content/clustering.html) on storing client data in a databasse and sharing client data across multiple Lucee instances.
 
 ###Server
 Server scoped variables exist for the life of a running Lucee instance.
-
-###Cluster
 
 ##Request Scopes
 These are scopes created and available for the live of a single web request. Once the request ends, any data set into these scopes is deleted.
