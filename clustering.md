@@ -134,5 +134,15 @@ component {
 ```
 </noscript>
 
-##Enabling Cache Clustering
+##Enabling Cache Replication
+For sharing complex data across a cluster that is not related to a specific user session or client, use a Lucee EHCache that is enabled for distributed replication. The [caching strategies](https://rorylaitila.gitbooks.io/lucee/content/caching.html) that can be used with the distributed cache are:
+
+* Functions
+* Objects (CFCs, structs & arrays)
+* Queries
+* Templates
+* Includes
+
+
+
 http://stackoverflow.com/questions/31053742/railo-lucee-ehcache-sessionstorage-not-synchronizing
