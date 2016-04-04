@@ -1,5 +1,5 @@
 # Clustering
-Clustering allows sharing data among multiple Lucee server instances for load balancing and failover. Currently the only *variable scopes* that can be shared across the cluster are Session and Client variables. To share other types of data across instances, store the data in a database, or configure a distributed cache. Lucee does not have specific "clustering" settings, but supports features which enable you to develop applications in a clustered manner. 
+Clustering allows sharing data among multiple Lucee server instances for load balancing and failover. Currently the only *variable scopes* that can be shared across the cluster are Session and Client variables. To share other types of data across instances, store the data in a database, or configure a distributed cache. Lucee does not have specific "clustering" settings, but supports features which enable you to develop applications in a clustered manner.
 
 ##Clustering Considerations
 Sharing data across a cluster has drawbacks and is not a universal solution to all performance and data sharing needs. Implementing the following recommendations will make clustering easier to achieve.
@@ -14,7 +14,7 @@ Avoid storing application and user state in global variables (application, sessi
 When configuring your load balancer, *sticky sessions* will ensure that a single Lucee instance serves the same user for the entire time that the user is engaged. Using sticky sessions will limit opportunities for race conditions, where saving/reading session data is not synchronized in time across instances in the cluster between requests. This is most an issue in ajax heavy applications which may fire multiple requests to the cluster at the same time.
 
 
-##Session Clustering
+##Enabling Session Clustering
 Multiple Lucee instances can share session data by storing the session data a database. While this incurs a performance penalty, storing sessions in a database confers the following benefits: 
 
 * Sessions are still available if Lucee is restarted
@@ -97,8 +97,8 @@ ALTER TABLE cf_session_data ADD PRIMARY KEY(cfid,name);
 
 https://github.com/getrailo/railo/wiki/Using-database-for-session-data-storage
 
-##Client Clustering
-Enabled client storage is the same as session storage above, but the Application.cfc simply needs to enable client storage. This will create a table "cf_client_data"
+##Enabling Client Clustering
+Enabled client storage is the same as session storage above, but the Application.cfc simply needs to enable client storage. This will create a table "cf_client_data" along with the "cf_session_data" table. Usually client and session data is used together, but you could only use client storage if needed. 
 
 {% gist id="roryl/201a70ad0bbbc27f84c7cc538c95b43d",file="Application.cfc" %}{% endgist %}
 
@@ -134,5 +134,5 @@ component {
 ```
 </noscript>
 
-##Cluster Cache
+##Enabling Cache Clustering
 http://stackoverflow.com/questions/31053742/railo-lucee-ehcache-sessionstorage-not-synchronizing
