@@ -1,6 +1,5 @@
 # Clustering
-
-Clustering allows sharing data among multiple Lucee server instances for load balancing and failover. Currently the only *variable scopes* that can be shared across the cluster are Session and Client variables. To share other types of data across instances, store the data in a database, or configure a distributed cache.
+Clustering allows sharing data among multiple Lucee server instances for load balancing and failover. Currently the only *variable scopes* that can be shared across the cluster are Session and Client variables. To share other types of data across instances, store the data in a database, or configure a distributed cache. Lucee does not have specific "clustering" settings, but supports features which enable you to develop applications in a clustered manner. 
 
 ##Clustering Considerations
 Sharing data across a cluster has drawbacks and is not a universal solution to all performance and data sharing needs. Implementing the following recommendations will make clustering easier to achieve.
@@ -16,7 +15,85 @@ When configuring your load balancer, *sticky sessions* will ensure that a single
 
 
 ##Session Clustering
-Multiple Lucee instances can share session data by storing the data a database.
+Multiple Lucee instances can share session data by storing the session data a database. While this incurs a performance penalty, storing sessions in a database confers the following benefits: 
+
+* Sessions are still available if Lucee is restarted
+* If a Lucee instance failes, the session will be available on another instance
+* Frees up memory on the Lucee instance
+
+>Note: Session data can be stored in your primary database, or another database dedicated just for sessions. If you want your session storage to not be impacted by performance issues of your primary database, consider creating a dedicated database just for sessions. This article sets up a dedicated database.
+
+The steps below are for a MySQL database, but any SQL database can be used for session storage. 
+
+###Create the MySQL database
+The statements below will create a database & user. Refer to the documentation for your specific database.
+
+{% gist id="roryl/44f730ecd8ba2593b03e45f1189fcf5f",file="database.sql" %}{% endgist %}
+
+<noscript>
+```
+CREATE DATABASE lucee_sessions;
+CREATE USER lucee_sessions@'localhost' identified by '123456';
+GRANT ALL ON lucee_sessions.* to lucee_sessions@'localhost' identified by '123456';
+FLUSH PRIVILEGES;
+```
+</noscript>
+
+###Configure the datasource in Lucee
+
+[Configure the datasource in Lucee](https://rorylaitila.gitbooks.io/lucee/content/sqlrdbms.html) to allow session/client storage. This is like any other datasource, but be sure to check an additional option: "Allow to use this datasource as client/session storage."
+
+![](allow_storage.png)
+
+If the datasource is configured correctly, you should see a "Yes" in the storage column on the datasources page:
+
+![](storage_yes.png)
+
+###Setup Application.cfc
+
+Tell your Lucee Application to use the datasource for session storage. We also copied the datasource details from the admin into the Application.cfc so that our configuration is portable. 
+
+{% gist id="roryl/44f730ecd8ba2593b03e45f1189fcf5f",file="Application.cfc" %}{% endgist %}
+
+<noscript>
+```
+component {
+
+	this.datasources["lucee_sessions"] = {
+		  class: 'org.gjt.mm.mysql.Driver'
+		, connectionString: 'jdbc:mysql://localhost:3306/lucee_sessions?useUnicode=true&characterEncoding=UTF-8&useLegacyDatetimeCode=true'
+		, username: 'lucee_sessions'
+		, password: "encrypted:149560f5791fa0a32a4038bf23d139a8056de2594ee6ceab"
+		
+		// optional settings
+		, storage:true // default: false
+	};
+
+	this.sessionTimeout = createTimeSpan(0,0,20,0); //Set a default session timeout of 20 minutes
+	this.sessionStorage = "lucee_sessions"; //Set our session storage to the lucee_sessions datasource
+}
+```
+</noscript>
+
+###Run your Lucee Application
+The first time your application loads, Lucee should create a table called cf_session_data with a session in it that looks like this:
+
+![](session_data.png)
+
+###Add Indexing
+For MySQL and databases supporting indexing, its recommended to add a primary key index to the generated table. This will improve performance for large numbers of sessions. The example below is for MySQL. See your database documentation for adding a primary key:
+
+{% gist id="roryl/44f730ecd8ba2593b03e45f1189fcf5f",file="alter_table.sql" %}{% endgist %}
+
+<noscript>
+```
+USE lucee_sessions;
+ALTER TABLE cf_session_data ADD PRIMARY KEY(cfid,name);
+```
+</noscript>
+
+
+> Note All manipulations with session data are always performed in memory. Only after session become inactive for about 10 sec Lucee will dump session data to database and free up memory. Every 1 hour Lucee automatically cleans database from expired sessions (session timeout value).
 
 https://github.com/getrailo/railo/wiki/Using-database-for-session-data-storage
 
