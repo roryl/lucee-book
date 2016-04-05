@@ -81,10 +81,10 @@ writeDump(dateTimeFormat(myDate, "medium", "PST")); //But we can output into any
 ```
 </noscript>
 
-The first dump outputs the EST time:
+The first dump outputs the America/New_York time:
 ![](est.png)
 
-And the second is converted to PST 
+And the second is converted to PST  (three hours earlier)
 
 ![](pst.png)
 
