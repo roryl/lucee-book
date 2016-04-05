@@ -9,7 +9,7 @@ Lucee has a built in DateTime object.
 ![](date.png)
 
 
-Creating a Date only object using the createDate() function, simply creates a DateTime object, but the Time is 0. This is handy when time is not needed but only the date.
+Creating a Date only object using the createDate() function, simply creates a DateTime object, but the Time is 0. This is handy when only the date is needed and not the time.
 
 {% gist id="roryl/6a9839d7d9cbd52636afc35844e1aa3f",file="create_date_time.cfm" %}{% endgist %}
 
