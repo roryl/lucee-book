@@ -73,12 +73,19 @@ This example shows how the datetime object is independent of the timezone. First
 <noscript>
 ```
 <cfscript>
-setTimezone("EST"); //Set a timezone for this request
+setTimezone("America/New_York"); //Set a timezone for this request
 myDate = now(); //Set the current time to now
-writeDump(myDate); //When dumping now, it outputs based on the timezone set
+writeDump(myDate);
 writeDump(dateTimeFormat(myDate, "medium", "PST")); //But we can output into any other time zone
 </cfscript>
 ```
 </noscript>
+
+The first dump outputs the EST time:
+![](est.png)
+
+And the second is converted to PST 
+
+![](pst.png)
 
 
