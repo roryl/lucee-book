@@ -54,9 +54,31 @@ Because timezones are not a part of the datetime object, this means that the tim
 - HST (Hawaiian Standard Time in the USA)
 
 ###Always store UTC
-When persisting dates to a database, you should always store dateTimes in UTC and convert them to the locale appropriate timezone for your user as a final step. This will keep your datetimes accurate and error free from timezone changes or user preference changes.
+When persisting dates to a database, it is best practice to store dateTimes in UTC and convert them to the locale appropriate timezone for the user as a final step. This will keep datetimes accurate and error free from timezone changes or user preference changes.
+
+Note with MySQL, there is an issue with timezone conversions by Lucee. Be sure to set the datasource config "Legacy Datetime Code" to false
+
+![](legacy datetime code.png)
+
+See these articles:
+* https://groups.google.com/forum/#!topic/lucee/WZvSozMB6-A
+* https://issues.jboss.org/browse/RAILO-2555
+* http://stackoverflow.com/questions/7605953/how-to-change-mysql-timezone-in-java-connection
 
 ###Timezone Example
+This example shows how the datetime object is independent of the timezone. First it uses `setTimezone` to override the Lucee Application.cfc or Admin timezone, then it it gets the current time with `now()`, dumps it, then outputs the time in PST timezone. 
+
 {% gist id="roryl/6a9839d7d9cbd52636afc35844e1aa3f",file="timezone.cfc" %}{% endgist %}
+
+<noscript>
+```
+<cfscript>
+setTimezone("EST"); //Set a timezone for this request
+myDate = now(); //Set the current time to now
+writeDump(myDate); //When dumping now, it outputs based on the timezone set
+writeDump(dateTimeFormat(myDate, "medium", "PST")); //But we can output into any other time zone
+</cfscript>
+```
+</noscript>
 
 
