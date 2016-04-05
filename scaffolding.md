@@ -38,7 +38,7 @@ Here is a possible complex directory structure:
 
 - /root
   - /model - Entities & Value Objects of your Domain
-  - /services - Communicates with other domains
+  - /services - Communicates with other domains and infrastructure
   - /vendor - Third party code
   - /util - Non domain / universal code
   - /app - client web application    
