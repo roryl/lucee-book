@@ -70,9 +70,9 @@ component {
 
 	this.datasources["lucee_sessions"] = {
 		  class: 'org.gjt.mm.mysql.Driver'
-		, connectionString: 'jdbc:mysql://localhost:3306/lucee_sessions?useUnicode=true&characterEncoding=UTF-8&useLegacyDatetimeCode=true'
+		, connectionString: 'jdbc:mysql://192.168.33.10:3306/lucee_sessions?useUnicode=true&characterEncoding=UTF-8&useLegacyDatetimeCode=true'
 		, username: 'lucee_sessions'
-		, password: "encrypted:149560f5791fa0a32a4038bf23d139a8056de2594ee6ceab"
+		, password: "encrypted:8c3ea865feab8133a7614f58aee150cddee0ed6f82a476f1"
 		
 		// optional settings
 		, storage:true // default: false
@@ -80,6 +80,11 @@ component {
 
 	this.sessionTimeout = createTimeSpan(0,0,20,0); //Set a default session timeout of 20 minutes
 	this.sessionStorage = "lucee_sessions"; //Set our session storage to the lucee_sessions datasource
+	this.sessionCluster = true; //Set true if more than one Lucee instance connected to the same sessison store
+
+	function onSessionStart(){
+		session.someData = "My Data";
+	}
 }
 ```
 </noscript>
@@ -101,8 +106,9 @@ ALTER TABLE cf_session_data ADD PRIMARY KEY(cfid,name);
 ```
 </noscript>
 
+###this.sessionCluster
 
-> Note All manipulations with session data are always performed in memory. Only after session become inactive for about 10 sec Lucee will dump session data to database and free up memory. Every 1 hour Lucee automatically cleans database from expired sessions (session timeout value).
+By default in Lucee, all manipulations with session data are always performed in memory. Only after session become inactive for about 10 sec Lucee will dump session data to database and free up memory. Every 1 hour Lucee automatically cleans database from expired sessions (session timeout value). This can cause a problem with delays between two Lucee instances utilizing the same session store. The Application.cfc setting `this.sessionCluster = true;` should be set when more then one Lucee instance is accessing the same session database. This setting can be omitted for sincle Lucee instances because there is not a rick of race conditions. 
 
 https://github.com/getrailo/railo/wiki/Using-database-for-session-data-storage
 
