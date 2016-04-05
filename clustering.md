@@ -108,7 +108,7 @@ ALTER TABLE cf_session_data ADD PRIMARY KEY(cfid,name);
 
 ###this.sessionCluster
 
-By default in Lucee, all manipulations with session data are always performed in memory. Only after session become inactive for about 10 sec Lucee will dump session data to database and free up memory. Every 1 hour Lucee automatically cleans database from expired sessions (session timeout value). This can cause a problem with delays between two Lucee instances utilizing the same session store. The Application.cfc setting `this.sessionCluster = true;` should be set when more then one Lucee instance is accessing the same session database. This setting can be omitted for sincle Lucee instances because there is not a rick of race conditions. 
+By default in Lucee, all manipulations with session data are always performed in memory. Only after session become inactive for about 10 sec Lucee will dump session data to database and free up memory. Every 1 hour Lucee automatically cleans database from expired sessions (session timeout value). This can cause a problem with delays between two Lucee instances utilizing the same session store. The Application.cfc setting `this.sessionCluster = true;` should be set when more then one Lucee instance is accessing the same session database. This setting can be omitted for sincle Lucee instances because there is not a risk of race conditions. 
 
 https://github.com/getrailo/railo/wiki/Using-database-for-session-data-storage
 
