@@ -4,10 +4,10 @@ Clustering allows sharing data among multiple Lucee server instances for load ba
 1. [Clustering Considerations](#clustering-considerations)
   2. [Load Balancers](#load-balancers)
   3. [Stateless Applications](#stateless-applications)
-  4. [Use Sticky Sessions](#use-sticky-sessions)
+  4. [Use Sticky Sessions](#sticky-sessions)
 5. [Enabling Session Clustering](#enabling-session-clustering)
 6. [Enabling Client Clustering](#enabling-client-clustering)
-7. [Enabling Cache Clustering](#enabling-cache_clustering)
+7. [Enabling Cache Clustering](#enabling-cache-clustering)
 
 ##Clustering Considerations
 Sharing data across a cluster has drawbacks and is not a universal solution to all performance and data sharing needs. Implementing the following recommendations will make clustering easier to achieve.
