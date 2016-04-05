@@ -68,7 +68,7 @@ See these articles:
 ###Timezone Example
 This example shows how the datetime object is independent of the timezone. First it uses `setTimezone` to override the Lucee Application.cfc or Admin timezone, then it it gets the current time with `now()`, dumps it, then outputs the time in PST timezone. 
 
-{% gist id="roryl/6a9839d7d9cbd52636afc35844e1aa3f",file="timezone.cfc" %}{% endgist %}
+{% gist id="roryl/6a9839d7d9cbd52636afc35844e1aa3f",file="timezone.cfm" %}{% endgist %}
 
 <noscript>
 ```
