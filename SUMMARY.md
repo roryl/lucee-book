@@ -32,7 +32,7 @@
            * [Arrays](arrays.md)
            * [Structs](structs.md)
            * [Queries](queries.md)
-           * Dates
+           * [Dates](dates.md)
            * Lists
        * [Closures](closures.md)
        * [Templates](templates.md)
