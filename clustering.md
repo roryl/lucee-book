@@ -62,6 +62,8 @@ If the datasource is configured correctly, you should see a "Yes" in the storage
 
 Tell your Lucee Application to use the datasource for session storage. We also copied the datasource details from the admin into the Application.cfc so that our configuration is portable. 
 
+>Note: Only Lucee managed sessions support clustering. J2EE sessions are managed by the underlying Java servlet container (Tomcat) by default. Refer to Tomcat documentation on how to cluster sessions in Tomcat.
+
 {% gist id="roryl/44f730ecd8ba2593b03e45f1189fcf5f",file="Application.cfc" %}{% endgist %}
 
 <noscript>
@@ -81,6 +83,7 @@ component {
 	this.sessionTimeout = createTimeSpan(0,0,20,0); //Set a default session timeout of 20 minutes
 	this.sessionStorage = "lucee_sessions"; //Set our session storage to the lucee_sessions datasource
 	this.sessionCluster = true; //Set true if more than one Lucee instance connected to the same sessison store
+    this.sessionType = "cfml"; //Needed for session clustering
 
 	function onSessionStart(){
 		session.someData = "My Data";
