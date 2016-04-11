@@ -8,6 +8,7 @@
 - [For IN Loop Array](#for-in-loop-array)
 - [For IN loop Struct](#for-in-loop-struct)
 - [For In Loop Query](#for-in-loop-query)
+- [For In Loop List](#for-in-loop-query)
 - [Array Loop](#array-loop)
 - [While Loop](#while-loop)
 - [Closure](#closure)
