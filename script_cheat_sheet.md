@@ -61,6 +61,10 @@
 
 {% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="for_in_query.cfm" %}{% endgist %}
 
+#For IN loop List
+The for in construct works with any [List](https://rorylaitila.gitbooks.io/lucee/content/lists.html) that is comma delimited. To change a list to comma delimited, use the ['listChangeDelims()'](http://luceedocs.herokuapp.com/object/string/listChangeDelims) function.
+
+{% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="for_in_list.cfm" %}{% endgist %}
 
 
 ##Array Loop
