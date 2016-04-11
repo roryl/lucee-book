@@ -3,6 +3,7 @@
 Language features include:
 
 * [Classes (Known as Components in Lucee)](https://rorylaitila.gitbooks.io/lucee/content/classes.html)
+* [Class Properties](https://rorylaitila.gitbooks.io/lucee/content/properties.html)
 * [Types](https://rorylaitila.gitbooks.io/lucee/content/types.html)
 * [Type Hinting](https://rorylaitila.gitbooks.io/lucee/content/types.html#type-hinting)
 * [Type Coercion](https://rorylaitila.gitbooks.io/lucee/content/types.html#type-coercion)
