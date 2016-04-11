@@ -173,9 +173,11 @@ component accessors='true' {
 
 When dumping this component it now looks like:
 
+![](componentPropertiesWithDefault.png)
 
+The difference here is the myValue property has a default without any code setting it in the constructor.
 
-And the script to create use component :
+The following example shows using this default property value and will echo `test this is a default!`
 
 {% gist id="roryl/5fbeecc3f9dde7289f519b7963db6a72",file="use_default.cfm" %}{% endgist %}
 
