@@ -246,6 +246,10 @@ writeDump(now());
 ```
 </noscript>
 
+####Constructor Valdiation
+When using the population method above, it is not possible to define a constructor which validates object state, because defining such a constructor cancels the automatic populating. State either needs to be validated by defining customer setter methods for each property, or by manually calling a defined validation method after instantiation. 
+
+There is an enhancement request for auto populating validation here: https://luceeserver.atlassian.net/browse/LDEV-815
 
 
 
