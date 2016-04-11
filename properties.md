@@ -3,7 +3,9 @@ Properties in Lucee allow annotating Components with meta data about fields in t
 
 - [Basic Example](#basic-example)
 - [Lucee Generated Accessors](#lucee-generated-accessors)
-  - Overriding Getter & Setter
+  - [Overriding Getter & Setter](#overriding-getter-setter)
+  - [Setting A Default Value](#setting-a-default-value)
+  - Constraining Type
 
 ##Basic Example
 By default, properties do not change any behavior of the class and simply allow for meta data reflection. Consider this basic Component without any properties: 
@@ -190,6 +192,14 @@ echo(myComponent.getMyValue());
 </cfscript>
 ```
 </noscript>
+
+Only simple values can be set in the default. Complex values should be set in the constructor of the component. 
+
+Constraining Type
+
+
+
+
 
 
 
