@@ -195,7 +195,18 @@ echo(myComponent.getMyValue());
 
 Only simple values can be set in the default. Complex values should be set in the constructor of the component. 
 
-Constraining Type
+###Constraining Type
+The generated setter and getter can be type checked to a particular type so that Lucee throws an error if the caller trys to set the wrong type. Consider the following component: 
+
+{% gist id="roryl/5fbeecc3f9dde7289f519b7963db6a72",file="componentWithPropertiesType.cfc" %}{% endgist %}
+
+When dumping, notice the type annotations for the generated methods. The "Return Type" for getMyValue is now 'struct' and the arguments for setMyValue require a struct.
+
+![](componentPropertiesType.png)
+
+{% gist id="roryl/5fbeecc3f9dde7289f519b7963db6a72",file="use_type.cfm" %}{% endgist %}
+
+`invalid call of the function setMyValue (componentWithPropertiesType.cfc), first Argument (myValue) is of invalid type, can't cast String [test] to a value of type [struct]`
 
 
 
