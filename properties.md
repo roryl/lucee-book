@@ -204,9 +204,9 @@ When dumping, notice the type annotations for the generated methods. The "Return
 
 ![](componentPropertiesType.png)
 
-{% gist id="roryl/5fbeecc3f9dde7289f519b7963db6a72",file="use_type.cfm" %}{% endgist %}
+When trying to use the setter but passing the wrong type, and it throw an error like: `invalid call of the function setMyValue (componentWithPropertiesType.cfc), first Argument (myValue) is of invalid type, can't cast String [test] to a value of type [struct]`
 
-`invalid call of the function setMyValue (componentWithPropertiesType.cfc), first Argument (myValue) is of invalid type, can't cast String [test] to a value of type [struct]`
+{% gist id="roryl/5fbeecc3f9dde7289f519b7963db6a72",file="use_type.cfm" %}{% endgist %}
 
 
 
