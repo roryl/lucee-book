@@ -4,7 +4,7 @@ Lucee has lists which are strings with a delimiter (default is a comma). Lists c
 ##Create a List
 To create a list, create a string with a delimiter. The default delimiter for list functions is a comma, but any delimiter is possible. 
 
-
+{% gist id="roryl/2433bba8846d72eabda7db04ad4147a0",file="create_list.cfm" %}{% endgist %}
 
 <noscript>
 ```
