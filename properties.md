@@ -96,7 +96,7 @@ For each property, Lucee will generate a getter and a setter function.
 
 With these functions generated, it is now possible to set and retrieve values into the component:
 
-{% gist id="roryl/5fbeecc3f9dde7289f519b7963db6a72",file="use_properties.cfm" %}{% endgist %}
+{% gist id="roryl/5fbeecc3f9dde7289f519b7963db6a72",file="use_accessors.cfm" %}{% endgist %}
 
 <noscript>
 ```
