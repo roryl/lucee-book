@@ -1,7 +1,7 @@
 # Lists
 Lucee has lists which are strings with a delimiter (default is a comma). Lists can only contain strings (and they are a string themselves), so use an Array to contain complex data types. Lists are not real objects in Lucee, and are simply strings that contain a delimiter. As such, any string can be a list that has a delimiter other than a zero length string.
 
-All of the list functions precide with "list" in their name. This is to differentiate from them string functions, because lists are also strings. So `"my,list".len();` returns 7, while `"my,list".listLen()` returns 2
+All of the list functions precide with "list" in their name. This is to differentiate list functions from string functions, because lists are also strings. So `"my,list".len();` returns 7, while `"my,list".listLen()` returns 2
 
 See the available List functions under the [string methods](http://luceedocs.herokuapp.com/objects)
 
