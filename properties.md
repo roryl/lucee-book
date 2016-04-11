@@ -3,6 +3,7 @@ Properties in Lucee allow annotating Components with meta data about fields in t
 
 - [Basic Example](#basic-example)
 - [Lucee Generated Accessors](#lucee-generated-accessors)
+  - Overriding Getter & Setter
 
 ##Basic Example
 By default, properties do not change any behavior of the class and simply allow for meta data reflection. Consider this basic Component without any properties: 
@@ -109,5 +110,47 @@ echo(myComponent.getMyValue());
 </noscript>
 
 This example above merely outputs `Hello!`
+
+###Overriding Getter & Setter
+If a particular property should not have a getter or a setter, tell Lucee to not generate it by setting `getter=false` or `setter=false` for that particular property. This is most often used to disable setters in which the value is handled by the internals of the component.
+
+Consider the following component where we disable the setter and set the `myValue` variable within the constructor:
+
+{% gist id="roryl/5fbeecc3f9dde7289f519b7963db6a72",file="componentWithPropertiesOverride.cfc" %}{% endgist %}
+
+<noscript>
+```
+component accessors='true' {
+  
+	property name='myValue' setter='false';
+
+	public function init(){
+		variables.myValue = 'Hello!';
+		return this;
+	}
+  
+}
+```
+</noscript>
+
+When we dump the component, it now looks like this, with the primary difference being that there is no `setMyValue` function, and we see that the property is populated with the value that was set in the constructor:
+
+![](componenentWithPropertiesOverride.png)
+
+In this example below, it tries to use the `setMyValue()` function but it will throw an error, which is expected, because this function was not generated.
+
+{% gist id="roryl/5fbeecc3f9dde7289f519b7963db6a72",file="use_override.cfm" %}{% endgist %}
+
+<noscript>
+```
+<cfscript>
+myComponent = new componentWithPropertiesOverride();
+writeDump(myComponent);
+echo(myComponent.getMyValue());
+myComponent.setMyValue("Hello!"); //errors that function does not exist
+</cfscript>
+```
+</noscript>
+
 
 
