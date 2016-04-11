@@ -57,6 +57,6 @@ Any attributes given to the property will appear in this meta data, and this fun
 
 This meta data in of itself is not too interesting for most cases, but properties become more powerful with Lucee Generated Accessors.
 
-Properties are also heavily used for the Lucee ORM. See that documentation for details. The rest of this article will focus on the Generated Method functionality that Lucee provides.
+Properties are also heavily used for the Lucee ORM. See the Lucee ORM documentation for details. The rest of this article will focus on the Generated Method functionality that Lucee provides.
 
 ##Lucee Generated Accessors
