@@ -6,6 +6,7 @@ Properties in Lucee allow annotating Components with meta data about fields in t
   - [Overriding Getter & Setter](#overriding-getter--setter)
   - [Setting A Default Value](#setting-a-default-value)
   - [Constraining Type](#constraining-type)
+  - [Populating Properties](#populating-properties)
 
 ##Basic Example
 By default, properties do not change any behavior of the class and simply allow for meta data reflection. Consider this basic Component without any properties: 
@@ -209,6 +210,41 @@ When trying to use the setter but passing the wrong type, it will throw an error
 {% gist id="roryl/5fbeecc3f9dde7289f519b7963db6a72",file="use_type.cfm" %}{% endgist %}
 
 Also be aware that providing a default value with a type will have no effect on the checking of the default value during creation. The type annotation only affects when calling the setter or getter.
+
+###Populating Properties
+For any of the Lucee generated setters, Lucee will also automatically call the setter for any key value pairs passed. Consider the following component: 
+
+{% gist id="roryl/5fbeecc3f9dde7289f519b7963db6a72",file="componentWithPropertiesNoConstructor.cfc" %}{% endgist %}
+
+<noscript>
+```
+component accessors='true' {
+  
+	property name='myValue';
+	  
+}
+```
+</noscript>
+
+This example uses the above component but sets values on instantiation. Lucee will call the appropriate setter for each value:
+
+{% gist id="roryl/5fbeecc3f9dde7289f519b7963db6a72",file="constructor_call_setter.cfm" %}{% endgist %}
+
+<noscript>
+```
+<cfscript>
+myComponent = new componentWithPropertiesNoConstructor(myValue:"Hello there!");
+echo(myComponent.getMyValue());
+myComponent = new componentWithPropertiesNoConstructor({myValue:"Hello there!"}); //Equivalent to the above
+echo(myComponent.getMyValue());
+myComponent = new componentWithPropertiesNoConstructor(argumentCollection={myValue:"Hello there!"}); //Equivalent to the above
+echo(myComponent.getMyValue());
+writeDump(now());
+</cfscript>
+```
+</noscript>
+
+> Note, we have not defined an init() constructor. This method above only works without an init() constructor defined. If you define a custom init(), it will take precedence over Lucee calling the setters and the value will not be set.
 
 
 
