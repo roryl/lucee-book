@@ -53,7 +53,7 @@ You can see here that the components are nearly identical, the additional 'prope
 
 ![](reflection_properties.png)
 
-Any attributes given to the property will appear in this meta data, and this functionality is often used by frameworks written in Lucee to dynamically read components and work with this. For example, the [Wirebox Dependency Injection](http://wiki.coldbox.org/wiki/WireBox.cfm) framework uses properties to determine how to configure components using the framework.
+Any attributes given to the property will appear in this meta data, and this functionality is often used by open source frameworks to dynamically read components and work with it. For example, the [Wirebox Dependency Injection](http://wiki.coldbox.org/wiki/WireBox.cfm) framework uses properties to determine how to configure components using the framework.
 
 This meta data in of itself is not too interesting for most cases, but properties become more powerful with Lucee Generated Accessors.
 
