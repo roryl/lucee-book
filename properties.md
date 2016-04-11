@@ -92,5 +92,22 @@ Notice two changes:
 - There is now a 'properties' data value in the component
 - There are two new functions, `getMyValue` and `setMyValue`, Lucee created these automatically.
 
-For each property, Lucee will generated a getter and a setter function.
+For each property, Lucee will generate a getter and a setter function.
+
+With these functions generated, it is now possible to set and retrieve values into the component:
+
+{% gist id="roryl/5fbeecc3f9dde7289f519b7963db6a72",file="use_properties.cfm" %}{% endgist %}
+
+<noscript>
+```
+<cfscript>
+myComponent = new componentWithPropertiesAccessor();
+myComponent.setMyValue("Hello!");
+echo(myComponent.getMyValue());
+</cfscript>
+```
+</noscript>
+
+This example above merely outputs `Hello!`
+
 
