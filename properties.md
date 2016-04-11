@@ -226,6 +226,8 @@ component accessors='true' {
 ```
 </noscript>
 
+> Note, we have not defined an init() constructor. Automatic property population only works without an init() constructor defined. If you define a custom init(), it will take precedence over Lucee calling the setters and the value will not be set.
+
 This example below uses the above component but sets values on instantiation. Lucee will call the appropriate setter for each value:
 
 {% gist id="roryl/5fbeecc3f9dde7289f519b7963db6a72",file="constructor_call_setter.cfm" %}{% endgist %}
@@ -244,7 +246,7 @@ writeDump(now());
 ```
 </noscript>
 
-> Note, we have not defined an init() constructor. This method above only works without an init() constructor defined. If you define a custom init(), it will take precedence over Lucee calling the setters and the value will not be set.
+
 
 
 
