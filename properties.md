@@ -226,7 +226,7 @@ component accessors='true' {
 ```
 </noscript>
 
-This example uses the above component but sets values on instantiation. Lucee will call the appropriate setter for each value:
+This example below uses the above component but sets values on instantiation. Lucee will call the appropriate setter for each value:
 
 {% gist id="roryl/5fbeecc3f9dde7289f519b7963db6a72",file="constructor_call_setter.cfm" %}{% endgist %}
 
