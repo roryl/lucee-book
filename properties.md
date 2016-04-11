@@ -155,7 +155,7 @@ myComponent.setMyValue("Hello!"); //errors that function does not exist
 ###Setting a Default Value
 When using accessors, Lucee can also set the default value on component creation. Consider the following component with a default property:
 
-{% gist id="roryl/5fbeecc3f9dde7289f519b7963db6a72",file="use_override.cfm" %}{% endgist %}
+{% gist id="roryl/5fbeecc3f9dde7289f519b7963db6a72",file="componentWithPropertiesDefault.cfc" %}{% endgist %}
 
 <noscript>
 ```
@@ -171,7 +171,25 @@ component accessors='true' {
 ```
 </noscript>
 
-{% gist id="roryl/5fbeecc3f9dde7289f519b7963db6a72",file="use_override.cfm" %}{% endgist %}
+When dumping this component it now looks like:
+
+
+
+And the script to create use component :
+
+{% gist id="roryl/5fbeecc3f9dde7289f519b7963db6a72",file="use_default.cfm" %}{% endgist %}
+
+<noscript>
+```
+<cfscript>
+myComponent = new componentWithPropertiesDefault();
+writeDump(myComponent);
+echo(myComponent.getMyValue());
+</cfscript>
+```
+</noscript>
+
+
 
 
 
