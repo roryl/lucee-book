@@ -84,3 +84,13 @@ Now when we dump this component, we see that it has a property:
 
 ![](componentWithPropertiesAccessor.png)
 
+And for comparison, here was the image of the componentWithProperties.cfc that did not have `accessors=true`
+
+![](componentWithProperties.png)
+
+Notice two changes: 
+- There is now a 'properties' data value in the component
+- There are two new functions, `getMyValue` and `setMyValue`, Lucee created these automatically.
+
+For each property, Lucee will generated a getter and a setter function.
+
