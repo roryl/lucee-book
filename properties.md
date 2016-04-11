@@ -60,3 +60,10 @@ This meta data in of itself is not too interesting for most cases, but propertie
 Properties are also heavily used for the Lucee ORM. See the Lucee ORM documentation for details. The rest of this article will focus on the Generated Method functionality that Lucee provides.
 
 ##Lucee Generated Accessors
+Lucee can use properties defined in a component to auto-generate getter and setter methods, set default values, and type check and validate the values. This is very handy for components with a lot of fields, as creating accessors to those fields is a lot of boilerplate code. 
+
+Taking the componentWithProperties.cfc example above, all that is required to tell Lucee to use generated accessors is to add `accessors=true` to the component:
+
+{% gist id="roryl/5fbeecc3f9dde7289f519b7963db6a72",file="componentWithPropertiesAccessor.cfc" %}{% endgist %}
+
+
