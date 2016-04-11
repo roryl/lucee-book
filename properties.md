@@ -204,11 +204,11 @@ When dumping, notice the type annotations for the generated methods. The "Return
 
 ![](componentPropertiesType.png)
 
-When trying to use the setter but passing the wrong type, and it throw an error like: `invalid call of the function setMyValue (componentWithPropertiesType.cfc), first Argument (myValue) is of invalid type, can't cast String [test] to a value of type [struct]`
+When trying to use the setter but passing the wrong type, it will throw an error like: `invalid call of the function setMyValue (componentWithPropertiesType.cfc), first Argument (myValue) is of invalid type, can't cast String [test] to a value of type [struct]`
 
 {% gist id="roryl/5fbeecc3f9dde7289f519b7963db6a72",file="use_type.cfm" %}{% endgist %}
 
-Providing a default value with a type will have no effect on the checking of the default value during creation. The type annotation only affects when calling the setter or getter.
+Also be aware that providing a default value with a type will have no effect on the checking of the default value during creation. The type annotation only affects when calling the setter or getter.
 
 
 
