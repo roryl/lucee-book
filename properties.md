@@ -46,9 +46,12 @@ If we dump this component, it looks like the following:
 
 ![](componentWithProperties.png)
 
-You can see here that the components are nearly identical, the additional 'property' defined in the componentWithProperties.cfc did not change any behavior about the class. But if we look at the meta data using the reflection 'getComponentMetaData()', our property appears under the 'properties' section:
+You can see here that the components are nearly identical, the additional 'property' defined in the componentWithProperties.cfc did not change any behavior about the class. But if we look at the meta data using the reflection function `getComponentMetaData()`, our property appears under the 'properties' section:
 
-![](componentWithPropertiesMeta.png)
+{% gist id="roryl/5fbeecc3f9dde7289f519b7963db6a72",file="reflect_properties.cfm" %}{% endgist %}
+
+
+![](reflection_properties.png)
 
 Any attributes given to the property will appear in this meta data, and this functionality is often used by frameworks written in Lucee to dynamically read components and work with this. For example, the [Wirebox Dependency Injection](http://wiki.coldbox.org/wiki/WireBox.cfm) framework uses properties to determine how to configure components using the framework.
 
