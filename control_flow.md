@@ -79,7 +79,7 @@ The loop tag is an alternative style which has additional features for [arrays](
 
 See:
 * [Looping Arrays](https://rorylaitila.gitbooks.io/lucee/content/arrays.html#looping-arrays)
-* [Looping Structs](https://rorylaitila.gitbooks.io/lucee/content/structs.html#looping-structs) TODO
+* [Looping Structs](https://rorylaitila.gitbooks.io/lucee/content/structs.html#looping-structs)
 * [Looping Queries](https://rorylaitila.gitbooks.io/lucee/content/queries.html#loop)
 
 {% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="loop.cfm" %}{% endgist %}
