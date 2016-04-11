@@ -66,4 +66,21 @@ Taking the componentWithProperties.cfc example above, all that is required to te
 
 {% gist id="roryl/5fbeecc3f9dde7289f519b7963db6a72",file="componentWithPropertiesAccessor.cfc" %}{% endgist %}
 
+<noscript>
+```
+component accessors='true' {
+  
+	property name='myValue';
+
+	public function init(){
+		return this;
+	}
+  
+}
+```
+</noscript>
+
+Now when we dump this component, we see that it has a property:
+
+![](componentWithPropertiesAccessor.png)
 
