@@ -128,6 +128,10 @@ User defined functions can be called from anywhere within the script but when th
 
 {% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="array_literal.cfm" %}{% endgist %}
 
+##String Literal
+
+{% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="string_literal.cfm" %}{% endgist %}
+
 
 
 
