@@ -3,9 +3,9 @@ Properties in Lucee allow annotating Components with meta data about fields in t
 
 - [Basic Example](#basic-example)
 - [Lucee Generated Accessors](#lucee-generated-accessors)
-  - [Overriding Getter & Setter](#overriding-getter-setter)
+  - [Overriding Getter & Setter](#overriding-getter--setter)
   - [Setting A Default Value](#setting-a-default-value)
-  - Constraining Type
+  - [Constraining Type](#constraining-type)
 
 ##Basic Example
 By default, properties do not change any behavior of the class and simply allow for meta data reflection. Consider this basic Component without any properties: 
@@ -207,6 +207,8 @@ When dumping, notice the type annotations for the generated methods. The "Return
 When trying to use the setter but passing the wrong type, and it throw an error like: `invalid call of the function setMyValue (componentWithPropertiesType.cfc), first Argument (myValue) is of invalid type, can't cast String [test] to a value of type [struct]`
 
 {% gist id="roryl/5fbeecc3f9dde7289f519b7963db6a72",file="use_type.cfm" %}{% endgist %}
+
+Providing a default value with a type will have no effect on the checking of the default value during creation. The type annotation only affects when calling the setter or getter.
 
 
 
