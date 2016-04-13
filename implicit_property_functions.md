@@ -50,6 +50,8 @@ However, it is possible to access the variables in the public `this` scope, and 
 
 {% gist id="roryl/c8c33b03651b5c4641a4a711799db735",file="implicit.cfm" %}{% endgist %}
 
+The above would output FOO
+
 <noscript>
 ```
 <cfscript>
