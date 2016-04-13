@@ -256,9 +256,9 @@ There is an enhancement request for auto populating validation here: https://luc
 ###Validating Properties
 Components with generated accessors (by defining `accessors=true`) can validate the data passed to the setter method automatically. This can quickly speed up adding complex type assertions to components without writing a lot of boilerplate code.
 
-Adding validation to properties makes use of two attributes, `validate` for build in validation types, and optionally `validateparams` to additional custom validation types.
+Adding validation to properties makes use of two attributes, `validate` for built in validation types, and optionally `validateparams` to additional custom validation types.
 
-The validate attribute takes a type to be used for validating data when implicit setter for this property is called. It takes the following validators:
+The validate attribute takes a type to be used for validating data when implicit setter for this property is called. It can use one of the following validators:
 
 | Type | Description |
 | -- | -- |
@@ -278,7 +278,7 @@ The validate attribute takes a type to be used for validating data when implicit
 |guid| A Universally Unique Identifier of the form "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX" where 'X' is a hexadecimal number|
 |zipcode| U.S., 5- or 9-digit format ZIP codes|
 
-The validateparams attribute takes the parameters required by the validator specified in the validate attribute. This should be specified in the implicit struct notation.
+Additionally, the optional validateparams attribute can specify additional constraints required by the type specified in the validate attribute. This should be specified in the implicit struct notation.
 
 | Parameter | Description |
 | -- | -- |
