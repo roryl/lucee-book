@@ -1,2 +1,2 @@
-# Implicit Property Functions
+# Implicit Methods
 
