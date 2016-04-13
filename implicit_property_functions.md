@@ -1,0 +1,2 @@
+# Implicit Property Functions
+
