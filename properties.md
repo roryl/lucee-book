@@ -7,6 +7,7 @@ Properties in Lucee allow annotating Components with meta data about fields in t
   - [Setting A Default Value](#setting-a-default-value)
   - [Constraining Type](#constraining-type)
   - [Populating Properties](#populating-properties)
+  - [Validating Properties](#validating-properties)
 
 ##Basic Example
 By default, properties do not change any behavior of the class and simply allow for meta data reflection. Consider this basic Component without any properties: 
@@ -251,6 +252,49 @@ When using the population method above, it is not possible to define a construct
 
 There is an enhancement request for auto populating validation here: https://luceeserver.atlassian.net/browse/LDEV-815
 
+
+###Validating Properties
+Components with generated accessors (by defining `accessors=true`) can validate the data passed to the setter method automatically. This can quickly speed up adding complex type assertions to components without writing a lot of boilerplate code.
+
+Adding validation to properties makes use of two attributes, `validate` for build in validation types, and optionally `validateparams` to additional custom validation types.
+
+The validate attribute takes a type to be used for validating data when implicit setter for this property is called. It takes the following validators:
+
+| Type | Description |
+| -- | -- |
+|string|Any string|
+|boolean|Any boolean value, true or false|
+|integer|any integer|
+|numeric|any value which can be a number|
+|date|any date|
+|time|any time|
+|creditcard| A 13-16 digit number conforming to the mod10 algorithm.|
+|email| A valid e-mail address.|
+|eurodate| A date-time value. Any date part must be in the format dd/mm/yy. The format can use /, -, or . characters as delimiters.|
+|regex| Matches input against pattern specified in validateparams.|
+|ssn| A U.S. social security number.|
+|telephone| A standard U.S. telephone number.|
+|UUID| A Home Universally Unique Identifier, formatted 'XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXXXXX', where 'X' is a hexadecimal number.|
+|guid| A Universally Unique Identifier of the form "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX" where 'X' is a hexadecimal number|
+|zipcode| U.S., 5- or 9-digit format ZIP codes|
+
+The validateparams attribute takes the parameters required by the validator specified in the validate attribute. This should be specified in the implicit struct notation.
+
+| Parameter | Description |
+| -- | -- |
+|min| Minimum value if validate is integer/numeric/|
+|max| Maximum value if the validate is integer/numeric/|
+|minLength| Minimum length of the string if the validate is string|
+|maxLength| Maximum length of the string if the validate is string|
+|pattern| regex expression if the validator specified in validate attribute is regex
+
+The following example validates an email address with one of the above types and a custom string validation with validateparams:
+
+{% gist id="roryl/5fbeecc3f9dde7289f519b7963db6a72",file="componentWithPropertyValidations.cfc" %}{% endgist %}
+
+Here is an example of using the above component: 
+
+{% gist id="roryl/5fbeecc3f9dde7289f519b7963db6a72",file="use_validations.cfm" %}{% endgist %}
 
 
 
