@@ -4,7 +4,7 @@
 * [About This Book](about_this_book.md)
    * [Gist Examples Directory](gist_examples_directory.md)
    * [Helpful Community Documentation](helpful_community_documentation.md)
-   * Documentation Tracked Tickets
+   * [Documentation Tracked Tickets](documentation_tracked_tickets.md)
 * [Tutorials](chapter1.md)
    * [Beginning Web Application Development with Lucee](beginning_web_application_development_with_lucee.md)
        * [What is Lucee](what_is_lucee.md)
