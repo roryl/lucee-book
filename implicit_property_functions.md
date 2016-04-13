@@ -59,7 +59,3 @@ echo(myObj.MyValue);
 </cfscript>
 ```
 </noscript>
-
-##Use Cases
-
-
