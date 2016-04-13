@@ -1,6 +1,6 @@
 # Implicit Accessor Methods
 
-Implicit Accessor Methods in Lucee allows treating getters and setter methods on a component as if they were public variables. To enable this feature, it requires an override in the Application.cfc
+Implicit Accessor Methods in Lucee allows treating getters and setter methods on a component as if they were public variables in the this scope. This enables the developer to gracefully wrap public variables in a function to validate them. To enable this feature, it requires an override in the Application.cfc
 
 {% gist id="roryl/c8c33b03651b5c4641a4a711799db735",file="Application.cfc" %}{% endgist %}
 
