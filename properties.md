@@ -296,7 +296,7 @@ Here is an example of using the above component:
 
 {% gist id="roryl/5fbeecc3f9dde7289f519b7963db6a72",file="use_validations.cfm" %}{% endgist %}
 
-
+>Note, there is currently an issue with auto populated validation: https://luceeserver.atlassian.net/browse/LDEV-816. In order to use validation, setters need to be called manually
 
 
 
