@@ -28,7 +28,7 @@
    * [Features](features.md)
        * [Classes](classes.md)
            * [Properties](properties.md)
-           * [Implicit Property Functions](implicit_property_functions.md)
+           * [Implicit Methods](implicit_property_functions.md)
        * [Types](types.md)
            * [Arrays](arrays.md)
            * [Structs](structs.md)
