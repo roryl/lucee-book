@@ -236,3 +236,5 @@ The reason this above method works is because Lucee Interface type checking and 
 2. Any components that the component extends are initialized first (going through the whole extends hierarchy)
 3. Lucee then checks the `implements` attribute of the original component and ensures that the component, or any component it extends, contains the function signatures.
 4. Lucee finishes initializing the component, calling the implicit constructor area
+
+This inheritence mixin method will work with both include and copy style mixins.
