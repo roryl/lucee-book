@@ -1,5 +1,5 @@
 # Mixins
-Mixins are a programming feature which allow for dynamically adding methods to components during instantiation. Lucee support both [type checked mixins](type-checked-interface-mixins) confirming to an interface, and unchecked [dynamic mixins](dynamic-mixins).
+[Mixins](https://en.wikipedia.org/wiki/Mixin) are a programming feature which allow for dynamically adding methods to components during instantiation. Lucee support both [type checked mixins](type-checked-interface-mixins) confirming to an interface, and unchecked [dynamic mixins](dynamic-mixins).
 
 ##Mixin Rationalle 
 
