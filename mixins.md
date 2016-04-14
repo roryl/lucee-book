@@ -81,7 +81,7 @@ The include method assumes that the functions to mixin are in a .cfm template. H
 
 Consider this additional component:
 
-{% gist id="roryl/2a50bde54f70683747f0353926d49179",file="basicMixin.cfc" %}{% endgist %}
+{% gist id="roryl/2a50bde54f70683747f0353926d49179",file="mixinComponent.cfc" %}{% endgist %}
 
 <noscript>
 ```
@@ -98,6 +98,31 @@ component {
 }
 ```
 </noscript>
+
+Because this is a component, it can be used directly like any component. However we can also use these fourthFunc() and fifthFunc() functions in our basic component by copying them in.
+
+{% gist id="roryl/2a50bde54f70683747f0353926d49179",file="liftComponent.cfc" %}{% endgist %}
+
+<noscript>
+```
+component {
+
+  mixinComponent = new mixinComponent();
+  this.fourthFunc = mixinComponent.fourthFunc;
+  variables.fourthFunc = mixinComponent.fourthFunc;
+
+  this.fifthFunc = mixinComponent.fifthFunc;
+  variables.fifthFunc = mixinComponent.fifthFunc;
+  
+  function init(){
+    //Do something on instantiation     
+    return this;
+  }  
+
+}
+```
+</noscript>
+
 
 
 
