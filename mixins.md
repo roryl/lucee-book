@@ -7,8 +7,8 @@ In terms of code-reuse, this allows for more flexibility than inheritance becaus
 
 ##Dynamic Mixins
 There are two methods of acheiving mixins with Lucee:
-1. Including Functions
-2. Lifting, or copying functions between components
+1. [Including Functions](#including-functions)
+2. [Lifting, or copying functions between components](#lifting--copying-functions)
 
 ###Including Functions
 
