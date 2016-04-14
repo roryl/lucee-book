@@ -1,6 +1,8 @@
 # Mixins
 Mixins are a programming feature which allow for dynamically adding methods to components during instantiation. Lucee support both [type checked mixins](type-checked-interface-mixins) confirming to an interface, and unchecked [dynamic mixins](dynamic-mixins).
 
+##Mixin Rationalle 
+
 Mixins are used when a component has "cross cutting" functionality that is shared with other components, and which this functionality should be exposed as functionality of the component itself. This allows for code reuse by only writing the functionality in one place, and then including it in other places.
 
 In terms of code-reuse, this allows for more flexibility than inheritance because multiple sets of functionality can be 'mixed in', and it is less boilerplate than creating ['Decorator' classes](https://en.wikipedia.org/wiki/Decorator_pattern) which simply wrap other function calls.
