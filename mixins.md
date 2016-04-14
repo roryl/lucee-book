@@ -123,7 +123,63 @@ component {
 ```
 </noscript>
 
+This is a bit more involed, so we'll explain in steps:
 
+First we instantiated the component that we wished to mixin:
 
+`mixinComponent = new mixinComponent();`
 
-##Type Checked
+Then we copied each of the functions we wish to use into the `this` scope and `variables` scope. It is important to copy into both scopes because "this" is available outside the component, and variables from within. If not copied into both scopes, then Lucee will not be able to find the functions from within the component.
+
+```
+this.fourthFunc = mixinComponent.fourthFunc;
+variables.fourthFunc = mixinComponent.fourthFunc;
+
+this.fifthFunc = mixinComponent.fifthFunc;
+variables.fifthFunc = mixinComponent.fifthFunc;
+```
+
+By doing this, now when we dump the basic component with these copied in functions, it looks like this:
+
+![](liftMixin.png)
+
+This method of copying functions is a little more verbose, and each function that needs to be used must be explicity copied. But it can be a useful alternative when just one or two functions need to be copied from another component.
+
+##Type Checked Interface Mixins
+[Lucee Interfaces](https://rorylaitila.gitbooks.io/lucee/content/interfaces.html) are type checked during instantiation of a component and ensure that the component implements a set of methods. However, this interface type checking happens before executing the implicit constructor area where the mixins were included or lifted. To ensure that a component mixing in functions can `implement` an interface matching those mixins, we need to make use of component inheritence. 
+
+This is achieved by moving our mixins to a base component, inheriting that component, and then implementing the interfaces on the final component. 
+
+Consider these functions we with to mixin:
+
+<noscript>
+```
+<cfscript>
+function myOtherFunc(required array myArray){
+
+}
+
+function thirdFunc(required string myString){
+	
+}
+</cfscript>
+```
+</noscript>
+
+And consider this Interface that we created to type check this particular set of mixed-in functions:
+
+<noscript>
+```
+interface {
+  
+  public function myOtherFunc(required array myArray){
+  
+  }
+
+  public function thirdFunc(required string myString){
+  
+  }
+
+}
+```
+</noscript>
