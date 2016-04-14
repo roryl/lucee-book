@@ -150,7 +150,9 @@ This method of copying functions is a little more verbose, and each function tha
 
 This is achieved by moving our mixins to a base component, inheriting that component, and then implementing the interfaces on the final component. 
 
-Consider these functions we with to mixin:
+Consider these functions we wish to mixin:
+
+{% gist id="roryl/2a50bde54f70683747f0353926d49179",file="mixin.cfm" %}{% endgist %}
 
 <noscript>
 ```
@@ -168,6 +170,8 @@ function thirdFunc(required string myString){
 
 And consider this Interface that we created to type check this particular set of mixed-in functions:
 
+{% gist id="roryl/2a50bde54f70683747f0353926d49179",file="IMixin.cfc" %}{% endgist %}
+
 <noscript>
 ```
 interface {
@@ -183,3 +187,4 @@ interface {
 }
 ```
 </noscript>
+
