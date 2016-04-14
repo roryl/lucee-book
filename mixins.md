@@ -7,6 +7,8 @@ Mixins are used when a component has "cross cutting" functionality that is share
 
 In terms of code-reuse, this allows for more flexibility than inheritance because multiple sets of functionality can be 'mixed in', and it is less boilerplate than creating ['Decorator' classes](https://en.wikipedia.org/wiki/Decorator_pattern) which simply wrap other function calls.
 
+Lucee's mixin capability with interfaces can approximate a [Trait](https://en.wikipedia.org/wiki/Trait_(computer_programming)
+
 ##Dynamic Mixins
 There are two methods of acheiving mixins with Lucee:
 1. [Including Functions](#including-functions)
