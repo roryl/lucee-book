@@ -14,7 +14,7 @@ There are two methods of acheiving mixins with Lucee:
 
 Consider this basic component without any mixins:
 
-{% gist id="SamyPesse/6ceb8cb8d531ffab75f0",file="README.md" %}{% endgist %}
+{% gist id="roryl/2a50bde54f70683747f0353926d49179",file="basicComponent.cfc" %}{% endgist %}
 
 <noscript>
 ```
@@ -28,6 +28,77 @@ component {
 }
 ```
 </noscript>
+
+If we dump this component it looks like:
+
+![](basicComponentMixin.png)
+
+If there was functionality that we wanted to share amongst this component and other components and did not want to write wrapper functions, we can make use of the `include` statement to include functions into this component. Consider this set of functions:
+
+{% gist id="roryl/2a50bde54f70683747f0353926d49179",file="mixin.cfm" %}{% endgist %}
+
+<noscript>
+```
+<cfscript>
+function myOtherFunc(required array myArray){
+
+}
+
+function thirdFunc(required string myString){
+	
+}
+</cfscript>
+```
+</noscript>
+
+Notice that these functions are written in a .cfm file, a template file. This is important, because when we 'include' these functions, Lucee can only include template files. To see how to mixin functions which are from other components, read the Lift/Copying method further along in this article.
+
+To mixin this function file, we need to include it in the implicit constructor area of a component:
+
+{% gist id="roryl/2a50bde54f70683747f0353926d49179",file="basicMixin.cfc" %}{% endgist %}
+
+<noscript>
+```
+component {
+
+  include template="mixin.cfm";
+  
+  function init(){
+    //Do something on instantiation 
+    return this;
+  }  
+
+}
+```
+</noscript>
+
+If we dump the component, it looks like this and we see the additional functions:
+
+![](basicMixin.png)
+
+###Lifting & Copying Functions
+The include method assumes that the functions to mixin are in a .cfm template. However, what if the function are a part of an existing component that can be used independently, but which you also want to mixin that functionality into another component? To achieve this, we make use of the fact that in Lucee, [functions are first class citizens](https://rorylaitila.gitbooks.io/lucee/content/first_class_functions.html)
+
+Consider this additional component:
+
+{% gist id="roryl/2a50bde54f70683747f0353926d49179",file="basicMixin.cfc" %}{% endgist %}
+
+<noscript>
+```
+component {
+
+	function fourthFunc(){
+
+	}
+
+	function fifthFunc(){
+		
+	}
+
+}
+```
+</noscript>
+
 
 
 ##Type Checked
