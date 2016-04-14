@@ -188,3 +188,51 @@ interface {
 ```
 </noscript>
 
+To use this interface with these mixins, we are first going to create a base component that mixes in the functions:
+
+{% gist id="roryl/2a50bde54f70683747f0353926d49179",file="baseComponent.cfc" %}{% endgist %}
+
+<noscript>
+```
+component {
+	include template="mixin.cfm";
+}
+```
+</noscript>
+
+Then our component which we want to conform to the interface, implements this base class:
+
+{% gist id="roryl/2a50bde54f70683747f0353926d49179",file="implementsComponent.cfc" %}{% endgist %}
+
+<noscript>
+```
+component extends="baseComponent" implements="IMixin"{
+  
+  function init(){
+    //Do something on instantiation 
+    return this;
+  }
+
+  function myFunc(){
+
+  }  
+
+}
+```
+</noscript>
+
+If we dump this component, we see the following method signatures:
+
+![](implementsComponentMixin.png)
+
+And if we use getMetaData on this component, we see it implements the following interfaces:
+
+![](implementsMetaMixin.png)
+
+####Inheritence Execution Order
+The reason this above method works is because Lucee Interface type checking and component initialization happen in the following order: 
+
+1. The component meta data is read but the component is not initialized
+2. Any components that the component extends are initialized first (going through the whole extends hierarchy)
+3. Lucee then checks the `implements` attribute of the original component and ensures that the component, or any component it extends, contains the function signatures.
+4. Lucee finishes initializing the component, calling the implicit constructor area
