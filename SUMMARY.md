@@ -48,7 +48,7 @@
        * [Control Flow](control_flow.md)
        * [Interfaces](interfaces.md)
        * [Reflection](reflection.md)
-       * Mixins
+       * [Mixins](mixins.md)
    * [Mappings (Class Paths)](mappings_class_paths.md)
    * [Language Comparisons](language_comparisons.md)
        * [Lucee vs Java](lucee_vs_java.md)
