@@ -5,6 +5,7 @@ Because Lucee is a Java application, any Java library can be used within Lucee. 
 * [Java Standard Library](#instantiating-a-java-standard-library-class)
 * [Third Party Java Libraries](#instantiating-third-party-java-libraries)
 * [Custom Java code](#compiling-and-running-java-source-files)
+* Other Tips
 
 ###Instantiating a Java standard library class
 The entire Java standard library that ships with the JVM is available to Lucee code without any additional configuration.
@@ -126,3 +127,7 @@ Further Resources:
 
 ###Custom Java Code
 Any Java code that you write can be utilized just like a third party library above. Make sure that your .java classes are compiled to .class or .jar files and visible to be loaded using one of the methods listed for third party libraries. For just a new custom java classes, its possible to [have Lucee compile java classes](https://rorylaitila.gitbooks.io/lucee/content/using_lucee_to_compile_java.html).
+
+###Other Tips
+####Generics
+In Java, generic types are compiled down to the object type. Since Lucee is dynamic, it is not necessary to specify Java generic types when instantiating a generic class.
