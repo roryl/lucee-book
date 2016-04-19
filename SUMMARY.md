@@ -21,7 +21,7 @@
        * Windows IIS
        * OSX
    * [System Directories](system_directories.md)
-   * Lucee Service
+   * [Lucee Service](lucee_service.md)
 * [Lucee Language](lucee_language.md)
    * [Command Line REPL](command_line_repl.md)
    * [Syntax](syntax.md)
