@@ -6,7 +6,7 @@ Closures are a name given to a type of [First Class Function](https://rorylaitil
 
 When setting a variable equal to a function, this creates a Closure. Any variables references inside the function have acess to the parent scopes from where they were created. This includes any local variables of parent functions, Components, and global scopes like application, session and request.
 
-<script src="https://gist.github.com/roryl/d14806856b35baeffc5e.js?file=basic_closure.cfm"></script>
+{% gist id="roryl/d14806856b35baeffc5e",file="basic_closure.cfm" %}{% endgist %}
 
 <noscript>
 ```
@@ -20,7 +20,7 @@ myClosure = function(){
 ##Define a Closure via Anonymous Function
 Many functions in Lucee like array.map() take a Closure as an argument, and these closures are defined inline without names
 
-<script src="https://gist.github.com/roryl/d14806856b35baeffc5e.js?file=anonymous_closure.cfm"></script>
+{% gist id="roryl/d14806856b35baeffc5e",file="anonymous_closure.cfm" %}{% endgist %}
 
 <noscript>
 ```
@@ -37,7 +37,7 @@ Here we passed an anonymous function (it had no name) to the map function.  For 
 ##Closure Scopes Example
 When creating closures, each closure contains references to its parents scopes, but parents do not have reference to the childs local scope. 
 
-<script src="https://gist.github.com/roryl/d14806856b35baeffc5e.js?file=closure_scopes_example.cfm"></script>
+{% gist id="roryl/d14806856b35baeffc5e",file="closure_scopes_example.cfm" %}{% endgist %}
 
 <noscript>
 ```
