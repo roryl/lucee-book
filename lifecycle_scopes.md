@@ -8,7 +8,7 @@ There are three primary categorizations of scopes:
 * [Request Scopes](#request-scopes)
 * [Localized Scopes](#localized-scopes)
 
-It is also important to understand the [Scope Lookup/Cascading](#scope-lookup-cascading) rules. 
+It is also important to understand the [Scope Lookup/Cascading](#scope-lookup--cascading) rules. 
 
 ###Setting any variable into a scope
 To set a variable into a scope, use dotted notation:
