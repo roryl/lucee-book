@@ -10,7 +10,7 @@ There are two flavors to the Lucee Language, Tags and Script. The entire languag
 ### Script
 The script based language resembles javascript 
 
-<script src="https://gist.github.com/roryl/5817942eccef2bad2281.js?file=setting_a_variable.cfm"></script>
+{% gist id="roryl/5817942eccef2bad2281",file="setting_a_variable.cfm" %}{% endgist %}
 
 <noscript>
 ```
@@ -22,7 +22,7 @@ The trailing ";" denoting the end of the statement can be ommitted as long as ne
 
 Lucee script supports all Tags in script by simply wrapping the code block in brackets
 
-<script src="https://gist.github.com/roryl/5817942eccef2bad2281.js?file=script_tags.cfm"></script>
+{% gist id="roryl/5817942eccef2bad2281",file="script_tags.cfm" %}{% endgist %}
 
 <noscript>
 ```
@@ -38,7 +38,7 @@ View the [script reference](https://rorylaitila.gitbooks.io/lucee/content/script
 
 The tag based language loosely resembles HTML.
 
-<script src="https://gist.github.com/roryl/5817942eccef2bad2281.js?file=setting_a_variable_tag.cfm"></script>
+{% gist id="roryl/5817942eccef2bad2281",file="setting_a_variable_tag.cfm" %}{% endgist %}
 
 <noscript>
 ```
@@ -48,7 +48,7 @@ The tag based language loosely resembles HTML.
 
 Tags can have bodies or not. Tags without bodies do not need a closing bracket, but some people prefer them stylistically 
 
-<script src="https://gist.github.com/roryl/5817942eccef2bad2281.js?file=optional_closing.cfm"></script>
+{% gist id="roryl/5817942eccef2bad2281",file="optional_closing.cfm" %}{% endgist %}
 
 <noscript>
 ```
@@ -58,7 +58,7 @@ Tags can have bodies or not. Tags without bodies do not need a closing bracket, 
 
 Tags with bodies always need a closing tag
 
-<script src="https://gist.github.com/roryl/5817942eccef2bad2281.js?file=closing_tag_bodies.cfm"></script>
+{% gist id="roryl/5817942eccef2bad2281",file="closing_tag_bodies.cfm" %}{% endgist %}
 
 <noscript>
 ```
