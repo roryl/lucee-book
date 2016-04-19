@@ -29,18 +29,19 @@ Tags in Lucee can take strings or variables, for exmaple
 The common convention is to always quote attributes so that there is visual consistency in the attributes like in the second example above.
 
 ##Scope Non-local Variables
-Variables in Lucee can exist in one of many [scopes](https://rorylaitila.gitbooks.io/lucee/content/lifecycle_scopes.html), Local, Variables, This, Application, Session, etc. Lucee will look up the chain of available scopes to find a variable, but this costs performance and is unclear to other developers. The best practice is to always preface variables with the scope they are in, except for local function variables
+Variables in Lucee can exist in one of many [scopes](https://rorylaitila.gitbooks.io/lucee/content/lifecycle_scopes.html), Local, Variables, This, Application, Session, etc. Lucee has [scope cascading rules](https://rorylaitila.gitbooks.io/lucee/content/lifecycle_scopes.html#scope-lookup--cascading) to find a variable, but this costs performance and is unclear to other developers. The best practice is to always preface variables with the scope they are in, except for local function variables.
 
 ```
 <cfscript>
 application.myVariable = "foo";
+myVariable = "bar";
 
-echo(myVariable); //outputs foo
+echo(myVariable); //will output bar
 echo(application.myVariable); //outputs foo
 </cfscript>
 ```
 
-Although in the proceeding example, both calls to myVariable will work (because Lucee will check all scopes for myVariable if it can't find it), the second `application.myVariable` is faster for Lucee to execute and is more clear.
+Although in the proceeding example, both calls to myVariable will work (because Lucee will check for the variables scope myVariable first), the second `application.myVariable` is faster for Lucee to execute and is more clear.
 
 Scoping variables is particularly important in the case of CFCs. The shared CFC variable state is the "variables" scope, and Lucee will put any unscoped variables into the variables scope by default. This can lead to subtle bugs and race conditions, so its always best to scope CFC variables too.
 
