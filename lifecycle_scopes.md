@@ -140,8 +140,30 @@ The caller scope is a special scope used only in custom tags
 The thread scope is created when creating a new thread{} in Lucee. Any variables passed to the thread at put in the thread scope, and exist until the thread finishes.
 
 ##Scope Lookup / Cascading
-Lucee looks for variables starting from the most specific all the way up to the most global. If a variable is not scoped, Lucee will search all scopes for it. This can be a performance penalty if doing a lot of lookups, therefore follow the [style guide for scoping variables](https://rorylaitila.gitbooks.io/lucee/content/style_guide.html#scope-nonlocal-variables)
+Lucee looks for variables starting from the most specific and works outward. If a variable is not scoped, Lucee will search additional scopes for it. This can be a performance penalty if doing a lot of lookups, therefore follow the [style guide for scoping variables](https://rorylaitila.gitbooks.io/lucee/content/style_guide.html#scope-nonlocal-variables)
 
 The order in which Lucee looks up scopes is:
+
+1. .CFM Templates
+  2. Variables
+  3. CGI
+  4. Cffile
+  5. URL
+  6. Form
+  7. Cookie
+  8. Client
+
+1. Components
+  2. Local
+  3. Arguments
+  4. Query (only inside a query loop)
+  5. Variables
+  6. CGI
+  7. Cffile
+  8. URL
+  9. Form
+  10. Cookie
+  11. Client
+
 
 
