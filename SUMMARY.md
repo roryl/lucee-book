@@ -11,6 +11,7 @@
 * [Lucee Server](lucee_server.md)
    * [Lucee Context](lucee_context.md)
    * [Lucee Admin](lucee_admin.md)
+       * Resetting Admin Password
    * [Deployment Options](deployment_options.md)
        * CommandBox
        * [Vagrant](vagrant.md)
