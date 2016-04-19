@@ -10,7 +10,7 @@ A full features Vagrant setup example can be found here: https://github.com/Ortu
 
 This vagrant file cane be used to configure a VM and install Lucee. This section does not go into the specific of using Vagrant, for that follow a [Vagrant Tutorial](https://www.vagrantup.com/docs/). This vagrant file below uses a CentOS 6 VM and is not security hardended, it is only intended for development purposes. It installs Lucee, Apache and MySQL, which is a common configuration.
 
-<script src="https://gist.github.com/roryl/d0dec15fb47bdcec19ab.js"></script>
+{% gist id="roryl/d0dec15fb47bdcec19ab" %}{% endgist %}
 
 <noscript>
 ```
