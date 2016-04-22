@@ -72,3 +72,15 @@ component {
 ```
 </noscript>
 
+##Calling Custom Tags
+Before getting into how to build custom tags, its important to first know where Lucee looks for custom tags and how to call them. There are a few lookup rules:
+
+1. Custom Tags in the same directory as the executing script
+2. Custom Tags defined in a custom tag path
+3. Custom Tags imported into the view
+
+###Custom Tags in the Same Directory
+If the custom tag is in the same directory as the view template executing the tag, Lucee can find the tag with the cf prefix. Consider the following directory structure (which is the structure of this example).
+
+greeting.cfc
+view.cfm
