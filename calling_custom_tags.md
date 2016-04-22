@@ -1,9 +1,9 @@
 #Calling Custom Tags
 Before getting into how to build custom tags, its important to first know where Lucee looks for custom tags and how to call them. There are a few lookup rules:
 
-1. Custom Tags in the same directory as the executing script
-2. Custom Tags defined in a customtag path
-4. Custom Tags loaded at Lucee startup
+1. [Custom Tags in the same directory as the executing] script(#custom-tags-in-the-same-directory)
+2. [Custom Tags defined in a customtag path](#custom-tags-defined-in-a-custom-tag-path)
+4. [Custom Tags loaded at Lucee startup](#custom-tags-loaded-at-lucee-startup)
 
 ###Custom Tags in the Same Directory
 If the custom tag is in the same directory as the view template executing the tag, Lucee can find the tag with the cf prefix. Consider the following directory structure (which is the structure of the above example).
