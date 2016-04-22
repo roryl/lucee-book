@@ -123,6 +123,7 @@
    * Logging
 * [Extending Lucee](extending_lucee.md)
    * [Custom Tags](custom_tags.md)
+       * Calling Custom Tags
    * Installing Extensions
    * Creating Extensions
 * [Community](community.md)
