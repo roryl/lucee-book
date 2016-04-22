@@ -76,8 +76,7 @@ component {
 Before getting into how to build custom tags, its important to first know where Lucee looks for custom tags and how to call them. There are a few lookup rules:
 
 1. Custom Tags in the same directory as the executing script
-2. Custom Tags defined in a custom tag path
-3. Custom Tags imported into the view
+2. Custom Tags defined in a customtag path
 4. Custom Tags loaded at Lucee startup
 
 ###Custom Tags in the Same Directory
@@ -133,9 +132,22 @@ Good Day Jim Smith,
 The time is 07:04 AM
 ```
 
-###Custom Tags Imported into the View
-It is also possible to import tags into a view using a Lucee mapping path.
+###Custom Tags loaded at Lucee startup
+Any custom tags placed into the Lucee server context, or Web context, custom tag directory. Server context tags will be available to all web contexts, while web context tags will only be available to that specific web context.
 
+The easiest way to find these directories is with the system directory placeholders:
 
+{% gist id="roryl/f7fcd0fc09be6a207adba91b495c55b7",file="system.cfm" %}{% endgist %}
+
+<noscript>
+```
+<cfscript>
+writeDump(expandPath("{lucee-server}/library/tag"));
+writeDump(expandPath("{lucee-web}/library/tag"));
+</cfscript>
+```
+</noscript>
+
+Place any custom tags into the library/tag directory of the server or web context, and Lucee can find them.
 
 
