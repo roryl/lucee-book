@@ -39,4 +39,11 @@ It will output: `Hello there!`
 ###onStartTag arguments
 Then Lucee calls the onStartTag, it provides the arguments specified in the example above. Your onStartTag should handle all of these arguments.
 
+####Attributes
+Lucee will pass to onStartTag, a struct containing all of the attributes in the start tag area. The onStartTag() function can use these attributes to perform actions, looking data or do anything the custom tag should be allowed to do. 
 
+####Caller
+Lucee will pass a *reference* to the variables scope of the .cfm template which is calling the custom tag. This allows the custom tag to inject data into the script which is using the custom tag, that the script may use. 
+
+###onStartTag return value (boolean)
+onStartTag() should return a true or false, which controls if the body of the tag should be executed. This is useful for tags which do not have bodies `<cf_nobody>`
