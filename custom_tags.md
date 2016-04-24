@@ -37,7 +37,7 @@ Hello Jim Smith,
 The time is 06:43 AM
 ```
 
-What happened here is we created a custom tag called greeting, passed a firstname & lastname to it, and the greeting tag generated the text for output. 
+The .cfm html template used a custom tag called greeting, passed a firstname & lastname to it, and the greeting tag generated the text for output. 
 
 Here is what the greeting.cfc custom tag looks like. The article on Creating Custom Tags explains in depth.
 
