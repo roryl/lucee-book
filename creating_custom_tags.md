@@ -71,5 +71,14 @@ To implement this custom tag, we used the following:
 
 {% gist id="roryl/f7fcd0fc09be6a207adba91b495c55b7",file="invite.cfc" %}{% endgist %}
 
+###onEndTag Arguments
+The arguments passed to the onEndTag allow for controlling what happens to the content between the start and end tags
 
+####Attributes
+Just like the onStartTag, the onEndTag gets the attributes from the start tag. This is often used to control or change the content of the text between the tags.
+
+####Caller
+Just like the onStartTag, the onEndTag also gets a reference to the variables scope of the calling template. 
+
+####GeneratedContent
 
