@@ -24,7 +24,7 @@ The important execution areas to be aware of are as follows:
 Handling all of these execution areas is done in a single Component.
 
 ##Handling the Start Tag
-When executing a custom tag, Lucee looks for a function in the component called onStartTag().
+When executing a custom tag, Lucee looks for a function in the component called onStartTag() and it calls it.
 
 Here is an example of a minimal custom tag:
 
@@ -35,4 +35,8 @@ To execute this tag, use:
 {% gist id="roryl/f7fcd0fc09be6a207adba91b495c55b7",file="use_basic.cfm" %}{% endgist %}
 
 It will output: `Hello there!`
+
+###onStartTag arguments
+Then Lucee calls the onStartTag, it provides the arguments specified in the example above. Your onStartTag should handle all of these arguments.
+
 
