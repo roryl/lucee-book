@@ -124,6 +124,7 @@
 * [Extending Lucee](extending_lucee.md)
    * [Custom Tags](custom_tags.md)
        * [Calling Custom Tags](calling_custom_tags.md)
+       * Creating Custom Tags
    * Installing Extensions
    * Creating Extensions
 * [Community](community.md)
