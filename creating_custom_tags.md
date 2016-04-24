@@ -81,4 +81,16 @@ Just like the onStartTag, the onEndTag gets the attributes from the start tag. T
 Just like the onStartTag, the onEndTag also gets a reference to the variables scope of the calling template. 
 
 ####GeneratedContent
+This argument is the unique difference with onEndTag. What Lucee passed to generatedContent is all of the executed content between the start and end tags. This allows the onEndTag function to manipulate that content. In the example above, it merely output the content, but it could also be changed, for exmaple, we could upper case all of the content:
 
+{% gist id="roryl/f7fcd0fc09be6a207adba91b495c55b7",file="inviteUcase.cfc" %}{% endgist %}
+
+And then execute the script:
+
+{% gist id="roryl/f7fcd0fc09be6a207adba91b495c55b7",file="use_invite_ucase.cfm" %}{% endgist %}
+
+```
+Hello Jimmy,
+
+I'D LIKE TO LET YOU KNOW THAT YOU ARE INVITED TO OUR PARTY!
+```
