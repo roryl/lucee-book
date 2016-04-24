@@ -28,11 +28,11 @@ When executing a custom tag, Lucee looks for a function in the component called 
 
 Here is an example of a minimal custom tag:
 
-{% gist id="roryl/e310ceab4866e75ae923861f5381d8b9",file="basicTag.cfc" %}{% endgist %}
+{% gist id="roryl/f7fcd0fc09be6a207adba91b495c55b7",file="basicTag.cfc" %}{% endgist %}
 
 To execute this tag, use:
 
-{% gist id="roryl/e310ceab4866e75ae923861f5381d8b9",file="use_basic.cfm" %}{% endgist %}
+{% gist id="roryl/f7fcd0fc09be6a207adba91b495c55b7",file="use_basic.cfm" %}{% endgist %}
 
 It will output: `Hello there!`
 
