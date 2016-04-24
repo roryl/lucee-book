@@ -1,6 +1,6 @@
 # Custom Tags
 
-Lucee allows extending the language with custom tags to add functionality to your views. Custom tags are typically used for view logic. You create cutom tags with CFCs and then import them into your page.
+Lucee allows extending the language with custom tags to add functionality to view templates. Custom tags are typically used for view logic. Custom tags are created with CFCs and then imported into a view, or Application.cfc
 
 This article shows a brief example, then read these additional articles:
 
