@@ -33,3 +33,6 @@ Here is an example of a minimal custom tag:
 To execute this tag, use:
 
 {% gist id="roryl/e310ceab4866e75ae923861f5381d8b9",file="use_basic.cfm" %}{% endgist %}
+
+It will output: `Hello there!`
+
