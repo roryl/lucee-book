@@ -49,4 +49,27 @@ Lucee will pass a *reference* to the variables scope of the .cfm template which 
 onStartTag() should return a true or false, which controls if the body of the tag should be executed. This is useful for tags which do not have bodies `<cf_nobody>`, or for when the custom tag needs to skip the body based on the values of the attributes or some other need.
 
 ##Handling the End Tag
+Lucee handles the end tag by calling the function onEndTag() in the Component. Lucee does this for normal full closing tags, and self closing tags. 
+
+>#### A note about Self Closing Tags
+A self closing tag is when the custom tag does not have a tag body, but has a closing slash (/) for example: `<cf_basicTag />`. In a self closing tag, Lucee will call onEndTag() just as if the tag had a body like `<cf_basicTag>body</cf_basicTag>`. If the tag does not close like <cf_basicTag> then Lucee will not call onEndTag()
+
+
+Consider this example of a custom tag we created to output the invite to a party:
+
+{% gist id="roryl/f7fcd0fc09be6a207adba91b495c55b7",file="use_invite.cfm" %}{% endgist %}
+
+What this tag is going to do is take an invitee supplied as an attribute, create a salutation for them and then output the paragraph for the invitation. The example would output: 
+
+```
+Hello Jimmy,
+
+I'd like to let you know that you are invited to our party!
+```
+
+To implement this custom tag, we used the following:
+
+{% gist id="roryl/f7fcd0fc09be6a207adba91b495c55b7",file="invite.cfc" %}{% endgist %}
+
+
 
