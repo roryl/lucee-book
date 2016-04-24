@@ -1,12 +1,12 @@
 #Calling Custom Tags
 Before getting into how to build custom tags, its important to first know where Lucee looks for custom tags and how to call them. There are a few lookup rules:
 
-1. [Custom Tags in the same directory as the executing] script(#custom-tags-in-the-same-directory)
+1. [Custom Tags in the same directory as the executing script](#custom-tags-in-the-same-directory)
 2. [Custom Tags defined in a customtag path](#custom-tags-defined-in-a-custom-tag-path)
 4. [Custom Tags loaded at Lucee startup](#custom-tags-loaded-at-lucee-startup)
 
 ###Custom Tags in the Same Directory
-If the custom tag is in the same directory as the view template executing the tag, Lucee can find the tag with the cf prefix. Consider the following directory structure (which is the structure of the above example).
+If the custom tag is in the same directory as the view template executing the tag, Lucee can find the tag with the cf prefix. Consider the following directory structure (which is the structure in the example of the intro to [custom tags](https://rorylaitila.gitbooks.io/lucee/content/custom_tags.html)).
 
 - /
   - greeting.cfc
@@ -59,7 +59,7 @@ The time is 07:04 AM
 ```
 
 ###Custom Tags loaded at Lucee startup
-Any custom tags placed into the Lucee server context, or Web context, custom tag directory. Server context tags will be available to all web contexts, while web context tags will only be available to that specific web context.
+Any custom tags placed into the Lucee server context, or Web context, custom tag directory can be used. Server context tags will be available to all web contexts, while web context tags will only be available to that specific web context.
 
 The easiest way to find these directories is with the system directory placeholders:
 
