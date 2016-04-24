@@ -37,7 +37,7 @@ To execute this tag, use:
 It will output: `Hello there!`
 
 ###onStartTag arguments
-Then Lucee calls the onStartTag, it provides the arguments specified in the example above. Your onStartTag should handle all of these arguments.
+When Lucee calls the onStartTag, it provides the arguments specified in the example above. the onStartTag() function should be written so that it handles all of these arguments.
 
 ####Attributes
 Lucee will pass to onStartTag, a struct containing all of the attributes in the start tag area. The onStartTag() function can use these attributes to perform actions, looking data or do anything the custom tag should be allowed to do. 
