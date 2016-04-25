@@ -75,7 +75,7 @@
        * Post-Redirect-Get
        * Get-Post-Return
        * Resource Based Routing
-   * Messaging
+   * [Messaging](messaging.md)
    * [Caching](caching.md)
        * Template Caching
        * Query Caching
