@@ -3,7 +3,7 @@ This article gives an overview of working with the installed Lucee service on va
 
 * Standard Lucee Install on CentOS 6.5
 
-##Standard Lucee Install on CentOS 6.5
+##Standard Lucee Install on CentOS
 
 Service Location: 
 ```bash
