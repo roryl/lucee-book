@@ -99,7 +99,7 @@ I'D LIKE TO LET YOU KNOW THAT YOU ARE INVITED TO OUR PARTY!
 The attributes used in the custom tag which are passed to the onStartTag() and onEndTag() functions is simply a structure and so Lucee has additional support for managing and validating the attributes. The first method using the `param` statement is a standard Lucee feature, and there is an additional `metadata` feature specifically for custom tags.
 
 ###Param
-The most simple method is to use the [param statement](http://luceedocs.herokuapp.com/tag/cfparam) to ensure that parameters are supplied or have defaults. For example if given this template using the custom tag cf_greeting before, the difference with this example is the last name was not passed:
+The most simple method is to use the [param statement](http://luceedocs.herokuapp.com/tag/cfparam) to ensure that parameters are supplied or have defaults. For example this template used the cf_greeting as before but is now missing the last name:
 
 {% gist id="roryl/f7fcd0fc09be6a207adba91b495c55b7",file="attribute_missing.cfm" %}{% endgist %}
 
