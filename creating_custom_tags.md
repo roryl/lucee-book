@@ -159,6 +159,31 @@ If we then call this custom tag passing in an attribute that is not defined, it 
 ![](metadata_fixed_error.png)
 
 
+####this.metadata.attributes
 
+Like in the preceding example with the `this.metadata.attributetype=fixed`, it used an additional `this.metadata.attributes` setting. This additional setting allows defining what attributes are required, optional, or have defaults. Each attribute should be defined on its own, and it takes a structure of options. In the example we define two required attributes:
+
+```
+this.metadata.attributes.firstName={required:true,type:"string"};
+this.metadata.attributes.lastName={required:true,type:"string"};
+```
+
+Each attribute can have the following options:
+
+| Option | Default | Description |
+| -- | -- | -- |
+| required | false | Whether the attribute is required to be passed |
+| type | any | The Lucee type that this attribute must be. See [Lucee Types](https://rorylaitila.gitbooks.io/lucee/content/types.html) for a listing of available types. |
+| default |  | A default value for this attribute |
+| hint | | A hint to supply Lucee for automatic documentation when the custom tag is installed as a core tag |
+
+#####Attribute Hints
+When a hint is specified for the metadata attribute, and the tag is installed to Lucee as described in [Custom Tags Loaded at Lucee Startup](https://rorylaitila.gitbooks.io/lucee/content/calling_custom_tags.html#custom-tags-loaded-at-lucee-startup), Lucee will read that hint to produce documentation using the `getTagData()` function. This is useful for autogenerating documentation about custom tags.
+
+{% gist id="roryl/f7fcd0fc09be6a207adba91b495c55b7",file="metadata_hint.cfm" %}{% endgist %}
+
+Which would produce the output:
+
+![](metadata_hint.png)
 
 
