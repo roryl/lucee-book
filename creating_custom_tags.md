@@ -137,7 +137,7 @@ The time is 07:10 AM
 ```
 
 ###Custom Tag Metadata
-Lucee provides a special metadata variable for controlling attributes. These metadata variables are set in the implicit consturctor are of the component. There are two types of metadata variables that can be set, `this.metadata.attributetype` and `this.metadata.attributes`
+Lucee provides a special metadata variable for controlling attributes. These metadata variables are set in the implicit consturctor area of the component. There are two types of metadata variables that can be set, `this.metadata.attributetype` and `this.metadata.attributes`
 
 ####this.metadata.attributetype
 
@@ -147,8 +147,10 @@ This controls how attributes are handled in bulk, there are two options:
 | -- | -- | -- |
 | dynamic | yes | Any attributes supplied to the tag are allowed. This is how custom tags work by default.|
 | fixed | no | Only the attributes specified with metadata.attrbutes are allowed |
+<br />
 
 In this example, we define a custom tag that is fixed with only two attributes, firstName & lastName:
+<br /><br />
 
 {% gist id="roryl/f7fcd0fc09be6a207adba91b495c55b7",file="greetingMetadataFixed.cfc" %}{% endgist %}
 
