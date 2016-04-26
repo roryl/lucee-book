@@ -94,3 +94,49 @@ Hello Jimmy,
 
 I'D LIKE TO LET YOU KNOW THAT YOU ARE INVITED TO OUR PARTY!
 ```
+
+##Handling Attributes
+The attributes used in the custom tag which are passed to the onStartTag() and onEndTag() functions is simply a structure and so Lucee has additional support for managing and validating the attributes. The first method using the `param` statement is a standard Lucee feature, and there is an additional `metadata` feature specifically for custom tags.
+
+###Param
+The most simple method is to use the [param statement](http://luceedocs.herokuapp.com/tag/cfparam) to ensure that parameters are supplied or have defaults. For example if given this template using the custom tag cf_greeting before, the difference with this example is the last name was not passed:
+
+{% gist id="roryl/f7fcd0fc09be6a207adba91b495c55b7",file="attribute_missing.cfm" %}{% endgist %}
+
+And the code for the custom tag:
+
+{% gist id="roryl/f7fcd0fc09be6a207adba91b495c55b7",file="greeting.cfc" %}{% endgist %}
+
+There are two important lines in the custom tag:
+
+```
+param name="attributes.firstName";
+param name="attributes.lastName";
+```
+
+This tells Lucee that these variables `attributes.firstName` and `attributes.lastName` must be present, or error. Therefore our example generates an error because the last name was not supplied:
+
+![](param_error.png)
+
+
+
+
+
+It is also possible to specify defaults, thereby making the attribute optional, and our error will go away:
+
+{% gist id="roryl/f7fcd0fc09be6a207adba91b495c55b7",file="greetingSmith.cfc" %}{% endgist %}
+
+If we run this template we'll get the output with the last name of Smith:
+
+{% gist id="roryl/f7fcd0fc09be6a207adba91b495c55b7",file="attribute_smith.cfm" %}{% endgist %}
+
+```
+Hello Jim smith,
+
+The time is 07:10 AM
+```
+
+
+
+
+
