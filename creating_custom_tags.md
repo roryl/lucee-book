@@ -114,7 +114,7 @@ param name="attributes.firstName";
 param name="attributes.lastName";
 ```
 
-This tells Lucee that these variables `attributes.firstName` and `attributes.lastName` must be present, or error. Therefore our example generates an error because the last name was not supplied:
+This tells Lucee that these variables `attributes.firstName` and `attributes.lastName` must be present, or error. Therefore our example throws an error "The required parameter [attributes.lastName] was not provided." because the last name was not supplied:
 
 ![](param_error.png)
 
@@ -152,11 +152,11 @@ In this example, we define a custom tag that is fixed with only two attributes, 
 
 {% gist id="roryl/f7fcd0fc09be6a207adba91b495c55b7",file="greetingMetadataFixed.cfc" %}{% endgist %}
 
-If we then call this custom tag passing in an attribute that is not defined, it will throw an error. For example:
+If we then call this custom tag passing in an attribute that is not defined, it will throw the error "attribute [middlename] is not supported for tag [GreetingMetadata]". For example:
 
 {% gist id="roryl/f7fcd0fc09be6a207adba91b495c55b7",file="view_metadata_fixed.cfm" %}{% endgist %}
 
-
+![](metadata_fixed_error.png)
 
 
 
