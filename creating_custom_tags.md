@@ -6,8 +6,8 @@ The special conventions that make a component a custom tag are:
 
 * [Handling the start tag](#handling-the-start-tag) 
 * [Handling the end tag](#handling-the-end-tag)
-* Handling output
-* Handling Attributes
+* [Handling Attributes](#handling-attributes)
+* Handling output* 
 
 When describing a custom tag, these conventions above map to areas in the code when using a custom tag. Consider this custom tag below:
 
