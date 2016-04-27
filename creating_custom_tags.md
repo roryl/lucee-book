@@ -188,4 +188,71 @@ Which would produce the output:
 
 ![](metadata_hint.png)
 
+##Handling Output
+
+There are three common use cases for handling output and returning data from a custom tag. Custom tags are most often used in the view layer to create reusable view components.
+
+1. Outputting attribute data and text
+2. Working with and outputting the tag body
+3. Injecting data into the caller scope
+
+###Outputting attribute data and text
+The easiest method of outputting data is to just call `echo()` (or `writeOutput()`) anywhere from within the custom tag. Any text echo'd will be output at that location in the calling script. Consider one of view examples earlier in this article: 
+
+{% gist id="roryl/f7fcd0fc09be6a207adba91b495c55b7",file="view.cfm" %}{% endgist %}
+
+When running this view, it outputs:
+
+```
+Hello Jim Smith,
+
+The time is 07:06 AM
+```
+
+Within the custom tag, we see that the onStartTag() has the writeOutput which is writing the text to the page:
+
+{% gist id="roryl/f7fcd0fc09be6a207adba91b495c55b7",file="greeting.cfc" %}{% endgist %}
+
+###Working with and outputting the tag body
+Custom tags become more powerful when working with and manipulating the tag body content. The tag body is passed to the onEndTag() generatedContent parameter and can be manipulated with any string methods and then output to the page with writeOutput(). 
+
+In an earlier example, we used the onEndTag() to upper case the body content. We repeat this example below. Consider this view:
+
+{% gist id="roryl/f7fcd0fc09be6a207adba91b495c55b7",file="use_invite_ucase.cfm" %}{% endgist %}
+
+Which when executed, outputs:
+
+```
+Hello Jimmy,
+
+I'D LIKE TO LET YOU KNOW THAT YOU ARE INVITED TO OUR PARTY!
+```
+
+And the custom tag which implements this upper casing:
+
+{% gist id="roryl/f7fcd0fc09be6a207adba91b495c55b7",file="inviteUcase.cfc" %}{% endgist %}
+
+####Variables inside the tag body
+It should be noted that any variables inside the tag body not surrounded by `<cfoutput></cfoutput>` tags will not be processed. Condier the following view which tries to output the year of the party:
+
+{% gist id="roryl/f7fcd0fc09be6a207adba91b495c55b7",file="use_invite_try_parsebody.cfm" %}{% endgist %}
+
+This would output:
+
+```
+Hello Jimmy,
+
+I'd like to let you know that you are invited to our party on #theDate#!
+```
+
+The variable `#theDate#` did not get processed because Lucee thought it was a string. There are two ways to get Lucee to process variables within the tag body. The first way, is to wrap the body in `<cfoutput>`:
+
+{% gist id="roryl/f7fcd0fc09be6a207adba91b495c55b7",file="use_invite_wrap_output.cfm" %}{% endgist %}
+
+
+
+
+
+
+
 
