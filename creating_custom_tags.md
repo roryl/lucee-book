@@ -270,7 +270,7 @@ structAppend(local, caller);
 writeOutput(evaluate(de(generatedContent)));
 ```
 
-The first line `structAppend(local, caller);` copies all of the variables from the caller view into the onEndTag's local variables scope. This is so that '`theDate` can be found when it next parses the tag body text.
+The first line `structAppend(local, caller);` copies all of the variables from the caller view into the onEndTag's local variables scope. This is so that `theDate` can be found when it next parses the tag body text.
 
 The second line `writeOutput(evaluate(de(generatedContent)));` outputs the generated content by evaluating it with the `evaluate()` function and the `de()` (delayed evaluation) function. In Lucee, strings can be evaluated with evaluate(), and de() can be used to evaluate an evaluated variable.
 
