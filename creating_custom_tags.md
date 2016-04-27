@@ -291,7 +291,15 @@ The final method of using custom tags is to put data directly into the view vari
 
 {% gist id="roryl/f7fcd0fc09be6a207adba91b495c55b7",file="use_invite_inject.cfm" %}{% endgist %}
 
-Notice that the difference here is that the view is expecting two variables `#salutation#` and `#message#`  but these variables were not set in the view. Instead they were set in the custom `<cf_inviteInject invitee="Jimmy">`:
+This view outputs the same result:
+
+```
+Hello Jimmy
+
+I'd like to let you know that you are invited to our party!
+```
+
+The difference here is that the view is expecting two variables `#salutation#` and `#message#`,  but these variables were not set in the view. Instead they were set in the custom `<cf_inviteInject invitee="Jimmy">`:
 
 {% gist id="roryl/f7fcd0fc09be6a207adba91b495c55b7",file="inviteInject.cfc" %}{% endgist %}
 
