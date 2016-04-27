@@ -286,6 +286,11 @@ Hello Jimmy,
 I'd like to let you know that you are invited to our party on 1999!
 ```
 
+###Injecting data into the caller scope
+The final method of using custom tags is to put data directly into the view variables that the view can then use to output content. Continuing the examples above, an alternative view might be:
+
+{% gist id="roryl/f7fcd0fc09be6a207adba91b495c55b7",file="use_invite_inject.cfm" %}{% endgist %}
+
 
 
 
