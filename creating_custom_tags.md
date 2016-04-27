@@ -249,6 +249,42 @@ The variable `#theDate#` did not get processed because Lucee thought it was a st
 
 {% gist id="roryl/f7fcd0fc09be6a207adba91b495c55b7",file="use_invite_wrap_output.cfm" %}{% endgist %}
 
+When running this view, it will now output:
+
+```
+Hello Jimmy,
+
+I'd like to let you know that you are invited to our party on 1999!
+```
+
+But what if we wanted to make a tag which could process the body content and resolve any variables, without the user having to remember to use `<cfoutput>`. This can be achieved by manipulating the generatedContent in onEndTag(). 
+
+Consider this custom tag:
+
+{% gist id="roryl/f7fcd0fc09be6a207adba91b495c55b7",file="inviteParseBody.cfc" %}{% endgist %}
+
+What is different about this version of the invite tag are these lines in the onEndTag():
+
+```
+structAppend(local, caller);
+writeOutput(evaluate(de(generatedContent)));
+```
+
+The first line `structAppend(local, caller);` copies all of the variables from the caller view into the onEndTag's local variables scope. This is so that '`theDate` can be found when it next parses the tag body text.
+
+The second line `writeOutput(evaluate(de(generatedContent)));` outputs the generated content by evaluating it with the `evaluate()` function and the `de()` (delayed evaluation) function. In Lucee, strings can be evaluated with evaluate(), and de() can be used to evaluate an evaluated variable.
+
+Thus by running a view using this new tag:
+
+{% gist id="roryl/f7fcd0fc09be6a207adba91b495c55b7",file="use_invite_parsebody.cfm" %}{% endgist %}
+
+It will output the date properly:
+
+```
+Hello Jimmy,
+
+I'd like to let you know that you are invited to our party on 1999!
+```
 
 
 
