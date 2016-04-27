@@ -257,7 +257,7 @@ Hello Jimmy,
 I'd like to let you know that you are invited to our party on 1999!
 ```
 
-But what if we wanted to make a tag which could process the body content and resolve any variables, without the user having to remember to use `<cfoutput>`. This can be achieved by manipulating the generatedContent in onEndTag(). 
+But what if we wanted to make a tag which could process the body content and resolve any variables, without the user having to remember to use `<cfoutput>`? This can be achieved by manipulating the generatedContent in onEndTag(). 
 
 Consider this custom tag:
 
