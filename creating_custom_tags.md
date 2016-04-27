@@ -291,9 +291,20 @@ The final method of using custom tags is to put data directly into the view vari
 
 {% gist id="roryl/f7fcd0fc09be6a207adba91b495c55b7",file="use_invite_inject.cfm" %}{% endgist %}
 
+Notice that the difference here is that the view is expecting two variables `#salutation#` and `#message#`  but these variables were not set in the view. Instead they were set in the custom `<cf_inviteInject invitee="Jimmy">`:
 
+{% gist id="roryl/f7fcd0fc09be6a207adba91b495c55b7",file="inviteInject.cfc" %}{% endgist %}
 
+The critical difference in this version of the invite is it is injecting variables into the caller scope:
 
+```
+caller.salutation = "Hello #attributes.invitee#";
+caller.message = "I'd like to let you know that you are invited to our party!";
+```
+
+Both the onStartTag() and onEndTag() function receive a caller parameter. This parameter is a *reference* to the variables of the view. So any additional variables set into caller, then become available from the view.
+
+When you might use this injection method vs. the previous output methods just depends on the purpose of the custom tag. Tags which wrap output text or manipulate the tag body text, usually will output directly. However tags which get data some somewhere else or use the attributes to create data which may be used in various ways by the view, might better inject the results as variables so that the view can choose what it wants to do with them.
 
 
 
