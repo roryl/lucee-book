@@ -54,11 +54,22 @@ component {
 ```
 
 ###Current Directory
-To simply add mapping names to the current directory, use a ".":
+To add mapping names to the current web directory, use a ".":
 
 ```
 component {
 	this.mappings["/mymapping"] = ".";	
 }
 ```
+
+###Web Subdirectories
+By default, Lucee mapping relative paths are from the webroot. Any Application.cfc mappings in nested subfolders operate from the webroot, not the Application.cfc in question in the subfolder. To set a mapping relative to the Application.cfc, use the following:
+
+```
+component {
+	this.mappings["/mymapping"] = getDirectoryFromPath(getCurrentTemplatePath());	
+}
+```
+
+What this combination does is actually set an absolute path by first getting the full file path to the Application.cfc (`getCurrentTemplatePath()`), and then get the directory from that path (`getDirectoryFromPath()`)
 
