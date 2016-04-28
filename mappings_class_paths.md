@@ -17,4 +17,4 @@ Take for example the following directory structure
 
 In this example, the web server is running from the /web directory, and therefore /core/include.cfm can not be browsed directly from a browser.
 
-<script src="https://gist-it.appspot.com/github/robertkrimen/gist-it-example/blob/master/example.js"></script>
+<script src="https://gist-it.appspot.com/github/roryl/lucee-mappings/blob/master/web/Application.cfc"></script>
