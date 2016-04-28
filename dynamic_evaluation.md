@@ -1,5 +1,5 @@
 # Dynamic Evaluation
-Sometimes it can be useful to run Lucee code which has been dynamically generated, or access variables which are dynamically generated. This can enable meta programming when you do not know the names of variables in advance.
+Sometimes it can be useful to run Lucee code which has been dynamically generated, or access variables which are dynamically generated. This can enable meta programming when the code or variable names cannot be known at compile time.
 
 ##Dynamic Variables
 The following code sets a dynamic variable "test" 
@@ -22,7 +22,7 @@ Its also possible to use the `getVariable()` function to dynamically evaluate a 
 
 
 ##Evaluate
-When doing more complex dynamic evaluations, you can make use of the evalute() function which will execute the Lucee code as if it was normally executed. This example below produces the same output as above. 
+When doing more complex dynamic evaluations, you can make use of the evalute() function which will execute any Lucee *expression* as if it was normally executed. This example below produces the same output as above. 
 
 {% gist id="https://gist.github.com/roryl/95f6bd166627abb425a4",file="evaluate.cfm" %}{% endgist %}
 
@@ -51,3 +51,7 @@ echo(myStruct["test2"]; //outputs "bar"
 </cfscript>
 ```
 </noscript>
+
+##Dynamic Lucee Code
+Dynamically running Lucee tags or script that is more complex with simple expressions is usually not possible with evaluate(). In these situations, we can make use of Lucee's virtual filesystem to write and include dynamic code.
+
