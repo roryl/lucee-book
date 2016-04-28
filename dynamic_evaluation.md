@@ -61,6 +61,6 @@ First it is necessary to create a mapping to the virtual file system. The mappin
 
 Then it is possible to dynamically create .cfm templates and include them. This example below compiles a template that outputs the time with a 50 milisecond delay, based on the number of iterations specified. 
 
-{% gist id="https://gist.github.com/roryl/95f6bd166627abb425a4",file="dynamic_compilation" %}{% endgist %}
+{% gist id="https://gist.github.com/roryl/95f6bd166627abb425a4",file="dynamic_compilation.cfm" %}{% endgist %}
 
 
