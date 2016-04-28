@@ -42,12 +42,23 @@ Now Lucee can find the component.
 
 ##Defining Mappings Explained
 
-The Application.cfc has a setting `this.mappings` which is a structure. Each key in the stucture is a mapping, and each value is a relative path starting from the web root. The value can also be an absolute system path. 
+The Application.cfc has a setting `this.mappings` which is a structure. Each key in the stucture is a mapping, and each value is a relative path *starting from the web root*. The value can also be an absolute system path.
+
+In the example, `this.mappings["/core"] = "../core";` the `"../core"` is a relative path telling Lucee to set the mapping one directory up.
 
 ###Absolute Path
 ```
 component {
-	this.mappings["/core"] = "../core";	
+	this.mappings["/core"] = "c:\websites\luceebook\examples\mappings\core";	
+}
+```
+
+###Current Directory
+To simply add mapping names to the current directory, use a ".":
+
+```
+component {
+	this.mappings["/mymapping"] = ".";	
 }
 ```
 
