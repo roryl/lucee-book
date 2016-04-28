@@ -47,6 +47,8 @@ The Application.cfc has a setting `this.mappings` which is a structure. Each key
 In the example, `this.mappings["/core"] = "../core";` the `"../core"` is a relative path telling Lucee to set the mapping one directory up.
 
 ###Absolute Path
+It is also possible to create mappings with absolute system paths: 
+
 ```
 component {
 	this.mappings["/core"] = "c:\websites\luceebook\examples\mappings\core";	
@@ -54,7 +56,7 @@ component {
 ```
 
 ###Current Directory
-To add mapping names to the current web directory, use a ".":
+To add mapping names which resolve to the to the current web directory, use a ".":
 
 ```
 component {
@@ -63,7 +65,7 @@ component {
 ```
 
 ###Web Subdirectories
-By default, Lucee mapping relative paths are from the webroot. Any Application.cfc mappings in nested subfolders operate from the webroot, not the Application.cfc in question in the subfolder. To set a mapping relative to the Application.cfc, use the following:
+By default, Lucee mapping relative paths are *from the webroot*. Any Application.cfc mappings in nested subfolders operate from the webroot, and not any Application.cfc in question in the subfolder. To set a mapping relative to the Application.cfc, use the following:
 
 ```
 component {
