@@ -2,7 +2,7 @@
 
 In the previous article [Creating Custom Tags](https://rorylaitila.gitbooks.io/lucee/content/creating_custom_tags.html), it used an example of a single tag. Single use tags can be powerful but even moreso, Lucee can nest custom tags which can communicate with eachother and enabled complex behavior.
 
-Consider this view template which generates an article and a Table of Contents for each section:
+Consider this view template which generates an article and a Table of Contents for each section. It has a `<cf_article>` tag which contains multiple `<cf_section>` tags. And these two tags will worth together to produce the output.
 
 {% gist id="roryl/f7fcd0fc09be6a207adba91b495c55b7",file="use_article.cfm" %}{% endgist %}
 
