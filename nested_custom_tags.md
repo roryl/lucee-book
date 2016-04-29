@@ -70,6 +70,15 @@ The purpose of these getter methods is so that <cf_article> can get to the data 
 
 {% gist id="roryl/f7fcd0fc09be6a207adba91b495c55b7",file="article.cfc" %}{% endgist %}
 
+The first thing to point out is the implicit constructor area has this variable being set: 
+
+ 
+
+```
+public function addChild(required component child){
+    this.children.append(child);
+}	
+```
 
 
 
