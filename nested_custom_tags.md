@@ -141,7 +141,7 @@ echo("<p>#child.getBody()#</p>");
 
 Because the `<cf_section>` added itself as a reference inside the parent `<cf_article>`, the parent now has a reference to the child. And it can call the public getter methods `getTitle()` and `getBody()` to produce the desired output.
 
-With this basic method of linking the parent>child tags together via references, and then exposing public methods on them to get to each others data, virtually any complex interaction and output is possible. 
+With this basic method of linking the parent and child tags together via references, and then exposing public methods on them to get to each others data, virtually any complex interaction and output is possible.
 
 
 
