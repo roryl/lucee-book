@@ -132,7 +132,7 @@ public boolean function onEndTag(required struct attributes, required struct cal
 }
 ```
 
-What the implementation here does is check if there are any children sections, if there are, it outputs a table of content for each section. It then outputs the title and content for each section. Notice these function calls in particular:
+What the implementation here does is check if there are any children sections, if there are, it outputs a table of contents. It then outputs the title and content for each section. Notice these function calls in particular:
 
 ```
 echo("<h3>#child.getTitle()#</h3>");
