@@ -86,7 +86,7 @@ public function addChild(required component child){
 }	
 ```
 
-We see that this function takes a component and adds that component to the array of children. Recall from the `<cf_section>` implementation, it called this addChild() function in its own constructor:
+We see that this function takes a component and adds that component to the array of children. Recall from the `<cf_section>` implementation, it called the addChild() function in its own constructor:
 
 >section.cfc
 ```
