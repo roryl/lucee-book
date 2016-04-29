@@ -60,7 +60,7 @@ Will look like:
 
 ###For Loop
 
-This is the classic method of looping over an array, and similar to javascript. However the previous methods at a little less verbose.
+This is the classic method of looping over an array, and similar to javascript. However the previous methods is a little less verbose.
 
 {% gist id="https://gist.github.com/roryl/cc95907c4837ca032b45",file="array_for_loop.cfm" %}{% endgist %}
 
