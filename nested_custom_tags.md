@@ -72,13 +72,74 @@ The purpose of these getter methods is so that <cf_article> can get to the data 
 
 The first thing to point out is the implicit constructor area has this variable being set: 
 
- 
+```
+this.children = [];
+```
+
+This array will be used to hold references to all of the child <cf_section> tags.
+
+Next there is a function `addChild()`:
 
 ```
 public function addChild(required component child){
     this.children.append(child);
 }	
 ```
+
+We see that this function takes a component and adds that component to the array of children. Recall from the <cf_section> implementation, it called this addChild() function in its own constructor:
+
+>section.cfc
+```
+public void function init(component parent, required boolean hasEndTag){
+    if(!isNull(parent)){
+        parent.addChild(this);
+    } else {
+        throw("Cannot have sections without a parent <cf_article>");
+    }
+}
+```
+
+This interaction above, of the Parent (`<cf_article>`) exposing a function that the child (`<cf_section>`) can call, is the primary means by which parent and nested tags can become aware of each other. Now that the tags have been linked, `<cf_article>` can implement the functionality to control the output of all of the tags together, via the onEndTag() function:
+
+```
+public boolean function onEndTag(required struct attributes, required struct caller, string generatedContent){
+
+    param name="attributes.title";
+    echo("<h1>#attributes.title#</h1>");
+
+
+    if(this.children.len() == 0){
+        echo("<p>There are no sections yet</p>")
+    } else {
+
+        echo("<h2>Table of Contents</h2>");
+        echo("<ol>");
+
+        for(var child in this.children){
+            echo("<li>#child.getTitle()#</li>");
+        }
+
+        echo("</ol>");
+
+    }
+
+    for(var child in this.children){
+        echo("<h3>#child.getTitle()#</h3>");
+        echo("<p>#child.getBody()#</p>");
+    }
+
+    return false;
+}
+```
+
+What the implementation here does is check if there are any children sections, if there are, it outputs a table of content for each section. It then outputs the title and content for each section. Notice these function calls in particular:
+
+```
+echo("<h3>#child.getTitle()#</h3>");
+echo("<p>#child.getBody()#</p>");
+```
+
+Because the `<cf_section>` added itself as a reference inside the parent `<cf_article>`, the parent now has a reference to the child. And it can call the public getter methods `getTitle()` and `getBody()` to produce the desired output.
 
 
 
