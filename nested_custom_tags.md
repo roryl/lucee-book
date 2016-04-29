@@ -27,7 +27,7 @@ public void function init(component parent, required boolean hasEndTag){
 }
 ```
 
-When Lucee encounters a custom tag and instantiates it, it will pass two parameters to the init() function, first is a reference to the parent cfc, and second a true/false for `hasEndTag`. Notice that hasEndTag is required, but parent is not. This means that a parent is not always present. If a custom tag does not have any parent tags (which the `<cf_article>` in the example does not) then this value will be null.
+When Lucee encounters a custom tag and instantiates it, it will pass two parameters to the init() function, first is a reference to the parent cfc, and second a true/false for `hasEndTag`. Notice that hasEndTag is required, but parent is not. This means that a parent is not always present. If a custom tag does not have any parent tags (which the `<cf_article>` in the example is the root tag thus does not have any parents) then this value will be null.
 
 Looking at the full implementation: 
 
