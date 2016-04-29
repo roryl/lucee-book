@@ -43,7 +43,7 @@ public void function init(component parent, required boolean hasEndTag){
 
 We see that it does two things: First, it checks if the parent exists, and then calls `parent.addChild(this)` (more on this later), or else it throws an error that sections must have a parent article.
 
-Moving on to the <cf_section> onEndTag() function, it is implemented: 
+Moving on to the `<cf_section>` onEndTag() function, it is implemented: 
 
 ```
 public boolean function onEndTag(required struct attributes, required struct caller, string generatedContent){
@@ -54,7 +54,7 @@ public boolean function onEndTag(required struct attributes, required struct cal
   }
 ```
 
-Instead of outputting the tag content or title, instead it is setting the content into the variables scope. This is for later use by the `<cf_article>` parent. Also see that <cf_section> implements two getter methods for variables.title and variables.body:
+Instead of outputting the tag content or title, instead it is setting the content into the variables scope. This is for later use by the `<cf_article>` parent. Also see that `<cf_section>` implements two getter methods for variables.title and variables.body:
 
 ```
 public function getTitle(){
@@ -66,7 +66,7 @@ public function getBody(){
 }
 ```
 
-The purpose of these getter methods is so that <cf_article> can get to the data of <cf_section>. Now that we have the implementation of <cf_section>, lets see the implementation of <cf_article>:
+The purpose of these getter methods is so that `<cf_article>` can get to the data of `<cf_section>`. Now that we have the implementation of `<cf_section>`, lets see the implementation of `<cf_article>`:
 
 {% gist id="roryl/f7fcd0fc09be6a207adba91b495c55b7",file="article.cfc" %}{% endgist %}
 
@@ -76,7 +76,7 @@ The first thing to point out is the implicit constructor area has this variable 
 this.children = [];
 ```
 
-This array will be used to hold references to all of the child <cf_section> tags.
+This array will be used to hold references to all of the child `<cf_section>` tags.
 
 Next there is a function `addChild()`:
 
@@ -86,7 +86,7 @@ public function addChild(required component child){
 }	
 ```
 
-We see that this function takes a component and adds that component to the array of children. Recall from the <cf_section> implementation, it called this addChild() function in its own constructor:
+We see that this function takes a component and adds that component to the array of children. Recall from the `<cf_section>` implementation, it called this addChild() function in its own constructor:
 
 >section.cfc
 ```
