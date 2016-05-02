@@ -18,4 +18,5 @@ Language features include:
 * Meta Programming Capabilities
 * [Java Integration](https://rorylaitila.gitbooks.io/lucee/content/java_integration.html)
 * [Dynamic Evaluation](https://rorylaitila.gitbooks.io/lucee/content/dynamic_evaluation.html)
+* [Reflection](https://rorylaitila.gitbooks.io/lucee/content/reflection.html)
 * [Application Lifecycle Scopes](https://rorylaitila.gitbooks.io/lucee/content/lifecycle_scopes.html)
