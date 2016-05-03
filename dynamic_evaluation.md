@@ -68,3 +68,10 @@ It is possible to pass to functions a dynamic set of arguments. This is useful w
 
 {% gist id="https://gist.github.com/roryl/95f6bd166627abb425a4",file="argument_collection.cfm" %}{% endgist %}
 
+When executing this example, it results in:
+
+```
+17
+17
+```
+
