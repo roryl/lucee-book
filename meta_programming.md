@@ -7,4 +7,4 @@ An often useful programming pattern is the [Decorator Pattern](https://en.wikipe
 
 Consider this component which implements some math functions:
 
-{% gist id="SamyPesse/6ceb8cb8d531ffab75f0",file="README.md" %}{% endgist %}
+{% gist id="roryl/1209cf05ae342beeecda87dd879b0150",file="README.md" %}{% endgist %}
