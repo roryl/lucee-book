@@ -5,6 +5,10 @@ Meta Programming in Lucee referes to the concept where method calls are not know
 ##A Meta Programming Use Case
 An often useful programming pattern is the [Decorator Pattern](https://en.wikipedia.org/wiki/Decorator_pattern) wherein one class wraps another class in order to add additional functionality. For example, one could create a decorator to log all method calls.
 
-Consider this component which implements some math functions:
+Consider this component which implements some math functions add, multiply and subtract:
 
-{% gist id="roryl/1209cf05ae342beeecda87dd879b0150",file="README.md" %}{% endgist %}
+{% gist id="roryl/1209cf05ae342beeecda87dd879b0150",file="math.cfc" %}{% endgist %}
+
+If the use case was that every time we called one of the methods we wanted to output some text, we could solve it by creating a decorator which reproduces and wraps the math object. Consider this decorator: 
+
+{% gist id="roryl/1209cf05ae342beeecda87dd879b0150",file="mathDecoratorBasic.cfc" %}{% endgist %}
