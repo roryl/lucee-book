@@ -67,7 +67,14 @@ Now we can use this new mathDecorator:
 
 {% gist id="roryl/1209cf05ae342beeecda87dd879b0150",file="use_math.cfm" %}{% endgist %}
 
+And it outputs the following:
 
+```
+You are trying to add 5 and 7 
+The result was 12You are trying to multiply 2 and 10 
+The result was 20You are trying to subtract 20 and 6 
+The result was 14
+```
 		
 		
 		
