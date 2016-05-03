@@ -53,7 +53,7 @@ echo("You are trying to #missingMethodName# #missingMethodArguments[1]# and #mis
 var math = new math();
 ```
 
-3. Then making use of the [dynamic evaluation](https://rorylaitila.gitbooks.io/lucee/content/dynamic_evaluation.html#evaluate) function, we call the method that was originally intended, passing in all of the arguments using Lucee's dynamic argumentCollection feature
+3. Then making use of the [dynamic evaluation](https://rorylaitila.gitbooks.io/lucee/content/dynamic_evaluation.html#evaluate) function, we call the method that was originally intended, passing in all of the arguments using Lucee's dynamic [argumentCollection](https://rorylaitila.gitbooks.io/lucee/content/dynamic_evaluation.html#argumentcollection) feature
 ```
 var result = evaluate("math.#missingMethodName#(argumentCollection=missingMethodArguments)");
 ```
