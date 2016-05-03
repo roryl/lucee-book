@@ -39,6 +39,37 @@ onMissingMethod takes the following arguments:
 | Name | Type | Description |
 | -- | -- | -- |
 | missingMethodName | string |  The name of the method that was being called |
-| missingMethodArguments | 
+| missingMethodArguments | struct | A structure of the arguments passed to the function call |
+
+Walking through each line of the implementation:
+
+First we use the missing method name to output what method was being called, and the value of the arguments passed:
+```
+echo("You are trying to #missingMethodName# #missingMethodArguments[1]# and #missingMethodArguments[2]# <br />");
+```
+
+Then we instantiate the math component
+```
+var math = new math();
+```
+
+Then making use of the [dynamic evaluation](https://rorylaitila.gitbooks.io/lucee/content/dynamic_evaluation.html#evaluate) function, we call the method that was originally intended, passing in all of the arguments using Lucee's dynamic argumentCollection feature
+```
+var result = evaluate("math.#missingMethodName#(argumentCollection=missingMethodArguments)");
+```
+
+Lastly we echo the result:
+```
+echo("The result was #result#");
+```
+
+Now we can use this new mathDecorator:
+
+{% gist id="roryl/1209cf05ae342beeecda87dd879b0150",file="use_math.cfm" %}{% endgist %}
+
+
+		
+		
+		
 
 
