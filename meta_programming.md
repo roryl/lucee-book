@@ -43,22 +43,22 @@ Lucee has a metaprogramming feature called onMissingMethod which allows implemen
 
 **Walking through each line of the implementation:**
 
-First we use the missing method name to output what method was being called, and the value of the arguments passed:
+1. First we use the missing method name to output what method was being called, and the value of the arguments passed:
 ```
 echo("You are trying to #missingMethodName# #missingMethodArguments[1]# and #missingMethodArguments[2]# <br />");
 ```
 
-Then we instantiate the math component
+2. Then we instantiate the math component
 ```
 var math = new math();
 ```
 
-Then making use of the [dynamic evaluation](https://rorylaitila.gitbooks.io/lucee/content/dynamic_evaluation.html#evaluate) function, we call the method that was originally intended, passing in all of the arguments using Lucee's dynamic argumentCollection feature
+3. Then making use of the [dynamic evaluation](https://rorylaitila.gitbooks.io/lucee/content/dynamic_evaluation.html#evaluate) function, we call the method that was originally intended, passing in all of the arguments using Lucee's dynamic argumentCollection feature
 ```
 var result = evaluate("math.#missingMethodName#(argumentCollection=missingMethodArguments)");
 ```
 
-Lastly we echo the result:
+4. Lastly we echo the result:
 ```
 echo("The result was #result#");
 ```
