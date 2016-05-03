@@ -30,14 +30,15 @@ The result was 26
 
 This works as expected but in this decorator there is a lot of similar code in each wrapper function. Also each and every function has to be wrapped, which is easy if there are only a few functions, but if there were dozens it could be a lot of tedious coding. 
 
-Lucee has a metaprogramming feature called onMissingMethod which allows implementing a decorator pattern like this much easier. With onMissingMethod, the decorator can be written dynamically as follows:
+Lucee has a metaprogramming feature called onMissingMethod which allows implementing a decorator pattern like the above in a lot less code. If an `onMissingMethod()` function is defined, Lucee will call this whenever a method invocation is made on the component and the method does not exist. With onMissingMethod, the decorator can be written dynamically as follows:
 
 {% gist id="roryl/1209cf05ae342beeecda87dd879b0150",file="mathDecorator.cfc" %}{% endgist %}
 
 onMissingMethod takes the following arguments:
 
-| Name | Description |
-| -- | -- |
-| 0:2 | 1:2 |
+| Name | Type | Description |
+| -- | -- | -- |
+| missingMethodName | string |  The name of the method that was being called |
+| missingMethodArguments | 
 
 
