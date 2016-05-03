@@ -63,4 +63,6 @@ Then it is possible to dynamically create .cfm templates and include them. This 
 
 {% gist id="https://gist.github.com/roryl/95f6bd166627abb425a4",file="dynamic_compilation.cfm" %}{% endgist %}
 
+##ArgumentCollection
+It is possible to pass to functions a dynamic set of arguments
 
