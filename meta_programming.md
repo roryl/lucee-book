@@ -34,14 +34,14 @@ Lucee has a metaprogramming feature called onMissingMethod which allows implemen
 
 {% gist id="roryl/1209cf05ae342beeecda87dd879b0150",file="mathDecorator.cfc" %}{% endgist %}
 
-onMissingMethod takes the following arguments:
+**onMissingMethod takes the following arguments:**
 
 | Name | Type | Description |
 | -- | -- | -- |
 | missingMethodName | string |  The name of the method that was being called |
 | missingMethodArguments | struct | A structure of the arguments passed to the function call |
 
-Walking through each line of the implementation:
+**Walking through each line of the implementation:**
 
 First we use the missing method name to output what method was being called, and the value of the arguments passed:
 ```
