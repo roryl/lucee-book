@@ -9,7 +9,7 @@ Consider this component which implements some math functions- add, multiply and 
 
 {% gist id="roryl/1209cf05ae342beeecda87dd879b0150",file="math.cfc" %}{% endgist %}
 
-If the use case was that every time we called one of the math methods we wanted to output some text, we could solve it by creating a decorator which reproduces and wraps the math object. Consider this decorator: 
+If the use case was that every time we called one of the math methods we wanted to output some text, we could solve it by creating a decorator which reproduces and wraps the math object. Consider this decorator which simply re-implements the functions of math.cfc, adds the new functionality, and forwards the calls to match.cfc: 
 
 {% gist id="roryl/1209cf05ae342beeecda87dd879b0150",file="mathDecoratorBasic.cfc" %}{% endgist %}
 
