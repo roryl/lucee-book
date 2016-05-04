@@ -1,2 +1,2 @@
 # Concurrency
-
+Lucee applications are by default concurrent per request. Each request to Lucee runs in its own thread, with its own request scope to store data for that request. Lucee provides additional concurrency features to run conccurrent execution within a single request.
