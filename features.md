@@ -13,6 +13,7 @@ Language features include:
 * [First Class Functions](https://rorylaitila.gitbooks.io/lucee/content/first_class_functions.html)
 * Lamdas (comming soon to Lucee 5)
 * [Closures](https://rorylaitila.gitbooks.io/lucee/content/closures.html)
+* Futures
 * Declarative Programming Features
 * [Mixins](https://rorylaitila.gitbooks.io/lucee/content/mixins.html)
 * [Meta Programming Capabilities](https://rorylaitila.gitbooks.io/lucee/content/meta_programming.html)
