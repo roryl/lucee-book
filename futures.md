@@ -3,12 +3,13 @@ Lucee has a number of [concurrency features](https://rorylaitila.gitbooks.io/luc
 
 >Note: The Futures library is an open source extension which can be obtained [its repository](https://github.com/roryl/future.lucee/blob/master/README.md)
 
-##Future Purpose
+
 Futures are used for executing code asynchronously from the currently executing request and providing a handle that can be passed to obtain the result of the asynchronous code when it completes. Lucee futures also have the additional capabilities in its future implementation:
 
+* Asynchronous Callbacks
 * Chaining Futures
 * Yielding between Futures
-* Asynchronous Callbacks
+
 
 ##Creating a basic Future
 Futures in Lucee are created with the futures component:
