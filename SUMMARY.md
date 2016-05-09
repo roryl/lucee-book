@@ -119,7 +119,7 @@
        * Parallel Functions
        * Synchronized
    * Migrations
-       * ORM Migrations
+       * [ORM Migrations](orm_migrations.md)
        * Advanced Migrations
    * Search
    * Logging
