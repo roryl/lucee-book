@@ -1,8 +1,7 @@
 {
     "plugins": [
         "gist",
-        "anchors",
-        "structured-toc",
+        "anchors",        
         "-collapsible-menu"
     ],
     "pluginsConfig": {}
