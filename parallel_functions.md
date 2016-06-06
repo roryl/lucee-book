@@ -31,9 +31,9 @@ This example started with an array of numbers, and then calls the map() method o
 This basic example of map() is fairly straight forward. The unique feature of Lucee is its ability to concurrently run map which is described below.
 
 ##Running map in parallel
-With only 6 numbers in the above example, flipping the numbers negative completes almost instantly. But what if there was a lot of data, say thousands of numbers, or the computation of each number took a long time. Lucee can speed up execution by running map() in parallel. 
+With only 6 numbers in the above example, flipping the numbers negative completes almost instantly. But what if there was a lot of data, say hundreds of numbers, and the computation of each number took a long time. Lucee can speed up execution by running map() in parallel. 
 
-Consider this expanded example which has 10,000 numbers:
+Consider this expanded example which has 100 numbers:
 
 {% gist id="roryl/947eeaf158db69f021f983925fcd1813",file="array_each_large.cfm" %}{% endgist %}
 
@@ -54,7 +54,9 @@ timer type="inline"{
 ```
 </noscript>
 
-Executing this script to flip 10,000 numbers from positive to negative takes about 700 milliseconds. This can be sped up considerably by telling Lucee to run the map in parallel:
+In this example, it also mimics a slow computation by forcing each flip to take an extra 100 miliseconds with the `sleep()` function. 
+
+Executing this script to flip 100 numbers from positive to negative takes about 10,000 milliseconds (10 seconds). This can be sped up considerably by telling Lucee to run the map in parallel:
 
 
 
