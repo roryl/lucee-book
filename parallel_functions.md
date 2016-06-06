@@ -15,6 +15,7 @@ The starting array with the numbers looks like this:
 ```
 <cfscript>
 myArray = [1,2,3,4,5,6];
+writeDump(myArray);
 flipped = myArray.map(function(value){
 	return value * -1;
 });
@@ -27,6 +28,11 @@ This example started with an array of numbers, and then calls the map() method o
 
 ![](array_each.png)
 
-This basic example of map() is fairly straight forward. The unique feature of Lucee is its ability to concurrently run map.
+This basic example of map() is fairly straight forward. The unique feature of Lucee is its ability to concurrently run map which is described below.
 
-##
+##Running map in parallel
+With only 6 numbers in the above example, flipping the numbers negative completes almost instantly. But what if there was a lot of data, say thousands of numbers, or the computation of each number took a long time. Lucee can speed up execution by running map() in parallel. 
+
+Consider this expanded example which has 1000 numbers:
+
+
