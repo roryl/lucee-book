@@ -88,7 +88,14 @@ myArray.map(function(value){
 }, true, 2);
 ```
 
-When this executes, it will now execute in half the time, at only 5 seconds.
+When this executes, it will now execute in half the time, at only 5 seconds. If the number of threads is set to 4, it will execute in about 2.5 seconds:
+
+```
+myArray.map(function(value){
+    sleep(100);
+    return value * -1;
+}, true, 4);
+```
 
 
 
