@@ -116,7 +116,7 @@
            * [Configure ORM](configure_orm.md)
    * [Concurrency](concurrency.md)
        * Threading
-       * Parallel Functions
+       * [Parallel Functions](parallel_functions.md)
        * Synchronized
    * Migrations
        * [ORM Migrations](orm_migrations.md)
