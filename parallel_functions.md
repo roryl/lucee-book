@@ -97,5 +97,10 @@ myArray.map(function(value){
 }, true, 4);
 ```
 
+###Considerations
+Not every workload can be parallelized efficiently. There is a startup cost to each thread that Lucee creates, and therefore the time it takes to execute each iteration must be greater than the time it takes to create the thread. Otherwise it will actually be slower to execute in parallel! In testing, Lucee seems to take 5-10ms to create a thread. 
+
+Another thing to consider is the number of max threads. The most efficient number of threads is likely to be equal to the number of CPU cores available on the machine, and there is a limit to the number of threads that the JVM can efficiently manage. So don't simply set a very high number of max threads. It is better to start small, say 2 max threads, and increase until it is no longer beneficial. 
+
 
 
