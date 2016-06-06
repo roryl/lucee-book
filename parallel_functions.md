@@ -4,7 +4,7 @@ The easiest way to get started with concurrency in Lucee is with the available p
 ##A Basic Each Example
 Consider the following example which uses the map() function to flip some numbers from positive to negative. 
 
-{% gist id="roryl/947eeaf158db69f021f983925fcd1813",file="array_each.cfm" %}{% endgist %}
+{% gist id="roryl/947eeaf158db69f021f983925fcd1813",file="array_map.cfm" %}{% endgist %}
 
 The starting array with the numbers looks like this:
 
@@ -35,7 +35,7 @@ With only 6 numbers in the above example, flipping the numbers negative complete
 
 Consider this expanded example which has 100 numbers:
 
-{% gist id="roryl/947eeaf158db69f021f983925fcd1813",file="array_each_large.cfm" %}{% endgist %}
+{% gist id="roryl/947eeaf158db69f021f983925fcd1813",file="array_map_large.cfm" %}{% endgist %}
 
 <noscript>
 ```
@@ -59,8 +59,36 @@ In this example, it also mimics a slow computation by forcing each flip to take 
 
 Executing this script to flip 100 numbers from positive to negative takes about 10,000 milliseconds (10 seconds). This can be sped up considerably by telling Lucee to run the map in parallel:
 
-{% gist id="roryl/947eeaf158db69f021f983925fcd1813",file="array_each_large_parallel.cfm" %}{% endgist %}
+{% gist id="roryl/947eeaf158db69f021f983925fcd1813",file="array_map_large_parallel.cfm" %}{% endgist %}
 
+<noscript>
+```
+<cfscript>
+myArray = []
+loop from="1" to="100" index="i"{
+	myArray.append(randRange(1,10));
+}
+
+timer type="inline"{
+	flipped = myArray.map(function(value){
+		sleep(100);
+		return value * -1;
+	}, true, 2);	
+}
+</cfscript>
+```
+</noscript>
+
+The change here is to set parrallel to true, and maxThreads to 2
+
+```
+myArray.map(function(value){
+    sleep(100);
+    return value * -1;
+}, true, 2);
+```
+
+When this executes, it will now execute in half the time, at only 5 seconds.
 
 
 
