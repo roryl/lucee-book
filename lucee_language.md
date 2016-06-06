@@ -17,8 +17,8 @@ Language features include:
 * Lamdas (comming soon to Lucee 5)
 * [Closures](https://rorylaitila.gitbooks.io/lucee/content/closures.html)
 * Declarative Programming Features
-* Mixins
-* Meta Programming Capabilities
+* [Mixins](https://rorylaitila.gitbooks.io/lucee/content/mixins.html)
+* [Meta Programming Capabilities](https://rorylaitila.gitbooks.io/lucee/content/meta_programming.html)
 * [Java Integration](https://rorylaitila.gitbooks.io/lucee/content/java_integration.html)
 * [Dynamic Evaluation](https://rorylaitila.gitbooks.io/lucee/content/dynamic_evaluation.html)
 * [Application Lifecycle Scopes](https://rorylaitila.gitbooks.io/lucee/content/lifecycle_scopes.html)
