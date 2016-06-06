@@ -41,12 +41,13 @@ Consider this expanded example which has 100 numbers:
 ```
 <cfscript>
 myArray = []
-loop from="1" to="10000" index="i"{
+loop from="1" to="100" index="i"{
 	myArray.append(randRange(1,10));
 }
 
 timer type="inline"{
 	flipped = myArray.map(function(value){
+		sleep(100);
 		return value * -1;
 	});	
 }
@@ -57,6 +58,8 @@ timer type="inline"{
 In this example, it also mimics a slow computation by forcing each flip to take an extra 100 miliseconds with the `sleep()` function. 
 
 Executing this script to flip 100 numbers from positive to negative takes about 10,000 milliseconds (10 seconds). This can be sped up considerably by telling Lucee to run the map in parallel:
+
+{% gist id="roryl/947eeaf158db69f021f983925fcd1813",file="array_each_large_parallel.cfm" %}{% endgist %}
 
 
 
