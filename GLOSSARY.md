@@ -34,4 +34,4 @@ Functions written in Lucee which are not closures.
 
 ## implicit constructor
 
-The constructor area of a component between the opening component { statement, and any functions. The implicit constructor is used to define variables and setup code that must run on every invocation of the component.
+The constructor area of a component between the opening `component {` statement, and any functions. The implicit constructor is used to define variables and setup code that must run on every invocation of the component.
