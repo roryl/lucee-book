@@ -14,7 +14,7 @@ An application in which the views can be rendered server side or in javascript. 
 
 ## Mapping
 
-A setting in the Application.cfc that tells Lucee how to include templates and into import components
+A setting in the Application.cfc that tells Lucee how to include templates and import components
 
 ## Request Scope
 
