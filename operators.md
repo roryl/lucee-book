@@ -88,14 +88,6 @@ For example:
 
 would output "Meow".
 
-
-## Elvis operator
-The "Elvis operator" is a shortening of the ternary operator. One instance of where this is handy is for returning a 'sensible default' value if an variable does not exist. A simple example might look like this:
-    writeOutput(rockstar?: "Elvis Presley");
-
-Outputs the value of "rockstar" if the variable exists, otherwise it outputs "Elvis Presley"
-
-
 ## Operators not available in tags
 
 You can use <> > < >= and <= in tags, as long as they don't interfere with the tag syntax.  In that case you must use the equivalent GT, LT, etc. operators instead.
