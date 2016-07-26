@@ -4,9 +4,9 @@ Lucee is a dynamically typed and interpreted scripting language that runs on the
 
 Lucee is an Object Oriented Language, with First Class Functions, Closures, a large standard library, and a templating language included, which is much like a JSP tag library. It also includes functional programming features like map & reduce, and being based on Java, has access to the entire Java standard library. Lucee can also load any jars on the classpath and make them available, and also dynamically load jars at runtime.
 
-Lucee does not have Static functions or properties. 
+Lucee 5 includes static functions and properties. 
 
-Lucee does not have typed arrays java. For example, in the form of int[] where in java this type the array such that all members of the array should be an int. Arrays in Lucee can contain any value of any type.
+Lucee does not have typed arrays as java. For example, in the form of int[] where in java this types the array such that all members of the array should be an int. Arrays in Lucee can contain any value of any type.
 
 
 
