@@ -59,4 +59,3 @@ When running this web application and going to /subfolder1/index.cfm, it will ou
 Output from /Application.cfc 
 Output from /subfolder1/Application.cfc 
 ```
-
