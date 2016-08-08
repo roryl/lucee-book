@@ -19,4 +19,39 @@ If this application is run, it will output the text from the baseApp.cfc because
 
 > This is my base component that applications can extend
 
+##Extending Application.cfc in parent folders
+
+Sometimes it is necessary to extend another Application.cfc in a parent or root folder. Component extensions are pathed from the current directory, from the webroot, or from a mapping. For any other component (not named Application.cfc) this is not an issue. But when an Application.cfc is extending another Application.cfc, it can cause a stackoverflow error (because it thinks it is extending itself), since Lucee looks in the current direcotry for the component name. 
+
+Consider this directory structure: 
+
+* /
+  * Application.cfc
+  * subfolder1/
+    * Application.cfc
+    * index.cfm
+
+If the Sub application wants to extend the root Application, it needs to prepend the extends attribute with a period. This tells Lucee to look at the webroot, and not the current directory, for the component.
+
+/subfolder1/Application.cfc
+```
+component extends=".Application" {
+
+	writeOutput("Output from /sub1/Application.cfc <br />");
+
+}
+```
+
+/Application.cfc
+```
+component {
+
+	writeOutput("Output from /Application.cfc <br />");
+
+}
+```
+
+if the /subfolder1/Application.cfc nievely had `component extends="Application"` without the period, then Lucee will try to have the Application.cfc extend itself, and this will lead to an irrecoverable error.
+
+
 
