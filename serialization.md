@@ -153,3 +153,9 @@ This example outputs:
 ![](deserialize_json.png)
 
 Notice the primary difference is that when deserializing the json, we no longer have a native Lucee query object, but simply structures & arrays. Deserializing json always returns structures or arrays.
+
+## Serializing to Binary
+
+It is also possible to use the `objectSave()` and `objectLoad()` functions to serialize/deserialize a component to/from binary files.
+
+{% gist id="roryl/61c1b10a8fa4c2ba542a",file="object_save.cfm" %}{% endgist %}
