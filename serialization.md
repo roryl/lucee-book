@@ -156,6 +156,6 @@ Notice the primary difference is that when deserializing the json, we no longer 
 
 ## Serializing to Binary
 
-It is also possible to use the `objectSave()` and `objectLoad()` functions to serialize/deserialize a component to/from binary files.
+It is also possible to use the `objectSave()` and `objectLoad()` functions to serialize/deserialize a component to/from binary files. This may be useful when saving and loading objects from the same Lucee installation. However this may not work between Lucee versions or different servers as expected, so it is recommended to use `serialize()` when transferring objects between systems.
 
 {% gist id="roryl/61c1b10a8fa4c2ba542a",file="object_save.cfm" %}{% endgist %}
