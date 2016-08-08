@@ -37,7 +37,7 @@ If the Sub application wants to extend the root Application, it needs to prepend
 ```
 component extends=".Application" {
 
-	writeOutput("Output from /sub1/Application.cfc <br />");
+	writeOutput("Output from /subfolder1/Application.cfc <br />");
 
 }
 ```
@@ -53,5 +53,10 @@ component {
 
 if the /subfolder1/Application.cfc nievely had `component extends="Application"` without the period, then Lucee will try to have the Application.cfc extend itself, and this will lead to an irrecoverable error.
 
+When running this web application and going to /subfolder1/index.cfm, it will output the following:
 
+```
+Output from /Application.cfc 
+Output from /subfolder1/Application.cfc 
+```
 
