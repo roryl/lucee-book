@@ -48,6 +48,8 @@ Which would output:
 
 ![](string_array_argument2.png)
 
+Additional Information: http://blog.adamcameron.me/2013/12/railo-supports-array-types.html
+
 ##Referencing Arrays
 
 {% gist id="https://gist.github.com/roryl/cc95907c4837ca032b45",file="referencing_arrays.cfm" %}{% endgist %}
