@@ -20,9 +20,25 @@ Arrays can be created with elements or empty and elements added later.
 {% gist id="https://gist.github.com/roryl/cc95907c4837ca032b45",file="array_append.cfm" %}{% endgist %}
 
 ##Array Types (aka Typed Arrays)
-Lucee can constrain all elements in the array to be of a certain type. This is accomplished by adding `[]` to the type signature. Consider the following function which returns a string:
+Lucee can constrain all elements in the array to be of a certain type. This is accomplished by adding `[]` to the type signature. This is useful when you know that the array used or returned by a function, will always be of the same type. Consider the following function which returns a string:
 
 {% gist id="https://gist.github.com/roryl/cc95907c4837ca032b45",file="string.cfm" %}{% endgist %}
+
+When running this code, it will output: `foo`
+
+This type signature can be updated to return an array of strings like so:
+
+{% gist id="https://gist.github.com/roryl/cc95907c4837ca032b45",file="string_array.cfm" %}{% endgist %}
+
+When running this code, it will output an array:
+
+![](array_type.png)
+
+With the Typed Array being expected, if the function now returns a string, we will see that it errors like this in example:
+
+{% gist id="https://gist.github.com/roryl/cc95907c4837ca032b45",file="string_array_fail.cfm" %}{% endgist %}
+
+Which errors with `can't cast String [foo] to a value of type [string[]]`
 
 ##Referencing Arrays
 
