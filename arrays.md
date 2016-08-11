@@ -40,6 +40,10 @@ With the Typed Array being expected, if the function now returns a string, we wi
 
 Which errors with `can't cast String [foo] to a value of type [string[]]`
 
+It is also possible to pass Typed Arrays as arguments to a function:
+
+{% gist id="https://gist.github.com/roryl/cc95907c4837ca032b45",file="string_array_argument.cfm" %}{% endgist %}
+
 ##Referencing Arrays
 
 {% gist id="https://gist.github.com/roryl/cc95907c4837ca032b45",file="referencing_arrays.cfm" %}{% endgist %}
