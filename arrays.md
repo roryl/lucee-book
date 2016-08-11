@@ -19,6 +19,10 @@ Arrays can be created with elements or empty and elements added later.
 
 {% gist id="https://gist.github.com/roryl/cc95907c4837ca032b45",file="array_append.cfm" %}{% endgist %}
 
+##Array Types (aka Typed Arrays)
+Lucee can constrain all elements in the array to be of a certain type. This is accomplished by adding `[]` to the type signature. Consider the following function which returns a string:
+
+{% gist id="https://gist.github.com/roryl/cc95907c4837ca032b45",file="string.cfm" %}{% endgist %}
 
 ##Referencing Arrays
 
