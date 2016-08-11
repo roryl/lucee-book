@@ -34,7 +34,7 @@ When running this code, it will output an array:
 
 ![](array_type.png)
 
-With the Typed Array being expected, if the function now returns a string, we will see that it errors like this in example:
+With the Typed Array being expected, if the function now returns a string, we will see that it errors:
 
 {% gist id="https://gist.github.com/roryl/cc95907c4837ca032b45",file="string_array_fail.cfm" %}{% endgist %}
 
