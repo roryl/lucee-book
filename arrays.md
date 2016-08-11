@@ -46,7 +46,7 @@ It is also possible to pass Typed Arrays as arguments to a function:
 
 Which would output:
 
-![](string_array_argument.png)
+![](string_array_argument2.png)
 
 ##Referencing Arrays
 
