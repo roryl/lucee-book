@@ -20,6 +20,7 @@
 - [Multi Line Comment](#multi-line-comment)
 - [Struct Literal](#struct-literal)
 - [Array Literal](#array-literal)
+- Switch
 
 ## If
 
@@ -131,6 +132,10 @@ User defined functions can be called from anywhere within the script but when th
 ##String Literal
 
 {% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="string_literal.cfm" %}{% endgist %}
+
+##Switch
+
+{% gist id="https://gist.github.com/roryl/11c5a5ab8cf061ab1621",file="switch.cfm" %}{% endgist %}
 
 
 
