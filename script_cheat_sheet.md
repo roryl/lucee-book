@@ -20,7 +20,7 @@
 - [Multi Line Comment](#multi-line-comment)
 - [Struct Literal](#struct-literal)
 - [Array Literal](#array-literal)
-- Switch
+- [Switch](https://rorylaitila.gitbooks.io/lucee/content/script_cheat_sheet.html#switch)
 
 ## If
 
