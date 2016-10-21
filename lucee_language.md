@@ -15,7 +15,7 @@ Language features include:
 * [Interfaces](https://rorylaitila.gitbooks.io/lucee/content/interfaces.html)
 * [Large standard Library of "Built in Functions" and tags](https://rorylaitila.gitbooks.io/lucee/content/standard_library_reference.html) 
 * [First Class Functions](https://rorylaitila.gitbooks.io/lucee/content/first_class_functions.html)
-* Lamdas (comming soon to Lucee 5)
+* Lamdas (Lucee 5)
 * [Closures](https://rorylaitila.gitbooks.io/lucee/content/closures.html)
 * Futures
 * Declarative Programming Features
