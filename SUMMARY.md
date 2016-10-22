@@ -28,7 +28,7 @@
        * [Script Quick Reference](script_cheat_sheet.md)
    * [Operators](operators.md)
    * [Features](features.md)
-       * Applications
+       * [Applications](applications.md)
        * [Classes](classes.md)
            * [Properties](properties.md)
            * [Implicit Methods](implicit_property_functions.md)
