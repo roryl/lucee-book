@@ -24,7 +24,7 @@ Here is an example of a Lucee Template which outputs the time for a webpage:
 
 Lucee templates can combine HTML and Lucee code. In this example above, it outputs the time using the Lucee function now(). It is wrapped in ## to tell Lucee to evaluate now() instead of sending it to the browser.
 
-The &lt;cfoutput&gt;&lt;/cfoutput&gt; tags tell Lucee to look for any variables wrapped in # signs and evaluate them. A common convention is to wrap all content &lt;cfoutput&gt;&lt;/cfoutput&gt; when using CFML templates.
+The `<cfoutput></cfoutput>` tags tell Lucee to look for any variables wrapped in # signs and evaluate them. A common convention is to wrap all content &lt;cfoutput&gt;&lt;/cfoutput&gt; when using CFML templates.
 
 
 ##Conditional Logic
