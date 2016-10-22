@@ -2,7 +2,9 @@
 
 Lucee allows creating server side templates which can house HTML to be rendered and delivered to the web browser. These templates allow access to all Lucee "Built in Functions" (Lucee's standard function library) and block Tags like query, loop and savecontent. Combining these functions and tags with HTML allow building complex interfaces, or other kinds of output like XML, JSON, or PDFs. 
 
-Lucee implements the ColdFusion Markup Language (CFML) as its default templating language, but supports other popular templating languages like [Handlebars](https://github.com/roryl/handlebars.lucee). The examples below utilize CFML templates.
+Lucee implements the ColdFusion Markup Language (CFML) as its default templating language, but supports other popular templating languages like [Handlebars](https://github.com/roryl/handlebars.lucee) as well [Custom Tags](https://rorylaitila.gitbooks.io/lucee/content/custom_tags.html) for implementing reusable template elements. 
+
+The examples below utilize CFML templates for basic usage.
 
 >Note: The file extension of the default Lucee templates is .cfm
 
