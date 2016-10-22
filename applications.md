@@ -14,3 +14,6 @@ Any application is defined by simply the presense of an Application.cfc file in 
 {% gist id="https://gist.github.com/roryl/fed1716562c197feb32bd1fc1ef6c1da",file="Application.cfc" %}{% endgist %}
 
 {% gist id="https://gist.github.com/roryl/fed1716562c197feb32bd1fc1ef6c1da",file="index.cfm" %}{% endgist %}
+
+##Naming an Application
+Lucee keeps track of Application settings based on providing a unique Application name.
