@@ -8,3 +8,10 @@ When you click the <?/> it will expand in to the setting that can be put into yo
 
 ![](adminexpanded.jpg)
 
+
+##Application Settings
+These are the available settings which can be placed into your Lucee Application.cfc
+
+| Setting Name | Default Value | Description | Example |
+| -- | -- | -- | -- |
+| this.name | 1:2 | 2:2 | 3:2 |
