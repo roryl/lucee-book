@@ -25,3 +25,8 @@ Its possible for there to be more than one Application.cfc defined for a particu
 To name an application, define `this.name = "myapp";` in the Application.cfc, like so:
 
 {% gist id="https://gist.github.com/roryl/00fb4e5a51b3b904b954b03537198594",file="Application.cfc" %}{% endgist %}
+
+##Application Settings
+All configurable application settings are defined in the implicit component constructor area along with the Application name. There are many dozens of settings to control all aspects of the Lucee runtime. Below is just an example of a settings, which sets the timezone for the application:
+
+{% gist id="https://gist.github.com/roryl/51c9c9a54fd672ff1bb8e1f597ac8234",file="Application.cfc" %}{% endgist %}
