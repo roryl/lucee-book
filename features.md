@@ -2,6 +2,7 @@
 
 Language features include:
 
+* [Applications](https://rorylaitila.gitbooks.io/lucee/content/applications.html)
 * [Classes (Known as Components in Lucee)](https://rorylaitila.gitbooks.io/lucee/content/classes.html)
 * [Class Properties](https://rorylaitila.gitbooks.io/lucee/content/properties.html)
 * [Types](https://rorylaitila.gitbooks.io/lucee/content/types.html)
