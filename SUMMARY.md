@@ -53,6 +53,7 @@
        * [Mixins](mixins.md)
        * [Meta Programming](meta_programming.md)
        * [Futures](futures.md)
+       * Applications
    * [Mappings (Class Paths)](mappings_class_paths.md)
    * [Language Comparisons](language_comparisons.md)
        * [Lucee vs Java](lucee_vs_java.md)
