@@ -12,6 +12,9 @@ When you click the <?/> it will expand in to the setting that can be put into yo
 ##Application Settings
 These are the available settings which can be placed into your Lucee Application.cfc
 
-| Setting Name | Default Value | Description | Example |
+| Setting Name | Type | Default Value | Description | Example |
 | -- | -- | -- | -- |
-| this.name | 1:2 | 2:2 | 3:2 |
+| this.locale | string | en_US | The default locale to use in the Application. The locale is used in timezone, currency and other functions which rely on a geographic location. | `this.locale = "en_US";`|
+| this.name | string | "" | The name for the application. This defines how Lucee knows which application is running, and which application variables to lookup. Each Application should always define a name. | `this.name = "myapp";` |
+| this.timezone | string | America/New_York | Time timezone used by the application. The timezone is used in data/time functions to ensure the proper timezone output of the application. Although the default is America/New_York, most applications should use UTC for displaying and particularly, storing times. | `this.timezone = "UTC";`
+| this.typeChecking | boolean | true | Tells Lucee whether or not to type check arguments and return values to functions. Setting this to false can speed up some production applications. | `this.typeChecking = false;` |
