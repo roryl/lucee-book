@@ -30,3 +30,5 @@ To name an application, define `this.name = "myapp";` in the Application.cfc, li
 All configurable application settings are defined in the implicit component constructor area along with the Application name. There are many dozens of settings to control all aspects of the Lucee runtime. Below is just an example of a settings, which sets the timezone for the application:
 
 {% gist id="https://gist.github.com/roryl/51c9c9a54fd672ff1bb8e1f597ac8234",file="Application.cfc" %}{% endgist %}
+
+See more details about [Application Settings](https://rorylaitila.gitbooks.io/lucee/content/applicationcfc_settings.html) in the Developing Application section.
