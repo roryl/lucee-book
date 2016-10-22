@@ -14,8 +14,10 @@ These are the available settings which can be placed into your Lucee Application
 
 | Setting Name | Type | Default Value | Description | Example |
 | -- | -- | -- | -- |
-| this.applicationTimeout | timeSpan | 1 Day | The length of time that Lucee should keep [application variables](https://rorylaitila.gitbooks.io/lucee/content/lifecycle_scopes.html#application) alive before clearing them. | `this.applicationTimeout = createTimeSpan( 1, 0, 0, 0 );`
+| this.applicationTimeout | timeSpan | 1 Day | The length of time that Lucee should keep [application variables](https://rorylaitila.gitbooks.io/lucee/content/lifecycle_scopes.html#application) alive between requests before clearing them. | `this.applicationTimeout = createTimeSpan( 1, 0, 0, 0 );`
 | this.locale | string | en_US | The default locale to use in the Application. The locale is used in timezone, currency and other functions which rely on a geographic location. | `this.locale = "en_US";`|
 | this.name | string | "" | The name for the application. This defines how Lucee knows which application is running, and which application variables to lookup. Each Application should always define a name. | `this.name = "myapp";` |
+| this.sessionManagement | boolean | false | Whether to enable session management for the application. Sessions are used to store temporary data on a per user basis | `this.sessionManagement = true;` | 
+| this.sessionTimeout | timeSpan | 30 minutes | The length of time that a unused session will be kept around. Once this time passes an unused session will be deleted | `this.sessionTimeout = createTimeSpan( 0, 0, 30, 0 ); `|
 | this.timezone | string | America/New_York | Time timezone used by the application. The timezone is used in data/time functions to ensure the proper timezone output of the application. Although the default is America/New_York, most applications should use UTC for displaying and particularly, storing times. See how the timezone affects date manipulation in [Dates](https://rorylaitila.gitbooks.io/lucee/content/dates.html) | `this.timezone = "UTC";`
 | this.typeChecking | boolean | true | Tells Lucee whether or not to type check arguments and return values to functions. Setting this to false can speed up some production applications. | `this.typeChecking = false;` |
