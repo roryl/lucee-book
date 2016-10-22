@@ -15,5 +15,13 @@ Any application is defined by simply the presense of an Application.cfc file in 
 
 {% gist id="https://gist.github.com/roryl/fed1716562c197feb32bd1fc1ef6c1da",file="index.cfm" %}{% endgist %}
 
+If running this code, we'll see:
+
+![](basic_application.png)
+
 ##Naming an Application
-Lucee keeps track of Application settings based on providing a unique Application name.
+Its possible for there to be more than one Application.cfc defined for a particular website, or even particular server. Lucee keeps track of Application settings based on providing a unique Application name. Each Application in a server using this name, will have access to the same [Application Scope](https://rorylaitila.gitbooks.io/lucee/content/lifecycle_scopes.html#application)
+
+To name an application, define `this.name = "myapp";` in the Application.cfc, like so:
+
+{% gist id="https://gist.github.com/roryl/00fb4e5a51b3b904b954b03537198594",file="Application.cfc" %}{% endgist %}
