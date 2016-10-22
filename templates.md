@@ -1,4 +1,4 @@
-#Templates
+##Templates
 
 Lucee allows creating server side templates which can house HTML to be rendered and delivered to the web browser. These templates allow access to all Lucee "Built in Functions" (Lucee's standard function library) and block Tags like query, loop and savecontent. Combining these functions and tags with HTML allow building complex interfaces, or other kinds of output like XML, JSON, or PDFs. 
 
@@ -25,7 +25,6 @@ Here is an example of a Lucee Template which outputs the time for a webpage:
 Lucee templates can combine HTML and Lucee code. In this example above, it outputs the time using the Lucee function now(). It is wrapped in ## to tell Lucee to evaluate now() instead of sending it to the browser.
 
 The `<cfoutput></cfoutput>` tags tell Lucee to look for any variables wrapped in # signs and evaluate them. A common convention is to wrap all content &lt;cfoutput&gt;&lt;/cfoutput&gt; when using CFML templates.
-
 
 ##Conditional Logic
 Because Lucee's language control flow is completely available as HTML style tags, it lends itself naturally to HTML output. The example below uses the LOOP, IF, ELSEIF and ELSE tag to change what is displayed.
