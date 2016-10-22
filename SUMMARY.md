@@ -28,6 +28,7 @@
        * [Script Quick Reference](script_cheat_sheet.md)
    * [Operators](operators.md)
    * [Features](features.md)
+       * Applications
        * [Classes](classes.md)
            * [Properties](properties.md)
            * [Implicit Methods](implicit_property_functions.md)
@@ -53,7 +54,6 @@
        * [Mixins](mixins.md)
        * [Meta Programming](meta_programming.md)
        * [Futures](futures.md)
-       * Applications
    * [Mappings (Class Paths)](mappings_class_paths.md)
    * [Language Comparisons](language_comparisons.md)
        * [Lucee vs Java](lucee_vs_java.md)
