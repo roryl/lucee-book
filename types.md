@@ -10,7 +10,7 @@ Lucee supports simple and complex types, type hinting and type coercion
 > Note: You can check if a variable resolves to a simple type with the function isSimpleValue()
 
 ###Numeric Type
-The numeric type supports Integers and Real Numbers.
+The numeric type supports Integers and Real Numbers. 
 
 ###Pass by Value
 The simple types of String, Boolean and Numeric are passed by value, meaning that assigning a variable of a simple type to another variable, duplicates the value.
