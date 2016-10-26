@@ -38,6 +38,7 @@
            * [Queries](queries.md)
            * [Dates](dates.md)
            * [Lists](lists.md)
+           * Numeric
        * [Closures](closures.md)
        * [Templates](templates.md)
        * [First Class Functions](first_class_functions.md)
