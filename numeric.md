@@ -89,6 +89,8 @@ If creating a lot of BigIntegers in code, there is another method which may be s
 {% gist id="roryl/6edb0b617f29447556e515e4b7597281",file="bigint_java_createobject.cfm" %}{% endgist %}
 
 ###Working with BigInteger
+The primary thing to keep in mind is that when working with the BigInteger objects, any numbers being operated on must also be BigIntegers. Any conversion to Lucee numeric type explicitly or implicity (by performing a native +, -, / etc) will loose the precision.
+
 
 
 http://www.barneyb.com/barneyblog/2009/07/15/beware-coldfusion-floating-point-integers/
