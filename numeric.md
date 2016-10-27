@@ -97,4 +97,13 @@ Here is an example of adding two big integers together:
 
 {% gist id="roryl/6edb0b617f29447556e515e4b7597281",file="bigint_java_add.cfm" %}{% endgist %}
 
+which results in:
+
+![](big_integer_add.png)
+
+###BigInteger performance
+There is a 2-3x performance penality for using BigInteger. Consider this example which does 100,000 additions of two numbers, using BigInteger, vs the Lucee numeric:
+
+{% gist id="roryl/6edb0b617f29447556e515e4b7597281",file="bigint_java_performance.cfm" %}{% endgist %}
+
 http://www.barneyb.com/barneyblog/2009/07/15/beware-coldfusion-floating-point-integers/
