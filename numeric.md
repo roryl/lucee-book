@@ -82,7 +82,13 @@ To dump the value, we needed to call `toString()` on the BigInteger, otherwise L
 
 ![](bigint_java_dump.png)
 
-> Note: Converting a Lucee Numeric into a BigInteger will not work:  `javaCast("java.math.BigInteger", 135837265748372615)` Notice that the number is not in quites (a string), therefore Lucee creates a numeric out of it. The numeric type is created before being passed to javaCast, and so it lost precision before even starting.  
-> 
+> Note: Converting a Lucee Numeric into a BigInteger will not work:  `javaCast("java.math.BigInteger", 135837265748372615)` Notice that the number is not in quites (a string), therefore Lucee creates a numeric out of it. The numeric type is created before being passed to javaCast, and so it lost precision before even starting.
+
+If creating a lot of BigIntegers in code, there is another method which may be shorter syntax: 
+
+{% gist id="roryl/6edb0b617f29447556e515e4b7597281",file="bigint_java_createobject.cfm" %}{% endgist %}
+
+###Working with BigInteger
+
 
 http://www.barneyb.com/barneyblog/2009/07/15/beware-coldfusion-floating-point-integers/
