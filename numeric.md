@@ -39,6 +39,50 @@ If Lucee cannot convert a string to a valid number, it will throw an error like 
 ![](operate_string_error.png)
 
 ##Working with Big Integers
-Numbers in Lucee are a floating point number with 16 digits of precision (Lucee uses the java.lang.Double type). For most use cases, this is a sufficiently performant way for Lucee to store numbers. However for really big numbers (greater than 16 digits), this will cause Lucee to round the number to the nearest place.
+Numbers in Lucee are a floating point number with 16 digits of precision (Lucee uses the java.lang.Double type). For most use cases, this is a sufficiently performant way for Lucee to store numbers. However for really big integers (greater than 16 digits), this will cause Lucee to approximate or round the remaining values. 
+
+Consider this number with 18 digits `135837265748372615`, if used in Lucee and dumped, the resulting number will not match:
+
+{% gist id="roryl/6edb0b617f29447556e515e4b7597281",file="bigint.cfm" %}{% endgist %}
+
+Once Lucee has created the number and it is dumped, it is different:
+
+![](bigint_dump.png)
+
+We see here that the original number set into the variable was `135837265748372615`, but the resulting number was `135837265748372608`. Only the first 16 digits between the numbers were preserved exactly.
+
+There are two corrective measures if you need to use big integers:
+
+1. Store Big Integers as Strings
+2. Use the java.math.BigInteger class
+
+###Store Big Numbers as Strings
+If the number only needs to be passed around, saved and/or output and *does not* need any math applied to it, the number can be stored as a string to preserve its value:
+
+{% gist id="roryl/6edb0b617f29447556e515e4b7597281",file="bigint_as_string.cfm" %}{% endgist %}
+
+If the value is dumped it will be as type string:
+
+![](bigint_as_string_dump.png)
+
+**Any math operators applied to this string will change it back into a numeric type and lose precision **
+
+###Use the java.math.BigInteger class
+The underlying Java class BigInteger is designed to work with integers of infinite length. Lucee numbers can be converted into BigIntegers.
+
+>Note: When using BigInteger, all work must be performed using the BigInteger class. Using any Lucee operators or functions on the BigInteger will work, but they will convert the number back into a Lucee numeric, which may loose precision.
+
+###Creating a BigInteger
+
+To create a BigInteger, use the javaCast method to convert a string into a BigInteger.
+
+{% gist id="roryl/6edb0b617f29447556e515e4b7597281",file="bigint_java.cfm" %}{% endgist %}
+
+To dump the value, we needed to call `toString()` on the BigInteger, otherwise Lucee would have converted it back to Numeric when dumping and have lost the precision.
+
+![](bigint_java_dump.png)
+
+> Note: Converting a Lucee Numeric into a BigInteger will not work:  `javaCast("java.math.BigInteger", 135837265748372615)` Notice that the number is not in quites (a string), therefore Lucee creates a numeric out of it. The numeric type is created before being passed to javaCast, and so it lost precision before even starting.  
+> 
 
 http://www.barneyb.com/barneyblog/2009/07/15/beware-coldfusion-floating-point-integers/
