@@ -109,5 +109,7 @@ There is a 2-3x performance penality for using BigInteger. Consider this example
 The BigInteger example takes about 3 times longer to execute, though this is not likely to be a problem for most systems this is something to consider. You can make use of BigInteger only in the portions of your application where it is expected. In most cases, the Lucee numeric type will be sufficient.
 
 ![](bigint_performance_dump.png)
-
-http://www.barneyb.com/barneyblog/2009/07/15/beware-coldfusion-floating-point-integers/
+<noscript>
+##Big Integers and SQL
+When Lucee encounters a Big Integer value from a SQL database, it will convert it to a string. Databases may often use Big Integers for primary or unique identifiers. It is important to be aware that any math operators on this value will convert it to a Lucee numeric and loose precision.
+</noscript>
