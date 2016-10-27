@@ -91,6 +91,10 @@ If creating a lot of BigIntegers in code, there is another method which may be s
 ###Working with BigInteger
 The primary thing to keep in mind is that when working with the BigInteger objects, any numbers being operated on must also be BigIntegers. Any conversion to Lucee numeric type explicitly or implicity (by performing a native +, -, / etc) will loose the precision.
 
+The BigInteger class has functions like add(), subtract(), divide() and pow() [multiply]. Use these functions to perform math operations on BigIntegers. The full list of BigInteger functions can be found at the [java.math.BigInteger documentation](https://docs.oracle.com/javase/7/docs/api/java/math/BigInteger.html).
 
+Here is an example of adding two big integers together:
+
+{% gist id="roryl/6edb0b617f29447556e515e4b7597281",file="bigint_java_add.cfm" %}{% endgist %}
 
 http://www.barneyb.com/barneyblog/2009/07/15/beware-coldfusion-floating-point-integers/
