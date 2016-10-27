@@ -1,4 +1,4 @@
-# Numeric (DRFAT)
+# Numeric
 Lucee has a built in number type called Numeric. This type supports numbers with up to 16 digits of precision. Lucee will use [type coercion](https://rorylaitila.gitbooks.io/lucee/content/types.html#type-coercion) and automatically convert numeric types to string and visa versa, depending on use.  
 
 ##Creating a Number
