@@ -104,9 +104,9 @@ which results in:
 ###BigInteger performance
 There is a 2-3x performance penality for using BigInteger. Consider this example which does 100,000 additions of two numbers, using BigInteger, vs the Lucee numeric:
 
-{% gist id="roryl/6edb0b617f29447556e515e4b7597281",file="bigint_java_performance.cfm" %}{% endgist %}
+{% gist id="roryl/6edb0b617f29447556e515e4b7597281",file="bigint_java_performance.cfm" %}{% endgist %} 
 
-The BigInteger example takes about 3 times longer to execute, though this is not likely to be a problem for most systems this is something to consider. You can make use of BigInteger only in the portions of your application where it is expected. In most cases, the Lucee numeric type will be sufficient.
+The BigInteger example takes about 3 times longer to execute. Although this is not likely to be a problem for most systems this is something to consider. You can make use of BigInteger only in the portions of your application where it is expected. In most cases, the Lucee numeric type will be sufficient.
 
 ![](bigint_performance_dump.png)
 <noscript>
