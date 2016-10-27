@@ -106,4 +106,8 @@ There is a 2-3x performance penality for using BigInteger. Consider this example
 
 {% gist id="roryl/6edb0b617f29447556e515e4b7597281",file="bigint_java_performance.cfm" %}{% endgist %}
 
+The BigInteger example takes about 3 times longer to execute, though this is not likely to be a problem for most systems.
+
+![](bigint_performance_dump.png)
+
 http://www.barneyb.com/barneyblog/2009/07/15/beware-coldfusion-floating-point-integers/
