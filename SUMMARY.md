@@ -15,7 +15,7 @@
    * [Deployment Options](deployment_options.md)
        * CommandBox
        * [Vagrant](vagrant.md)
-       * Digital Ocean
+       * [Digital Ocean](digital_ocean.md)
        * Docker
        * [CentOS (Generic)](centos_generic.md)
        * Windows IIS
