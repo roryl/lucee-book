@@ -30,7 +30,7 @@ The following boot script is specially configured for DigitalOcean CentOS 7 virt
 # The name of the server used by Apache configuration
 server_name='luceetest'
 
-# The git repo address to pull down the Lucee application files.
+# The git repo address to pull down the Lucee application files. Replace this with your own repo address
 git_repo='https://github.com/droppanel/lucee.git'
 
 # The Lucee Administrator Password
