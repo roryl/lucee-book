@@ -22,7 +22,7 @@
        * OSX
    * [System Directories](system_directories.md)
    * [Lucee Service](lucee_service.md)
-   * Server Scope
+   * [Server Scope](server_scope.md)
 * [Lucee Language](lucee_language.md)
    * [Command Line REPL](command_line_repl.md)
    * [Syntax](syntax.md)
