@@ -20,7 +20,7 @@
        * [CentOS (Generic)](centos_generic.md)
        * Windows IIS
        * OSX
-       * Lockdown Guide
+       * [Lockdown Guide](lockdown_guide.md)
    * [System Directories](system_directories.md)
    * [Lucee Service](lucee_service.md)
    * [Server Scope](server_scope.md)
