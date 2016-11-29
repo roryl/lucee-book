@@ -19,4 +19,4 @@ If access to the Lucee admin is not necessary to administer the production serve
 In general, refrain from putting .cfm or .cfc files which are internal to your app in the webroot. Prohibiting internal files from the webroot prohibits unintended access of them. Instead, reference internal files from a component mapping. 
 
 ###Disable .CFC dumping
-If CFC files cannot be moved out of the webroot, consider disabling the component web dump feature by overwriting {{lucee-web}}/context/conponent-dump.cfm
+If CFC files cannot be moved out of the webroot, consider disabling the component web dump feature by overwriting {{lucee-web}}/context/conponent-dump.cfm.
