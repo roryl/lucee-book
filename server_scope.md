@@ -29,14 +29,14 @@ Information about the Operating System running Lucee
 ![](os.png)
 
 
-###seperator
+###separator
 
 Use these seperators to have a cross OS compatible way to create file paths, read files by line, and list file paths.
 
-####seperator.file
+####separator.file
 The character that is used by the OS when pathing to files. Windows is `\` and Mac & Linux are `/`
 
-####seperator.line
+####separator.line
 How line breaks and carriage returns are handled in each OS. Use this when parsing files into an array or ther means which needs OS compatability.
 
 ####seperator.path
