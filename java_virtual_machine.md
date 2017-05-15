@@ -44,7 +44,20 @@ Download URLs change frequently so use this: [https://www.google.com/?\#q=jdk+do
 
 There are several Tomcat configurations that must be implemented along with a simple script. This article only discusses Tomcat, the default servlet container shipped for a production Lucee installation.
 
-##### 1.Tomcat Configuration
+
+
+##### 1. Install the full Java Development Kit
+
+Be sure to install the full Java Development Kit for your installation. The JDK that ships with RedHat based distributions does not have the jstatd binary. For CentOS/RedHat, download the appropriate JDK rpm from Orcale and install it:
+
+```
+#Unpack and install the JDK
+rpm -i /var/www/jdk-8u131-linux-x64.rpm
+```
+
+For CentOS, the JDK will be installed to /usr/java/VERSION/, check the bin folder for the jstatd executable
+
+##### 2.Tomcat Configuration
 
 Update your setenv.sh config to include the following:
 
@@ -54,7 +67,7 @@ Change 'YOUR.IP.GOES.HERE' to the local IP of the server.
 
 You will need to restart tomcat after this change.
 
-##### 2.User Security
+##### 3.User Security
 
 You will need to create two files: $CATALINA\_HOME/conf/jmxremote.access and $CATALINA\_HOME/conf/jmxremote.password.
 
@@ -72,7 +85,42 @@ userone c0mpl3xpass
 anotheruser anotherpassword
 ```
 
-##### 3. VisualVM Script
+The following commands are for your convenience and will will create the scripts in the default directory on CentOS
+
+```bash
+touch /opt/lucee/tomcat/conf/jmxremote.password 
+echo 'user password' > /opt/lucee/tomcat/conf/jmxremote.password
+chmod 600 /opt/lucee/tomcat/conf/jmxremote.password
+```
+
+```bash
+touch /opt/lucee/tomcat/conf/jmxremote.access
+echo 'user readwrite' > /opt/lucee/tomcat/conf/jmxremote.access
+chmod 600 /opt/lucee/tomcat/conf/jmxremote.access
+```
+
+##### 4. Create a Permissions File
+
+Create a JVM permissions file that we will use when starting the visual vm process at $CATALINA\_HOME/conf/tools.policy with the content:
+
+```
+grant codebase "file:\${java.home}/../lib/tools.jar" {
+   permission java.security.AllPermission;
+};
+```
+
+The following shell commands will create this file for you:
+
+```bash
+##Create a security polity file
+cat > /opt/lucee/tomcat/conf/tools.policy << EOF
+grant codebase "file:\${java.home}/../lib/tools.jar" {
+   permission java.security.AllPermission;
+};
+EOF
+```
+
+##### 5. VisualVM Script
 
 In order for VisualVM to connect to the running server instance, the jstatd program needs to be running. Its easiest to create a shell script to execute this program:
 
@@ -81,5 +129,18 @@ In order for VisualVM to connect to the running server instance, the jstatd prog
 /your/local/path/jdk/jre/bin/jstatd -J-Djava.security.policy=/your/local/path/tomcat/conf/tools.policy
 ```
 
-Again, update `/your/local/path` as appropriate. Save it as `visualvm` or the like, with execute permissions. Run this from the command line while you are running VisualVM and terminate the process when complete.
+Again, update `/your/local/path` as appropriate to the location of the JDK installed in step 1. Save it as `visualvm` or the like, with execute permissions. Run this from the command line while you are running VisualVM and terminate the process when complete.
+
+The following snippet will create the start script
+
+```
+##Create a security polity file
+cat > /root/bin/visualgc << EOF
+#!/bin/bash
+#/usr/java/jdk1.6.0_32/bin/jstatd -J-Djava.security.policy=/opt/lucee/tomcat/conf/tools.policy
+/usr/java/jdk1.8.0_131/bin/jstatd -J-Djava.security.policy=/opt/lucee/tomcat/conf/tools.policy
+EOF
+```
+
+
 
