@@ -24,7 +24,6 @@
   * [System Directories](system_directories.md)
   * [Lucee Service](lucee_service.md)
   * [Server Scope](server_scope.md)
-  * [Performance Tuning](performance-tuning.md)
 * [Lucee Language](lucee_language.md)
   * [Command Line REPL](command_line_repl.md)
   * [Syntax](syntax.md)
@@ -103,8 +102,8 @@
   * Automated Testing
   * Securing
     * Java Virtual Machine
-  * Performance Tuning
-    * Lucee Language & Compiler
+  * [Performance Tuning](performance-tuning.md)
+    * [Lucee Language & Compiler](lucee-language-and-compiler.md)
     * [Java Virtual Machine](java_virtual_machine.md)
   * Deploying
   * REST
