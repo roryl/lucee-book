@@ -20,3 +20,12 @@ In general, refrain from putting .cfm or .cfc files which are internal to your a
 
 ###Disable .CFC dumping
 If CFC files cannot be moved out of the webroot, consider disabling the component web dump feature by overwriting {{lucee-web}}/context/conponent-dump.cfm.
+
+###Disable CFC Remoting
+If the application does not need use any CFC remoting, disable all calls to CFC by overriding the lifecycle function onCFCRequest(). This sample below will output empty content
+
+```java
+function onCFCRequest(string cfcName, string methodName, struct args) {  
+	echo('<html><body></body></html>');  
+}
+```
