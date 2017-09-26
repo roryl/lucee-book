@@ -26,7 +26,7 @@ Then when dumping the GCI scope, it should now have the remote address instead o
 If automatically deploying Lucee, the following sed command will find and replace the value into the server.xml file on CentOS
 
 ```bash
-sed -i -e 's/<Engine name="Catalina" defaultHost="127.0.0.1">/<Engine name="Catalina" defaultHost="127.0.0.1"><Valve className="org.apache.catalina.valves.RemoteIpValve" remoteIpHeader="X-Forwarded-For" requestAttributesEnabled="true" /> /g' /opt/lucee/tomcat/conf/server.xml
+sed -i -e 's/<Engine name="Catalina" defaultHost="127.0.0.1">/<Engine name="Catalina" defaultHost="127.0.0.1"><Valve className="org.apache.catalina.valves.RemoteIpValve" remoteIpHeader="X-Forwarded-For" requestAttributesEnabled="true" ><\/Valve> /g' /opt/lucee/tomcat/conf/server.xml
 ```
 
 
