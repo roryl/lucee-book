@@ -161,7 +161,7 @@ rpm -i jdk-8u151-linux-x64.rpm
 #################################
 ## CONFIGURE LUCEE BOOT SCRIPT ##
 #################################
-# Remove the CATALINE_OPTS export because we are going to append it back to the end 
+# Remove the CATALINE_OPTS export because we are going to append it back to the end
 # after creatating more options
 sed -i -e 's/export CATALINA_OPTS;//g' /opt/lucee/tomcat/bin/setenv.sh
 
@@ -181,27 +181,27 @@ echo "export CATALINA_OPTS;" >> /opt/lucee/tomcat/bin/setenv.sh
 # Who has access to manage the JVM remotely
 
 # Create the password file
-touch /opt/lucee/tomcat/conf/jmxremote.password 
-echo "${JMX_USER} ${JMX_HOST}" > /opt/lucee/tomcat/conf/jmxremote.password
+touch /opt/lucee/tomcat/conf/jmxremote.password
+echo "${JMX_USERNAME} ${JMX_PASSWORD}" > /opt/lucee/tomcat/conf/jmxremote.password
 chmod 600 /opt/lucee/tomcat/conf/jmxremote.password
 
 # Create the permissions file for the user
 touch /opt/lucee/tomcat/conf/jmxremote.access
-echo '${JMX_USER} readwrite' > /opt/lucee/tomcat/conf/jmxremote.access
+echo "${JMX_USERNAME} readwrite" > /opt/lucee/tomcat/conf/jmxremote.access
 # copy the above line for additional users
 chmod 600 /opt/lucee/tomcat/conf/jmxremote.access
 
 # Create a security policy file
 cat > /opt/lucee/tomcat/conf/tools.policy << EOF
 grant codebase "file:/usr/java/jdk1.8.0_151/lib/tools.jar" {
-   permission java.security.AllPermission;
+permission java.security.AllPermission;
 };
 EOF
 
 ###################################
 ## CREATE SCRIPT TO START Jstatd ##
 ###################################
-# The jstatd process which provides the 
+# The jstatd process which provides the
 # advanced memory profiling is not enabled by default
 # we create a simple script that starts jstatd that
 # you can run
@@ -220,6 +220,7 @@ chmod 755 /root/bin/visualgc
 # all of the time on your server. Alternatively, you can run this only
 # when you need to profile
 /root/bin/visualgc &
+
 ```
 
 #### Connecting to the Lucee Server
@@ -240,7 +241,7 @@ After a moment, you should now see two proceses on the remote host, jstatd and T
 
 ![](/assets/running_remote_processes.png)
 
-Jstatd is the process for connecting visualVM, you can ignore it. Tomcat is the Lucee process. 
+Jstatd is the process for connecting visualVM, you can ignore it. Tomcat is the Lucee process.
 
 ##### 2. Connect to Tomcat
 
@@ -252,7 +253,7 @@ If no errors are received, it means success. You can now double click on Tomcat 
 
 ![](/assets/tomcat_jstatd_console.png)
 
-You can now see the running Java memory on the "VisualGC" tab. 
+You can now see the running Java memory on the "VisualGC" tab.
 
 > Note: In this view, performing garbage collections "Perform GC" and making heat dumps "Heat Dump" button appear to be disabled. See the Adding JMX connection section below to get access to these functions.
 
