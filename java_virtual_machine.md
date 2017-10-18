@@ -40,19 +40,21 @@ You will need to download/install the Java JDK on your workstation \(not the ser
 
 Download URLs change frequently so use this: [https://www.google.com/?\#q=jdk+download](https://www.google.com/?#q=jdk+download)
 
+
+
 #### Server Configuration
 
-There are several Tomcat configurations that must be implemented along with a simple script. This article only discusses Tomcat, the default servlet container shipped for a production Lucee installation.
-
-
+There are several Tomcat configurations that must be implemented along with a simple script. This article only discusses Tomcat, the default servlet container shipped for a production Lucee installation. At the end of this article there is a sample setup script which will perform all of these tasks.
 
 ##### 1. Install the full Java Development Kit
 
 Be sure to install the full Java Development Kit for your installation. The JDK that ships with RedHat based distributions does not have the jstatd binary. For CentOS/RedHat, download the appropriate JDK rpm from Orcale and install it:
 
 ```
-#Unpack and install the JDK
-rpm -i /var/www/jdk-8u131-linux-x64.rpm
+# Download and install the Java 8 SDK. The oracle site
+# requires a specific accept cookie to be set, so we mimic a browser
+wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u151-b12/e758a0de34e24606bca991d704f6dcbf/jdk-8u151-linux-x64.rpm"
+rpm -i jdk-8u151-linux-x64.rpm
 ```
 
 For CentOS, the JDK will be installed to /usr/java/VERSION/, check the bin folder for the jstatd executable
@@ -69,7 +71,7 @@ You will need to restart tomcat after this change.
 
 ##### 3.User Security
 
-You will need to create two files: $CATALINA\_HOME/conf/jmxremote.access and $CATALINA\_HOME/conf/jmxremote.password.
+You will need to create two files: /opt/lucee/tomcat/conf/jmxremote.access and /opt/lucee/tomcat/conf/jmxremote.password.
 
 jmxremote.access manages permissions and looks like this:
 
@@ -85,39 +87,14 @@ userone c0mpl3xpass
 anotheruser anotherpassword
 ```
 
-The following commands are for your convenience and will will create the scripts in the default directory on CentOS
-
-```bash
-touch /opt/lucee/tomcat/conf/jmxremote.password 
-echo 'user password' > /opt/lucee/tomcat/conf/jmxremote.password
-chmod 600 /opt/lucee/tomcat/conf/jmxremote.password
-```
-
-```bash
-touch /opt/lucee/tomcat/conf/jmxremote.access
-echo 'user readwrite' > /opt/lucee/tomcat/conf/jmxremote.access
-chmod 600 /opt/lucee/tomcat/conf/jmxremote.access
-```
-
 ##### 4. Create a Permissions File
 
-Create a JVM permissions file that we will use when starting the visual vm process at $CATALINA\_HOME/conf/tools.policy with the content:
+Create a JVM permissions file that we will use when starting the visual vm process at /opt/lucee/tomcat/conf/tools.policy with the content:
 
 ```
 grant codebase "file:\${java.home}/../lib/tools.jar" {
    permission java.security.AllPermission;
 };
-```
-
-The following shell commands will create this file for you:
-
-```bash
-##Create a security polity file
-cat > /opt/lucee/tomcat/conf/tools.policy << EOF
-grant codebase "file:\${java.home}/../lib/tools.jar" {
-   permission java.security.AllPermission;
-};
-EOF
 ```
 
 ##### 5. VisualVM Script
@@ -126,7 +103,7 @@ In order for VisualVM to connect to the running server instance, the jstatd prog
 
 ```
 #!/bin/bash
-/your/local/path/jdk/jre/bin/jstatd -J-Djava.security.policy=/your/local/path/tomcat/conf/tools.policy
+/usr/java/jdk1.8.0_151/bin/jstatd -J-Djava.security.policy=/opt/lucee/tomcat/conf/tools.policy -J-Djava.rmi.server.hostname=YOUR IP ADDRESS GOES HERE
 ```
 
 Again, update `/your/local/path` as appropriate to the location of the JDK installed in step 1. Save it as `visualvm` or the like, with execute permissions. Run this from the command line while you are running VisualVM and terminate the process when complete.
