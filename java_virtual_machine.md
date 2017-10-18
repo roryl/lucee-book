@@ -40,6 +40,19 @@ You will need to download/install the Java JDK on your workstation \(not the ser
 
 Download URLs change frequently so use this: [https://www.google.com/?\#q=jdk+download](https://www.google.com/?#q=jdk+download)
 
+##### 2. Open VisualVM
+
+Open VisualVM \(it will be installed into the JDK, on Windows in something like: C:\Program Files\Java\jdk1.8.0\_131\bin\jvisualvm.exe\). You should see something like this:
+
+![](/assets/visualvm_home.png)
+
+##### 2. Install the VisualGC Plugin
+
+In VisualVM, go to Tools &gt; Plugins &gt; Available Plugins and select "Visual GC" and click "Install  
+![](/assets/visual_gc_plugin_install.png)
+
+You are now ready to connect to a running Lucee server once the server configuration below is finished.
+
 
 
 #### Server Configuration
