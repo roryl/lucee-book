@@ -8,9 +8,9 @@ All of the examples are git gist repositories. You can download each gist indivi
 * [First Class Functions](https://gist.github.com/roryl/468f346631ec9afa3cf9)
 * [Local Scope Examples](https://gist.github.com/roryl/08a89aa59430b797cdb4)
 * [Templates](https://gist.github.com/roryl/708a488afcf4a86f1931)
-* [Implicit Methods](#https://gist.github.com/roryl/c8c33b03651b5c4641a4a711799db735)
-* [Mixins](#https://gist.github.com/roryl/2a50bde54f70683747f0353926d49179)
-* [SQL Transaction Examples](#https://gist.github.com/roryl/fca1f922ee013a4bfa8b1f67af163620)
+* [Implicit Methods](https://gist.github.com/roryl/c8c33b03651b5c4641a4a711799db735)
+* [Mixins](https://gist.github.com/roryl/2a50bde54f70683747f0353926d49179)
+* [SQL Transaction Examples](https://gist.github.com/roryl/fca1f922ee013a4bfa8b1f67af163620)
 * [Custom Tags](https://gist.github.com/roryl/f7fcd0fc09be6a207adba91b495c55b7)
 * [Meta Programming](https://gist.github.com/roryl/1209cf05ae342beeecda87dd879b0150)
 
